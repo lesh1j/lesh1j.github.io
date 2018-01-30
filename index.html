@@ -16,6 +16,7 @@
 <div id="map"></div>
 <script>
     
+    // создаем объект с описание меток на карте
     
     var data = {
     "type": "FeatureCollection",
@@ -33,9 +34,11 @@
         ]
     }
     
+    // загружаем карту, когда api готово
     ymaps.ready(init);
 
     function init () {
+        // инициализируем карту и объявляем изначальные центр и масштаб
         var myMap = new ymaps.Map('map', {
             center: [54.204836, 37.6184915],
             zoom: 10
@@ -46,7 +49,7 @@
             // Чтобы метки начали кластеризоваться, выставляем опцию.
             clusterize: true,
             // ObjectManager принимает те же опции, что и кластеризатор.
-            //gridSize: 32,
+            gridSize: 32,
             clusterDisableClickZoom: false
         });
 
@@ -55,56 +58,54 @@
         objectManager.objects.options.set('preset', 'islands#blueCircleDotIcon');
         objectManager.clusters.options.set('preset', 'islands#blueClusterIcons');
         objectManager.objects.options.set('hideIconOnBalloonOpen', false);
+        
+        // добавляем маркеры на карту
         myMap.geoObjects.add(objectManager);
-
         objectManager.add(data);
         
         var userLocation = [];
         
+        // определяем местоположение пользователя
         ymaps.geolocation.get({
-            // Выставляем опцию для определения положения по ip
+            // Выставляем опцию для определения положения по auto
+            // Geolocation.API если доступен, если нет - то по ip
             provider: 'auto',
-            // Карта автоматически отцентрируется по положению пользователя.
-            //mapStateAutoApply: true
         }).then(function (result) {
             
             userLocation = result.geoObjects.position;
+            // добавляем значок с местоположением пользователя
             myMap.geoObjects.add(result.geoObjects);
                     
-            var distances = [];
-
             var features = data.features;
             var pointLocation, distanceToPoint, nearPointLocation, nearPointId;
             var minDistance = Infinity;
-
+            
+            // перебираем метки и находи ближайшую к пользователю
             for (var key in features) {
-
+                
+                // координаты метки
                 pointLocation = features[key].geometry.coordinates;
-
+                
+                // определяем расстояние от пользователя до метки
                 distanceToPoint = ymaps.coordSystem.geo.getDistance(userLocation, pointLocation);
                 
+                // выбираем минимальное расстояние
                 if(distanceToPoint < minDistance){
                     minDistance = distanceToPoint;
                     nearPointLocation = pointLocation;
                     nearPointId = features[key].id;
                 }
                 
-                distances.push(distanceToPoint);
-
             }
-
-            console.log(distances);
-            console.log(minDistance + ' - ' + nearPointLocation + ' - ' + nearPointId);
             
+            // задаем центр карты по ближайшей метке и увеличиваем масштаб до 14
             myMap.setCenter(nearPointLocation, 14);
             
+            // открываем балун ближайше метки
             var objectState = objectManager.getObjectState(nearPointId);
             if (objectState.isClustered) {
                 // Сделаем так, чтобы указанный объект был "выбран" в балуне.
                 objectManager.clusters.state.set('activeObject', objectManager.objects.getById(nearPointId));
-                // Все сгенерированные кластеры имеют уникальные идентификаторы.
-                // Этот идентификатор нужно передать в менеджер балуна, чтобы указать,
-                // на каком кластере нужно показать балун.
                 objectManager.clusters.balloon.open(objectState.cluster.id);
             } else {
                 objectManager.objects.balloon.open(nearPointId);
