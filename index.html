@@ -16,7 +16,7 @@
 <div id="map"></div>
 <script>
     
-    // создаем объект с описание меток на карте
+    // создаем объект с описанием меток на карте
     
     var data = {
     "type": "FeatureCollection",
@@ -80,7 +80,7 @@
             var pointLocation, distanceToPoint, nearPointLocation, nearPointId;
             var minDistance = Infinity;
             
-            // перебираем метки и находи ближайшую к пользователю
+            // перебираем метки и находим ближайшую к пользователю
             for (var key in features) {
                 
                 // координаты метки
@@ -101,7 +101,7 @@
             // задаем центр карты по ближайшей метке и увеличиваем масштаб до 14
             myMap.setCenter(nearPointLocation, 14);
             
-            // открываем балун ближайше метки
+            // открываем балун ближайшей метки
             var objectState = objectManager.getObjectState(nearPointId);
             if (objectState.isClustered) {
                 // Сделаем так, чтобы указанный объект был "выбран" в балуне.
