@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Карта</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
+    <script src="//yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+	<style>
+        html, body, #map {
+            width: 100%; height: 100%; padding: 0; margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+    
+    
+    var data = {
+    "type": "FeatureCollection",
+    "features": [
+        {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [53.931903, 27.411961]}, "properties": {"balloonContentHeader": "1", "balloonContentBody": "1", "hintContent": "1"}},
+        {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [53.963338, 27.565466]}, "properties": {"balloonContentHeader": "2", "balloonContentBody": "1", "hintContent": "1"}},
+        {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [53.993338, 27.565466]}, "properties": {"balloonContentHeader": "3", "balloonContentBody": "1", "hintContent": "1"}},
+        {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [53.944522, 27.616378]}, "properties": {"balloonContentHeader": "4", "balloonContentBody": "1", "hintContent": "1"}},
+        {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [53.980898, 27.642889]}, "properties": {"balloonContentHeader": "5", "balloonContentBody": "1", "hintContent": "1"}},
+        {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [53.993559, 27.435983]}, "properties": {"balloonContentHeader": "6", "balloonContentBody": "1", "hintContent": "1"}},
+        {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [53.900584, 27.675638]}, "properties": {"balloonContentHeader": "7", "balloonContentBody": "1", "hintContent": "1"}},
+        {"type": "Feature", "id": 8, "geometry": {"type": "Point", "coordinates": [53.975724, 27.56084]}, "properties": {"balloonContentHeader": "9", "balloonContentBody": "1", "hintContent": "1"}},
+        {"type": "Feature", "id": 9, "geometry": {"type": "Point", "coordinates": [53.922144, 27.433781]}, "properties": {"balloonContentHeader": "10", "balloonContentBody": "1", "hintContent": "1"}}
+        ]
+    }
+    
+    ymaps.ready(init);
+
+    function init () {
+        var myMap = new ymaps.Map('map', {
+            center: [53.96, 27.64],
+            zoom: 13
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        objectManager = new ymaps.ObjectManager({
+            // Чтобы метки начали кластеризоваться, выставляем опцию.
+            clusterize: true,
+            // ObjectManager принимает те же опции, что и кластеризатор.
+            gridSize: 32,
+            clusterDisableClickZoom: false
+        });
+
+        // Чтобы задать опции одиночным объектам и кластерам,
+        // обратимся к дочерним коллекциям ObjectManager.
+        objectManager.objects.options.set('preset', 'islands#greenDotIcon');
+        objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
+        myMap.geoObjects.add(objectManager);
+
+        objectManager.add(data);
+        
+        var userLocation = [];
+        
+        ymaps.geolocation.get({
+            // Выставляем опцию для определения положения по ip
+            provider: 'auto',
+            // Карта автоматически отцентрируется по положению пользователя.
+            //mapStateAutoApply: true
+        }).then(function (result) {
+            
+            userLocation = result.geoObjects.position;
+            myMap.geoObjects.add(result.geoObjects);
+                    
+            var distances = [];
+
+            var features = data.features;
+            var pointLocation, distanceToPoint, nearPointLocation, nearPointId;
+            var minDistance = Infinity;
+
+            for (var key in features) {
+
+                pointLocation = features[key].geometry.coordinates;
+
+                distanceToPoint = ymaps.coordSystem.geo.getDistance(userLocation, pointLocation);
+                
+                if(distanceToPoint < minDistance){
+                    minDistance = distanceToPoint;
+                    nearPointLocation = pointLocation;
+                    nearPointId = features[key].id;
+                }
+                
+                distances.push(distanceToPoint);
+
+            }
+
+            console.log(distances);
+            console.log(minDistance + ' - ' + nearPointLocation + ' - ' + nearPointId);
+            
+            myMap.setCenter(nearPointLocation);
+            
+            var objectState = objectManager.getObjectState(nearPointId);
+            if (objectState.isClustered) {
+                // Сделаем так, чтобы указанный объект был "выбран" в балуне.
+                objectManager.clusters.state.set('activeObject', objectManager.objects.getById(nearPointId));
+                // Все сгенерированные кластеры имеют уникальные идентификаторы.
+                // Этот идентификатор нужно передать в менеджер балуна, чтобы указать,
+                // на каком кластере нужно показать балун.
+                objectManager.clusters.balloon.open(objectState.cluster.id);
+            } else {
+                objectManager.objects.balloon.open(nearPointId);
+            }
+            
+        });
+        
+    }
+</script>
+</body>
+</html>
