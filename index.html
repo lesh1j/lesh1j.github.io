@@ -21,16 +21,832 @@
     var data = {
     "type": "FeatureCollection",
     "features": [
-        {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [54.1876279, 37.5310531]}, "properties": {"balloonContentHeader": 'ООО "Демидовская вода"', "balloonContentBody": "г. Тула, Одоевское шоссе, 81<br>Время работы: с 8 до 20 час.", "hintContent": "г. Тула, Одоевское шоссе, 81"}},
-        {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [54.208398, 37.575703]}, "properties": {"balloonContentHeader": 'АЗС № 72 (ОАО «Туланефтепродукт»)', "balloonContentBody": "г. Тула, ул. Нижняя Упская, д.15<br>круглосуточно", "hintContent": "г. Тула, ул. Нижняя Упская, д.15"}},
-        {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [54.132982, 37.573429]}, "properties": {"balloonContentHeader": 'м-н "Продукты" (ИП Новикова Н.А.)', "balloonContentBody": "Ленинский р-н, п. Барсуки, ул. Шоссейная, д.4<br>с 8 до 21 час.", "hintContent": "Ленинский р-н, п. Барсуки, ул. Шоссейная, д.4"}},
-        {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [54.095212, 37.6143069]}, "properties": {"balloonContentHeader": 'м-н "Виктория" (ИП Толкачева Е.С.)', "balloonContentBody": "Ленинский р-н, п. Новая Мыза, Шоссейная ул, дом № 7<br>с 8 до 22ч.", "hintContent": "Ленинский р-н, п. Новая Мыза, Шоссейная ул, дом № 7"}},
-        {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [54.242414, 37.618029]}, "properties": {"balloonContentHeader": 'АЗС № 69 (ОАО «Туланефтепродукт»)', "balloonContentBody": "г. Тула, ул. Октябрьская, д. 301<br>круглосуточно", "hintContent": "г. Тула, ул. Октябрьская, д. 301"}},
-        {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [54.265522, 37.6008017]}, "properties": {"balloonContentHeader": 'АЗС «Престиж» (ООО «Престиж»)', "balloonContentBody": "п.Горелки, Московское ш, д. 55<br>круглосуточно", "hintContent": "п.Горелки, Московское ш, д. 55"}},
-        {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [54.28406663, 37.60366291]}, "properties": {"balloonContentHeader": 'Магазин "Сельхозпродукты" (ИП Александрова Н.В.)', "balloonContentBody": "п. Хомяково, Хомяковское ш., дом № 2, строение 1/11<br>с 9 до 19 час.", "hintContent": "п. Хомяково, Хомяковское ш., дом № 2, строение 1/11"}},
-        {"type": "Feature", "id": 7, "geometry": {"type": "Point", "coordinates": [54.228213, 37.655479]}, "properties": {"balloonContentHeader": 'АЗС № 21 (ОАО «Туланефтепродукт»)', "balloonContentBody": "г. Тула, Веневское ш, д. 24<br>круглосуточно", "hintContent": "г. Тула, Веневское ш, д. 24"}},
-        {"type": "Feature", "id": 8, "geometry": {"type": "Point", "coordinates": [54.2202866, 37.6826363]}, "properties": {"balloonContentHeader": 'ИП Рязанцева А.С.', "balloonContentBody": "г. Тула, ул. Щегловская засека, д. 25<br>с 9 до 19 час.", "hintContent": "г. Тула, ул. Щегловская засека, д. 25"}},
-        {"type": "Feature", "id": 9, "geometry": {"type": "Point", "coordinates": [54.1902315, 37.6982109]}, "properties": {"balloonContentHeader": 'Магазин (ИП Бондаренко Н.Н.)', "balloonContentBody": "г. Тула, ул. Кутузова, д. 145<br>с 9 до 19 час.", "hintContent": "г. Тула, ул. Кутузова, д. 145"}},
+        {
+            "type": "Feature", 
+            "id": 0, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1876279, 37.5310531]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ООО "Демидовская вода"', 
+                "balloonContentBody": "г. Тула, Одоевское шоссе, 81<br>Время работы: с 8 до 20 час.", 
+                "hintContent": "г. Тула, Одоевское шоссе, 81"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 1, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.208398, 37.575703]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 72 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, ул. Нижняя Упская, д.15<br>круглосуточно", 
+                "hintContent": "г. Тула, ул. Нижняя Упская, д.15"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 2, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.132982, 37.573429]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н "Продукты" (ИП Новикова Н.А.)', 
+                "balloonContentBody": "Ленинский р-н, п. Барсуки, ул. Шоссейная, д.4<br>с 8 до 21 час.", 
+                "hintContent": "Ленинский р-н, п. Барсуки, ул. Шоссейная, д.4"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 3, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.095212, 37.6143069]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н "Виктория" (ИП Толкачева Е.С.)', 
+                "balloonContentBody": "Ленинский р-н, п. Новая Мыза, Шоссейная ул, дом № 7<br>с 8 до 22ч.", 
+                "hintContent": "Ленинский р-н, п. Новая Мыза, Шоссейная ул, дом № 7"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 4, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.242414, 37.618029]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 69 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, ул. Октябрьская, д. 301<br>круглосуточно", 
+                "hintContent": "г. Тула, ул. Октябрьская, д. 301"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 5, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.265522, 37.6008017]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС «Престиж» (ООО «Престиж»)', 
+                "balloonContentBody": "п.Горелки, Московское ш, д. 55<br>круглосуточно", 
+                "hintContent": "п.Горелки, Московское ш, д. 55"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 6, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.28406663, 37.60366291]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Магазин "Сельхозпродукты" (ИП Александрова Н.В.)', 
+                "balloonContentBody": "п. Хомяково, Хомяковское ш., дом № 2, строение 1/11<br>с 9 до 19 час.", 
+                "hintContent": "п. Хомяково, Хомяковское ш., дом № 2, строение 1/11"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 7,
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.228213, 37.655479]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 21 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, Веневское ш, д. 24<br>круглосуточно", 
+                "hintContent": "г. Тула, Веневское ш, д. 24"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 8, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.2202866, 37.6826363]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ИП Рязанцева А.С.', 
+                "balloonContentBody": "г. Тула, ул. Щегловская засека, д. 25<br>с 9 до 19 час.", 
+                "hintContent": "г. Тула, ул. Щегловская засека, д. 25"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 9, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1902315, 37.6982109]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Магазин (ИП Бондаренко Н.Н.)', 
+                "balloonContentBody": "г. Тула, ул. Кутузова, д. 145<br>с 9 до 19 час.", 
+                "hintContent": "г. Тула, ул. Кутузова, д. 145"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 10, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.191794, 37.694997]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н «Продукты» (ООО «Фиеста»)', 
+                "balloonContentBody": "г. Тула, ул. Кутузова, д. 108<br>", 
+                "hintContent": "г. Тула, ул. Кутузова, д. 108"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 11, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.200313, 37.655656]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н «Мини» (ООО «Фиеста»)', 
+                "balloonContentBody": "г. Тула, ул. Калинина, д. 79, кор. Г<br>с 8 до 20ч.", 
+                "hintContent": "г. Тула, ул. Калинина, д. 79, кор. Г"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 12, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.209939, 37.692725]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС «Транзит-Нефть»', 
+                "balloonContentBody": "г. Тула, ул. Вильямса, д. 36, кор. Б<br>круглосуточно", 
+                "hintContent": "г. Тула, ул. Вильямса, д. 36, кор. Б"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 13, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1973911, 37.6600631]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 66 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, ул. Ложевая, д. 149<br>круглосуточно", 
+                "hintContent": "г. Тула, ул. Ложевая, д. 149"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 14, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1674141, 37.6415279]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 78 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "Ленинский р-н, д. Малевка, Новомосковское ш., 7 км<br>круглосуточно", 
+                "hintContent": "Ленинский р-н, д. Малевка, Новомосковское ш., 7 км"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 15, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1552687, 37.6380251]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 68 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, Новомосковское ш, д.64<br>круглосуточно", 
+                "hintContent": "г. Тула, Новомосковское ш, д.64"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 16, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1694985, 37.6350749]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС "ТВ" (ООО "ТВ")', 
+                "balloonContentBody": "г. Тула, ул. Рязанская, д. 56<br>круглосуточно", 
+                "hintContent": "г. Тула, ул. Рязанская, д. 56"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 17, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.162403, 37.5983329]
+            }, 
+            "properties": {
+                "balloonContentHeader": '', 
+                "balloonContentBody": "г. Тула, ул. Пархоменко, д. № 40<br>с 9 до 22 час.", 
+                "hintContent": "г. Тула, ул. Пархоменко, д. № 40"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 18, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1618644, 37.6163571]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 5 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, ул. Рязанская, д.38а<br>круглосуточно", 
+                "hintContent": "г. Тула, ул. Рязанская, д.38а"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 19, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1788763, 37.6293767]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 80 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, ул. Староникитская, д.110<br>круглосуточно", 
+                "hintContent": "г. Тула, ул. Староникитская, д.110"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 20, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1764856, 37.5748697]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'супермаркет «Лабиринт» (ИП Корчевный Н.В.)', 
+                "balloonContentBody": "г. Тула, ул. Болдина, д.79<br>круглосуточно", 
+                "hintContent": "г. Тула, ул. Болдина, д.79"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 21, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1570615, 37.5817019]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 71 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, Калужское ш, д.2а<br>круглосуточно", 
+                "hintContent": "г. Тула, Калужское ш, д.2а"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 22, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.146753, 37.581941]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС № 67 (ОАО «Туланефтепродукт»)', 
+                "balloonContentBody": "г. Тула, пр.Ленина, д.130а<br>круглосуточно", 
+                "hintContent": "г. Тула, пр.Ленина, д.130а"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 23, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.13284954, 37.57884264]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н «Продукты» (ИП Чернопятова И.Н.)', 
+                "balloonContentBody": "п.Ивановские дачи, ул. Пионерская, д.15<br>с 9 до 21ч.", 
+                "hintContent": "п.Ивановские дачи, ул. Пионерская, д.15"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 24, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.0154028, 37.5071733]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС "ТВ" (ООО "ТВ")', 
+                "balloonContentBody": "Тульская область, г.Щекино, ул.2-я Луговая<br>круглосуточно", 
+                "hintContent": "Тульская область, г.Щекино, ул.2-я Луговая"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 25, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.16532341, 37.46703744]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС (ИП Иванов В.В.)', 
+                "balloonContentBody": "Тульская область, п. Иншинский, д.24, корп. Г<br>круглосуточно", 
+                "hintContent": "Тульская область, п. Иншинский, д.24, корп. Г"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 26, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.16102686, 37.45797157]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Кафе "У трёх дорог" (ИП Головачев Э.В.)', 
+                "balloonContentBody": "Тульская область, п. Иншинский, 95 км + 80 м. трассы Калуга-Тула<br>круглосуточно", 
+                "hintContent": "Тульская область, п. Иншинский, 95 км + 80 м. трассы Калуга-Тула"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 27, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9297622, 37.9298194]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС «ПГС» (ООО «ПГС»)', 
+                "balloonContentBody": "Тульская область, г. Киреевск ул. Горняков, д. 26<br>круглосуточно", 
+                "hintContent": "Тульская область, г. Киреевск ул. Горняков, д. 26"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 28, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9279952, 37.9328658]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н «Владимирский» (ИП Воробьев Владимир Анатольевич)', 
+                "balloonContentBody": "Тульская область, г.Киреевск, ул.Ленина, д. 11<br>круглосуточно", 
+                "hintContent": "Тульская область, г.Киреевск, ул.Ленина, д. 11"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 29, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.1343487, 37.8404864]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н "НОУ-ХАУ"', 
+                "balloonContentBody": "Тульская область, Ленинский р-н, п. Шатск, ул. Садовая, дом № 12<br>с 8 до 20 час", 
+                "hintContent": "Тульская область, Ленинский р-н, п. Шатск, ул. Садовая, дом № 12"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 30, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9279952, 37.9328658]
+            }, 
+            "properties": {
+                "balloonContentHeader": '', 
+                "balloonContentBody": "Тульская область, <br>круглосуточно", 
+                "hintContent": "Тульская область, "
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 31, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9971351, 37.8149477]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н "ВЕСТ-ХАУС"', 
+                "balloonContentBody": "Тульская область, Киреевский р-н, рп. Бородинский, ул. Пушкина, дом № 34 А<br>с 8 до 19 час.", 
+                "hintContent": "Тульская область, Киреевский р-н, рп. Бородинский, ул. Пушкина, дом № 34 А"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 32, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.76553428, 37.0235345]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС №28 (ОАО "Туланефтепродукт")', 
+                "balloonContentBody": "Тульская область, г.Богородицк, п.Строителей, а/д Москва-Воронеж, 239 км<br>круглосуточно", 
+                "hintContent": "Тульская область, г.Богородицк, п.Строителей, а/д Москва-Воронеж, 239 км"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 33, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.80001905, 37.01735469]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС №2 (ОАО "Туланефтепродукт")', 
+                "balloonContentBody": "Тульская область, г. Богородицк, а/д Москва - Воронеж, 238 км<br>круглосуточно", 
+                "hintContent": "Тульская область, г. Богородицк, а/д Москва - Воронеж, 238 км"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 34, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.73187503, 37.40298361]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н "ТПС"', 
+                "balloonContentBody": "Тульская область, рп. Заокский, ул. Поленова, д.№2, корпус А<br>с 8 до 17 час.", 
+                "hintContent": "Тульская область, рп. Заокский, ул. Поленова, д.№2, корпус А"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 35, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.73159317, 37.40311235]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н "Сельхозпродукты"', 
+                "balloonContentBody": "Тульская область, рп. Заокский, ул. Поленова, д. 2, корпус А<br>с 8 до 17 час.", 
+                "hintContent": "Тульская область, рп. Заокский, ул. Поленова, д. 2, корпус А"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 36, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.3701193, 37.5107887]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС №38 (ООО «Престиж»)', 
+                "balloonContentBody": "Тульская область, р-н Заокский , д. Малахово<br>круглосуточно", 
+                "hintContent": "Тульская область, р-н Заокский , д. Малахово"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 37, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.36720848, 37.51122952]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Универсам "Визит" (ИП Павлов И.В.)', 
+                "balloonContentBody": "Тульская область, Заокский р-н, д. Малахово, д.38<br>с 9 до 21 час.", 
+                "hintContent": "Тульская область, Заокский р-н, д. Малахово, д.38"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 38, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.7507191, 37.3630496]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Минимаркет (ИП Нефедов Д.А)', 
+                "balloonContentBody": "Тульская область, Заокский р-н, сельское поселение Страховское, западнее дер. Скрипово<br>с 9 до 20 час.", 
+                "hintContent": "Тульская область, Заокский р-н, сельское поселение Страховское, западнее дер. Скрипово"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 39, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.73349777, 37.40149436]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н «Все для чистой воды» (ИП Иванова О.О.)', 
+                "balloonContentBody": "Тульская область, рп.Заокский, ул.Поленова, д. 5, корп. А<br>круглосуточно", 
+                "hintContent": "Тульская область, рп.Заокский, ул.Поленова, д. 5, корп. А"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 40, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.7326491, 37.4021971]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'М-н "Причал" (ИП Бортяков А.Л.)', 
+                "balloonContentBody": "Тульская область, Заокский рп, ул. Поленова, дом № 5 Б<br>с 8 до 22 час.", 
+                "hintContent": "Тульская область, Заокский рп, ул. Поленова, дом № 5 Б"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 41, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.7341855, 37.3973826]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Магазин (ИП Колот О.А.)', 
+                "balloonContentBody": "Тульская область, Заокский р-н, Заокский рп., Ленина ул., дом № 45, корпус А<br>с 9 до 19 час.", 
+                "hintContent": "Тульская область, Заокский р-н, Заокский рп., Ленина ул., дом № 45, корпус А"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 42, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.7271331, 37.52879499]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Магазин (ООО "Проект")', 
+                "balloonContentBody": "Тульская область, Заокский р-н, 50 метров северо-западнее дер. Злобино<br>с 10 до 18 час.", 
+                "hintContent": "Тульская область, Заокский р-н, 50 метров северо-западнее дер. Злобино"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 43, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.7218235, 37.4021971]
+            }, 
+            "properties": {
+                "balloonContentHeader": '', 
+                "balloonContentBody": "Тульская область, <br>с 10 до 18 час.", 
+                "hintContent": "Тульская область, "
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 44, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.7326491, 37.4920316]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Магазин (ООО "Проект")', 
+                "balloonContentBody": "Тульская область, Заокский р-н, Малаховское сельское поселение, 500 метров юго-восточнее дер. Савино<br>с 8 до 22 час.", 
+                "hintContent": "Тульская область, Заокский р-н, Малаховское сельское поселение, 500 метров юго-восточнее дер. Савино"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 45, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.38254137, 37.15514297]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС №25 (ПАО "Туалнефтепродукт")', 
+                "balloonContentBody": "Тульская область, Веневский р-н, а/д Москва-Дон, 173 км<br>круглосуточно", 
+                "hintContent": "Тульская область, Веневский р-н, а/д Москва-Дон, 173 км"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 46, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.1464757, 37.0940452]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС №9 (ОАО "Туланефтепродукт")', 
+                "balloonContentBody": "Тульская область, г. Ефремов, Тульское ш, д. 28<br>круглосуточно", 
+                "hintContent": "Тульская область, г. Ефремов, Тульское ш, д. 28"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 47, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.7326491, 37.4021971]
+            }, 
+            "properties": {
+                "balloonContentHeader": '', 
+                "balloonContentBody": "Тульская область, <br>с 8 до 22 час.", 
+                "hintContent": "Тульская область, "
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 48, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.5127126, 37.1024511]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'Магазин (ООО "Вкус" )', 
+                "balloonContentBody": "Тульская область, г. Алексин, ул. Тульская, д.85<br>с 9 до 21 час.", 
+                "hintContent": "Тульская область, г. Алексин, ул. Тульская, д.85"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 49, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9658593, 38.3049402]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ОАО «Туланефтепродукт» АЗС № 41', 
+                "balloonContentBody": "г. Донской, ул. Железнодорожный проезд д. 16<br>круглосуточно", 
+                "hintContent": "г. Донской, ул. Железнодорожный проезд д. 16"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 50, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9717614, 38.5338943]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'м-н "Продукты" (ООО "Лагуна")', 
+                "balloonContentBody": "г. Кимовск, ул. Ленина, д. 44<br>с 9 до 22 час.", 
+                "hintContent": "г. Кимовск, ул. Ленина, д. 44"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 51, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9841313, 38.546938]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ОАО «Туланефтепродукт» АЗС № 1', 
+                "balloonContentBody": "г. Кимовск, ул. Коммунистическая д.21<br>круглосуточно", 
+                "hintContent": "г. Кимовск, ул. Коммунистическая д.21"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 52, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.004507, 38.298572]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ООО "Демидовская вода" обособленное подразделение г. Новомосковск', 
+                "balloonContentBody": "г. Новомосковск, ул. Маяковского, д. 22а<br>с 8 до 20 час.", 
+                "hintContent": "г. Новомосковск, ул. Маяковского, д. 22а"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 53, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.02657, 38.3249799]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ОАО «Туланефтепродукт» АЗС №75', 
+                "balloonContentBody": "г. Новомосковск, ул. Рязанское шоссе д. 4<br>круглосуточно", 
+                "hintContent": "г. Новомосковск, ул. Рязанское шоссе д. 4"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 54, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9873508, 38.3050671]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ООО «ТВ» АЗС № 3', 
+                "balloonContentBody": "г. Новомосковск, ул. Первомайская д. 112<br>круглосуточно", 
+                "hintContent": "г. Новомосковск, ул. Первомайская д. 112"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 55, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.018704, 38.2834749]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ООО «ТВ» АЗС №7', 
+                "balloonContentBody": "г. Новомосковск, ул. Куйбышева д. 13 В<br>круглосуточно", 
+                "hintContent": "г. Новомосковск, ул. Куйбышева д. 13 В"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 56, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [54.019225, 38.2638789]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ООО «ТВ» АЗС №6', 
+                "balloonContentBody": "г. Новомосковск, ул. Мира д. 1 Е<br>круглосуточно", 
+                "hintContent": "г. Новомосковск, ул. Мира д. 1 Е"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 57, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.9691769, 38.1688186]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'АЗС №15 (ООО "ТВ")', 
+                "balloonContentBody": "г. Узловая, ул. Заводская, д.4а<br>круглосуточно", 
+                "hintContent": "г. Узловая, ул. Заводская, д.4а"
+            }
+        },
+        
+        {
+            "type": "Feature", 
+            "id": 58, 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [53.95685616, 38.16160882]
+            }, 
+            "properties": {
+                "balloonContentHeader": 'ОАО «Туланефтепродукт» АЗС №47', 
+                "balloonContentBody": "г. Узловая, 46 км а/д Тула-Новомосковск<br>круглосуточно", 
+                "hintContent": "г. Узловая, 46 км а/д Тула-Новомосковск"
+            }
+        }
+
         ]
     }
     
