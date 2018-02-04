@@ -1,934 +1,642 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Карта</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="//api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
-	<style>
-        html, body, #map {
-            width: 100%; height: 100%; padding: 0; margin: 0;
-        }
-    </style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Creative Responsive Bootstrap Multi-Purpose HTML Template">
+<meta name="keywords" content="H2O, Creative, Agency, Portfolio, Freelancer, Shop, Store,Bootstrap, HTML, Template, One page">
+<meta name="author" content="Vadzim Liashkevich">
+
+<!-- SITE TITLE -->
+<title>DentalClinic - Responsive Clinic HTML Template</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+
+<!-- LIBRARIES CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    
+<!-- PLUGIN CSS -->
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    
+<!-- CUSTOM CSS -->
+<link rel="stylesheet" type="text/css" href="css/theme.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
 </head>
-<body>
-<div id="map"></div>
-<script>
-    
-    // создаем объект с описанием меток на карте
-    
-    var data = {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature", 
-            "id": 0, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1876279, 37.5310531]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ООО "Демидовская вода"', 
-                "balloonContentBody": "г. Тула, Одоевское шоссе, 81<br>Время работы: с 8 до 20 час.", 
-                "hintContent": "г. Тула, Одоевское шоссе, 81"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 1, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.208398, 37.575703]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 72 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, ул. Нижняя Упская, д.15<br>круглосуточно", 
-                "hintContent": "г. Тула, ул. Нижняя Упская, д.15"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 2, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.132982, 37.573429]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н "Продукты" (ИП Новикова Н.А.)', 
-                "balloonContentBody": "Ленинский р-н, п. Барсуки, ул. Шоссейная, д.4<br>с 8 до 21 час.", 
-                "hintContent": "Ленинский р-н, п. Барсуки, ул. Шоссейная, д.4"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 3, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.095212, 37.6143069]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н "Виктория" (ИП Толкачева Е.С.)', 
-                "balloonContentBody": "Ленинский р-н, п. Новая Мыза, Шоссейная ул, дом № 7<br>с 8 до 22ч.", 
-                "hintContent": "Ленинский р-н, п. Новая Мыза, Шоссейная ул, дом № 7"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 4, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.242414, 37.618029]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 69 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, ул. Октябрьская, д. 301<br>круглосуточно", 
-                "hintContent": "г. Тула, ул. Октябрьская, д. 301"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 5, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.265522, 37.6008017]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС «Престиж» (ООО «Престиж»)', 
-                "balloonContentBody": "п.Горелки, Московское ш, д. 55<br>круглосуточно", 
-                "hintContent": "п.Горелки, Московское ш, д. 55"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 6, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.28406663, 37.60366291]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Магазин "Сельхозпродукты" (ИП Александрова Н.В.)', 
-                "balloonContentBody": "п. Хомяково, Хомяковское ш., дом № 2, строение 1/11<br>с 9 до 19 час.", 
-                "hintContent": "п. Хомяково, Хомяковское ш., дом № 2, строение 1/11"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 7,
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.228213, 37.655479]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 21 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, Веневское ш, д. 24<br>круглосуточно", 
-                "hintContent": "г. Тула, Веневское ш, д. 24"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 8, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.2202866, 37.6826363]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ИП Рязанцева А.С.', 
-                "balloonContentBody": "г. Тула, ул. Щегловская засека, д. 25<br>с 9 до 19 час.", 
-                "hintContent": "г. Тула, ул. Щегловская засека, д. 25"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 9, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1902315, 37.6982109]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Магазин (ИП Бондаренко Н.Н.)', 
-                "balloonContentBody": "г. Тула, ул. Кутузова, д. 145<br>с 9 до 19 час.", 
-                "hintContent": "г. Тула, ул. Кутузова, д. 145"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 10, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.191794, 37.694997]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н «Продукты» (ООО «Фиеста»)', 
-                "balloonContentBody": "г. Тула, ул. Кутузова, д. 108<br>", 
-                "hintContent": "г. Тула, ул. Кутузова, д. 108"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 11, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.200313, 37.655656]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н «Мини» (ООО «Фиеста»)', 
-                "balloonContentBody": "г. Тула, ул. Калинина, д. 79, кор. Г<br>с 8 до 20ч.", 
-                "hintContent": "г. Тула, ул. Калинина, д. 79, кор. Г"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 12, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.209939, 37.692725]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС «Транзит-Нефть»', 
-                "balloonContentBody": "г. Тула, ул. Вильямса, д. 36, кор. Б<br>круглосуточно", 
-                "hintContent": "г. Тула, ул. Вильямса, д. 36, кор. Б"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 13, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1973911, 37.6600631]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 66 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, ул. Ложевая, д. 149<br>круглосуточно", 
-                "hintContent": "г. Тула, ул. Ложевая, д. 149"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 14, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1674141, 37.6415279]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 78 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "Ленинский р-н, д. Малевка, Новомосковское ш., 7 км<br>круглосуточно", 
-                "hintContent": "Ленинский р-н, д. Малевка, Новомосковское ш., 7 км"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 15, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1552687, 37.6380251]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 68 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, Новомосковское ш, д.64<br>круглосуточно", 
-                "hintContent": "г. Тула, Новомосковское ш, д.64"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 16, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1694985, 37.6350749]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС "ТВ" (ООО "ТВ")', 
-                "balloonContentBody": "г. Тула, ул. Рязанская, д. 56<br>круглосуточно", 
-                "hintContent": "г. Тула, ул. Рязанская, д. 56"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 17, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.162403, 37.5983329]
-            }, 
-            "properties": {
-                "balloonContentHeader": '', 
-                "balloonContentBody": "г. Тула, ул. Пархоменко, д. № 40<br>с 9 до 22 час.", 
-                "hintContent": "г. Тула, ул. Пархоменко, д. № 40"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 18, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1618644, 37.6163571]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 5 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, ул. Рязанская, д.38а<br>круглосуточно", 
-                "hintContent": "г. Тула, ул. Рязанская, д.38а"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 19, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1788763, 37.6293767]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 80 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, ул. Староникитская, д.110<br>круглосуточно", 
-                "hintContent": "г. Тула, ул. Староникитская, д.110"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 20, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1764856, 37.5748697]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'супермаркет «Лабиринт» (ИП Корчевный Н.В.)', 
-                "balloonContentBody": "г. Тула, ул. Болдина, д.79<br>круглосуточно", 
-                "hintContent": "г. Тула, ул. Болдина, д.79"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 21, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1570615, 37.5817019]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 71 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, Калужское ш, д.2а<br>круглосуточно", 
-                "hintContent": "г. Тула, Калужское ш, д.2а"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 22, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.146753, 37.581941]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС № 67 (ОАО «Туланефтепродукт»)', 
-                "balloonContentBody": "г. Тула, пр.Ленина, д.130а<br>круглосуточно", 
-                "hintContent": "г. Тула, пр.Ленина, д.130а"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 23, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.13284954, 37.57884264]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н «Продукты» (ИП Чернопятова И.Н.)', 
-                "balloonContentBody": "п.Ивановские дачи, ул. Пионерская, д.15<br>с 9 до 21ч.", 
-                "hintContent": "п.Ивановские дачи, ул. Пионерская, д.15"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 24, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.0154028, 37.5071733]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС "ТВ" (ООО "ТВ")', 
-                "balloonContentBody": "Тульская область, г.Щекино, ул.2-я Луговая<br>круглосуточно", 
-                "hintContent": "Тульская область, г.Щекино, ул.2-я Луговая"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 25, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.16532341, 37.46703744]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС (ИП Иванов В.В.)', 
-                "balloonContentBody": "Тульская область, п. Иншинский, д.24, корп. Г<br>круглосуточно", 
-                "hintContent": "Тульская область, п. Иншинский, д.24, корп. Г"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 26, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.16102686, 37.45797157]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Кафе "У трёх дорог" (ИП Головачев Э.В.)', 
-                "balloonContentBody": "Тульская область, п. Иншинский, 95 км + 80 м. трассы Калуга-Тула<br>круглосуточно", 
-                "hintContent": "Тульская область, п. Иншинский, 95 км + 80 м. трассы Калуга-Тула"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 27, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9297622, 37.9298194]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС «ПГС» (ООО «ПГС»)', 
-                "balloonContentBody": "Тульская область, г. Киреевск ул. Горняков, д. 26<br>круглосуточно", 
-                "hintContent": "Тульская область, г. Киреевск ул. Горняков, д. 26"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 28, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9279952, 37.9328658]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н «Владимирский» (ИП Воробьев Владимир Анатольевич)', 
-                "balloonContentBody": "Тульская область, г.Киреевск, ул.Ленина, д. 11<br>круглосуточно", 
-                "hintContent": "Тульская область, г.Киреевск, ул.Ленина, д. 11"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 29, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.1343487, 37.8404864]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н "НОУ-ХАУ"', 
-                "balloonContentBody": "Тульская область, Ленинский р-н, п. Шатск, ул. Садовая, дом № 12<br>с 8 до 20 час", 
-                "hintContent": "Тульская область, Ленинский р-н, п. Шатск, ул. Садовая, дом № 12"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 30, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9279952, 37.9328658]
-            }, 
-            "properties": {
-                "balloonContentHeader": '', 
-                "balloonContentBody": "Тульская область, <br>круглосуточно", 
-                "hintContent": "Тульская область, "
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 31, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9971351, 37.8149477]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н "ВЕСТ-ХАУС"', 
-                "balloonContentBody": "Тульская область, Киреевский р-н, рп. Бородинский, ул. Пушкина, дом № 34 А<br>с 8 до 19 час.", 
-                "hintContent": "Тульская область, Киреевский р-н, рп. Бородинский, ул. Пушкина, дом № 34 А"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 32, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.76553428, 37.0235345]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС №28 (ОАО "Туланефтепродукт")', 
-                "balloonContentBody": "Тульская область, г.Богородицк, п.Строителей, а/д Москва-Воронеж, 239 км<br>круглосуточно", 
-                "hintContent": "Тульская область, г.Богородицк, п.Строителей, а/д Москва-Воронеж, 239 км"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 33, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.80001905, 37.01735469]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС №2 (ОАО "Туланефтепродукт")', 
-                "balloonContentBody": "Тульская область, г. Богородицк, а/д Москва - Воронеж, 238 км<br>круглосуточно", 
-                "hintContent": "Тульская область, г. Богородицк, а/д Москва - Воронеж, 238 км"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 34, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.73187503, 37.40298361]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н "ТПС"', 
-                "balloonContentBody": "Тульская область, рп. Заокский, ул. Поленова, д.№2, корпус А<br>с 8 до 17 час.", 
-                "hintContent": "Тульская область, рп. Заокский, ул. Поленова, д.№2, корпус А"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 35, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.73159317, 37.40311235]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н "Сельхозпродукты"', 
-                "balloonContentBody": "Тульская область, рп. Заокский, ул. Поленова, д. 2, корпус А<br>с 8 до 17 час.", 
-                "hintContent": "Тульская область, рп. Заокский, ул. Поленова, д. 2, корпус А"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 36, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.3701193, 37.5107887]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС №38 (ООО «Престиж»)', 
-                "balloonContentBody": "Тульская область, р-н Заокский , д. Малахово<br>круглосуточно", 
-                "hintContent": "Тульская область, р-н Заокский , д. Малахово"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 37, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.36720848, 37.51122952]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Универсам "Визит" (ИП Павлов И.В.)', 
-                "balloonContentBody": "Тульская область, Заокский р-н, д. Малахово, д.38<br>с 9 до 21 час.", 
-                "hintContent": "Тульская область, Заокский р-н, д. Малахово, д.38"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 38, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.7507191, 37.3630496]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Минимаркет (ИП Нефедов Д.А)', 
-                "balloonContentBody": "Тульская область, Заокский р-н, сельское поселение Страховское, западнее дер. Скрипово<br>с 9 до 20 час.", 
-                "hintContent": "Тульская область, Заокский р-н, сельское поселение Страховское, западнее дер. Скрипово"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 39, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.73349777, 37.40149436]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н «Все для чистой воды» (ИП Иванова О.О.)', 
-                "balloonContentBody": "Тульская область, рп.Заокский, ул.Поленова, д. 5, корп. А<br>круглосуточно", 
-                "hintContent": "Тульская область, рп.Заокский, ул.Поленова, д. 5, корп. А"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 40, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.7326491, 37.4021971]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'М-н "Причал" (ИП Бортяков А.Л.)', 
-                "balloonContentBody": "Тульская область, Заокский рп, ул. Поленова, дом № 5 Б<br>с 8 до 22 час.", 
-                "hintContent": "Тульская область, Заокский рп, ул. Поленова, дом № 5 Б"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 41, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.7341855, 37.3973826]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Магазин (ИП Колот О.А.)', 
-                "balloonContentBody": "Тульская область, Заокский р-н, Заокский рп., Ленина ул., дом № 45, корпус А<br>с 9 до 19 час.", 
-                "hintContent": "Тульская область, Заокский р-н, Заокский рп., Ленина ул., дом № 45, корпус А"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 42, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.7271331, 37.52879499]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Магазин (ООО "Проект")', 
-                "balloonContentBody": "Тульская область, Заокский р-н, 50 метров северо-западнее дер. Злобино<br>с 10 до 18 час.", 
-                "hintContent": "Тульская область, Заокский р-н, 50 метров северо-западнее дер. Злобино"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 43, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.7218235, 37.4021971]
-            }, 
-            "properties": {
-                "balloonContentHeader": '', 
-                "balloonContentBody": "Тульская область, <br>с 10 до 18 час.", 
-                "hintContent": "Тульская область, "
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 44, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.7326491, 37.4920316]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Магазин (ООО "Проект")', 
-                "balloonContentBody": "Тульская область, Заокский р-н, Малаховское сельское поселение, 500 метров юго-восточнее дер. Савино<br>с 8 до 22 час.", 
-                "hintContent": "Тульская область, Заокский р-н, Малаховское сельское поселение, 500 метров юго-восточнее дер. Савино"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 45, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.38254137, 37.15514297]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС №25 (ПАО "Туалнефтепродукт")', 
-                "balloonContentBody": "Тульская область, Веневский р-н, а/д Москва-Дон, 173 км<br>круглосуточно", 
-                "hintContent": "Тульская область, Веневский р-н, а/д Москва-Дон, 173 км"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 46, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.1464757, 37.0940452]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС №9 (ОАО "Туланефтепродукт")', 
-                "balloonContentBody": "Тульская область, г. Ефремов, Тульское ш, д. 28<br>круглосуточно", 
-                "hintContent": "Тульская область, г. Ефремов, Тульское ш, д. 28"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 47, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.7326491, 37.4021971]
-            }, 
-            "properties": {
-                "balloonContentHeader": '', 
-                "balloonContentBody": "Тульская область, <br>с 8 до 22 час.", 
-                "hintContent": "Тульская область, "
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 48, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.5127126, 37.1024511]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'Магазин (ООО "Вкус" )', 
-                "balloonContentBody": "Тульская область, г. Алексин, ул. Тульская, д.85<br>с 9 до 21 час.", 
-                "hintContent": "Тульская область, г. Алексин, ул. Тульская, д.85"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 49, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9658593, 38.3049402]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ОАО «Туланефтепродукт» АЗС № 41', 
-                "balloonContentBody": "г. Донской, ул. Железнодорожный проезд д. 16<br>круглосуточно", 
-                "hintContent": "г. Донской, ул. Железнодорожный проезд д. 16"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 50, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9717614, 38.5338943]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'м-н "Продукты" (ООО "Лагуна")', 
-                "balloonContentBody": "г. Кимовск, ул. Ленина, д. 44<br>с 9 до 22 час.", 
-                "hintContent": "г. Кимовск, ул. Ленина, д. 44"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 51, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9841313, 38.546938]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ОАО «Туланефтепродукт» АЗС № 1', 
-                "balloonContentBody": "г. Кимовск, ул. Коммунистическая д.21<br>круглосуточно", 
-                "hintContent": "г. Кимовск, ул. Коммунистическая д.21"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 52, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.004507, 38.298572]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ООО "Демидовская вода" обособленное подразделение г. Новомосковск', 
-                "balloonContentBody": "г. Новомосковск, ул. Маяковского, д. 22а<br>с 8 до 20 час.", 
-                "hintContent": "г. Новомосковск, ул. Маяковского, д. 22а"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 53, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.02657, 38.3249799]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ОАО «Туланефтепродукт» АЗС №75', 
-                "balloonContentBody": "г. Новомосковск, ул. Рязанское шоссе д. 4<br>круглосуточно", 
-                "hintContent": "г. Новомосковск, ул. Рязанское шоссе д. 4"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 54, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9873508, 38.3050671]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ООО «ТВ» АЗС № 3', 
-                "balloonContentBody": "г. Новомосковск, ул. Первомайская д. 112<br>круглосуточно", 
-                "hintContent": "г. Новомосковск, ул. Первомайская д. 112"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 55, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.018704, 38.2834749]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ООО «ТВ» АЗС №7', 
-                "balloonContentBody": "г. Новомосковск, ул. Куйбышева д. 13 В<br>круглосуточно", 
-                "hintContent": "г. Новомосковск, ул. Куйбышева д. 13 В"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 56, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [54.019225, 38.2638789]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ООО «ТВ» АЗС №6', 
-                "balloonContentBody": "г. Новомосковск, ул. Мира д. 1 Е<br>круглосуточно", 
-                "hintContent": "г. Новомосковск, ул. Мира д. 1 Е"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 57, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.9691769, 38.1688186]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'АЗС №15 (ООО "ТВ")', 
-                "balloonContentBody": "г. Узловая, ул. Заводская, д.4а<br>круглосуточно", 
-                "hintContent": "г. Узловая, ул. Заводская, д.4а"
-            }
-        },
-        
-        {
-            "type": "Feature", 
-            "id": 58, 
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [53.95685616, 38.16160882]
-            }, 
-            "properties": {
-                "balloonContentHeader": 'ОАО «Туланефтепродукт» АЗС №47', 
-                "balloonContentBody": "г. Узловая, 46 км а/д Тула-Новомосковск<br>круглосуточно", 
-                "hintContent": "г. Узловая, 46 км а/д Тула-Новомосковск"
-            }
-        }
 
-        ]
-    }
+<body data-spy="scroll" data-target=".navbar">
     
-    // загружаем карту, когда api готово
-    ymaps.ready(init);
-
-    function init () {
-        // инициализируем карту и объявляем изначальные центр и масштаб
-        var myMap = new ymaps.Map('map', {
-            center: [54.204836, 37.6184915],
-            zoom: 10
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-        objectManager = new ymaps.ObjectManager({
-            // Чтобы метки начали кластеризоваться, выставляем опцию.
-            clusterize: true,
-            // ObjectManager принимает те же опции, что и кластеризатор.
-            gridSize: 32,
-            clusterDisableClickZoom: false
-        });
-
-        // Чтобы задать опции одиночным объектам и кластерам,
-        // обратимся к дочерним коллекциям ObjectManager.
-        objectManager.objects.options.set('preset', 'islands#blueCircleDotIcon');
-        objectManager.clusters.options.set('preset', 'islands#blueClusterIcons');
-        objectManager.objects.options.set('hideIconOnBalloonOpen', false);
-        
-        // добавляем маркеры на карту
-        myMap.geoObjects.add(objectManager);
-        objectManager.add(data);
-        
-        var userLocation = [];
-        
-        // определяем местоположение пользователя
-        ymaps.geolocation.get({
-            // Выставляем опцию для определения положения по auto
-            // Geolocation.API если доступен, если нет - то по ip
-            provider: 'auto',
-        }).then(function (result) {
+<!-- =========================
+     TOP BAR
+============================== -->   
+<div class="top-bar" id="top-bar">
+    <div class="container">
+        <div class="row">
+			
+			<!-- TOP BAR LEFT -->
+			<div class="col-6 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="top-bar-logo">
+                    <img src="images/logo.png" alt="" />
+                </div>
+			</div>
             
-            userLocation = result.geoObjects.position;
-            // добавляем значок с местоположением пользователя
-            myMap.geoObjects.add(result.geoObjects);
+            <!-- TOP BAR CENTER -->
+			<div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <div class="top-bar-right">
+                    <div class="top-bar-menu">
+                        <ul>
+                            <li><a href="#">Как работаем</a></li>
+                            <li><a href="#">О нашей студии</a></li>
+                            <li><a href="#">Портфолио</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">SEO-Кейсы</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-bar-phone">
+                        <a href="tel:+74999384389"><img src="images/phone_icon.png" alt="" />+7 (499) 938-43-89</a>
+                    </div>
+                </div>
+			</div>
+            
+            <div class="showmenu">
+                <div class="showmenu-line showmenu-line-1"></div>
+                <div class="showmenu-line showmenu-line-2"></div>
+                <div class="showmenu-line showmenu-line-3"></div>
+            </div>
+						
+		</div>
+	</div>
+</div>
+<!-- =========================
+     END TOP BAR   
+============================== -->
+    
+    
+<!-- =========================
+     HEADER
+============================== -->    
+<div class="header" id="header">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                
+                <div class="header-title">
+                    <h1>Отправьте свой сайт на web-вершины!</h1>
+                </div>
+                <div class="header-text">
+                    <h2>Закажите бесплатный SEO-аудит Вашего сайта:</h2>
+                    <ul>
+                        <li>Подробный список ошибок на Вашем сайте, мешающих продвижению</li>
+                        <li>Анализ позиций и репутации Вашего сайта на поиске и в социальных сетях</li>
+                        <li>Пошаговый план продвижения и развития Вашего сайта на 6 месяцев</li>
+                    </ul>
+                </div>
+                <div class="header-form">
+                    <form>
+                        <input type="text" placeholder="Адрес Вашего сайта">
+                        <button class="btn btn-primary">Получить SEO-аудит</button>
+                    </form>
+                    <div class="header-form-sub">
+                        Мы проанализируем сайт бесплатно и вышлем прогноз на почту
+                    </div>
+                </div>
+                
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- =========================
+     END HEADER
+============================== -->  
+
+    
+<!-- =========================
+     SERVICES
+============================== -->    
+<div class="services" id="services">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">    
+                <div class="section-title"><h2>Эффективный it-аутсорсинг</h2></div>
+                <div class="section-subtitle">Как это работает и шаги нашего взаимодействия</div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                
+                <div class="services-item services-item-left">
+                    <div class="services-item-number">
+                        01
+                    </div>
+                    <div class="services-item-title">
+                        <h3>Комплексный<br>аудит</h3>
+                    </div>
+                    <div class="services-item-text">
+                        Проводим подробные исследования Вашего сайта на наличие ошибок и фиксируем точку А. Изучаем Ваше УТП, спрос и сезонность, активность и позиции конку- рентов
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                
+                <div class="services-item services-item-right">
+                    <div class="services-item-number">
+                        02
+                    </div>
+                    <div class="services-item-title">
+                        <h3>Комплексный<br>аудит</h3>
+                    </div>
+                    <div class="services-item-text">
+                        Проводим подробные исследования Вашего сайта на наличие ошибок и фиксируем точку А. Изучаем Ваше УТП, спрос и сезонность, активность и позиции конку- рентов
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                
+                <div class="services-item services-item-left">
+                    <div class="services-item-number">
+                        03
+                    </div>
+                    <div class="services-item-title">
+                        <h3>Комплексный<br>аудит</h3>
+                    </div>
+                    <div class="services-item-text">
+                        Проводим подробные исследования Вашего сайта на наличие ошибок и фиксируем точку А. Изучаем Ваше УТП, спрос и сезонность, активность и позиции
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                
+                <div class="services-item services-item-right">
+                    <div class="services-item-number">
+                        04
+                    </div>
+                    <div class="services-item-title">
+                        <h3>Комплексный<br>аудит</h3>
+                    </div>
+                    <div class="services-item-text">
+                        Проводим подробные исследования Вашего сайта на наличие ошибок и фиксируем точку А. Изучаем Ваше УТП, спрос и сезонность, активность и позиции конку- рентов
+                    </div>
+                </div>
+                
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- =========================
+     END SERVICES
+============================== --> 
+
+    
+<!-- =========================
+     FEATURES
+============================== -->    
+<div class="features" id="features">
+    <div class="container">    
+        <div class="row">
+            
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                
+                <div class="features-left">
+                    <img src="images/mac.png" alt="" />
+                </div>
+                
+			</div>
+            
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                
+                <div class="features-right">
                     
-            var features = data.features;
-            var pointLocation, distanceToPoint, nearPointLocation, nearPointId;
-            var minDistance = Infinity;
-            
-            // перебираем метки и находим ближайшую к пользователю
-            for (var key in features) {
+                    <div class="section-title"><h2>Мы знаем web изнутри</h2></div>
+                    <div class="section-subtitle">Студия "Результат"</div>
+                    
+                    <div class="features-item features-item-1">
+                        <div class="features-item-title">
+                            <span class="features-item-icon">
+                                <img src="images/feature1.png" alt="" />
+                            </span>
+                            <h3>Опытность</h3>
+                        </div>
+                        <div class="features-item-text">
+                            Мы работаем на рынке ИТ-аутсорсинга и и рекламных услуг более 12 лет - с 2005 года
+                        </div>
+                    </div>
+
+                    <div class="features-item features-item-2">
+                        <div class="features-item-title">
+                            <span class="features-item-icon">
+                                <img src="images/feature2.png" alt="" />
+                            </span>
+                            <h3>Опытность</h3>
+                        </div>
+                        <div class="features-item-text">
+                            Мы работаем на рынке ИТ-аутсорсинга и и рекламных услуг более 12 лет - с 2005 года Мы работаем на рынке ИТ-аутсорсинга
+                        </div>
+                    </div>
+
+                    <div class="features-item features-item-3">
+                        <div class="features-item-title">
+                            <span class="features-item-icon">
+                                <img src="images/feature3.png" alt="" />
+                            </span>
+                            <h3>Опытность</h3>
+                        </div>
+                        <div class="features-item-text">
+                            Мы работаем на рынке ИТ-аутсорсинга и и рекламных услуг более 12 лет - с 2005 года Мы работаем на рынке ИТ-аутсорсинга
+                        </div>
+                    </div>
+                    
+                </div>
                 
-                // координаты метки
-                pointLocation = features[key].geometry.coordinates;
-                
-                // определяем расстояние от пользователя до метки
-                distanceToPoint = ymaps.coordSystem.geo.getDistance(userLocation, pointLocation);
-                
-                // выбираем минимальное расстояние
-                if(distanceToPoint < minDistance){
-                    minDistance = distanceToPoint;
-                    nearPointLocation = pointLocation;
-                    nearPointId = features[key].id;
-                }
-                
-            }
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- =========================
+     END FEATURES
+============================== --> 
+
+<!-- =========================
+     ADVS
+============================== -->    
+<div class="advs" id="advs">
+    <div class="container">
+        <div class="row">
             
-            // задаем центр карты по ближайшей метке и увеличиваем масштаб до 14
-            myMap.setCenter(nearPointLocation, 14);
-            
-            // открываем балун ближайшей метки
-            var objectState = objectManager.getObjectState(nearPointId);
-            if (objectState.isClustered) {
-                // Сделаем так, чтобы указанный объект был "выбран" в балуне.
-                objectManager.clusters.state.set('activeObject', objectManager.objects.getById(nearPointId));
-                objectManager.clusters.balloon.open(objectState.cluster.id);
-            } else {
-                objectManager.objects.balloon.open(nearPointId);
-            }
-            
-        });
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">    
+                <div class="section-title"><h2 class="white">Результативные преимущества</h2></div>
+                <div class="section-subtitle white">И всё же, почему вам нужна именно наша студия</div>
+            </div>
+        </div>
         
-    }
-</script>
+        <div class="row">
+            
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                
+                <div class="advs-item">
+                    <div class="advs-item-icon">
+                        <img src="images/adv1.png" alt="" />
+                    </div>
+                    <div class="advs-item-title">
+                        <h3>SEO-Аудит</h3>
+                    </div>
+                    <div class="advs-item-text">
+                        Проводим полный аудит Вашего сайта и совместно составляем план по улучшению
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                
+                <div class="advs-item">
+                    <div class="advs-item-icon">
+                        <img src="images/adv2.png" alt="" />
+                    </div>
+                    <div class="advs-item-title">
+                        <h3>SEO-Аудит</h3>
+                    </div>
+                    <div class="advs-item-text">
+                        Проводим полный аудит Вашего сайта и совместно составляем план по улучшению
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                
+                <div class="advs-item">
+                    <div class="advs-item-icon">
+                        <img src="images/adv3.png" alt="" />
+                    </div>
+                    <div class="advs-item-title">
+                        <h3>SEO-Аудит</h3>
+                    </div>
+                    <div class="advs-item-text">
+                        Проводим полный аудит Вашего сайта и совместно составляем план по улучшению
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                
+                <div class="advs-item">
+                    <div class="advs-item-icon">
+                        <img src="images/adv4.png" alt="" />
+                    </div>
+                    <div class="advs-item-title">
+                        <h3>SEO-Аудит</h3>
+                    </div>
+                    <div class="advs-item-text">
+                        Проводим полный аудит Вашего сайта и совместно составляем план по улучшению
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                
+                <div class="advs-item">
+                    <div class="advs-item-icon">
+                        <img src="images/adv5.png" alt="" />
+                    </div>
+                    <div class="advs-item-title">
+                        <h3>SEO-Аудит</h3>
+                    </div>
+                    <div class="advs-item-text">
+                        Проводим полный аудит Вашего сайта и совместно составляем план по улучшению
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                
+                <div class="advs-item">
+                    <div class="advs-item-icon">
+                        <img src="images/adv6.png" alt="" />
+                    </div>
+                    <div class="advs-item-title">
+                        <h3>SEO-Аудит</h3>
+                    </div>
+                    <div class="advs-item-text">
+                        Проводим полный аудит Вашего сайта и совместно составляем план по улучшению
+                    </div>
+                </div>
+                
+			</div>
+            
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 offset-md-6 offset-lg-6 offset-xl-6">
+                
+                <div class="advs-text">
+                    <div class="section-title"><h2>Мы - Ваши проводники</h2></div>
+                    <div class="section-subtitle">Чем так полезен web-аутсорсинг</div>
+                    
+                    <ol>
+                        <li>Обеспечиваем фиксированные затраты на обслуживание Ваших ресурсов</li>
+                        <li>Предлагаем согласованный и понятный для Вас план действий</li>
+                        <li>Обеспечиваем фиксированные затраты на обслуживание Ваших ресурсов</li>
+                        <li>Предлагаем согласованный и понятный для Вас план действий</li>
+                        <li>Предлагаем согласованный и понятный для Вас план действий</li>
+                        <li>Обеспечиваем фиксированные затраты на обслуживание Ваших ресурсов</li>
+                    </ol>
+                    
+                </div>
+                
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- =========================
+     END ADVS
+============================== --> 
+    
+
+<!-- =========================
+     PROJECTS
+============================== -->    
+<div class="projects" id="projects">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 projects-left">
+                
+                <div class="projects-title">
+                    <div class="section-title"><h2>Последние проекты</h2></div>
+                    <div class="section-subtitle">Более 1000 успешных заказов</div>                
+                </div>
+                
+                <div class="projects-text">
+                    Наша команда предлагает широкий спектр услуг по разработке сайтов при помощи разнообразных платформ, продвижение, созда- ние фирменного стиля бренда, аналитику. Богатый опыт и профес- сионализм позволяют квалифицированно работать с заказами вы- сокого уровня сложности.
+                </div>
+                
+                <div class="projects-list">
+                    <h3>Нам есть, что вам предложить:</h3>
+                    <ul>
+                        <li>Посадочные продающие страницы (Landing Page)</li>
+                        <li>Посадочные продающие страницы (Landing Page)</li>
+                        <li>Посадочные продающие страницы (Landing Page)</li>
+                        <li>Посадочные продающие страницы (Landing Page)</li>
+                        <li>Посадочные продающие страницы (Landing Page) Посадочные продающие</li>
+                        <li>Посадочные продающие страницы (Landing Page) Посадочные продающие</li>
+                        <li>Посадочные продающие страницы (Landing Page)</li>
+                        <li>Посадочные продающие страницы (Landing Page) Посадочные продающие</li>
+                        <li>Посадочные продающие страницы (Landing Page)</li>
+                        <li>Посадочные продающие страницы (Landing Page) Посадочные продающие</li>
+                    </ul>
+                </div>
+                
+                <div class="projects-buttons">
+                    <a href="#" class="btn btn-default">Посмотреть все</a>
+                    <a href="#" class="btn btn-primary">Связаться</a>
+                </div>
+                
+			</div>
+            
+            <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(images/slider1.png)"></div>
+              <div class="swiper-slide" style="background-image:url(images/slider2.png)"></div>
+              <div class="swiper-slide" style="background-image:url(images/slider3.png)"></div>
+              <div class="swiper-slide" style="background-image:url(images/slider4.png)"></div>
+              <div class="swiper-slide" style="background-image:url(images/slider5.png)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+            
+        </div>
+    </div>
+</div>
+<!-- =========================
+     END PROJECTS
+============================== -->    
+
+    
+<!-- =========================
+     REVS
+============================== -->    
+<div class="revs" id="revs">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">             
+                <div class="projects-title">
+                    <div class="section-title"><h2>Благодарности от клиентов</h2></div>
+                    <div class="section-subtitle">На чем мы воздвигаем свою репутацию</div>                
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="revs-item row">             
+
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"> 
+                <div class="revs-item-photo">
+                    <img src="images/rev1.png" alt="" />
+                </div>
+            </div>
+            
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10"> 
+                <div class="revs-item-title">
+                    <h3>Ольга Евсюкова</h3>
+                </div>
+                <div class="revs-item-text">
+                    <p>Наша команда предлагает широкий спектр услуг по разработке сайтов при помощи разнообразных платформ, продвижение, созда- ние фирменного стиля бренда, аналитику. Богатый опыт и профес- сионализм позволяют квалифицированно работать с заказами вы- сокого уровня сложности. Наша команда предлагает широкий спектр услуг по разработке сайтов при помощи разнообразных платформ, продвижение, созда- ние фирменного стиля бренда, аналитику.</p>
+                    <p>Наша команда предлагает широкий спектр услуг по разработке сайтов при помощи разнообразных платформ.</p>
+                </div>
+            </div>
+                
+        </div>
+        
+        <div class="revs-item row">             
+
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"> 
+                <div class="revs-item-photo">
+                    <img src="images/rev2.png" alt="" />
+                </div>
+            </div>
+            
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10"> 
+                <div class="revs-item-title">
+                    <h3>Дмитрий Пантюхов</h3>
+                </div>
+                <div class="revs-item-text">
+                    <p>Наша команда предлагает широкий спектр услуг по разработке сайтов при помощи разнообразных платформ, продвижение, созда- ние фирменного стиля бренда, аналитику. Богатый опыт и профес- сионализм позволяют квалифицированно работать с заказами вы- сокого уровня сложности. Наша команда предлагает широкий спектр услуг по разработке сайтов при помощи разнообразных платформ</p>
+                    <p>Наша команда предлагает широкий спектр услуг по разработке сайтов при помощи разнообразных платформ. Наша команда предлагает широкий спектр услуг по разработке сайтов</p>
+                </div>
+            </div>
+                
+        </div>
+        
+        <div class="revs-more row">             
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+                <a href="#" class="btn btn-inverse">Посмотреть все</a>
+            </div>
+                
+        </div>
+            
+    </div>
+</div>
+<!-- =========================
+     END REVS
+============================== --> 
+
+    
+<!-- =========================
+     FEEDBACK
+============================== -->    
+<div class="feedback" id="feedback">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+                <div class="feedback-title">
+                    <h2>Свяжитесь с нами прямо сейчас</h2>              
+                </div>
+                <div class="feedback-subtitle">
+                    Закажите обратный звонок для заполнения брифа и получения стоимости<br>продвижения Вашего ресурса
+                </div>
+                <div class="feedback-form">
+                    <form>
+                        <input type="text" placeholder="Ваше имя" />
+                        <input type="text" placeholder="Ваш телефон" />
+                        <input type="text" placeholder="Ваша почта" />
+                        <button class="btn btn-primary">Получить информацию на почту</button>
+                    </form>
+                    <div class="feedback-form-sub">
+                        Оставьте свои контакты и наши менеджеры обязательно свяжутся с вами
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="row footer">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+                <div class="footer-item footer-item-1">
+                    <img src="images/logo_foot.png" alt="" />
+                </div>
+                <div class="footer-item footer-item-2">
+                    ООО "Результат"<br>
+                    ИНН 3423443216
+                </div>
+                <div class="footer-item footer-item-3">
+                    Московская область, Пушкино<br>
+                    Островского, 22, корпус 2<br>
+                    <a href="mailto:info@result-it.ru">info@result-it.ru</a>
+                </div>
+                <div class="footer-item footer-item-4">
+                    <a href="tel:+74951059256">+7 (495) 105-92-56</a><br>
+                    <a href="tel:+74951059256">+7 (495) 105-92-56</a>
+                </div>
+                <div class="footer-item footer-item-5">
+                    <a href="#"><img src="images/soc1.png" alt="" /></a>
+                    <a href="#"><img src="images/soc2.png" alt="" /></a>
+                    <a href="#"><img src="images/soc3.png" alt="" /></a>
+                    <a href="#"><img src="images/soc4.png" alt="" /></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<!-- =========================
+     END FEEDBACK
+============================== -->
+        
+        
+<!-- =========================
+     SCRIPTS   
+============================== -->	
+<!-- JQUERY -->
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<!-- POPPER -->
+<script src="js/popper.min.js"></script>
+    
+<!-- BOOTSTRAP -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/swiper.min.js"></script>
+
+<!-- CUSTOM SCRIPT -->
+<script src="js/theme.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
 </body>
 </html>
