@@ -39,13 +39,14 @@ $(window).on('load', function () {
         sliderStretch = 0;
     }
     
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#swiper', {
         width: sliderWidth,
         effect: sliderEffect,
         grabCursor: false,
         centeredSlides: true,
         slidesPerView: slidesPerView,
         loop: true,
+        simulateTouch:false,
         loopedSlides: 1,
         coverflowEffect: {
             rotate: 0,
@@ -97,6 +98,54 @@ $(window).on('load', function () {
     
 	});
     
+    var sliderStretch1, slidesPerView1, sliderEffect1;
+    
+    if(windowWidth > 996){
+        sliderStretch1 = 507;
+    }else{
+        sliderStretch1 = 740;
+    }
+    
+    if(windowWidth > 786){
+        slidesPerView1 = 2;
+        sliderEffect1 = 'coverflow';
+    }else{
+        slidesPerView1 = 1;
+        sliderEffect1 = 'fade';
+        sliderStretch1 = 0;
+    }
+    
+    
+    var swiper1 = new Swiper('#swiper1', {
+        width: 1620,
+        effect: sliderEffect1,
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: slidesPerView1,
+        loop: true,
+        loopedSlides: 1,
+        simulateTouch:false,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: sliderStretch1,
+            depth: 290,
+            modifier: 1,
+            slideShadows : false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    
+    
+    swiper1.on('slideChange', function () {
+        //alert(swiper1.activeIndex);
+        $('.works-desc').hide();
+        $('#desc_'+swiper1.activeIndex).show();
+    });
+    
+    
     $(document).on('click', '#showmenu', function(){
         if($(this).hasClass('opened')){
             $('#mobbar').css('right', '-200px');
@@ -142,6 +191,12 @@ $(window).on('load', function () {
         $('#overlay, #popup').fadeOut(200);
         $('#mobbar').css('right', '-200px');
         $('#showmenu').removeClass('opened');
+        return false;
+    });
+    
+    $(document).on('change', '#file', function(){
+        var file = $(this).val();
+        $('.uploadbutton .input').html(file);
         return false;
     });
 
