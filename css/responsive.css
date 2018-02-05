@@ -495,7 +495,7 @@ RESPONSIVE FIXES
         margin-top: -9px;
     }
     .feedback.inner {
-        background: url(../images/bottom_bg_inner.png) no-repeat center -90px #fff;
+        background: url(../images/bottom_bg_inner.png) no-repeat center bottom #f4f5f9;
     }
     .revs-item.inner {
         padding: 40px 25px 35px 25px;
