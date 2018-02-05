@@ -70,6 +70,38 @@ RESPONSIVE FIXES
     .footer-item-5 {
         margin-left: 40px;
     }
+    .works .swiper-container {
+        width: 1200px;
+        height: 500px;
+        left: -120px;
+    }
+    .works .swiper-slide {
+        width: 600px;
+        height: 400px;
+        border: 10px solid #fff;
+        border-radius: 10px;
+    }
+    .works-title {
+        padding-top: 550px;
+    }
+    .notes-item-title {
+        left: 35px;
+        padding-right: 35px;
+    }
+    .notes-item-info {
+        left: 35px;
+    }
+    .note-body {
+        padding: 40px;
+    }
+    .note-left {
+        width: 540px;
+    }
+    .note-right {
+        margin-top: 100px;
+        margin-left: 50px;
+        width: 250px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -414,6 +446,118 @@ RESPONSIVE FIXES
     .footer-item-5 a img {
         max-width: 100%;
     }
+    .works .swiper-container {
+        width: 940px;
+        height: 364px;
+        left: -125px;
+    }
+    .works .swiper-slide {
+        width: 600px;
+        height: 264px;
+        border: 7px solid #fff;
+        border-radius: 10px;
+    }
+    .works-title {
+        padding-top: 550px;
+    }
+    .pagetitle {
+        padding-top: 93px;
+        padding-bottom: 20px;
+    }
+    .pagetitle h1 {
+        font-size: 20px;
+    }
+    .pagetitle p {
+        font-size: 14px;
+        margin-top: -3px;
+    }
+    .works .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+        bottom: 7px;
+    }
+    .works-title {
+        padding-top: 378px;
+        margin-bottom: 10px;
+    }
+    .works-button {
+        margin-top: 33px;
+    }
+    .works-numbers {
+        margin-top: 25px;
+    }
+    .works-number {
+        margin: 0 8px;
+    }
+    .works-number-title {
+        font-size: 33px;
+    }
+    .works-number-text {
+        font-size: 16px;
+        margin-top: -9px;
+    }
+    .feedback.inner {
+        background: url(../images/bottom_bg_inner.png) no-repeat center -90px #f4f5f9;
+    }
+    .revs-item.inner {
+        padding: 40px 25px 35px 25px;
+    }
+    .revs-item.inner .revs-item-title {
+        padding-left: 0;
+    }
+    .revs-item.inner .revs-item-text {
+        padding-left: 0;
+    }
+    .revs-form-tcont {
+        border: none;
+        height: auto;
+        padding: 0;
+    }
+    .revs-form textarea {
+        border: 5px solid #fff;
+        height: 130px;
+        padding: 20px 30px;
+    }
+    label.uploadbutton {
+        height: 32px;
+    }
+    .revs-form-left input[type="text"] {
+        border: none;
+        border-radius: 25px;
+        height: 30px;
+        margin-right: 10px;
+        background: #fff;
+        width: 145px;
+    }
+    .notes-item-title h2 {
+        font-size: 16px;
+    }
+    .notes-item-subtitle {  
+        font-size: 14px;
+        margin-top: -5px;
+    }
+    .note-body {
+        padding: 30px;
+    }
+    .note-left {
+        width: 370px;
+    }
+    .note-right {
+        margin-top: 70px;
+        margin-left: 35px;
+        width: 190px;
+    }
+    .note-subtitle {
+        font-size: 14px;
+    }
+    .note-info {
+        margin-top: -19px;
+        margin-bottom: 25px;
+    }
+    .note-share {
+        margin-top: 25px;
+    }
+    .note {
+        padding-top: 93px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -746,4 +890,144 @@ RESPONSIVE FIXES
         background-size: 400%;
         padding-bottom: 5px;
     }
+    .pagetitle h1 {
+        font-size: 22px;
+    }
+    .pagetitle p {
+        font-size: 16px;
+        margin-top: -3px;
+    }
+    .works .swiper-container {
+        width: 100%;
+        height: 300px;
+        left: 0;
+    }
+    .works .swiper-slide {
+        width: 100%;
+        height: 200px;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .works-title {
+        padding-top: 320px;
+        margin-bottom: 10px;
+    }
+    .works-button {
+        text-align: center;
+    }
+    .works-numbers {
+        margin-top: 40px;
+    }
+    .works-number {
+        margin: 15px 0;
+        display: block;
+    }
+    .top-bar-inner .showmenu-line {
+        background: #444b5d;
+    }
+    .revs-item.inner {
+        padding: 30px 10px 30px 10px;
+    }
+    .revs-item.inner .revs-item-title {
+        margin-top: 30px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .revs-item-button {
+        text-align: center;
+    }
+    .revs-item-button .btn {
+        padding: 10px 25px;
+    }
+    .revs-form-left {
+        text-align: center;
+    }
+    .revs-form-left input[type="text"] {
+        border-radius: 25px;
+        height: 38px;
+        margin-bottom: 10px;
+        margin-right: 0;
+        width: 180px;
+    }
+    .revs-form-right {
+        text-align: center;
+    }
+    label.uploadbutton {
+        height: auto;
+        width: 180px;
+    }
+    .uploadbutton .btn {
+        width: 100%;
+        padding: 8px 15px;
+    }
+    label.uploadbutton .input {
+        padding-right: 0;
+        display: block;
+    }
+    .revs-form-right .btn-primary {
+        margin-top: 3px;
+        margin-left: 0;
+        padding: 8px 15px;
+        width: 180px;
+    }
+    .revs-form textarea {
+        padding: 10px 15px;
+    }
+    .notes-item-title h2 {
+        font-size: 18px;
+    }
+    .notes-item-subtitle {
+        font-size: 16px;
+    }
+    .notes-item-right-body {
+        padding: 25px;
+    }
+    .notes-item-button {
+        text-align: center;
+    }
+    .note {
+        background: #fff;
+        padding-top: 0;
+        margin-top: 70px;
+    }
+    .note-body {
+        padding: 0;
+    }
+    .note-left {
+        width: 100%;
+        float: none;
+        padding-top: 25px;
+    }
+    .note-subtitle {
+        font-size: 16px;
+        margin-top: -4px;
+    }
+    .note-info {
+        margin-top: -22px;
+        margin-bottom: 25px;
+    }
+    .note-right {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .pagetitle {
+        padding-top: 70px;
+    }
+}
+
+@media all and (-ms-high-contrast:none){
+    .header-form input[type='text'] { 
+         padding: 9px 22px 13px;
+    } /* IE10 */
+     *::-ms-backdrop, .header-form input[type='text'] {
+         padding: 9px 22px 13px;
+    } /* IE11 */
+    .btn { 
+         padding: 7px 22px 8px;
+    } /* IE10 */
+     *::-ms-backdrop, .btn {
+         padding: 7px 22px 8px;
+    } /* IE11 */
 }

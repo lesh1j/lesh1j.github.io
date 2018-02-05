@@ -66,7 +66,7 @@ $(window).on('load', function () {
         
         windowWidth = $(window).width();
         
-        if(windowWidth > 996){
+        if(windowWidth > 992){
             sliderWidth = 2000;
             sliderStretch = 725;
         }else{
@@ -74,7 +74,7 @@ $(window).on('load', function () {
             sliderStretch = 740;
         }
         
-        if(windowWidth > 786){
+        if(windowWidth > 768){
             slidesPerView = 2;
             sliderEffect = 'coverflow';
         }else{
@@ -98,26 +98,32 @@ $(window).on('load', function () {
     
 	});
     
-    var sliderStretch1, slidesPerView1, sliderEffect1;
+    var sliderWidth1, sliderStretch1, slidesPerView1, sliderEffect1;
     
-    if(windowWidth > 996){
+    if(windowWidth > 1200){
+        sliderWidth1 = 1620;
         sliderStretch1 = 507;
-    }else{
-        sliderStretch1 = 740;
-    }
-    
-    if(windowWidth > 786){
-        slidesPerView1 = 2;
         sliderEffect1 = 'coverflow';
+        slidesPerView1 = 2;
+    }else if(windowWidth > 992 && windowWidth <= 1200){
+        sliderWidth1 = 1200;
+        sliderStretch1 = 875;
+        sliderEffect1 = 'coverflow';
+        slidesPerView1 = 2;
+    }else if(windowWidth > 768 && windowWidth <= 992){
+        sliderWidth1 = 940;
+        sliderStretch1 = 645;
+        sliderEffect1 = 'coverflow';
+        slidesPerView1 = 2;
     }else{
-        slidesPerView1 = 1;
-        sliderEffect1 = 'fade';
+        sliderWidth1 = '100%';
         sliderStretch1 = 0;
-    }
-    
-    
+        sliderEffect1 = 'fade';
+        slidesPerView1 = 1;
+    }    
+
     var swiper1 = new Swiper('#swiper1', {
-        width: 1620,
+        width: sliderWidth1,
         effect: sliderEffect1,
         grabCursor: false,
         centeredSlides: true,
@@ -137,6 +143,47 @@ $(window).on('load', function () {
             clickable: true,
         },
     });
+    
+    
+    $(window).on('resize', function () {		
+        
+        windowWidth = $(window).width();
+        
+        if(windowWidth > 1200){
+            sliderWidth1 = 1620;
+            sliderStretch1 = 507;
+            sliderEffect1 = 'coverflow';
+            slidesPerView1 = 2;
+        }else if(windowWidth > 992 && windowWidth <= 1200){
+            sliderWidth1 = 1200;
+            sliderStretch1 = 875;
+            sliderEffect1 = 'coverflow';
+            slidesPerView1 = 2;
+        }else if(windowWidth > 768 && windowWidth <= 992){
+            sliderWidth1 = 940;
+            sliderStretch1 = 645;
+            sliderEffect1 = 'coverflow';
+            slidesPerView1 = 2;
+        }else{
+            sliderWidth1 = '100%';
+            sliderStretch1 = 0;
+            sliderEffect1 = 'fade';
+            slidesPerView1 = 1;
+        } 
+        
+        //alert(windowWidth);
+        
+        swiper1.params.effect = sliderEffect1;
+        
+        swiper1.params.slidesPerView = slidesPerView1;
+        
+        swiper1.params.width = sliderWidth1;
+        
+        swiper1.coverflowEffect.stretch = sliderStretch1;
+    
+        swiper1.update();
+    
+	});
     
     
     swiper1.on('slideChange', function () {

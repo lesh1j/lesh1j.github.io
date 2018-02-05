@@ -1,6 +1,6 @@
 // out: ../css/theme.css
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,400i,700,700i&subset=cyrillic');
 
 /*---------------------------------------
    1 VARIABLES           
@@ -13,7 +13,6 @@
 
 @font-1: 'PT Sans';
 @font-2: 'PT Sans Caption';
-@font-3: 'PT Sans Narrow';
 
 /*---------------------------------------
    2 GLOBAL STYLES           
@@ -29,7 +28,11 @@ html, body {
 
 body{
     overflow: hidden;
-    //background: url('../images/port.jpg') no-repeat center top;
+    //background: url('../images/port768.jpg') no-repeat center top;
+}
+
+body.inner{
+    background: #f4f5f9;
 }
 
 @-webkit-viewport {
@@ -895,6 +898,163 @@ label.uploadbutton .input {
             color: #858585;
             font-size: 28px;
             margin-top: -17px;
+        }
+    }
+}
+
+.notes{
+    background: #f4f5f9;
+    &-item{
+        margin: 0 0 15px;
+        border-radius: 4px;
+        overflow: hidden;
+        &-image{
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        &-overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(0,0,0,0.3);
+        }
+        &-title{
+            position: absolute;
+            top: 46px;
+            left: 65px;
+            h2{
+                font-size: 28px;
+                text-transform: uppercase;
+                a{
+                    color: #fff;
+                    &:hover{
+                        color: @color-primary;
+                    }
+                }
+            }
+        }
+        &-subtitle{
+            color: #fff;
+            font-size: 24px;
+            margin-top: -12px;
+        }
+        &-info{
+            position: absolute;
+            color: #858585;
+            bottom: 48px;
+            left: 67px;
+            span{
+                margin-right: 26px;
+                img{
+                    position: relative;
+                    top: -2px;
+                    margin-right: 6px;
+                }
+            }
+        }
+        &-right{
+            padding: 0;
+            background: #fff;
+            &-body{
+                height: 100%;
+                padding: 48px;
+            }
+        }
+        &-title2{
+            margin-bottom: 18px;
+            a{
+                color: @color-headers;
+                &:hover{
+                    color: @color-primary;
+                }
+            }
+        }
+        &-button{
+            margin-top: 28px;
+            text-align: right;
+            .btn{
+                padding: 8px 45px;
+            }
+        }
+    }
+}
+
+.note{
+    background: #f4f5f9;
+    padding-top: 159px;
+    &-body{
+        padding: 52px 65px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 4px;
+    }
+    &-left{
+        float: left;
+        width: 620px;
+    }
+    &-title{
+        h2{
+            text-transform: uppercase;
+        }
+    }
+    &-subtitle{
+        font-size: 24px;
+        color: #858585;
+        margin-top: -6px;
+    }
+    &-info{
+        color: #858585;
+        text-align: right;
+        margin-top: -28px;
+        margin-bottom: 35px;
+        span{
+            &:first-child{
+                margin-right: 26px;
+            }
+            img{
+                position: relative;
+                top: -2px;
+                margin-right: 6px;
+            }
+        }
+    }
+    &-image{
+        overflow: hidden;
+        border-radius: 4px;
+        margin-bottom: 21px;
+        img{
+            max-width: 100%;
+        }
+    }
+    h3, h4{
+        margin-bottom: 17px;
+    }
+    &-right{
+        margin-top: 112px;
+        margin-left: 61px;
+        float: left;
+        width: 325px;
+    }
+    &-module{
+        margin-bottom: 30px;
+        &-text{
+            line-height: 19px;
+            margin-bottom: 27px;
+        }
+    }
+    &-share{
+        margin-top: 47px;
+        margin-bottom: 7px;
+        &-item{
+            display: block;
+            float: left;
+            margin-right: 15px;
+            &-fb{
+                line-height: 0;
+            }
         }
     }
 }
