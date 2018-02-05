@@ -47,6 +47,8 @@ $(window).on('load', function () {
         slidesPerView: slidesPerView,
         loop: true,
         simulateTouch:false,
+        allowSwipeToNext: false, 
+        allowSwipeToPrev: false,
         loopedSlides: 1,
         coverflowEffect: {
             rotate: 0,
@@ -131,6 +133,8 @@ $(window).on('load', function () {
         loop: true,
         loopedSlides: 1,
         simulateTouch:false,
+        allowSwipeToNext: false, 
+        allowSwipeToPrev: false,
         coverflowEffect: {
             rotate: 0,
             stretch: sliderStretch1,
