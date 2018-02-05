@@ -19,7 +19,7 @@ $(window).on('load', function () {
     
     var windowWidth = $(window).width();
     
-    var sliderWidth, sliderStretch;
+    var sliderWidth, sliderStretch, slidesPerView, sliderEffect;
     
     if(windowWidth > 996){
         sliderWidth = 2000;
@@ -29,12 +29,22 @@ $(window).on('load', function () {
         sliderStretch = 740;
     }
     
+    if(windowWidth > 786){
+        slidesPerView = 2;
+        sliderEffect = 'coverflow';
+    }else{
+        slidesPerView = 1;
+        sliderWidth = '100%';
+        sliderEffect = 'fade';
+        sliderStretch = 0;
+    }
+    
     var swiper = new Swiper('.swiper-container', {
         width: sliderWidth,
-        effect: 'coverflow',
+        effect: sliderEffect,
         grabCursor: false,
         centeredSlides: true,
-        slidesPerView: 2,
+        slidesPerView: slidesPerView,
         loop: true,
         loopedSlides: 1,
         coverflowEffect: {
@@ -63,7 +73,21 @@ $(window).on('load', function () {
             sliderStretch = 740;
         }
         
+        if(windowWidth > 786){
+            slidesPerView = 2;
+            sliderEffect = 'coverflow';
+        }else{
+            slidesPerView = 1;
+            sliderWidth = '100%';
+            sliderEffect = 'fade';
+            sliderStretch = 0;
+        }
+        
         //alert(windowWidth);
+        
+        swiper.params.effect = sliderEffect;
+        
+        swiper.params.slidesPerView = slidesPerView;
         
         swiper.params.width = sliderWidth;
         
@@ -72,6 +96,38 @@ $(window).on('load', function () {
         swiper.update();
     
 	});
+    
+    $(document).on('click', '#showmenu', function(){
+        if($(this).hasClass('opened')){
+            $('#mobbar').css('right', '-200px');
+            $(this).removeClass('opened');
+        }else{
+            $('#mobbar').css('right', '0');
+            $(this).addClass('opened');
+        }
+    });
+    
+    var servIndex = 0;
+    
+    $(document).on('click', '#services-more', function(){
+        servIndex++;
+        if(servIndex == 4){
+            servIndex = 0;
+        }
+        $('.services .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6').addClass('d-none');
+        $('.services .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6').eq(servIndex).removeClass('d-none');
+        return false;
+    });
+    
+    $(document).on('click', '#advs-more', function(){
+        $('.advs-text li').removeClass('d-none');
+        return false;
+    });
+    
+    $(document).on('click', '#projects-more', function(){
+        $('.projects-list li').removeClass('d-none');
+        return false;
+    });
 
 })(jQuery);
 

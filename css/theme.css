@@ -157,6 +157,25 @@ ul li:after {
 .btn-inverse:hover {
   color: #ff0042;
 }
+.btn-grey {
+  background: #f4f5f9;
+  color: #434c5d;
+}
+.btn-grey:hover {
+  background: #ff0042;
+  color: #fff;
+}
+.btn-white {
+  background: #fff;
+  color: #434c5d;
+}
+.btn-white:hover {
+  background: #ff0042;
+  color: #fff;
+}
+.btn:focus {
+  box-shadow: none;
+}
 .section-title {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -185,6 +204,7 @@ ul li:after {
   right: 12px;
   top: 20px;
   width: 23px;
+  height: 15px;
   cursor: pointer;
 }
 .showmenu-line {
@@ -193,6 +213,7 @@ ul li:after {
   width: 100%;
   height: 3px;
   left: 0;
+  transition: all 200ms;
 }
 .showmenu-line-1 {
   top: 0;
@@ -203,6 +224,20 @@ ul li:after {
 .showmenu-line-3 {
   top: 12px;
 }
+.showmenu.opened .showmenu-line {
+  background: #434c5d;
+}
+.showmenu.opened .showmenu-line-1 {
+  transform: rotate(45deg);
+  top: 6px;
+}
+.showmenu.opened .showmenu-line-2 {
+  opacity: 0;
+}
+.showmenu.opened .showmenu-line-3 {
+  transform: rotate(-45deg);
+  top: 6px;
+}
 /*---------------------------------------
    3 TOP BAR           
 -----------------------------------------*/
@@ -210,7 +245,7 @@ ul li:after {
   position: absolute;
   width: 100%;
   padding: 47px 0;
-  z-index: 1;
+  z-index: 8;
 }
 .top-bar-right {
   text-align: right;
@@ -408,11 +443,20 @@ ul li:after {
   margin-bottom: 54px;
 }
 .advs-text ol {
-  padding: 0 0 0 16px;
+  padding: 0;
   line-height: 20px;
+  list-style: none;
+  counter-reset: li;
 }
 .advs-text ol li {
   margin-bottom: 18px;
+  counter-increment: li;
+}
+.advs-text ol li:before {
+  content: counter(li);
+  color: #66abe1;
+  display: inline-block;
+  margin-right: 5px;
 }
 .projects {
   padding: 124px 0 158px;
@@ -630,4 +674,38 @@ ul li:after {
 }
 .footer-item-5 a:last-child {
   margin-right: 0;
+}
+.mobbar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  right: -200px;
+  background: #fff;
+  z-index: 7;
+  transition: all 200ms;
+}
+.mobbar ul {
+  padding: 0;
+  margin: 60px 40px 40px;
+  list-style: none;
+}
+.mobbar ul li {
+  display: block;
+  margin: 15px 0;
+}
+.mobbar ul li a {
+  color: #282828;
+}
+.mobbar ul li a:hover {
+  color: #ff0042;
+}
+.mobbar-phone {
+  margin: 40px;
+}
+.mobbar-phone a {
+  color: #282828;
+}
+.mobbar-phone a:hover {
+  color: #ff0042;
 }
