@@ -30,8 +30,8 @@
 <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
     
 <!-- CUSTOM CSS -->
-<link rel="stylesheet" type="text/css" href="css/theme.css?v=2" />
-<link rel="stylesheet" type="text/css" href="css/responsive.css?v=2" />
+<link rel="stylesheet" type="text/css" href="css/theme.css?v=4" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css?v=4" />
 
 </head>
 
@@ -105,7 +105,7 @@
                 </div>
                 <div class="header-form">
                     <form>
-                        <input type="text" placeholder="Адрес Вашего сайта">
+                        <input type="text" name="top_website" id="top_website" placeholder="Адрес Вашего сайта">
                         <button class="btn btn-primary">Получить SEO-аудит</button>
                     </form>
                     <div class="header-form-sub">
@@ -469,7 +469,7 @@
                 <div class="projects-buttons">
                     <a href="#" id="projects-more" class="btn btn-white d-block d-md-none">Далее</a>
                     <a href="#" class="btn btn-default">Посмотреть все</a>
-                    <a href="#" class="btn btn-primary">Связаться</a>
+                    <a href="#" id="projects-get" class="btn btn-primary">Связаться</a>
                 </div>
                 
 			</div>
@@ -652,6 +652,19 @@
     </div>
     
 </div>
+    
+<div class="overlay" id="overlay"></div>
+    
+<div class="popup" id="popup">
+    <h2>Заполните форму</h2>
+    <form>
+        <input type="text" name="popup_name" id="popup_name" placeholder="Ваше имя" />
+        <input type="text" name="popup_phone" id="popup_phone" placeholder="Ваш телефон" />
+        <input type="text" name="popup_mail" id="popup_mail" placeholder="Ваша почта" />
+        <input type="hidden" name="popup_website" id="popup_website" placeholder="Ваша почта" />
+        <button class="btn btn-primary">Получить обратный звонок</button>
+    </form>
+</div>
         
 <!-- =========================
      SCRIPTS   
@@ -668,7 +681,7 @@
 <script src="js/swiper.min.js"></script>
 
 <!-- CUSTOM SCRIPT -->
-<script src="js/theme.js?v=2"></script>
+<script src="js/theme.js?v=4"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>

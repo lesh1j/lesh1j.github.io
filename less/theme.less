@@ -291,6 +291,9 @@ ul{
                         color: @color-primary;
                     }
                 }
+                &:after{
+                    display: none;
+                }
             }
         }
     }
@@ -754,4 +757,60 @@ ul{
             }
         }
     }
+}
+
+.popup{
+    width: 300px;
+    height: 380px;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -190px;
+    border-radius: 4px;
+    text-align: center;
+    display: none;
+    z-index: 9;
+    h2{
+        text-align: center;
+        margin: 30px 0;
+        font-size: 22px;
+    }
+    ::-webkit-input-placeholder {
+        color: @color-font;
+    }
+    ::-moz-placeholder{
+        color: @color-font;
+    }
+    :-moz-placeholder{
+        color: @color-font;
+    }
+    :-ms-input-placeholder{
+        color: @color-font;
+    }
+    input[type="text"]{
+        width: 240px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 10px;
+        border-radius: 0;
+    }
+    button{
+        width: 240px;
+        margin-top: 40px;
+    }
+}
+
+.overlay{
+    z-index: 6;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
 }

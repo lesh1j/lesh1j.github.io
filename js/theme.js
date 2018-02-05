@@ -101,9 +101,12 @@ $(window).on('load', function () {
         if($(this).hasClass('opened')){
             $('#mobbar').css('right', '-200px');
             $(this).removeClass('opened');
+            $('#overlay, #popup').fadeOut(200);
         }else{
             $('#mobbar').css('right', '0');
             $(this).addClass('opened');
+            $('#overlay').fadeIn(200);
+            $('#popup').fadeOut(200);
         }
     });
     
@@ -126,6 +129,19 @@ $(window).on('load', function () {
     
     $(document).on('click', '#projects-more', function(){
         $('.projects-list li').removeClass('d-none');
+        return false;
+    });
+    
+    $(document).on('click', '.header-form button, #projects-get', function(){
+        $('#popup_website').val($('#top_website').val());
+        $('#overlay, #popup').fadeIn(200);
+        return false;
+    });
+    
+    $(document).on('click', '#overlay', function(){
+        $('#overlay, #popup').fadeOut(200);
+        $('#mobbar').css('right', '-200px');
+        $('#showmenu').removeClass('opened');
         return false;
     });
 
