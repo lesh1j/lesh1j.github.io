@@ -22,22 +22,18 @@ $(window).on('load', function () {
     var sliderWidth, sliderStretch, slidesPerView, sliderEffect;
     
     if(windowWidth > 992){
-        //sliderWidth = 2000;
         sliderStretch = 725;
-    }else{
-        //sliderWidth = 1154;
-        sliderStretch = 740;
-    }
-    
-    if(windowWidth > 768){
-        slidesPerView = 2;
         sliderEffect = 'coverflow';
+        slidesPerView = 2;
+    }else if(windowWidth > 768 && windowWidth <= 992){
+        sliderStretch = 740;
+        sliderEffect = 'coverflow';
+        slidesPerView = 2;
     }else{
-        slidesPerView = 1;
-        //sliderWidth = 'auto';
-        sliderEffect = 'slide';
         sliderStretch = 0;
-    }
+        sliderEffect = 'slide';
+        slidesPerView = 1;
+    }  
     
     var swiper = new Swiper('#swiper', {
         effect: sliderEffect,
@@ -62,36 +58,26 @@ $(window).on('load', function () {
     
     $(window).on('resize', function () {		
         
-        windowWidth = $(window).width();
+        windowWidth = $(window).width();   
         
         if(windowWidth > 992){
-            //sliderWidth = 2000;
-            sliderStretch = 725;
+            sliderStretch1 = 725;
+            sliderEffect1 = 'coverflow';
+            slidesPerView1 = 2;
+        }else if(windowWidth > 768 && windowWidth <= 992){
+            sliderStretch1 = 740;
+            sliderEffect1 = 'coverflow';
+            slidesPerView1 = 2;
         }else{
-            //sliderWidth = 1154;
-            sliderStretch = 740;
-        }
-        
-        if(windowWidth > 768){
-            slidesPerView = 2;
-            sliderEffect = 'coverflow';
-        }else{
-            slidesPerView = 1;
-            //sliderWidth = '100%';
-            sliderEffect = 'slide';
-            sliderStretch = 0;
-        }
-        
-        //alert(windowWidth);
-        
+            sliderStretch1 = 0;
+            sliderEffect1 = 'slide';
+            slidesPerView1 = 1;
+        }     
+             
         swiper.params.effect = sliderEffect;
         
         swiper.params.slidesPerView = slidesPerView;
-        
-        //swiper.params.width = sliderWidth;
-        
-        //swiper.coverflowEffect.stretch = sliderStretch;
-    
+            
         swiper.update();
     
 	});
@@ -99,22 +85,18 @@ $(window).on('load', function () {
     var sliderWidth1, sliderStretch1, slidesPerView1, sliderEffect1;
     
     if(windowWidth > 1200){
-        //sliderWidth1 = 1620;
         sliderStretch1 = 507;
         sliderEffect1 = 'coverflow';
         slidesPerView1 = 2;
     }else if(windowWidth > 992 && windowWidth <= 1200){
-        //sliderWidth1 = 1200;
         sliderStretch1 = 875;
         sliderEffect1 = 'coverflow';
         slidesPerView1 = 2;
     }else if(windowWidth > 768 && windowWidth <= 992){
-        //sliderWidth1 = 940;
         sliderStretch1 = 645;
         sliderEffect1 = 'coverflow';
         slidesPerView1 = 2;
     }else{
-        //sliderWidth1 = '100%';
         sliderStretch1 = 0;
         sliderEffect1 = 'slide';
         slidesPerView1 = 1;
@@ -146,36 +128,26 @@ $(window).on('load', function () {
         windowWidth = $(window).width();
         
         if(windowWidth > 1200){
-            //sliderWidth1 = 1620;
             sliderStretch1 = 507;
             sliderEffect1 = 'coverflow';
             slidesPerView1 = 2;
         }else if(windowWidth > 992 && windowWidth <= 1200){
-            //sliderWidth1 = 1200;
             sliderStretch1 = 875;
             sliderEffect1 = 'coverflow';
             slidesPerView1 = 2;
         }else if(windowWidth > 768 && windowWidth <= 992){
-           // sliderWidth1 = 940;
             sliderStretch1 = 645;
             sliderEffect1 = 'coverflow';
             slidesPerView1 = 2;
         }else{
-           // sliderWidth1 = '100%';
             sliderStretch1 = 0;
             sliderEffect1 = 'slide';
             slidesPerView1 = 1;
         } 
         
-        //alert(windowWidth);
-        
         swiper1.params.effect = sliderEffect1;
         
         swiper1.params.slidesPerView = slidesPerView1;
-        
-        //swiper1.params.width = sliderWidth1;
-        
-        //swiper1.coverflowEffect.stretch = sliderStretch1;
     
         swiper1.update();
     
@@ -184,7 +156,6 @@ $(window).on('load', function () {
     var activeSlide;
     
     swiper1.on('slideChange', function () {
-        //alert(swiper1.activeIndex);
         activeSlide = swiper1.activeIndex + 1;
         $('.works-desc').hide();
         $('#desc_'+activeSlide).show();
