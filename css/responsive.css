@@ -51,6 +51,12 @@ RESPONSIVE FIXES
     .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
         width: 762px;
     }
+    .swiper-button-next {
+        left: 724px;
+    }
+    .swiper-button-prev {
+        left: 674px;
+    }
     .feedback-title h2 {
         font-size: 85px;
         line-height: 90px;
@@ -72,7 +78,7 @@ RESPONSIVE FIXES
     }
     .works .swiper-container {
         width: 1200px;
-        height: 500px;
+        height: 520px;
         left: -120px;
     }
     .works .swiper-slide {
@@ -328,6 +334,12 @@ RESPONSIVE FIXES
     }
     .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
         margin: 0 4px;
+    }
+    .swiper-button-prev {
+        left: 416px;
+    }
+    .swiper-button-next {
+        left: 466px;
     }
     .projects {
         padding: 30px 0 77px;
@@ -783,6 +795,15 @@ RESPONSIVE FIXES
         width: 100%;
         text-align: center;
         bottom: 13px;
+    }
+    .swiper-button-prev {
+        left: 50%;
+        margin-left: -40px;
+    }
+    .swiper-button-next {
+        left: auto;
+        right: 50%;
+        margin-right: -40px;
     }
     .projects-buttons {
         text-align: center;

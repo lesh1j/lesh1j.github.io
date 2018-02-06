@@ -21,60 +21,31 @@ $(window).on('load', function () {
     
     var sliderWidth, sliderStretch, slidesPerView, sliderEffect;
     
-    if(windowWidth > 996){
-        sliderWidth = 2000;
+    if(windowWidth > 992){
+        //sliderWidth = 2000;
         sliderStretch = 725;
     }else{
-        sliderWidth = 1154;
+        //sliderWidth = 1154;
         sliderStretch = 740;
     }
     
-    if(windowWidth > 786){
+    if(windowWidth > 768){
         slidesPerView = 2;
         sliderEffect = 'coverflow';
     }else{
         slidesPerView = 1;
-        sliderWidth = '100%';
-        sliderEffect = 'fade';
+        //sliderWidth = 'auto';
+        sliderEffect = 'slide';
         sliderStretch = 0;
     }
     
     var swiper = new Swiper('#swiper', {
-        width: sliderWidth,
-        effect: sliderEffect,
-        grabCursor: false,
-        centeredSlides: true,
-        slidesPerView: slidesPerView,
-        loop: true,
-        simulateTouch:false,
-        allowSwipeToNext: false, 
-        allowSwipeToPrev: false,
-        touchRatio: 0,
-        allowTouchMove: false,
-        loopedSlides: 1,
-        coverflowEffect: {
-            rotate: 0,
-            stretch: sliderStretch,
-            depth: 290,
-            modifier: 1,
-            slideShadows : false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-    
-    /*
-    var swiper = new Swiper('#swiper', {
-        width: sliderWidth,
         effect: sliderEffect,
         grabCursor: false,
         centeredSlides: true,
         slidesPerView: slidesPerView,
         initialSlide: 2,
         loop: false,
-
         coverflowEffect: {
             rotate: 0,
             stretch: sliderStretch,
@@ -87,7 +58,6 @@ $(window).on('load', function () {
             prevEl: '.swiper-button-prev',
           },
     });
-    */
     
     
     $(window).on('resize', function () {		
@@ -95,10 +65,10 @@ $(window).on('load', function () {
         windowWidth = $(window).width();
         
         if(windowWidth > 992){
-            sliderWidth = 2000;
+            //sliderWidth = 2000;
             sliderStretch = 725;
         }else{
-            sliderWidth = 1154;
+            //sliderWidth = 1154;
             sliderStretch = 740;
         }
         
@@ -107,7 +77,7 @@ $(window).on('load', function () {
             sliderEffect = 'coverflow';
         }else{
             slidesPerView = 1;
-            sliderWidth = '100%';
+            //sliderWidth = '100%';
             sliderEffect = 'fade';
             sliderStretch = 0;
         }
@@ -118,9 +88,9 @@ $(window).on('load', function () {
         
         swiper.params.slidesPerView = slidesPerView;
         
-        swiper.params.width = sliderWidth;
+        //swiper.params.width = sliderWidth;
         
-        swiper.coverflowEffect.stretch = sliderStretch;
+        //swiper.coverflowEffect.stretch = sliderStretch;
     
         swiper.update();
     
@@ -129,40 +99,34 @@ $(window).on('load', function () {
     var sliderWidth1, sliderStretch1, slidesPerView1, sliderEffect1;
     
     if(windowWidth > 1200){
-        sliderWidth1 = 1620;
+        //sliderWidth1 = 1620;
         sliderStretch1 = 507;
         sliderEffect1 = 'coverflow';
         slidesPerView1 = 2;
     }else if(windowWidth > 992 && windowWidth <= 1200){
-        sliderWidth1 = 1200;
+        //sliderWidth1 = 1200;
         sliderStretch1 = 875;
         sliderEffect1 = 'coverflow';
         slidesPerView1 = 2;
     }else if(windowWidth > 768 && windowWidth <= 992){
-        sliderWidth1 = 940;
+        //sliderWidth1 = 940;
         sliderStretch1 = 645;
         sliderEffect1 = 'coverflow';
         slidesPerView1 = 2;
     }else{
-        sliderWidth1 = '100%';
+        //sliderWidth1 = '100%';
         sliderStretch1 = 0;
-        sliderEffect1 = 'fade';
+        sliderEffect1 = 'slide';
         slidesPerView1 = 1;
-    }    
-
+    }
+    
     var swiper1 = new Swiper('#swiper1', {
-        width: sliderWidth1,
         effect: sliderEffect1,
         grabCursor: false,
         centeredSlides: true,
         slidesPerView: slidesPerView1,
-        loop: true,
-        loopedSlides: 1,
-        simulateTouch:false,
-        allowSwipeToNext: false, 
-        allowSwipeToPrev: false,
-        touchRatio: 0,
-        allowTouchMove: false,
+        initialSlide: 2,
+        loop: false,
         coverflowEffect: {
             rotate: 0,
             stretch: sliderStretch1,
@@ -170,10 +134,10 @@ $(window).on('load', function () {
             modifier: 1,
             slideShadows : false,
         },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
     });
     
     
@@ -182,22 +146,22 @@ $(window).on('load', function () {
         windowWidth = $(window).width();
         
         if(windowWidth > 1200){
-            sliderWidth1 = 1620;
+            //sliderWidth1 = 1620;
             sliderStretch1 = 507;
             sliderEffect1 = 'coverflow';
             slidesPerView1 = 2;
         }else if(windowWidth > 992 && windowWidth <= 1200){
-            sliderWidth1 = 1200;
+            //sliderWidth1 = 1200;
             sliderStretch1 = 875;
             sliderEffect1 = 'coverflow';
             slidesPerView1 = 2;
         }else if(windowWidth > 768 && windowWidth <= 992){
-            sliderWidth1 = 940;
+           // sliderWidth1 = 940;
             sliderStretch1 = 645;
             sliderEffect1 = 'coverflow';
             slidesPerView1 = 2;
         }else{
-            sliderWidth1 = '100%';
+           // sliderWidth1 = '100%';
             sliderStretch1 = 0;
             sliderEffect1 = 'fade';
             slidesPerView1 = 1;
@@ -209,19 +173,21 @@ $(window).on('load', function () {
         
         swiper1.params.slidesPerView = slidesPerView1;
         
-        swiper1.params.width = sliderWidth1;
+        //swiper1.params.width = sliderWidth1;
         
-        swiper1.coverflowEffect.stretch = sliderStretch1;
+        //swiper1.coverflowEffect.stretch = sliderStretch1;
     
         swiper1.update();
     
 	});
     
+    var activeSlide;
     
     swiper1.on('slideChange', function () {
         //alert(swiper1.activeIndex);
+        activeSlide = swiper1.activeIndex + 1;
         $('.works-desc').hide();
-        $('#desc_'+swiper1.activeIndex).show();
+        $('#desc_'+activeSlide).show();
     });
     
     
@@ -250,13 +216,35 @@ $(window).on('load', function () {
         return false;
     });
     
+    var advsMore = 0;
+    
     $(document).on('click', '#advs-more', function(){
-        $('.advs-text li').removeClass('d-none');
+        if(advsMore == 0){
+            $('.advs-text li').removeClass('d-none');
+            $(this).html('Скрыть');
+            advsMore = 1;
+        }else{
+            $('.advs-text li').addClass('d-none');
+            $('.advs-text li:nth-child(1), .advs-text li:nth-child(2)').removeClass('d-none');
+            $(this).html('Далее');
+            advsMore = 0;
+        }
         return false;
     });
     
+    var projectsMore = 0;
+    
     $(document).on('click', '#projects-more', function(){
-        $('.projects-list li').removeClass('d-none');
+        if(projectsMore == 0){
+            $('.projects-list li').removeClass('d-none');
+            $(this).html('Скрыть');
+            projectsMore = 1;
+        }else{
+            $('.projects-list li').addClass('d-none');
+            $('.projects-list li:nth-child(1), .projects-list li:nth-child(2)').removeClass('d-none');
+            $(this).html('Далее');
+            projectsMore = 0;
+        }
         return false;
     });
     
@@ -267,7 +255,6 @@ $(window).on('load', function () {
     });
     
     $(document).on('click', '#overlay', function(){
-        alert('ss');
         $('#overlay, #popup').fadeOut(200);
         $('#mobbar').css('right', '-200px');
         $('#showmenu').removeClass('opened');

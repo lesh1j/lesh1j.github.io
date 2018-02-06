@@ -531,6 +531,9 @@ ul{
     padding: 124px 0 158px;
     position: relative;
     background: #f4f5f9;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
     .section-subtitle{
         font-size: 28px;
         margin-top: -5px;
@@ -581,7 +584,7 @@ ul{
     opacity: 0;
     box-shadow: 5px 9px 90.25px 4.75px rgba(0, 0, 0, 0.1);
     transition-property: transform, opacity;  
-    filter: blur(2px);
+    filter: blur(0);
 }
     .swiper-slide.swiper-slide-prev {
         opacity: 1;
@@ -615,6 +618,31 @@ ul{
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: #000;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 100%;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -35px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 8px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper-button-prev {
+    left: 780px;
+    right: auto;
+}
+
+.swiper-button-next {
+    left: 830px;
+    right: auto;
 }
 
 .revs{
@@ -846,7 +874,7 @@ label.uploadbutton .input {
     .swiper-container{
         position: absolute;
         width: 1620px;
-        height: 556px;
+        height: 576px;
         left: -225px;
         margin-left: 0;
         top: 0;
@@ -866,9 +894,19 @@ label.uploadbutton .input {
         text-align: center;
         bottom: -4px;
     }
+    .swiper-button-prev {
+        left: 50%;
+        margin-left: -40px;
+        right: auto;
+    }
+    .swiper-button-next {
+        left: auto;
+        right: 50%;
+        margin-right: -40px;
+    }
     &-desc{
         display: none;
-        &#desc_1{
+        &#desc_3{
             display: block;
         }
     }
@@ -1145,4 +1183,5 @@ label.uploadbutton .input {
     left: 0;
     background: rgba(0,0,0,0.5);
     display: none;
+    cursor: pointer;
 }
