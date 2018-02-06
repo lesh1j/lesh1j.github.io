@@ -65,6 +65,30 @@ $(window).on('load', function () {
         },
     });
     
+    /*
+    var swiper = new Swiper('#swiper', {
+        width: sliderWidth,
+        effect: sliderEffect,
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: slidesPerView,
+        initialSlide: 2,
+        loop: false,
+
+        coverflowEffect: {
+            rotate: 0,
+            stretch: sliderStretch,
+            depth: 290,
+            modifier: 1,
+            slideShadows : false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+    });
+    */
+    
     
     $(window).on('resize', function () {		
         
@@ -243,6 +267,7 @@ $(window).on('load', function () {
     });
     
     $(document).on('click', '#overlay', function(){
+        alert('ss');
         $('#overlay, #popup').fadeOut(200);
         $('#mobbar').css('right', '-200px');
         $('#showmenu').removeClass('opened');
