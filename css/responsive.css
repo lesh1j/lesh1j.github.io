@@ -400,7 +400,7 @@ RESPONSIVE FIXES
     .feedback-form input[type="text"] {
         padding: 4px 15px;
         width: 112px;
-        border: 1px solid #ff0042;
+        border: 1px solid #fff;
     }
     .feedback-form input[type="text"]:focus {
         border: 1px solid #282828;
@@ -515,6 +515,7 @@ RESPONSIVE FIXES
         border: 5px solid #fff;
         height: 130px;
         padding: 20px 30px;
+        background: transparent;
     }
     label.uploadbutton {
         height: 32px;
@@ -578,7 +579,7 @@ RESPONSIVE FIXES
         display: block;
     }
     .header{
-        margin-bottom: 51px;
+        margin-bottom: 0;
         background-size: 267%;
         background-position: 84% bottom;
     }
@@ -776,6 +777,7 @@ RESPONSIVE FIXES
         border-radius: 0;
         opacity: 0;
         box-shadow: none;
+        filter: blur(0);
     }
     .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
         width: 100%;
@@ -793,6 +795,9 @@ RESPONSIVE FIXES
     }
     .revs{
         padding-bottom: 45px;
+    }
+    body.inner .revs {
+        padding-bottom: 25px;
     }
     .revs .section-title {
         text-align: left;
@@ -842,7 +847,7 @@ RESPONSIVE FIXES
         width: 210px;
         margin-bottom: 10px;
         margin-right: 0;
-        border: 1px solid #ff0042;
+        border: 1px solid #fff;
     }
     .feedback-form {
         margin-top: 50px;

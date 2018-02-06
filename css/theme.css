@@ -377,9 +377,6 @@ ul li:after {
   font-weight: 600;
   padding: 16px 9px;
 }
-.services {
-  background: #fff;
-}
 .services-item {
   margin-bottom: 66px;
 }
@@ -392,6 +389,7 @@ ul li:after {
   margin-left: -5px;
   width: 102px;
   float: left;
+  color: #62a8df;
 }
 .services-item-title {
   padding-top: 3px;
@@ -538,6 +536,7 @@ ul li:after {
   opacity: 0;
   box-shadow: 5px 9px 90.25px 4.75px rgba(0, 0, 0, 0.1);
   transition-property: transform, opacity;
+  filter: blur(2px);
 }
 .swiper-slide.swiper-slide-prev {
   opacity: 1;
@@ -640,10 +639,6 @@ ul li:after {
   color: #434c5d;
 }
 .revs-form-tcont {
-  border: 1px solid #434c5d;
-  border-radius: 4px;
-  height: 250px;
-  padding: 15px;
   margin-bottom: 15px;
 }
 .revs-form textarea {
@@ -651,8 +646,8 @@ ul li:after {
   border-radius: 4px;
   height: 170px;
   width: 100%;
-  background: transparent;
-  padding: 30px 40px;
+  background: #fff;
+  padding: 20px 30px;
 }
 .revs-form-right {
   text-align: right;
@@ -666,7 +661,7 @@ ul li:after {
   border-radius: 25px;
   height: 41px;
   margin-right: 10px;
-  background: transparent;
+  background: #fff;
 }
 label.uploadbutton {
   height: 41px;
@@ -715,25 +710,25 @@ label.uploadbutton .input {
   margin-top: 58px;
 }
 .feedback-form ::-webkit-input-placeholder {
-  color: #fff;
+  color: #282828;
 }
 .feedback-form ::-moz-placeholder {
-  color: #fff;
+  color: #282828;
 }
 .feedback-form :-moz-placeholder {
-  color: #fff;
+  color: #282828;
 }
 .feedback-form :-ms-input-placeholder {
-  color: #fff;
+  color: #282828;
 }
 .feedback-form input[type="text"] {
-  color: #fff;
-  background: #ff0042;
+  color: #282828;
+  background: #fff;
   border-radius: 25px;
   padding: 6px 20px 8px;
   width: 166px;
   margin-right: 10px;
-  border: 2px solid #ff0042;
+  border: 2px solid #fff;
 }
 .feedback-form input[type="text"]:focus {
   border: 2px solid #434c5d;

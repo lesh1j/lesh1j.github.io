@@ -412,7 +412,7 @@ ul{
 }
 
 .services{
-    background: #fff;
+    //background: #fff;
     &-item{
         margin-bottom: 66px;
         &-right{
@@ -424,6 +424,7 @@ ul{
             margin-left: -5px;
             width: 102px;
             float: left;
+            color: #62a8df;
         }
         &-title{
             padding-top: 3px;
@@ -580,7 +581,7 @@ ul{
     opacity: 0;
     box-shadow: 5px 9px 90.25px 4.75px rgba(0, 0, 0, 0.1);
     transition-property: transform, opacity;  
-    //filter: blur(2px);
+    filter: blur(2px);
 }
     .swiper-slide.swiper-slide-prev {
         opacity: 1;
@@ -683,19 +684,15 @@ ul{
                 color: @color-headers;
         }
         &-tcont{
-            border: 1px solid @color-headers;
-            border-radius: 4px;
-            height: 250px;
-            padding: 15px;
             margin-bottom: 15px;
         }
         textarea{
             border: 1px solid @color-headers;
             border-radius: 4px;
             height: 170px;
-            width: 100%; 
-            background: transparent;
-            padding: 30px 40px;
+            width: 100%;
+            background: #fff;
+            padding: 20px 30px;
         }
         &-right{
             text-align: right;
@@ -710,7 +707,7 @@ ul{
                 border-radius: 25px;
                 height: 41px;
                 margin-right: 10px;
-                background: transparent;
+                background: #fff;
             }
         }
     }
@@ -768,25 +765,25 @@ label.uploadbutton .input {
     &-form{
         margin-top: 58px;
         ::-webkit-input-placeholder {
-            color: #fff;
+            color: @color-font;
         }
         ::-moz-placeholder{
-            color: #fff;
+            color: @color-font;
         }
         :-moz-placeholder{
-            color: #fff;
+            color: @color-font;
         }
         :-ms-input-placeholder{
-            color: #fff;
+            color: @color-font;
         }
         input[type="text"]{
-            color: #fff;
-            background: @color-primary;
+            color: @color-font;
+            background: #fff;
             border-radius: 25px;
             padding: 6px 20px 8px;
             width: 166px;
             margin-right: 10px;
-            border: 2px solid @color-primary;
+            border: 2px solid #fff;
             &:focus{
                 border: 2px solid @color-headers;
             }
