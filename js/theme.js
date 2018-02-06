@@ -78,7 +78,7 @@ $(window).on('load', function () {
         }else{
             slidesPerView = 1;
             //sliderWidth = '100%';
-            sliderEffect = 'fade';
+            sliderEffect = 'slide';
             sliderStretch = 0;
         }
         
@@ -163,7 +163,7 @@ $(window).on('load', function () {
         }else{
            // sliderWidth1 = '100%';
             sliderStretch1 = 0;
-            sliderEffect1 = 'fade';
+            sliderEffect1 = 'slide';
             slidesPerView1 = 1;
         } 
         
