@@ -187,6 +187,18 @@ $(window).on('load', function () {
         return false;
     });
     
+    var advsIndex = 0;
+    
+    $(document).on('click', '#advs-next', function(){
+        advsIndex++;
+        if(advsIndex == 6){
+            advsIndex = 0;
+        }
+        $('.advs .col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4').addClass('d-none');
+        $('.advs .col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4').eq(advsIndex).removeClass('d-none');
+        return false;
+    });
+    
     var advsMore = 0;
     
     $(document).on('click', '#advs-more', function(){
