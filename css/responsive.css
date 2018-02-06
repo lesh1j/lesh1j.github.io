@@ -719,7 +719,7 @@ RESPONSIVE FIXES
         padding-bottom: 34px;
     }
     .advs {
-        background: url(../images/mid_bg.png) no-repeat 40% top #f4f5f9;
+        background: url(../images/mid_bg.png) no-repeat 40% -150px #f4f5f9;
         background-size: 275%;
         padding: 44px 0;
         height: auto;
@@ -738,7 +738,7 @@ RESPONSIVE FIXES
     }
     .advs-text {
         padding-left: 0;
-        padding-top: 209px;
+        padding-top: 90px;
     }
     .advs-text .section-subtitle {
         margin-bottom: 44px;
