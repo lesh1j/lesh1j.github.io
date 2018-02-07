@@ -591,7 +591,8 @@ RESPONSIVE FIXES
         display: block;
     }
     .header{
-        margin-bottom: 0;
+        margin-bottom: -50px;
+        height: 597px;
         background-size: 267%;
         background-position: 84% bottom;
     }
