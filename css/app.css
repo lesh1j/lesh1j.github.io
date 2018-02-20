@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: tahoma;
+    font-size: 13px;
+}
+h3{
+    margin-bottom: 20px;
+}
+label {
+    font-size: 12px;
+    margin-right: 8px;
+}
+select {
+    padding: 6px;
+}
+input[type="text"] {
+    padding: 6px;
+}
+.small-input {
+    width: 60px;
+    margin-right: 5px;
+}
+.error{
+    color: #f74e83;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+.discount{
+    color: #f74e83;
+}
+.remove {
+    color: #f74e83;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.align-top-center{
+    align-items: center;
+}
+.col-8 {
+    -ms-flex: 0 0 66.66666%;
+    flex: 0 0 66.66666%;
+    max-width: 66.66666%;
+}
+.col-7 {
+    -ms-flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-4 {
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.col-1 {
+    -ms-flex: 0 0 8.33333%;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.calc {
+    background: #eff1f3;
+    width: 960px;
+    margin: 30px auto;
+    padding: 30px 30px 0 30px;
+}
+.calc-section {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #ccc;
+}
+.calc-section:last-child {
+    border-bottom: none;
+}
+.calc-section__form {
+    margin-bottom: 15px;
+}
+.calc-section__note {
+    font-size: 11px;
+}
+.calc-section__button {
+    padding: 12px 30px;
+    background: #fbc956;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.calc-section__button {
+    padding: 12px 30px;
+    background: #fbc956;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.calc-section__button:disabled {
+    background: #ffe4a6;
+    cursor: default;
+}
+.result {
+    padding-bottom: 30px;
+    display: none;
+}
+.result__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.result__header {
+    background: #6c787b;
+    padding: 7px 10px;
+    color: #fff;
+}
+.result__item {
+    background: #fff;
+    padding: 7px 10px;
+    border-bottom: 1px dotted #ccc;
+}
+.result__total {
+    font-weight: bold;
+    font-size: 17px;
+}
+.result__more {
+    display: table;
+    margin: 30px auto 0;
+    text-decoration: none;
+}
