@@ -17,6 +17,7 @@
     var files = {
         mini: {
             name: "Mini",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -28,6 +29,7 @@
         },
         mini_zebra: {
             name: "Mini Зебра",
+            discount: "20",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -38,6 +40,7 @@
         },
         uni_1: {
             name: "Uni 1",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -49,6 +52,7 @@
         },
         uni_1_zebra: {
             name: "Uni 1 Зебра",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -59,6 +63,7 @@
         },
         uni_2: {
             name: "Uni 2",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -70,6 +75,7 @@
         },
         uni_2_zebra: {
             name: "Uni 2 Зебра",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -80,6 +86,7 @@
         },
         uni_2_pruzhina: {
             name: "Uni 2 Пружина",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -91,6 +98,7 @@
         },
         lvt: {
             name: "Louvolite",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -102,6 +110,7 @@
         },
         lvt_zebra: {
             name: "Louvolite Зебра",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -112,6 +121,7 @@
         },
         mgs_zebra: {
             name: "MGS Зебра",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -122,6 +132,7 @@
         },
         lux: {
             name: "LUX",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -133,6 +144,7 @@
         },
         plisse: {
             name: "Плиссе",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -144,12 +156,14 @@
         },
         mirazh: {
             name: "Мираж",
+            discount: "10",
             cats: {
                 '_e': "E-категория"
             }
         },
         venus_16: {
             name: "VENUS 16 мм.",
+            discount: "10",
             cats: {
                 '_1': "1-категория",
                 '_3': "3-категория"
@@ -157,6 +171,7 @@
         },
         venus_25: {
             name: "VENUS 26 мм.",
+            discount: "10",
             cats: {
                 '_e': "E-категория",
                 '_1': "1-категория",
@@ -196,6 +211,8 @@
         $('#item-cats option').remove();
         for (var key in files) {
             if(key == itemType){
+                $('#discount').val(files[key].discount);
+                $('#discount').next('label').html('Скидка '+files[key].discount+'% на тип "'+files[key].name+'"');
                 itemCats = files[key].cats;
                 for (var key in itemCats) {
                     var keyValue = key.slice(1);
