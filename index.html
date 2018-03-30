@@ -1,217 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html manifest="offline.appcache">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>calc</title>
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-    
-    <div class="calc" id="calc">
-        
-        <div class="calc-section">
-            <div class="calc-section__title">
-                <h3>Выберите тип жалюзи:</h3>
-            </div>
-            <div class="calc-section__form row">
-                <div class="col-6">
-                    <label>Тип жалюзи</label>
-                    <select id="item-type" name="item-type">
-                    </select>
-                </div>
-                <div class="col-6">
-                    <label>Категория материала</label>
-                    <select id="item-cats" name="item-type">
-                    </select>
-                </div>
-            </div>
-            <div class="calc-section__note">
-                Все материалы распределены по возрастанию цены в нескольких категориях!
-            </div>
-        </div>
-        
-        <div class="calc-section">
-            <div class="calc-section__title">
-                <h3>Укажите размеры проема окна и кол-во жалюзи:</h3>
-            </div>
-            <div class="calc-section__form row">
-                <div class="col-4">
-                    <label>W (ширина)</label>
-                    <input class="small-input" id="item-width" type="text" value="100" />
-                    см.
-                    <div class="calc-section__note error" id="maxMinErrorW"></div>
-                </div>
-                <div class="col-4">
-                    <label>H (высота)</label>
-                    <input class="small-input" id="item-height" type="text" value="100" />
-                    см.
-                    <div class="calc-section__note error" id="maxMinErrorH"></div>
-                </div>
-                <div class="col-4">
-                    <label>Количество</label>
-                    <input class="small-input" id="item-count" type="text" value="1" />
-                    шт.
-                    <div class="calc-section__note error" id="countError"></div>
-                </div>
-            </div>
-        </div>
-            
-        <div class="calc-section">
-            <div class="calc-section__title">
-                <h3>Дополнительные услуги:</h3>
-            </div>
-            <div class="calc-section__form row">
-                <div class="col-4">
-                    <input type="checkbox" id="equip" checked>
-                    <label for="equip">Выезд замерщика</label>
-                </div>
-                <div class="col-4">
-                    <input type="checkbox" id="install" checked>
-                    <label for="install">Монтажные работы</label>
-                </div>
-                <div class="col-4">
-                    <input type="checkbox" id="delivery" checked>
-                    <label for="delivery">Доставка изделий</label>
-                </div>
-            </div>
-        </div>
-        
-        <div class="calc-section" id="where-section">
-            <div class="calc-section__title">
-                <h3>Где будет установка жалюзи:</h3>
-            </div>
-            <div class="calc-section__form row align-top-center">
-                <div class="col-4">
-                    <input type="radio" id="inmcad" name="where" checked>
-                    <label for="inmcad">В пределах МКАД</label>
-                </div>
-                <div class="col-4">
-                    <input type="radio" id="outmcad" name="where">
-                    <label for="outmcad">За МКАД</label>
-                    <input class="small-input" id="distance" type="text" value="1" />
-                    км.
-                </div>
-            </div>
-        </div>
-        
-        <div class="calc-section">
-            <div class="calc-section__title">
-                <h3>Выбери нужную скидку:</h3>
-            </div>
-            <div class="calc-section__form row">
-                <div class="col-4">
-                    <input type="checkbox" id="discount" value="10">
-                    <label for="discount">Скидка 10%</label>
-                </div>
-            </div>
-        </div>
-        
-        <div class="calc-section">
-            <button class="calc-section__button" id="addResult" disabled>Добавить в расчет</button>
-        </div>
-        
-        <div class="result" id="result">
-            <div class="result__title">
-                <h2>Результат расчета</h2>
-            </div>
-            <div class="result__header row">
-                <div class="col-7">
-                    Название. Тип жалюзи
-                </div>
-                <div class="col-1">
-                    Eд.
-                </div>
-                <div class="col-1">
-                    Кол-во
-                </div>
-                <div class="col-1">
-                    Цена
-                </div>
-                <div class="col-1">
-                    Стоим.
-                </div>
-            </div>
-            <div class="result__items" id="result-items">
- 
-            </div>
-            <div class="result__item row" id="result-works">
-                <div class="col-7">
-                    Монтажные работы:
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1 item-summ">
-                    
-                </div>
-            </div>
-            <div class="result__item row" id="result-delivery">
-                <div class="col-7">
-                    Доставка изделий:
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1 item-summ">
-                    
-                </div>
-            </div>
-            <div class="result__item row" id="result-check">
-                <div class="col-7">
-                    Замер с выездом:
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1 item-summ">
-                    
-                </div>
-            </div>
-            <div class="result__item result__total row" id="result-total">
-                <div class="col-7">
-                    Итого:
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1">
-                    ---
-                </div>
-                <div class="col-1 item-total">
-                    
-                </div>
-            </div>
-            <a href="#" class="result__more" id="result-more">+ ДОБАВИТЬ ЕЩЕ ИЗДЕЛИЕ</a>
-        </div>
-        
-    </div>
-    
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/papaparse.min.js"></script>
-    <script src="js/app.js?v=2"></script>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>конфигуратор</title>
+	
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+	
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="HandheldFriendly" content="true" />
+	
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
 
-</body>
-</html>
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+	
+
+</head> 
+ 
+<body> 
+	<div id="fb-root"></div>
+	
+	<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		// Check for running exported on file protocol
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+		}
+	})();
+	</script>
+	
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv">
+	
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="1280" height="720">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+			<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+			<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+			<a href="http://www.apple.com/safari/download/">Apple Safari</a></h1>
+		</canvas>
+		
+	</div>
+	
+	<!-- Pages load faster with scripts at the bottom -->
+	
+	<!-- Construct 2 exported games require jQuery. -->
+	<script src="jquery-2.1.1.min.js"></script>
+
+
+	
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+	<script src="c2runtime.js"></script>
+
+    <script>
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{			
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		function OnRegisterSWError(e)
+		{
+			console.warn("Failed to register service worker: ", e);
+		};
+		
+		// Runtime calls this global method when ready to start caching (i.e. after startup).
+		// This registers the service worker which caches resources for offline support.
+		window.C2_RegisterSW = function C2_RegisterSW()
+		{
+			if (!navigator.serviceWorker)
+				return;		// no SW support, ignore call
+			
+			try {
+				navigator.serviceWorker.register("sw.js", { scope: "./" })
+				.then(function (reg)
+				{
+					console.log("Registered service worker on " + reg.scope);
+				})
+				.catch(OnRegisterSWError);
+			}
+			catch (e)
+			{
+				OnRegisterSWError(e);
+			}
+		};
+    </script>
+</body> 
+</html> 

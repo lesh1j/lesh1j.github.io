@@ -1,0 +1,32 @@
+﻿{
+	"version": 1522449698,
+	"fileList": [
+		"data.js",
+		"c2runtime.js",
+		"jquery-2.1.1.min.js",
+		"offlineClient.js",
+		"images/model1-sheet0.png",
+		"images/model1-sheet1.png",
+		"images/sprite2-sheet0.png",
+		"images/sprite3-sheet0.png",
+		"images/wall-sheet0.png",
+		"images/sprite4-sheet0.png",
+		"images/model2-sheet0.png",
+		"images/model2-sheet1.png",
+		"images/stand-sheet0.png",
+		"images/model3-sheet0.png",
+		"images/model3-sheet1.png",
+		"images/model3-sheet2.png",
+		"images/stand2-sheet0.png",
+		"images/stand3-sheet0.png",
+		"images/rail1-sheet0.png",
+		"images/leftwall-sheet0.png",
+		"images/line-sheet0.png",
+		"icon-16.png",
+		"icon-32.png",
+		"icon-114.png",
+		"icon-128.png",
+		"icon-256.png",
+		"loading-logo.png"
+	]
+}
