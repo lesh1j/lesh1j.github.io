@@ -18404,9 +18404,10 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.IsOverlappingOffset,
 	cr.plugins_.Sprite.prototype.cnds.PickDistance,
 	cr.plugins_.Sprite.prototype.acts.SetX,
+	cr.system_object.prototype.cnds.PickOverlappingPoint,
+	cr.plugins_.Sprite.prototype.exps.Width,
 	cr.behaviors.Pin.prototype.acts.Pin,
 	cr.behaviors.Pin.prototype.acts.Unpin,
 	cr.system_object.prototype.cnds.EveryTick,
 	cr.plugins_.Sprite.prototype.cnds.CompareY
 ];};
-
