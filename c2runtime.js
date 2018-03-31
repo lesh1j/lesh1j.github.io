@@ -18341,11 +18341,11 @@ cr.behaviors.Rex_bNickname = function (runtime) {
 	};
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Function,
 	cr.plugins_.Mouse,
 	cr.plugins_.Rex_Nickname,
 	cr.plugins_.Sprite,
 	cr.plugins_.Text,
+	cr.plugins_.Function,
 	cr.behaviors.DragnDrop,
 	cr.behaviors.Pin,
 	cr.behaviors.Rex_bNickname,
@@ -18387,10 +18387,11 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps.tan,
 	cr.plugins_.Rex_Nickname.prototype.acts.CreateInst,
 	cr.system_object.prototype.acts.Wait,
+	cr.plugins_.Mouse.prototype.cnds.OnObjectClicked,
+	cr.plugins_.Sprite.prototype.acts.Destroy,
 	cr.system_object.prototype.cnds.ForEach,
 	cr.system_object.prototype.cnds.PickAll,
 	cr.system_object.prototype.cnds.PickByComparison,
-	cr.plugins_.Sprite.prototype.acts.Destroy,
 	cr.plugins_.Sprite.prototype.acts.SetY,
 	cr.plugins_.Sprite.prototype.cnds.CompareX,
 	cr.plugins_.Sprite.prototype.cnds.CompareHeight,
@@ -18408,3 +18409,4 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.cnds.EveryTick,
 	cr.plugins_.Sprite.prototype.cnds.CompareY
 ];};
+
