@@ -54,18 +54,25 @@ var getRandomNumber = function(min, max){
 }
     
 //функция выбора случайного элемента из массива
-var getRandomArrayItem = function(arr){
+var getRandomArrayItem = function(array){
     
-    return arr[getRandomNumber(0, arr.length - 1)];
+    return array[getRandomNumber(0, array.length - 1)];
     
 }
 
 //функция сортировки массива в случайном порядке
 var getRandomMixedArray = function(array){
     
-    return array.sort(function () {
+    var mixedArray = [];
+    for(var i = 0; i < array.length; i++){
+        mixedArray.push(array[i]);
+    }
+    
+    mixedArray.sort(function () {
         return Math.random() - 0.5;
     });
+    
+    return mixedArray;
     
 }
 
@@ -76,11 +83,13 @@ var getRandomArray = function(array){
     for(var i = 0; i < array.length; i++){
         randomArray.push(array[i]);
     }
+        
+    var itemsToRemove = getRandomNumber(0, randomArray.length - 1);
+        
+    for(var i = 0; i < itemsToRemove; i++){
+        randomArray.splice(getRandomNumber(0, randomArray.length - 1), 1);
+    }
     
-    getRandomMixedArray(randomArray);
-    
-    randomArray.splice(getRandomNumber(1, randomArray.length));
- 
     return randomArray;
 }
 
@@ -108,7 +117,8 @@ var generateAd = function(index){
             checkin: getRandomArrayItem(AD_TIMES),
             checkout: getRandomArrayItem(AD_TIMES),
             features: getRandomArray(AD_FEATURES),
-            description: ''     
+            description: '',
+            photos: getRandomMixedArray(AD_PHOTOS)
         }
     };
     
@@ -125,3 +135,90 @@ var generateRelatedAds = function(number){
 }
 
 generateRelatedAds(RELATED_ADS_NUMBER);
+
+var map = document.querySelector('.map');
+map.classList.remove('map--faded');
+
+//функция создания одной метки
+var createPin = function(template, ad){
+
+    var pinElement = template.cloneNode(true);
+    
+    pinElement.style.left = ad.location.x - 23 + 'px';
+    pinElement.style.top = ad.location.y - 58 + 'px';
+    
+    pinElement.querySelector('img').src = ad.author.avatar;
+    pinElement.querySelector('img').alt = ad.offer.title;
+            
+    return pinElement;
+    
+}
+
+//функция отрисовкиметок из массива
+var renderPins = function(ads) {
+    
+  var pinTemplate = document.querySelector('#pin').content.querySelector('.map__pin');
+  var pinsFragment = document.createDocumentFragment();
+
+  for (var i = 0; i < ads.length; i++) {
+    pinsFragment.appendChild(createPin(pinTemplate, ads[i]));
+  }
+
+  return pinsFragment;
+    
+};
+
+map.appendChild(renderPins(relatedAds));
+
+//функция создания карточки объявления
+var createCard = function(template, ad){
+    
+    var cardElement = template.cloneNode(true);
+    
+    cardElement.querySelector('.popup__title').textContent = ad.offer.title;
+    cardElement.querySelector('.popup__text--address').textContent = ad.offer.address;
+    cardElement.querySelector('.popup__text--price').textContent = ad.offer.price + ' p/ночь';
+    cardElement.querySelector('.popup__type').textContent = AD_TYPES_NAMES[AD_TYPES.indexOf(ad.offer.type)];
+    cardElement.querySelector('.popup__text--capacity').textContent = ad.offer.rooms + ' комнаты для ' + ad.offer.guests + ' гостей';
+    cardElement.querySelector('.popup__text--time').textContent = 'Заезд после ' + ad.offer.checkin + ', выезд до ' + ad.offer.checkout;
+    
+    var popupFeatures = cardElement.querySelector('.popup__features');
+    popupFeatures.textContent = ''
+    
+    for(var i = 0; i < ad.offer.features.length; i++){
+        var lisItem = document.createElement('li');
+        lisItem.classList.add('popup__feature', 'popup__feature--'+ad.offer.features[i]);
+        popupFeatures.appendChild(lisItem);
+    }
+    
+    cardElement.querySelector('.popup__description').textContent = ad.offer.description;
+    
+    var popupPhotos = cardElement.querySelector('.popup__photos');
+    popupPhotos.textContent = ''
+    
+    for(var i = 0; i < ad.offer.photos.length; i++){
+        var photoItem = document.createElement('img');
+        photoItem.classList.add('popup__photo');
+        photoItem.src = ad.offer.photos[i];
+        photoItem.alt = 'Фотография жилья';
+        photoItem.width = 45;
+        photoItem.height = 40;
+        popupPhotos.appendChild(photoItem);
+    }
+    
+    cardElement.querySelector('.popup__avatar').src = ad.author.avatar;
+    
+    return cardElement;
+    
+}
+
+var renderCard = function(ad) {
+    
+    var cardTemplate = document.querySelector('#card').content.querySelector('.map__card');
+    var cardElement = createCard(cardTemplate, ad);
+  
+    return cardElement;
+    
+};
+
+map.insertBefore(renderCard(relatedAds[0]), map.querySelector('.map__filters-container'));
