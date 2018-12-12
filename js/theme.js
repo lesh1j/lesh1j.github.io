@@ -224,6 +224,7 @@ var formFieldsets = document.querySelectorAll('fieldset');
 
 var cardTemplate = document.querySelector('#card').content.querySelector('.map__card');
 
+//функция активации карты
 var activateMap = function(){
     
     map.classList.remove('map--faded');
@@ -231,6 +232,7 @@ var activateMap = function(){
     
 }
 
+//функция активации формы
 var activateForm = function(){
     
     form.classList.remove('ad-form--disabled');
@@ -241,6 +243,7 @@ var activateForm = function(){
     
 }
 
+//функция установки адреса в инпут
 var setAdressInput = function(width, height){
     
     var addressInput = document.querySelector('#address');
@@ -260,6 +263,7 @@ mainPin.addEventListener('mouseup', function(){
     
 });
 
+//функция открытия карточки объявления
 var openPopup = function(pinElement, ad){
     
     pinElement.addEventListener('click', function(){
@@ -276,6 +280,7 @@ var openPopup = function(pinElement, ad){
     
 }
 
+//функция закрытия карточки объявления
 var closePopup = function(){
     
     var currentCard = document.querySelector('.map__card');
@@ -288,10 +293,94 @@ var closePopup = function(){
     
 }
 
+//обработчик нажатия клафиши esc
 var onEscPopupPress = function(evt){
     if(evt.keyCode == 27){
         closePopup();
     }
 }
 
+//функция изменения минимальной цены в зависимости от типа жилья
+var changeMinPrice = function(type){
+    
+    var minPrice = 0;
+    
+    switch(type){
+        case 'flat':
+            minPrice = 1000;
+            break;
+        case 'house':
+            minPrice = 5000;
+            break;
+        case 'palace':
+            minPrice = 10000;
+            break;
+    }
+    
+    return minPrice;
+    
+}
 
+var typeSelect = form.querySelector('#type');
+var priceInput = form.querySelector('#price');
+
+typeSelect.addEventListener('change', function(){
+    priceInput.min = changeMinPrice(this.value);
+    priceInput.placeholder = changeMinPrice(this.value);
+});
+
+
+//зависимостть времени заезда\выезда
+var timeIn = form.querySelector('#timein');
+var timeOut = form.querySelector('#timeout');
+
+timeIn.addEventListener('change', function(){
+    timeOut.value = this.value;
+});
+
+timeOut.addEventListener('change', function(){
+    timeIn.value = this.value;
+});
+
+var roomsSelect = document.querySelector('#room_number');
+var guestsSelect = document.querySelector('#capacity');
+var guestsOptions = guestsSelect.querySelectorAll('option');
+
+//функция изменения количества гостей в зависимости от количества комнат
+var checkGuests = function(rooms){
+    
+    //задаем массив с допустимыми значиниями колва гостей в зависимости от комнат
+    var currentGuestsOptions = [1];
+    
+    switch(parseInt(rooms)){
+        case 2:
+            currentGuestsOptions = [1, 2];
+            break;
+        case 3:
+            currentGuestsOptions = [1, 2, 3];
+            break;
+        case 100:
+            currentGuestsOptions = [0];
+            break;
+    }
+        
+    guestsSelect.textContent = '';
+    
+    var optionsFragment = document.createDocumentFragment();
+    
+    //перебираем все варианты количесва гостей
+    for(var i = 0; i < guestsOptions.length; i++){
+        //проверяем содержится ли текущее значение колва гостей в массиве с допустимым значением
+        if(currentGuestsOptions.indexOf(parseInt(guestsOptions[i].value)) != -1){
+            //если да, то добавляем его в селект
+            optionsFragment.appendChild(guestsOptions[i]);
+        }
+    }
+    
+    guestsSelect.appendChild(optionsFragment);
+    
+}
+
+roomsSelect.addEventListener('change', function(){
+    checkGuests(this.value);
+});
