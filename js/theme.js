@@ -43,6 +43,9 @@ var AD_PHOTOS = [
 
 var RELATED_ADS_NUMBER = 8;
 
+var MAP_WIDTH = 1200;
+var MAP_HEIGHT = 704;
+
 var MAIN_PIN_WIDTH = 65;
 var MAIN_PIN_HEIGHT = 85;
 
@@ -253,13 +256,61 @@ var setAdressInput = function(width, height){
 
 setAdressInput(0, 0);
 
-mainPin.addEventListener('mouseup', function(){
+mainPin.addEventListener('mousedown', function(evt){
    
-    activateMap();
+    evt.preventDefault();
+
+    var startCursorShift = {
+        x: evt.clientX - mainPin.offsetLeft,
+        y: evt.clientY - mainPin.offsetTop,
+    }
+
+    var onMainPinDragging = function(moveEvt){
+
+        moveEvt.preventDefault();
+
+        var mainPinLeft  = moveEvt.x - startCursorShift.x;
+        var mainPinTop  = moveEvt.y - startCursorShift.y;
+
+        if(mainPinLeft < -MAIN_PIN_WIDTH/2){
+            mainPinLeft = -MAIN_PIN_WIDTH/2;
+        }
         
-    activateForm();
+        if(mainPinLeft > MAP_WIDTH - MAIN_PIN_WIDTH/2){
+            mainPinLeft = MAP_WIDTH - MAIN_PIN_WIDTH/2;
+        }
+        
+        if(mainPinTop < 0){
+            mainPinTop = 0;
+        }
+
+        if(mainPinTop > MAP_HEIGHT - MAIN_PIN_HEIGHT){
+            mainPinTop = MAP_HEIGHT - MAIN_PIN_HEIGHT;
+        }
+
+        mainPin.style.left = mainPinLeft + 'px';
+        mainPin.style.top = mainPinTop + 'px';
+
+    }
     
-    setAdressInput(MAIN_PIN_WIDTH, MAIN_PIN_HEIGHT);
+    var onStopMainPinDragging = function(upEvt){
+
+        upEvt.preventDefault();
+        
+        activateMap();
+        
+        activateForm();
+    
+        setAdressInput(MAIN_PIN_WIDTH, MAIN_PIN_HEIGHT);
+
+        document.removeEventListener('mousemove', onMainPinDragging);
+        document.removeEventListener('mouseup', onStopMainPinDragging);
+
+    }
+    
+    
+    document.addEventListener('mousemove', onMainPinDragging);
+    document.addEventListener('mouseup', onStopMainPinDragging);
     
 });
 
