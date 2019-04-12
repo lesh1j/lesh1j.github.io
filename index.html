@@ -1,0 +1,3174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Likenilook.ru | Крупнейшие интернет-магазины модной одежды, обуви и аксессуаров в одном месте в Москве</title>    
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/vendor.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/android-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png" sizes="180x180">
+</head>
+<body>
+  
+  <!-- ШАПККА САЙТА -->
+  <header class="header">
+    <div class="container">
+      
+      <!-- МОБИЛЬНЫЕ КНОПКИ -->
+      <div class="col header__mob">
+        <i class="icon show-menu" id="show-menu">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#menu" />
+          </svg>
+        </i>
+        <i class="icon show-search" id="show-search">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#search" />
+          </svg>
+        </i>
+      </div>
+      
+      <!-- ГОРОД И СОЦСЕТИ -->
+      <div class="col header__left">
+        
+        <!-- ВЫБОР ГОРОДА -->
+        <div class="city-select" id="city-select">
+          <!-- МАРКЕР -->
+          <i class="icon city-select__icon">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#map-marker" />
+            </svg>
+          </i>
+          <!-- ТЕКСТ -->
+          <span class="city-select__text">
+            Москва
+          </span>
+          <!-- ВЫПАДАЮЩИЙ СПИСОК -->
+          <div class="city-select__dropdown" id="city-select__dropdown">
+            <!-- КНОПКА ЗАКРЫТЬ ДЛЯ МОБИЛЬНЫХ -->
+            <div class="city-select__title">
+              <div class="col city-select__close" id="city-select__close">
+                закрыть
+              </div>
+            </div>
+            <!-- САМ СПИСОК -->
+            <div class="city-select__list" id="city-select__list">
+              <ul>
+                <li class="active">Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Минск</li>
+                <li>ЕкатеринБург</li>
+                <li>Воронеж</li>
+                <li>Стамбул</li>
+                <li>Венеция</li>
+                <li>Киев</li>
+                <li>Стамбул</li>
+                <li>Венеция</li>
+                <li>Киев</li>
+              </ul>
+            </div>
+            <!-- КНОПКА ВЫБРАТЬ ГОРОД ДЛЯ МОБИЛЬНЫХ -->
+            <div class="city-select__button" id="city-select__button">
+              <button class="btn btn-primary">Выбрать город</button>
+            </div>
+            <!-- СТРЕЛКА ОТКРЫТАЯ -->
+            <i class="icon city-select__arrow">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#dropdown-arrow" />
+              </svg>
+            </i>
+          </div>
+          <!-- СТРЕЛКА ЗАКРЫТАЯ -->
+          <i class="icon city-select__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+          <!-- ФОРМА, В КОТОРУЮ ПОДСТАВЛЯЫЕТСЯ ВЫБРАННОЕ ЗНАЧЕНИЕ -->
+          <form id="city-form" name="city-form" action="/">
+            <input type="hidden" id="city" name="city" value="Москва">
+          </form>
+        </div>
+        
+        <!-- СОЦСЕТИ -->
+        <div class="social-icons hidden-lg">
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-vk" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-facebook" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-instagram" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-pinterest" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-telegram" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-viber" />
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- ЛОГОТИП -->
+      <div class="col header__logo">
+        <a href="/" class="logo" title="На главную">
+          <svg class="logo__image" width="208" height="125">
+            <use xlink:href="/images/icons.svg#logo" />
+          </svg>
+        </a>
+      </div>
+      
+      <!-- ПОИСК -->
+      <div class="col header__search" id="header__search">
+        <form class="search-form">
+          <input class="search-form__input" type="text" />
+          <button class="search-form__button">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#search" />
+              </svg>
+            </i>
+          </button>
+        </form>
+        <div class="header__search-close" id="header__search-close">x</div>
+      </div>
+      
+      <!-- ИЗБРАННОЕ -->
+      <div class="col header__likes">
+        <a href="#" class="icon" id="header__likes" title="Избранное">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#heart" />
+          </svg>
+        </a>
+      </div>
+        
+    </div>
+    
+  </header>
+  
+  <!-- ГЛАВНОЕ МЕНЮ -->
+  <nav class="menu">
+    <div class="container">
+      <ul class="menu__list" id="menu__list">
+        <li>
+          <a href="#">Женщинам</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Мужчинам</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hidden-sm">
+          <a href="#">Детям</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Косметика</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hidden-md"><a href="#">Бренды</a></li>
+        <li class="hidden-md"><a href="#">Магазины</a></li>
+        <li class="hidden-md"><a href="#">Акции</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- ВЕРХНИЙ БАННЕР -->
+  <section class="top-banner">
+    <div class="container">
+      <!--<h2 class="section-title">каталог</h2>-->
+      <i class="icon top-banner__heart hidden-lg">
+        <svg width="1em" height="1em" fill="currentColor">
+          <use xlink:href="/images/icons.svg#heart" />
+        </svg>
+      </i>
+      <div class="top-banner__content">
+        <h1 class="top-banner__title">Большая<br>распродажа</h1>
+        <p class="top-banner__subtitle">лучшие модели уходящего<br>лета по лучшим ценам</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ЖЕНСКИЕ ТОВАРЫ -->
+  <section class="products women">
+    <div class="container">
+      
+      <!-- НОВЫЕ -->
+      <div class="products__slider products__news">
+        
+        <h2 class="section-title">новинки</h2>
+        
+        <div class="owl-carousel" id="product-slider-1">
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="1">
+            <div class="product__labels">
+              <div class="product__new">
+                NEW
+              </div>
+            </div>
+            <i class="icon product__like" title="В избранное">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="2">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="3">
+            <div class="product__labels">
+              <div class="product__sale">
+                -50%
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton Colors</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by 
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="4">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="5">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="6">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="7">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- СТРЕЛКИ СЛАЙДЕРА -->
+        <i class="icon products__arrow slider__arrow next" id="product-slider-1-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        <i class="icon products__arrow slider__arrow prev" id="product-slider-1-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+      </div>
+      
+      <!-- ПОПУЛЯРНЫЕ -->
+      <div class="products__slider products__popular">
+        
+        <h2 class="section-title">популярное</h2>
+        
+        <div class="owl-carousel" id="product-slider-2">
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="8">
+            <div class="product__labels">
+              <div class="product__new">
+                NEW
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="9">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="10">
+            <div class="product__labels">
+              <div class="product__sale">
+                -50%
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton Colors</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by 
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="11">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="12">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="13">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__women" data-item-id="14">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- СТРЕЛКИ СЛАЙДЕРА -->
+        <i class="icon products__arrow slider__arrow next" id="product-slider-2-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+        <i class="icon products__arrow slider__arrow prev" id="product-slider-2-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- МУЖСКОЙ БАННЕР -->
+  <section class="banner men">
+    <div class="container">
+      <div class="col banner__content">
+        <div class="banner__link">
+          <a href="#">каталог</a>
+        </div>
+        <div class="banner__title">
+          <h2>Мужчинам</h2>
+        </div>
+        <div class="banner__menu">
+          <ul>
+            <li><a href="#">комбинезоны</a></li>
+            <li><a href="#">брюки</a></li>
+            <li><a href="#">юбки</a></li>
+            <li><a href="#">джинсы</a></li>
+            <li><a href="#">шорты</a></li>
+            <li>
+              <a href="#">
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#arrow" />
+                  </svg>
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- МУЖСКИЕ ТОВАРЫ -->
+  <section class="products men">
+    <div class="container">
+      
+      <!-- НОВЫЕ -->
+      <div class="products__slider products__news">
+        
+        <h2 class="section-title">новинки</h2>
+        
+        <div class="owl-carousel" id="product-slider-3">
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="15">
+            <div class="product__labels">
+              <div class="product__new">
+                NEW
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="16">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="17">
+            <div class="product__labels">
+              <div class="product__sale">
+                -50%
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton Colors</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by 
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="18">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="19">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="20">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="21">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- СТРЕЛКИ СЛАЙДЕРА -->
+        <i class="icon products__arrow slider__arrow next" id="product-slider-3-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        <i class="icon products__arrow slider__arrow prev" id="product-slider-3-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+      </div>
+      
+      <!-- ПОПУЛЯРНЫЕ -->
+      <div class="products__slider products__popular">
+        
+        <h2 class="section-title">популярное</h2>
+        
+        <div class="owl-carousel" id="product-slider-4">
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="22">
+            <div class="product__labels">
+              <div class="product__new">
+                NEW
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="23">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="24">
+            <div class="product__labels">
+              <div class="product__sale">
+                -50%
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton Colors</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by 
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="25">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="26">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="27">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__men" data-item-id="28">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- СТРЕЛКИ СЛАЙДЕРА -->
+        <i class="icon products__arrow slider__arrow next" id="product-slider-4-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+        <i class="icon products__arrow slider__arrow prev" id="product-slider-4-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- БЛОГ -->
+  <section class="blog" id="blog">
+    <div class="container">
+      
+      <div class="blog__slider">
+        
+        <h2 class="section-title">Блог</h2>
+        
+        <div class="owl-carousel" id="blog-slider">
+          
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="blog-item" data-item-id="1">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__category">
+              <a href="#">красота</a>
+            </div>
+            <div class="blog-item__title">
+              <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+            </div>
+            <div class="blog-item__date">
+              20 августа 2018
+            </div>
+            <div class="blog-item__likes">
+              <span>980</span>
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+            </div>
+          </div>
+                
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="blog-item" data-item-id="2">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__category">
+              <a href="#">красота</a>
+            </div>
+            <div class="blog-item__title">
+              <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+            </div>
+            <div class="blog-item__date">
+              20 августа 2018
+            </div>
+            <div class="blog-item__likes">
+              <span>980</span>
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+            </div>
+          </div>
+          
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="blog-item hidden-md" data-item-id="3">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__category">
+              <a href="#">стиль</a>
+            </div>
+            <div class="blog-item__title">
+              <h3><a href="#">С чем носить тренч Burberry</a></h3>
+            </div>
+            <div class="blog-item__date">
+              20 августа 2018
+            </div>
+            <div class="blog-item__likes">
+              <span>980</span>
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+            </div>
+          </div>
+          
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="blog-item hidden-md" data-item-id="4">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__category">
+              <a href="#">красота</a>
+            </div>
+            <div class="blog-item__title">
+              <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+            </div>
+            <div class="blog-item__date">
+              20 августа 2018
+            </div>
+            <div class="blog-item__likes">
+              <span>980</span>
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+            </div>
+          </div>
+          
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="blog-item hidden-md" data-item-id="5">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__category">
+              <a href="#">красота</a>
+            </div>
+            <div class="blog-item__title">
+              <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+            </div>
+            <div class="blog-item__date">
+              20 августа 2018
+            </div>
+            <div class="blog-item__likes">
+              <span>980</span>
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- КНОПКИ СЛАЙДЕРА -->
+        <i class="icon blog__arrow slider__arrow next" id="blog-slider-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        <i class="icon blog__arrow slider__arrow prev" id="blog-slider-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+        <!-- КНОПКА НА МОБИЛЬНЫХ -->
+        <div class="blog__button">
+          <a href="#" class="btn btn-white btn-lg">показать больше</a>
+        </div>
+        
+      </div>
+            
+    </div>
+  </section>
+  
+  <!-- БАННЕР КОСМЕТИКА -->
+  <section class="banner cosm">
+    <div class="container">
+      <div class="col banner__content">
+        <div class="banner__link">
+          <a href="#">каталог</a>
+        </div>
+        <div class="banner__title">
+          <h2>Косметика</h2>
+        </div>
+        <div class="banner__menu">
+          <ul>
+            <li><a href="#">комбинезоны</a></li>
+            <li><a href="#">брюки</a></li>
+            <li><a href="#">юбки</a></li>
+            <li><a href="#">джинсы</a></li>
+            <li><a href="#">шорты</a></li>
+            <li>
+              <a href="#">
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#arrow" />
+                  </svg>
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ТОВАРЫ КОСМЕТИКА -->
+  <section class="products cosm">
+    <div class="container">
+      
+      <!-- НОВЫЕ -->
+      <div class="products__slider products__news">
+        
+        <h2 class="section-title">новинки</h2>
+        
+        <div class="owl-carousel" id="product-slider-5">
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="29">
+            <div class="product__labels">
+              <div class="product__new">
+                NEW
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="30">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="31">
+            <div class="product__labels">
+              <div class="product__sale">
+                -50%
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton Colors</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by 
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="32">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="33">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="34">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="35">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- СТРЕЛКИ СЛАЙДЕРА -->
+        <i class="icon products__arrow slider__arrow next" id="product-slider-5-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        <i class="icon products__arrow slider__arrow prev" id="product-slider-5-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+      </div>
+      
+      <!-- ПОПУЛЯРНЫЕ -->
+      <div class="products__slider products__popular">
+        
+        <h2 class="section-title">популярное</h2>
+        
+        <div class="owl-carousel" id="product-slider-6">
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="36">
+            <div class="product__labels">
+              <div class="product__new">
+                NEW
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="37">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p><a href="#">Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</a></p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="38">
+            <div class="product__labels">
+              <div class="product__sale">
+                -50%
+              </div>
+            </div>
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton Colors</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by 
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="39">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="40">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="41">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+          <!-- ТОВАР -->
+          <div class="product product__cosm" data-item-id="42">
+            <i class="icon product__like">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#heart" />
+              </svg>
+            </i>
+            <div class="product__image">
+              <a href="#">
+                <img src="images/product.png" alt="" />
+              </a>
+            </div>
+            <div class="product__price">
+              <span class="old-price">67 550 p.</span>
+              33 800 p.
+            </div>
+            <div class="product__brand">
+              <a href="#">United Colors of Benetton</a>
+            </div>
+            <div class="product__desc">
+              <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+            </div>
+            <div class="product__info">
+              <div class="product__sizes">
+                <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+              </div>
+              <div class="product__shop">
+                <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- СТРЕЛКИ СЛАЙДЕРА -->
+        <i class="icon products__arrow slider__arrow next" id="product-slider-6-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+        <i class="icon products__arrow slider__arrow prev" id="product-slider-6-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- БРЕНДЫ -->
+  <section class="brands" id="brands">
+    <div class="container">
+      
+      <div class="brands__slider">
+        <h2 class="section-title">бренды</h2>
+        <div class="owl-carousel" id="brands-slider">
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_1.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_2.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_3.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_4.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_1.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_2.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_3.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_4.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_1.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="brand">
+            <a href="#">
+              <img src="/images/brand_2.png" alt="" />
+            </a>
+          </div>
+                
+          
+        </div>
+        <i class="icon brands__arrow slider__arrow next" id="brands-slider-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        <i class="icon brands__arrow slider__arrow prev" id="brands-slider-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+      </div>
+            
+    </div>
+  </section>
+  
+  <!-- МАГАЗИНЫ -->
+  <section class="shops" id="shops">
+    <div class="container">
+      
+      <div class="shops__slider">
+        <h2 class="section-title">магазины</h2>
+        <div class="owl-carousel" id="shops-slider">
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_1.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_2.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_3.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_4.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_1.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_2.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_3.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_4.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_1.png" alt="" />
+            </a>
+          </div>
+          
+          <div class="shop">
+            <a href="#">
+              <img src="/images/brand_2.png" alt="" />
+            </a>
+          </div>
+                
+          
+        </div>
+        <i class="icon shops__arrow slider__arrow next" id="shops-slider-next">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+        <i class="icon shops__arrow slider__arrow prev" id="shops-slider-prev">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#arrow" />
+          </svg>
+        </i>
+      </div>
+            
+    </div>
+  </section>
+  
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      
+      <!-- ЛОГО И СОЦСЕТИ -->
+      <div class="container">
+        <i class="icon footer__heart">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#heart" />
+          </svg>
+        </i>
+        <div class="footer__logo hidden-lg">
+          <a href="/">
+            <svg class="logo__image" width="208" height="125">
+              <use xlink:href="/images/icons.svg#logo" />
+            </svg>
+          </a>
+        </div>
+        <div class="social-icons show-lg">
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-vk" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-facebook" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-instagram" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-pinterest" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-telegram" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-viber" />
+                </svg>
+              </i>
+            </a>
+          </div>
+      </div>
+      
+      <!-- МЕНЮ -->
+      <div class="container">
+        <div class="col footer__menu">
+          <h3>Информация</h3>
+          <ul>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Обмен и возврат</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Разделы</h3>
+          <ul>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Акции</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Каталог</h3>
+          <ul>
+            <li><a href="#">Женщинам</a></li>
+            <li><a href="#">Мужчинам</a></li>
+            <li><a href="#">Детям</a></li>
+            <li><a href="#">Косметика</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu hidden-sm">
+          <h3>Соцсети</h3>
+          <ul>
+            <li><a href="#">Вконтакте</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Помощь</h3>
+          <ul>
+            <li><a href="#">Все категории</a></li>
+            <li><a href="#">Категории по бренду</a></li>
+            <li><a href="#">Категории по цвету</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- КОПИРАЙТ -->
+      <div class="container">
+      <div class="footer__copy">
+        &copy; Лайкни лук. Москва. 2016-2019. Все права защищены
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobmenu" id="mobmenu">
+    
+    <!-- ВЕРХ МЕНЮ -->
+    <div class="mobmenu__top" id="mobmenu__top">
+      <!-- ПУНКТЫ МЕНЮ 1 УРОВНЯ(КАТАЛОГ) -->
+      <ul class="mobmenu__cats" id="mobmenu__cats">
+        <li>
+          <a data-id="subs-1" href="#">Женщинам</a>
+        </li>
+        <li>
+          <a data-id="subs-2" href="#">Мужчинам</a>
+        </li>
+        <li>
+          <a data-id="subs-3" href="#">Детям</a>
+        </li>
+        <li>
+          <a data-id="subs-4" href="#">Косметика</a>
+        </li>
+      </ul>
+      <!-- КНОПКА НАЗАД -->
+      <div class="mobmenu__back" id="mobmenu__back">
+        назад
+        <i class="icon">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+        </i>
+      </div>
+      <!-- ЗАКРЫТЬ МЕНЮ -->
+      <div class="mobmenu__close" id="mobmenu__close">
+        x
+      </div>
+    </div>
+    
+    <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+    <div class="mobmenu__subs">
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-1" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              женская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">головные уборы<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">шапки и варежки<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">перчатки и варежки<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">сумки<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">рюкзаки<span class="mobmenu__count">23</span></a>
+                </li>
+                <li>
+                  <a href="#">кошельки<span class="mobmenu__count">545</span></a>
+                </li>
+                <li>
+                  <a href="#">косметички<span class="mobmenu__count">2322</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              женская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              женские аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-2" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              мужская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-3" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              детская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              детская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              детская аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-4" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              женская косметика
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская косметика
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              косметика аксессуары
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+    </div>
+    
+    <!-- ОСТАЛЬНЫЕ ПУНКТЫ МЕНЮ 1 УРОВНЯ -->
+    <div class="mobmenu__other">
+      <ul>
+        <li>
+          <a href="#">бренды</a>
+        </li>
+        <li>
+          <a href="#">магазины</a>
+        </li>
+        <li>
+          <a href="#">акции</a>
+        </li>
+        <li>
+          <a href="#">блог</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- сторонние скрипты -->
+  <script type="text/javascript" src="/js/vendor.js"></script>
+  <!-- главный скрипт -->
+  <script type="text/javascript" src="/js/main.js"></script>
+    
+</body>
+</html>
+
