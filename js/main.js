@@ -315,7 +315,7 @@ $(document).ready(function(){
     return currentLikes ? currentLikes.split(',') : [];
   }
   
-  function sendLike(itemId, elem, action){
+  function sendLike(itemId, elem, action, currentLikes, currentIndex){
     $.ajax({
       method: 'POST',
       url: '/like_blog_item.html',
@@ -323,6 +323,14 @@ $(document).ready(function(){
     })
     .done(function(data) {
       elem.children('span').text(data);
+      if(action === 'like'){
+        currentLikes.push(itemId);
+        elem.addClass('active');
+      }else{
+        currentLikes.splice(currentIndex, 1);
+        elem.removeClass('active');
+      }
+      Cookies.set('likes_list', currentLikes.join(','));
     })
     .fail(function() {
       alert('Произошла ошибка, попробуйте позже.');
@@ -333,9 +341,7 @@ $(document).ready(function(){
     var currentLikes = getCurrentLikes();
     var currentIndex = currentLikes.indexOf(itemId.toString());
     if(currentIndex === -1){
-      sendLike(itemId, elem, 'like')
-      currentLikes.push(itemId);
-      Cookies.set('likes_list', currentLikes.join(','));
+      sendLike(itemId, elem, 'like', currentLikes, currentIndex)
     }
   }
   
@@ -343,9 +349,7 @@ $(document).ready(function(){
     var currentLikes = getCurrentLikes();
     var currentIndex = currentLikes.indexOf(itemId.toString());
     if(currentIndex !== -1){
-      sendLike(itemId, elem, 'unlike')
-      currentLikes.splice(currentIndex, 1);
-      Cookies.set('likes_list', currentLikes.join(','));
+      sendLike(itemId, elem, 'unlike', currentLikes, currentIndex)
     }
   }
   
@@ -360,10 +364,8 @@ $(document).ready(function(){
   
   $('.blog-item__likes').on('click', function(){
     if($(this).hasClass('active')){
-      $(this).removeClass('active');
       unlikeBlogItem($(this).parent().data('item-id'), $(this));
     }else{
-      $(this).addClass('active');
       likeBlogItem($(this).parent().data('item-id'), $(this));
     }
   });
