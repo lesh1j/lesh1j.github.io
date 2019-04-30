@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Likenilook.ru | Крупнейшие интернет-магазины модной одежды, обуви и аксессуаров в одном месте в Москве</title>    
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/vendor.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/android-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png" sizes="180x180">
+</head>
+<body>
+  
+  <!-- ШАПККА САЙТА -->
+  <header class="header">
+    <div class="container">
+      
+      <!-- МОБИЛЬНЫЕ КНОПКИ -->
+      <div class="col header__mob">
+        <i class="icon show-menu" id="show-menu">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#menu" />
+          </svg>
+        </i>
+        <i class="icon show-search" id="show-search">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#search" />
+          </svg>
+        </i>
+      </div>
+      
+      <!-- ГОРОД И СОЦСЕТИ -->
+      <div class="col header__left">
+        
+        <!-- ВЫБОР ГОРОДА -->
+        <div class="city-select" id="city-select">
+          <!-- МАРКЕР -->
+          <i class="icon city-select__icon">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#map-marker" />
+            </svg>
+          </i>
+          <!-- ТЕКСТ -->
+          <span class="city-select__text">
+            Москва
+          </span>
+          <!-- ВЫПАДАЮЩИЙ СПИСОК -->
+          <div class="city-select__dropdown" id="city-select__dropdown">
+            <!-- КНОПКА ЗАКРЫТЬ ДЛЯ МОБИЛЬНЫХ -->
+            <div class="city-select__title">
+              <div class="col city-select__close" id="city-select__close">
+                закрыть
+              </div>
+            </div>
+            <!-- САМ СПИСОК -->
+            <div class="city-select__list" id="city-select__list">
+              <ul>
+                <li class="active">Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Минск</li>
+                <li>ЕкатеринБург</li>
+                <li>Воронеж</li>
+                <li>Стамбул</li>
+                <li>Венеция</li>
+                <li>Киев</li>
+                <li>Стамбул</li>
+                <li>Венеция</li>
+                <li>Киев</li>
+              </ul>
+            </div>
+            <!-- КНОПКА ВЫБРАТЬ ГОРОД ДЛЯ МОБИЛЬНЫХ -->
+            <div class="city-select__button" id="city-select__button">
+              <button class="btn btn-primary">Выбрать город</button>
+            </div>
+            <!-- СТРЕЛКА ОТКРЫТАЯ -->
+            <i class="icon city-select__arrow">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#dropdown-arrow" />
+              </svg>
+            </i>
+          </div>
+          <!-- СТРЕЛКА ЗАКРЫТАЯ -->
+          <i class="icon city-select__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+          <!-- ФОРМА, В КОТОРУЮ ПОДСТАВЛЯЫЕТСЯ ВЫБРАННОЕ ЗНАЧЕНИЕ -->
+          <form id="city-form" name="city-form" action="/">
+            <input type="hidden" id="city" name="city" value="Москва">
+          </form>
+        </div>
+        
+        <!-- СОЦСЕТИ -->
+        <div class="social-icons hidden-lg">
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-vk" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-facebook" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-instagram" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-pinterest" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-telegram" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-viber" />
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- ЛОГОТИП -->
+      <div class="col header__logo">
+        <a href="/" class="logo" title="На главную">
+          <svg class="logo__image" width="208" height="125">
+            <use xlink:href="/images/icons.svg#logo" />
+          </svg>
+        </a>
+      </div>
+      
+      <!-- ПОИСК -->
+      <div class="col header__search" id="header__search">
+        <form class="search-form">
+          <input class="search-form__input" type="text" />
+          <button class="search-form__button">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#search" />
+              </svg>
+            </i>
+          </button>
+        </form>
+        <div class="header__search-close" id="header__search-close">x</div>
+      </div>
+      
+      <!-- ИЗБРАННОЕ -->
+      <div class="col header__likes">
+        <a href="#" class="icon" id="header__likes" title="Избранное">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#heart" />
+          </svg>
+        </a>
+      </div>
+        
+    </div>
+    
+  </header>
+  
+  <!-- ГЛАВНОЕ МЕНЮ -->
+  <nav class="menu">
+    <div class="container">
+      <ul class="menu__list" id="menu__list">
+        <li>
+          <a href="#">Женщинам</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Мужчинам</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hidden-sm">
+          <a href="#">Детям</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Косметика</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hidden-md"><a href="#">Бренды</a></li>
+        <li class="hidden-md"><a href="#">Магазины</a></li>
+        <li class="hidden-md"><a href="#">Акции</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- КОНТЕНТ СТРАНИЦЫ -->
+  <section class="page offers-page">
+    <div class="container">
+      <!-- ХЛЕБНАЯ КРОШКА -->
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li>акции</li>
+      </ul>
+    </div>
+    <!-- МАГАЗИНЫ -->
+    <div class="container offers-content">
+      <h2 class="section-title">Акции</h2>
+      <div class="col offer">
+        <div class="offer__image">
+          <a href="#">
+            <img src="/images/offer.png" alt="" />
+          </a>
+        </div>
+        <div class="offer__info">
+          <a href="#" class="offer__shop">lamoda.by</a>
+          <h2 class="offer__title"><a href="#">Распродажа</a></h2>
+          <p class="offer__desc"><a href="#">Распродажа всей осенне-зимней коллекции с 1 октября по 8 января 2017 года при заказе.</a></p>
+          <div class="offer__bottom">
+            <p class="offer__timer">8д / 6ч / 1мин</p>
+            <a href="#" class="offer__link">
+              смотреть
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#arrow" />
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col offer">
+        <div class="offer__image">
+          <a href="#">
+            <img src="/images/offer.png" alt="" />
+          </a>
+        </div>
+        <div class="offer__info">
+          <a href="#" class="offer__shop">lamoda.by</a>
+          <h2 class="offer__title"><a href="#">Распродажа</a></h2>
+          <p class="offer__desc"><a href="#">Распродажа всей осенне-зимней коллекции с 1 октября по 8 января 2017 года при заказе.</a></p>
+          <div class="offer__bottom">
+            <p class="offer__timer">8д / 6ч / 1мин</p>
+            <a href="#" class="offer__link">
+              смотреть
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#arrow" />
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col offer">
+        <div class="offer__image">
+          <a href="#">
+            <img src="/images/offer.png" alt="" />
+          </a>
+        </div>
+        <div class="offer__info">
+          <a href="#" class="offer__shop">lamoda.by</a>
+          <h2 class="offer__title"><a href="#">Распродажа</a></h2>
+          <p class="offer__desc"><a href="#">Распродажа всей осенне-зимней коллекции с 1 октября по 8 января 2017 года при заказе.</a></p>
+          <div class="offer__bottom">
+            <p class="offer__timer">8д / 6ч / 1мин</p>
+            <a href="#" class="offer__link">
+              смотреть
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#arrow" />
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ <!-- БЛОГ -->
+  <section class="blog on-inner on-offers">
+    <div class="container blog-content">
+      
+      <div class="blog__title">
+        <h2 class="section-title">Блог</h2>
+      </div>
+      
+      <div class="blog-items blog-items-wrapper" id="blog-items">
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="col blog-item" data-item-id="1">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__info">
+              <div class="blog-item__category">
+                <a href="#">красота</a>
+              </div>
+              <div class="blog-item__title">
+                <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+              </div>
+              <div class="blog-item__date">
+                20 августа 2018
+              </div>
+              <div class="blog-item__likes">
+                <span>980</span>
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#heart" />
+                  </svg>
+                </i>
+              </div>
+              <div class="blog-item__desc">
+                Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг еще приятнее. Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг.
+              </div>
+            </div>
+          </div>
+                
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="col blog-item" data-item-id="2">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__info">
+              <div class="blog-item__category">
+                <a href="#">красота</a>
+              </div>
+              <div class="blog-item__title">
+                <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+              </div>
+              <div class="blog-item__date">
+                20 августа 2018
+              </div>
+              <div class="blog-item__likes">
+                <span>980</span>
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#heart" />
+                  </svg>
+                </i>
+              </div>
+              <div class="blog-item__desc">
+                Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг еще приятнее. Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг.
+              </div>
+            </div>
+          </div>
+          
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="col blog-item hidden-md" data-item-id="3">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__info">
+              <div class="blog-item__category">
+                <a href="#">красота</a>
+              </div>
+              <div class="blog-item__title">
+                <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+              </div>
+              <div class="blog-item__date">
+                20 августа 2018
+              </div>
+              <div class="blog-item__likes">
+                <span>980</span>
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#heart" />
+                  </svg>
+                </i>
+              </div>
+              <div class="blog-item__desc">
+                Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг еще приятнее. Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг.
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+        <!-- КНОПКА НА МОБИЛЬНЫХ -->
+        <div class="blog__button">
+          <a href="#" class="btn btn-white btn-lg">показать больше</a>
+        </div>
+                    
+    </div>
+  </section>
+  
+    <!-- ТОВАРЫ -->
+  <section class="products on-inner on-offers">
+    
+    <div class="container products-content">
+     
+      <h2 class="section-title">недавно просмотренные</h2>
+               
+      <div class="product-items" id="product-items">
+        <!-- ТОВАР -->
+        <div class="col product product__women" data-item-id="1">
+          <div class="product__labels">
+            <div class="product__new">
+              NEW
+            </div>
+          </div>
+          <i class="icon product__like" title="В избранное">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#heart" />
+            </svg>
+          </i>
+          <div class="product__image">
+            <a href="#">
+              <img src="images/product.png" alt="" />
+            </a>
+          </div>
+          <div class="product__price">
+            <span class="old-price">67 550 p.</span>
+            33 800 p.
+          </div>
+          <div class="product__brand">
+            <a href="#">United Colors of Benetton</a>
+          </div>
+          <div class="product__desc">
+            <p><a href="#">Укороченные брюки из смеси</a></p>
+          </div>
+          <div class="product__info">
+            <div class="product__sizes">
+              <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+            </div>
+            <div class="product__shop">
+              <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+            </div>
+          </div>
+        </div>
+
+        <!-- ТОВАР -->
+        <div class="col product product__men" data-item-id="2">
+          <i class="icon product__like">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#heart" />
+            </svg>
+          </i>
+          <div class="product__image">
+            <a href="#">
+              <img src="images/product.png" alt="" />
+            </a>
+          </div>
+          <div class="product__price">
+            <span class="old-price">67 550 p.</span>
+            33 800 p.
+          </div>
+          <div class="product__brand">
+            <a href="#">United Colors of Benetton</a>
+          </div>
+          <div class="product__desc">
+            <p><a href="#">Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</a></p>
+          </div>
+          <div class="product__info">
+            <div class="product__sizes">
+              <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+            </div>
+            <div class="product__shop">
+              <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+            </div>
+          </div>
+        </div>
+
+        <!-- ТОВАР -->
+        <div class="col product product__women hidden-sm" data-item-id="3">
+          <div class="product__labels">
+            <div class="product__sale">
+              -50%
+            </div>
+          </div>
+          <i class="icon product__like">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#heart" />
+            </svg>
+          </i>
+          <div class="product__image">
+            <a href="#">
+              <img src="images/product.png" alt="" />
+            </a>
+          </div>
+          <div class="product__price">
+            <span class="old-price">67 550 p.</span>
+            33 800 p.
+          </div>
+          <div class="product__brand">
+            <a href="#">United Colors of Benetton Colors</a>
+          </div>
+          <div class="product__desc">
+            <p>Укороченные брюки из смеси шерсти и вискозы в клетку</p>
+          </div>
+          <div class="product__info">
+            <div class="product__sizes">
+              <span>размер:</span> 40 42 44 46 48 50 52 
+            </div>
+            <div class="product__shop">
+              <span>магазин:</span> lamoda.by 
+            </div>
+          </div>
+        </div>
+
+        <!-- ТОВАР -->
+        <div class="col product product__cosm hidden-md" data-item-id="4">
+          <i class="icon product__like">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#heart" />
+            </svg>
+          </i>
+          <div class="product__image">
+            <a href="#">
+              <img src="images/product.png" alt="" />
+            </a>
+          </div>
+          <div class="product__price">
+            <span class="old-price">67 550 p.</span>
+            33 800 p.
+          </div>
+          <div class="product__brand">
+            <a href="#">United Colors of Benetton</a>
+          </div>
+          <div class="product__desc">
+            <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+          </div>
+          <div class="product__info">
+            <div class="product__sizes">
+              <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+            </div>
+            <div class="product__shop">
+              <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+            </div>
+          </div>
+        </div>
+
+        <!-- ТОВАР -->
+        <div class="col product product__women hidden-md" data-item-id="5">
+        <i class="icon product__like">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#heart" />
+          </svg>
+        </i>
+        <div class="product__image">
+          <a href="#">
+            <img src="images/product.png" alt="" />
+          </a>
+        </div>
+        <div class="product__price">
+          <span class="old-price">67 550 p.</span>
+          33 800 p.
+        </div>
+        <div class="product__brand">
+          <a href="#">United Colors of Benetton</a>
+        </div>
+        <div class="product__desc">
+          <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+        </div>
+        <div class="product__info">
+          <div class="product__sizes">
+            <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+          </div>
+          <div class="product__shop">
+            <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="products__button">
+        <a href="#" class="btn btn-grey btn-lg">показать больше</a>
+      </div>
+            
+    </div>
+  </section>
+  
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      
+      <!-- ЛОГО И СОЦСЕТИ -->
+      <div class="container">
+        <i class="icon footer__heart">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#heart" />
+          </svg>
+        </i>
+        <div class="footer__logo hidden-lg">
+          <a href="/">
+            <svg class="logo__image" width="208" height="125">
+              <use xlink:href="/images/icons.svg#logo" />
+            </svg>
+          </a>
+        </div>
+        <div class="social-icons show-lg">
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-vk" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-facebook" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-instagram" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-pinterest" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-telegram" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-viber" />
+                </svg>
+              </i>
+            </a>
+          </div>
+      </div>
+      
+      <!-- МЕНЮ -->
+      <div class="container">
+        <div class="col footer__menu">
+          <h3>Информация</h3>
+          <ul>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Обмен и возврат</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Разделы</h3>
+          <ul>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Акции</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Каталог</h3>
+          <ul>
+            <li><a href="#">Женщинам</a></li>
+            <li><a href="#">Мужчинам</a></li>
+            <li><a href="#">Детям</a></li>
+            <li><a href="#">Косметика</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu hidden-sm">
+          <h3>Соцсети</h3>
+          <ul>
+            <li><a href="#">Вконтакте</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Помощь</h3>
+          <ul>
+            <li><a href="#">Все категории</a></li>
+            <li><a href="#">Категории по бренду</a></li>
+            <li><a href="#">Категории по цвету</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- КОПИРАЙТ -->
+      <div class="container">
+      <div class="footer__copy">
+        &copy; Лайкни лук. Москва. 2016-2019. Все права защищены
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobmenu" id="mobmenu">
+    
+    <!-- ВЕРХ МЕНЮ -->
+    <div class="mobmenu__top" id="mobmenu__top">
+      <!-- ПУНКТЫ МЕНЮ 1 УРОВНЯ(КАТАЛОГ) -->
+      <ul class="mobmenu__cats" id="mobmenu__cats">
+        <li>
+          <a data-id="subs-1" href="#">Женщинам</a>
+        </li>
+        <li>
+          <a data-id="subs-2" href="#">Мужчинам</a>
+        </li>
+        <li>
+          <a data-id="subs-3" href="#">Детям</a>
+        </li>
+        <li>
+          <a data-id="subs-4" href="#">Косметика</a>
+        </li>
+      </ul>
+      <!-- КНОПКА НАЗАД -->
+      <div class="mobmenu__back" id="mobmenu__back">
+        назад
+        <i class="icon">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+        </i>
+      </div>
+      <!-- ЗАКРЫТЬ МЕНЮ -->
+      <div class="mobmenu__close" id="mobmenu__close">
+        x
+      </div>
+    </div>
+    
+    <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+    <div class="mobmenu__subs">
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-1" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              женская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">головные уборы<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">шапки и варежки<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">перчатки и варежки<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">сумки<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">рюкзаки<span class="mobmenu__count">23</span></a>
+                </li>
+                <li>
+                  <a href="#">кошельки<span class="mobmenu__count">545</span></a>
+                </li>
+                <li>
+                  <a href="#">косметички<span class="mobmenu__count">2322</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              женская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              женские аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-2" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              мужская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-3" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              детская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              детская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              детская аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-4" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              женская косметика
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская косметика
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              косметика аксессуары
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+    </div>
+    
+    <!-- ОСТАЛЬНЫЕ ПУНКТЫ МЕНЮ 1 УРОВНЯ -->
+    <div class="mobmenu__other">
+      <ul>
+        <li>
+          <a href="#">бренды</a>
+        </li>
+        <li>
+          <a href="#">магазины</a>
+        </li>
+        <li>
+          <a href="#">акции</a>
+        </li>
+        <li>
+          <a href="#">блог</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- КНОПКА НАВЕРХ-->
+  <div class="to-top" id="to-top">
+    <i class="icon">
+      <svg width="1em" height="1em" fill="currentColor">
+        <use xlink:href="/images/icons.svg#arrow-goto" />
+      </svg>
+    </i>
+    <span>наверх</span>
+  </div>
+  
+  <!-- сторонние скрипты -->
+  <script src="/js/vendor.js"></script>
+  <!-- главный скрипт -->
+  <script src="/js/main.js"></script>
+    
+</body>
+</html>
+

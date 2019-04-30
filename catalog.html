@@ -1,0 +1,4468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Likenilook.ru | Крупнейшие интернет-магазины модной одежды, обуви и аксессуаров в одном месте в Москве</title>    
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/vendor.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/android-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png" sizes="180x180">
+</head>
+<body>
+  
+  <!-- ШАПККА САЙТА -->
+  <header class="header">
+    <div class="container">
+      
+      <!-- МОБИЛЬНЫЕ КНОПКИ -->
+      <div class="col header__mob">
+        <i class="icon show-menu" id="show-menu">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#menu" />
+          </svg>
+        </i>
+        <i class="icon show-search" id="show-search">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#search" />
+          </svg>
+        </i>
+      </div>
+      
+      <!-- ГОРОД И СОЦСЕТИ -->
+      <div class="col header__left">
+        
+        <!-- ВЫБОР ГОРОДА -->
+        <div class="city-select" id="city-select">
+          <!-- МАРКЕР -->
+          <i class="icon city-select__icon">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#map-marker" />
+            </svg>
+          </i>
+          <!-- ТЕКСТ -->
+          <span class="city-select__text">
+            Москва
+          </span>
+          <!-- ВЫПАДАЮЩИЙ СПИСОК -->
+          <div class="city-select__dropdown" id="city-select__dropdown">
+            <!-- КНОПКА ЗАКРЫТЬ ДЛЯ МОБИЛЬНЫХ -->
+            <div class="city-select__title">
+              <div class="col city-select__close" id="city-select__close">
+                закрыть
+              </div>
+            </div>
+            <!-- САМ СПИСОК -->
+            <div class="city-select__list" id="city-select__list">
+              <ul>
+                <li class="active">Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Минск</li>
+                <li>ЕкатеринБург</li>
+                <li>Воронеж</li>
+                <li>Стамбул</li>
+                <li>Венеция</li>
+                <li>Киев</li>
+                <li>Стамбул</li>
+                <li>Венеция</li>
+                <li>Киев</li>
+              </ul>
+            </div>
+            <!-- КНОПКА ВЫБРАТЬ ГОРОД ДЛЯ МОБИЛЬНЫХ -->
+            <div class="city-select__button" id="city-select__button">
+              <button class="btn btn-primary">Выбрать город</button>
+            </div>
+            <!-- СТРЕЛКА ОТКРЫТАЯ -->
+            <i class="icon city-select__arrow">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#dropdown-arrow" />
+              </svg>
+            </i>
+          </div>
+          <!-- СТРЕЛКА ЗАКРЫТАЯ -->
+          <i class="icon city-select__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+          <!-- ФОРМА, В КОТОРУЮ ПОДСТАВЛЯЫЕТСЯ ВЫБРАННОЕ ЗНАЧЕНИЕ -->
+          <form id="city-form" name="city-form" action="/">
+            <input type="hidden" id="city" name="city" value="Москва">
+          </form>
+        </div>
+        
+        <!-- СОЦСЕТИ -->
+        <div class="social-icons hidden-lg">
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-vk" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-facebook" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-instagram" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-pinterest" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-telegram" />
+              </svg>
+            </i>
+          </a>
+          <a href="#" class="social-icons__item">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#social-viber" />
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- ЛОГОТИП -->
+      <div class="col header__logo">
+        <a href="/" class="logo" title="На главную">
+          <svg class="logo__image" width="208" height="125">
+            <use xlink:href="/images/icons.svg#logo" />
+          </svg>
+        </a>
+      </div>
+      
+      <!-- ПОИСК -->
+      <div class="col header__search" id="header__search">
+        <form class="search-form">
+          <input class="search-form__input" type="text" />
+          <button class="search-form__button">
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#search" />
+              </svg>
+            </i>
+          </button>
+        </form>
+        <div class="header__search-close" id="header__search-close">x</div>
+      </div>
+      
+      <!-- ИЗБРАННОЕ -->
+      <div class="col header__likes">
+        <a href="#" class="icon" id="header__likes" title="Избранное">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#heart" />
+          </svg>
+        </a>
+      </div>
+        
+    </div>
+    
+  </header>
+  
+  <!-- ГЛАВНОЕ МЕНЮ -->
+  <nav class="menu">
+    <div class="container">
+      <ul class="menu__list" id="menu__list">
+        <li>
+          <a href="#">Женщинам</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Мужчинам</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hidden-sm">
+          <a href="#">Детям</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Косметика</a>
+          <!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+          <div class="menu__dropdown">
+            <div class="container">
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">верхняя одежда</a>
+                  </li>
+                  <li>
+                    <a href="#">пальто</a>
+                  </li>
+                  <li>
+                    <a href="#">куртки</a>
+                  </li>
+                  <li>
+                    <a href="#">платья</a>
+                  </li>
+                  <li>
+                    <a href="#">брюки</a>
+                  </li>
+                  <li>
+                    <a href="#">рубашки</a>
+                  </li>
+                  <li>
+                    <a href="#">блузки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li>
+                    <a href="#">юбки</a>
+                  </li>
+                  <li>
+                    <a href="#">джемперы</a>
+                  </li>
+                  <li>
+                    <a href="#">джинсы</a>
+                  </li>
+                  <li>
+                    <a href="#">толстовки и свитшоты</a>
+                  </li>
+                  <li>
+                    <a href="#">жакеты и пиджаки</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">обувь</a>
+                  </li>
+                  <li>
+                    <a href="#">сапоги</a>
+                  </li>
+                  <li>
+                    <a href="#">ботинки</a>
+                  </li>
+                  <li>
+                    <a href="#">ботильоны</a>
+                  </li>
+                  <li>
+                    <a href="#">кроссовки и кеды</a>
+                  </li>
+                  <li>
+                    <a href="#">туфли</a>
+                  </li>
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col menu__dropdown-item">
+                <ul>
+                  <li class="menu__dropdown-title">
+                    <a href="#">аксессуары</a>
+                  </li>
+                  <li>
+                    <a href="#">платки и шарфы</a>
+                  </li>
+                  <li>
+                    <a href="#">сумки</a>
+                  </li>
+                  <li>
+                    <a href="#">рюкзаки</a>
+                  </li>
+                  <li>
+                    <a href="#">кошельки</a>
+                  </li>
+                  <li>
+                    <a href="#">часы</a>
+                  </li>        
+                  <li class="menu__dropdown-all">
+                    <a href="#">все товары</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hidden-md"><a href="#">Бренды</a></li>
+        <li class="hidden-md"><a href="#">Магазины</a></li>
+        <li class="hidden-md"><a href="#">Акции</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- КОНТЕНТ СТРАНИЦЫ -->
+  <section class="page cat-page cat women">
+    <div class="container">
+      <!-- ХЛЕБНАЯ КРОШКА -->
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li>Мужская одежда</li>
+      </ul>
+    </div>
+  
+    
+    <div class="container cat__content">
+          
+      <div class="cat__right">
+        
+        <div class="cat__text hidden-md">
+          <h2>Женский комбинезон</h2>
+          <p>
+            В Милане прошел один из самых ожидаемых модных показов: новую коллекцию весна-лето 2019 представили Dolce&Gabbana. Знаменитый дизайнерский дуэт вывел на подиум звездный и вместе с тем зрелый состав моделей: средний возраст манекенщиц, представивших творения итальянцев, составлял 50 лет. Главной звездой шоу стала 53-летняя Моника Беллуччи: актриса <a href="">дефилировала</a> по подиуму в платье в крупный горох, на создание которого дизайнеров явно вдохновили шедевры итальянского кино 50-х годов. Если участие Моники было в В Милане прошел один из самых ожидаемых модных показов: новую коллекцию весна-лето 2019 представили Dolce&Gabbana. Знаменитый дизайнерский дуэт вывел на подиум звездный и вместе с тем зрелый состав моделей: средний возраст манекенщиц, представивших творения итальянцев, составлял 50 лет. Главной звездой шоу стала 53-летняя Моника Беллуччи: актриса дефилировала по подиуму в платье в крупный горох, на создание
+          </p>
+        </div>
+        
+        <div class="cat__tags hidden-md">
+          <ul>
+            <li><a href="#">Джинсы с высокой посадкой</a></li>
+            <li><a href="#">Женские джинсы с звышенной талией</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">Джинсы с всокой посадкой</a></li>
+            <li><a href="#">Женские джинсы с звышенной талией</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">Джинсы с всокой посадкой</a></li>
+            <li><a href="#">Женские джинсы с звышенной талией</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">Джинсы с всокой посадкой</a></li>
+            <li><a href="#">Женские джинсы с звышенной талией</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">Пышные платья</a></li>
+          </ul>
+          <div class="cat__tags-show show">
+            <span>показать все</span>
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#dropdown-arrow" />
+              </svg>
+            </i>
+          </div>
+        </div>
+        
+        <div class="cat__title">
+          <h1>Платья в спортивном стиле женские Adidas Original бежевые<span>45 789 товаров</span></h1>
+          <ul>
+            <li>Мы собрали комбинезны для женщин по цене от 43 500 р.</li>
+            <li>Текст 2 текст 2 текст 2 текст 2 текст 2 текст 2.</li>
+            <li>Текст 3 текст 3 текст 3 текст 3 текст 3 текст 3 текст 3.</li>
+          </ul>
+        </div>
+        
+        <div class="filters">
+          <ul class="hidden-md">
+            <li class="filter active">
+              <span>цвет</span>
+              <div class="filter__clear">x</div>
+              <div class="filter__dropdown filter__dropdown-color">
+                <div class="filter__search">
+                  <input type="text" placeholder="Найти цвет" />
+                </div>
+                <div class="filter__options">
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_1" value="айвори" checked>
+                      <label for="filter-color_1">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_2" value="бежевый">
+                      <label for="filter-color_2">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_3" value="белый" checked>
+                      <label for="filter-color_3">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_4" value="бирюзовый">
+                      <label for="filter-color_4">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_6" value="бордовый" checked>
+                      <label for="filter-color_6">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_7" value="бронзовый">
+                      <label for="filter-color_7">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_8" value="васильковый">
+                      <label for="filter-color_8">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_9" value="вишневый">
+                      <label for="filter-color_9">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_10" value="айвори">
+                      <label for="filter-color_10">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_11" value="бежевый">
+                      <label for="filter-color_11">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_12" value="белый">
+                      <label for="filter-color_12">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_13" value="бирюзовый">
+                      <label for="filter-color_13">бирюзовый</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_15" value="бордовый">
+                      <label for="filter-color_15">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_16" value="бронзовый">
+                      <label for="filter-color_16">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_17" value="васильковый">
+                      <label for="filter-color_17">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_18" value="вишневый">
+                      <label for="filter-color_18">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_19" value="айвори">
+                      <label for="filter-color_19">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_20" value="бежевый">
+                      <label for="filter-color_20">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_21" value="белый">
+                      <label for="filter-color_21">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_22" value="бирюзовый">
+                      <label for="filter-color_22">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_24" value="бордовый">
+                      <label for="filter-color_24">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_25" value="бронзовый">
+                      <label for="filter-color_25">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_26" value="васильковый">
+                      <label for="filter-color_26">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-color" id="filter-color_27" value="вишневый">
+                      <label for="filter-color_27">вишневый</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__button">
+                  <button class="btn btn-primary">применить</button>
+                </div>
+              </div>
+            </li>
+            <li class="filter">
+              <span>
+                размер
+                <i class="icon filter__arrow">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                  </svg>
+                </i>
+              </span>
+              <div class="filter__dropdown filter__dropdown-size">
+                <div class="filter__search">
+                  <input type="text" placeholder="Найти размер" />
+                </div>
+                <div class="filter__options">
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_1" value="айвори" checked>
+                      <label for="filter-size_1">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_2" value="бежевый">
+                      <label for="filter-size_2">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_3" value="белый" checked>
+                      <label for="filter-size_3">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_4" value="бирюзовый">
+                      <label for="filter-size_4">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_6" value="бордовый" checked>
+                      <label for="filter-size_6">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_7" value="бронзовый">
+                      <label for="filter-size_7">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_8" value="васильковый">
+                      <label for="filter-size_8">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_9" value="вишневый">
+                      <label for="filter-size_9">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_10" value="айвори">
+                      <label for="filter-size_10">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_11" value="бежевый">
+                      <label for="filter-size_11">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_12" value="белый">
+                      <label for="filter-size_12">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_13" value="бирюзовый">
+                      <label for="filter-size_13">бирюзовый</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_15" value="бордовый">
+                      <label for="filter-size_15">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_16" value="бронзовый">
+                      <label for="filter-size_16">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_17" value="васильковый">
+                      <label for="filter-size_17">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_18" value="вишневый">
+                      <label for="filter-size_18">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_19" value="айвори">
+                      <label for="filter-size_19">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_20" value="бежевый">
+                      <label for="filter-size_20">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_21" value="белый">
+                      <label for="filter-size_21">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_22" value="бирюзовый">
+                      <label for="filter-size_22">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_24" value="бордовый">
+                      <label for="filter-size_24">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_25" value="бронзовый">
+                      <label for="filter-size_25">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_26" value="васильковый">
+                      <label for="filter-size_26">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-size" id="filter-size_27" value="вишневый">
+                      <label for="filter-size_27">вишневый</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__button">
+                  <button class="btn btn-primary">применить</button>
+                </div>
+              </div>
+            </li>
+            <li class="filter">
+              <span>
+                состав
+                <i class="icon filter__arrow">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                  </svg>
+                </i>
+              </span>
+              <div class="filter__dropdown filter__dropdown-squad">
+                <div class="filter__search">
+                  <input type="text" placeholder="Найти состав" />
+                </div>
+                <div class="filter__options">
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_1" value="айвори" checked>
+                      <label for="filter-squad_1">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_2" value="бежевый">
+                      <label for="filter-squad_2">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_3" value="белый" checked>
+                      <label for="filter-squad_3">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_4" value="бирюзовый">
+                      <label for="filter-squad_4">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_6" value="бордовый" checked>
+                      <label for="filter-squad_6">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_7" value="бронзовый">
+                      <label for="filter-squad_7">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_8" value="васильковый">
+                      <label for="filter-squad_8">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_9" value="вишневый">
+                      <label for="filter-squad_9">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_10" value="айвори">
+                      <label for="filter-squad_10">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_11" value="бежевый">
+                      <label for="filter-squad_11">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_12" value="белый">
+                      <label for="filter-squad_12">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_13" value="бирюзовый">
+                      <label for="filter-squad_13">бирюзовый</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_15" value="бордовый">
+                      <label for="filter-squad_15">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_16" value="бронзовый">
+                      <label for="filter-squad_16">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_17" value="васильковый">
+                      <label for="filter-squad_17">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_18" value="вишневый">
+                      <label for="filter-squad_18">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_19" value="айвори">
+                      <label for="filter-squad_19">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_20" value="бежевый">
+                      <label for="filter-squad_20">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_21" value="белый">
+                      <label for="filter-squad_21">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_22" value="бирюзовый">
+                      <label for="filter-squad_22">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_24" value="бордовый">
+                      <label for="filter-squad_24">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_25" value="бронзовый">
+                      <label for="filter-squad_25">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_26" value="васильковый">
+                      <label for="filter-squad_26">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-squad" id="filter-squad_27" value="вишневый">
+                      <label for="filter-squad_27">вишневый</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__button">
+                  <button class="btn btn-primary">применить</button>
+                </div>
+              </div>
+            </li>
+            <li class="filter">
+              <span>
+                сезон
+                <i class="icon filter__arrow">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                  </svg>
+                </i>
+              </span>
+              <div class="filter__dropdown filter__dropdown-season">
+                <div class="filter__search">
+                  <input type="text" placeholder="Найти сезон" />
+                </div>
+                <div class="filter__options">
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_1" value="айвори" checked>
+                      <label for="filter-season_1">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_2" value="бежевый">
+                      <label for="filter-season_2">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_3" value="белый" checked>
+                      <label for="filter-season_3">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_4" value="бирюзовый">
+                      <label for="filter-season_4">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_6" value="бордовый" checked>
+                      <label for="filter-season_6">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_7" value="бронзовый">
+                      <label for="filter-season_7">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_8" value="васильковый">
+                      <label for="filter-season_8">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_9" value="вишневый">
+                      <label for="filter-season_9">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_10" value="айвори">
+                      <label for="filter-season_10">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_11" value="бежевый">
+                      <label for="filter-season_11">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_12" value="белый">
+                      <label for="filter-season_12">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_13" value="бирюзовый">
+                      <label for="filter-season_13">бирюзовый</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_15" value="бордовый">
+                      <label for="filter-season_15">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_16" value="бронзовый">
+                      <label for="filter-season_16">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_17" value="васильковый">
+                      <label for="filter-season_17">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_18" value="вишневый">
+                      <label for="filter-season_18">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_19" value="айвори">
+                      <label for="filter-season_19">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_20" value="бежевый">
+                      <label for="filter-season_20">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_21" value="белый">
+                      <label for="filter-season_21">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_22" value="бирюзовый">
+                      <label for="filter-season_22">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_24" value="бордовый">
+                      <label for="filter-season_24">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_25" value="бронзовый">
+                      <label for="filter-season_25">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_26" value="васильковый">
+                      <label for="filter-season_26">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-season" id="filter-season_27" value="вишневый">
+                      <label for="filter-season_27">вишневый</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__button">
+                  <button class="btn btn-primary">применить</button>
+                </div>
+              </div>
+            </li>
+            <li class="filter">
+              <span>
+                бренд
+                <i class="icon filter__arrow">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                  </svg>
+                </i>
+              </span>
+              <div class="filter__dropdown filter__dropdown-brand">
+                <div class="filter__search">
+                  <input type="text" placeholder="Найти бренд" />
+                </div>
+                <div class="filter__options">
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_1" value="айвори" checked>
+                      <label for="filter-brand_1">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_2" value="бежевый">
+                      <label for="filter-brand_2">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_3" value="белый" checked>
+                      <label for="filter-brand_3">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_4" value="бирюзовый">
+                      <label for="filter-brand_4">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_6" value="бордовый" checked>
+                      <label for="filter-brand_6">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_7" value="бронзовый">
+                      <label for="filter-brand_7">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_8" value="васильковый">
+                      <label for="filter-brand_8">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_9" value="вишневый">
+                      <label for="filter-brand_9">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_10" value="айвори">
+                      <label for="filter-brand_10">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_11" value="бежевый">
+                      <label for="filter-brand_11">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_12" value="белый">
+                      <label for="filter-brand_12">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_13" value="бирюзовый">
+                      <label for="filter-brand_13">бирюзовый</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_15" value="бордовый">
+                      <label for="filter-brand_15">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_16" value="бронзовый">
+                      <label for="filter-brand_16">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_17" value="васильковый">
+                      <label for="filter-brand_17">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_18" value="вишневый">
+                      <label for="filter-brand_18">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_19" value="айвори">
+                      <label for="filter-brand_19">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_20" value="бежевый">
+                      <label for="filter-brand_20">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_21" value="белый">
+                      <label for="filter-brand_21">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_22" value="бирюзовый">
+                      <label for="filter-brand_22">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_24" value="бордовый">
+                      <label for="filter-brand_24">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_25" value="бронзовый">
+                      <label for="filter-brand_25">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_26" value="васильковый">
+                      <label for="filter-brand_26">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-brand" id="filter-brand_27" value="вишневый">
+                      <label for="filter-brand_27">вишневый</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__button">
+                  <button class="btn btn-primary">применить</button>
+                </div>
+              </div>
+            </li>
+            <li class="filter">
+              <span>
+                магазин
+                <i class="icon filter__arrow">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                  </svg>
+                </i>
+              </span>
+              <div class="filter__dropdown filter__dropdown-shop">
+                <div class="filter__search">
+                  <input type="text" placeholder="Найти магазин" />
+                </div>
+                <div class="filter__options">
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_1" value="айвори" checked>
+                      <label for="filter-shop_1">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_2" value="бежевый">
+                      <label for="filter-shop_2">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_3" value="белый" checked>
+                      <label for="filter-shop_3">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_4" value="бирюзовый">
+                      <label for="filter-shop_4">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_6" value="бордовый" checked>
+                      <label for="filter-shop_6">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_7" value="бронзовый">
+                      <label for="filter-shop_7">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_8" value="васильковый">
+                      <label for="filter-shop_8">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_9" value="вишневый">
+                      <label for="filter-shop_9">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_10" value="айвори">
+                      <label for="filter-shop_10">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_11" value="бежевый">
+                      <label for="filter-shop_11">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_12" value="белый">
+                      <label for="filter-shop_12">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_13" value="бирюзовый">
+                      <label for="filter-shop_13">бирюзовый</label>
+                    </li>
+
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_15" value="бордовый">
+                      <label for="filter-shop_15">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_16" value="бронзовый">
+                      <label for="filter-shop_16">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_17" value="васильковый">
+                      <label for="filter-shop_17">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_18" value="вишневый">
+                      <label for="filter-shop_18">вишневый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_19" value="айвори">
+                      <label for="filter-shop_19">айвори</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_20" value="бежевый">
+                      <label for="filter-shop_20">бежевый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_21" value="белый">
+                      <label for="filter-shop_21">белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_22" value="бирюзовый">
+                      <label for="filter-shop_22">бирюзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_24" value="бордовый">
+                      <label for="filter-shop_24">бордовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_25" value="бронзовый">
+                      <label for="filter-shop_25">бронзовый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_26" value="васильковый">
+                      <label for="filter-shop_26">васильковый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="filter-shop" id="filter-shop_27" value="вишневый">
+                      <label for="filter-shop_27">вишневый</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__button">
+                  <button class="btn btn-primary">применить</button>
+                </div>
+              </div>
+            </li>
+            <li class="filter">
+              <span>
+                цена
+                <i class="icon filter__arrow">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                  </svg>
+                </i>
+              </span>
+              <div class="filter__dropdown filter__dropdown-price">
+                <div class="filter__price">
+                  <input type="text" name="from" placeholder="от" />
+                  <input type="text" name="to" placeholder="до" />
+                  <input type="checkbox" name="discount" id="discount" />
+                  <label for="discount">только со скидкой</label>
+                </div>
+                <div class="filter__button">
+                  <button class="btn btn-primary">применить</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          
+          <ul class="show-md">
+            <li class="filter" id="mobfilters__show">
+              <span>
+                фильтры
+                <span class="filter-count">12</span>
+                <i class="icon filter__arrow">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                  </svg>
+                </i>
+              </span>
+            </li>
+          </ul>
+          
+          <ul>
+            <li class="filter">
+              <span>
+                по популярности
+                <i class="icon filter__arrow">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                  </svg>
+                </i>
+              </span>
+              <div class="filter__dropdown filter__dropdown-sort">
+                <form name="filter-sort">
+                  <div class="filter__sort">
+                    <ul>
+                      <li>
+                        <input type="radio" name="sort" id="sort-1" value="a" />
+                        <label for="sort-1">сначала дешевые</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="sort" id="sort-2" value="b" />
+                        <label for="sort-2">сначала дорогие</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="sort" id="sort-3" value="c" />
+                        <label for="sort-3">сначала новинки</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="sort" id="sort-4" value="d" />
+                        <label for="sort-4">сначала скидки</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="sort" id="sort-5" value="e" checked />
+                        <label for="sort-5">по соответствию</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="filter__button">
+                    <button class="btn btn-primary">применить</button>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="filters__active">
+          <ul>
+            <li data-filter-id="filter-color_1">
+              айвори
+              <span class="clear">x</span>
+            </li>
+            <li data-filter-id="filter-color_3">
+              белый
+              <span class="clear">x</span>
+            </li>    
+            <li data-filter-id="filter-color_6">
+              бордовый
+              <span class="clear">x</span>
+            </li><li data-filter-id="filter-color_6">
+              бордовый
+              <span class="clear">x</span>
+            </li>
+            <li>
+              <span class="clear_all">очистить все</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div id="cat_page">
+          
+          <div class="cat__products">
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="1">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="2">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="3">
+              <div class="product__labels">
+                <div class="product__new">
+                  NEW
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="4">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="5">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="6">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="7">
+              <div class="product__labels">
+                <div class="product__new">
+                  NEW
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="8">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="9">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="10">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="11">
+              <div class="product__labels">
+                <div class="product__new">
+                  NEW
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="12">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="13">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="14">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="15">
+              <div class="product__labels">
+                <div class="product__new">
+                  NEW
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="16">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="17">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="18">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="19">
+              <div class="product__labels">
+                <div class="product__new">
+                  NEW
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+            <!-- ТОВАР -->
+            <div class="col product product__women" data-item-id="20">
+              <div class="product__labels">
+                <div class="product__sale">
+                  -50%
+                </div>
+              </div>
+              <i class="icon product__like" title="В избранное">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#heart" />
+                </svg>
+              </i>
+              <div class="product__image">
+                <a href="#">
+                  <img class="active" src="images/cat_product_1.png" alt="" />
+                  <img src="images/cat_product_2.png" alt="" />
+                  <img src="images/cat_product_3.png" alt="" />
+                </a>
+                <div class="product__economy">
+                  Экономия 11 000 р.
+                </div>
+              </div>
+              <div class="product__price">
+                <span class="old-price">67 550 p.</span>
+                33 800 p.
+              </div>
+              <div class="product__brand">
+                <a href="#">United Colors of Benetton</a>
+              </div>
+              <div class="product__desc">
+                <p><a href="#">Укороченные брюки из смеси</a></p>
+              </div>
+              <div class="product__info">
+                <div class="product__sizes">
+                  <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+                </div>
+                <div class="product__shop">
+                  <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="cat__count">Вы посмотрели 60 моделей джинсов из 1 456</div>
+
+          <ul class="pagination">
+            <li class="arrow prev">
+              <a href="#">
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#arrow" />
+                  </svg>
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              4
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+            <li class="missed">
+              <a href="#">...</a>
+            </li>
+            <li>
+              <a href="#">46</a>
+            </li>
+            <li class="arrow next">
+              <a href="#">
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#arrow" />
+                  </svg>
+                </i>
+              </a>
+            </li>
+          </ul>
+      
+          <div class="cat__tags hidden-md">
+          <ul>
+            <li><a href="#">Джинсы с высокой посадкой</a></li>
+            <li><a href="#">Женские джинсы с звышенной талией</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+            <li><a href="#">платья с принтом</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">трикотажные платья</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">Джинсы с всокой посадкой</a></li>
+            <li><a href="#">Женские джинсы с звышенной талией</a></li>
+            <li><a href="#">Пышные платья</a></li>
+            <li><a href="#">кружевные платья</a></li>
+          </ul>
+          <div class="cat__tags-show show">
+            <span>показать все</span>
+            <i class="icon">
+              <svg width="1em" height="1em" fill="currentColor">
+                <use xlink:href="/images/icons.svg#dropdown-arrow" />
+              </svg>
+            </i>
+          </div>
+        </div>
+          
+        </div>
+        
+        <div class="cat__text bottom" id="bottom-text">
+          <h2>Женский комбинезон</h2>
+          <p>
+            В Милане прошел один из самых ожидаемых модных показов: новую коллекцию весна-лето 2019 представили Dolce&Gabbana. Знаменитый дизайнерский дуэт вывел на подиум звездный и вместе с тем зрелый состав моделей: средний возраст манекенщиц, представивших творения итальянцев, составлял 50 лет. Главной звездой шоу стала 53-летняя Моника Беллуччи: актриса <a href="">дефилировала</a> по подиуму в платье в крупный горох, на создание которого дизайнеров явно вдохновили шедевры итальянского кино 50-х годов. Если участие Моники было в В Милане прошел один из самых ожидаемых модных показов: новую коллекцию весна-лето 2019 представили Dolce&Gabbana. Знаменитый дизайнерский дуэт вывел на подиум звездный и вместе с тем зрелый состав моделей: средний возраст манекенщиц, представивших творения итальянцев, составлял 50 лет.
+          </p>
+          <div class="cat__text-images">
+            <img src="/images/cat-text.png" alt="" />
+            <img src="/images/cat-text.png" alt="" />
+          </div>
+          <p>
+            В Милане прошел один из самых ожидаемых модных показов: новую коллекцию весна-лето 2019 представили Dolce&Gabbana. Знаменитый дизайнерский дуэт вывел на подиум звездный и вместе с тем зрелый состав моделей: средний возраст манекенщиц, представивших творения итальянцев, составлял 50 лет. Главной звездой шоу стала 53-летняя Моника Беллуччи: актриса <a href="">дефилировала</a> по подиуму в платье в крупный горох, на создание которого дизайнеров явно вдохновили шедевры итальянского кино 50-х годов. Если участие Моники было в В Милане прошел один из самых ожидаемых модных показов: новую коллекцию весна-лето 2019 представили Dolce&Gabbana. Знаменитый дизайнерский дуэт вывел на подиум звездный и вместе с тем зрелый состав моделей: средний возраст манекенщиц, представивших творения итальянцев, составлял 50 лет.
+          </p>
+        </div>
+        
+        <div class="cat__related">
+          <h3>Другая обувь этого бренда</h3>
+          <a href="#">
+            <span class="cat__related-title">Высокие ботинки</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Кроссовки и кеды</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Низкие ботинки</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Мокасины</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Сандалии</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Шлепанцы</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Туфли</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Челси</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Дерби</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+          <a href="#">
+            <span class="cat__related-title">Пляжные шлепанцы</span>
+            <span class="cat__related-brand">Ecco</span>
+          </a>
+        </div>
+        
+      </div>
+      
+      <div class="cat-left hidden-md">
+        
+        <div class="left-menu left-item">
+          <div class="left-item__title">Женщинам</div>
+          <ul>
+            <li>
+              <a href="#">одежда</a><span>538396</span>
+              <ul>
+                <li>
+                  <a class="active" href="#">верхняя одежда</a><span>44058</span>
+                  <ul>
+                    <li><a href="#">пальто</a><span>8649</span></li>
+                    <li><a href="#">куртки</a><span>13496</span></li>
+                    <li><a href="#">кожаные куртки</a><span>1149</span></li>
+                    <li><a href="#">косухи</a><span>359</span></li>
+                    <li><a href="#">парки</a><span>501</span></li>
+                    <li><a href="#">плащи</a><span>1018</span></li>
+                    <li><a href="#">жилеты</a><span>367</span></li>
+                    <li><a href="#">бомберы</a><span>123</span></li>
+                    <li><a href="#">джинсовые куртки</a><span>1616</span></li>
+                    <li><a href="#">ветровки</a><span>639</span></li>
+                    <li><a href="#">пончо</a><span>629</span></li>
+                    <li><a href="#">летние пальто</a><span>4874</span></li>
+                    <li><a href="#">зимние куртки</a><span>1904</span></li>
+                    <li><a href="#">пуховики</a><span>3890</span></li>
+                    <li><a href="#">шубы</a><span>2112</span></li>
+                    <li><a href="#">дубленки</a><span>612</span></li>
+                    <li><a href="#">шубы из искусственного меха</a><span>217</span></li>
+                    <li><a href="#">меховые жилеты</a><span>131</span></li>
+                  </ul> 
+                </li>
+                <li><a href="#">платья</a><span>110416</span></li>
+                <li><a href="#">футболки и топы</a><span>59094</span></li>
+                <li><a href="#">брюки</a><span>77940</span></li>
+                <li><a href="#">блузки и рубашки</a><span>46669</span></li>
+                <li><a href="#">юбки</a><span>29783</span></li>
+                <li><a href="#">джемперы и свитеры</a><span>56314</span></li>
+                <li><a href="#">джинсы</a><span>28177</span></li>
+                <li><a href="#">толстовки и свитшоты</a><span>10273</span></li>
+                <li><a href="#">жакеты и пиджаки</a><span>16638</span></li>
+                <li><a href="#">пиджаки</a><span>14324</span></li>
+                <li><a href="#">комбинезоны</a><span>6439</span></li>
+                <li><a href="#">костюмы</a><span>2097</span></li>
+                <li><a href="#">жилеты</a><span>571</span></li>
+                <li><a href="#">туники</a><span>1496</span></li>
+                <li><a href="#">шорты</a><span>8647</span></li>
+                <li><a href="#">боди</a><span>335</span></li>
+                <li><a href="#">болеро</a><span>693</span></li>
+                <li><a href="#">купальники</a><span>12367</span></li>
+                <li><a href="#">белье</a><span>17072</span></li>
+                <li><a href="#">пижамы</a><span>1267</span></li>
+                <li><a href="#">домашняя одежда</a><span>2103</span></li>
+                <li><a href="#">спортивная одежда</a><span>5202</span></li>
+                <li><a href="#">одежда для беременных</a><span>1485</span></li>
+                <li><a href="#">обувь</a><span>140044</span></li>
+                <li><a href="#">аксессуары</a><span>90128</span></li>
+              </ul>          
+            </li>
+          </ul>
+        </div>
+        
+        <div class="left-filter left-item">
+          <div class="left-item__title">Популярные цвета</div>
+          <div class="left-filter__search">
+            <input type="text" placeholder="Найти цвет" />
+          </div>
+          <div class="left-filter__links">
+            <ul>
+              <li><a href="#">айвори</a></li>
+              <li><a href="#">бежевый</a></li>
+              <li><a href="#">белый</a></li>
+              <li><a href="#">бирюзовый</a></li>
+              <li><a href="#">бледно-розовый</a></li>
+              <li><a href="#">бордовый</a></li>
+              <li><a href="#">бронзовый</a></li>
+              <li><a href="#">васильковый</a></li>
+              <li><a href="#">вишневый</a></li>
+              <li><a href="#">айвори</a></li>
+              <li><a href="#">бежевый</a></li>
+              <li><a href="#">белый</a></li>
+              <li><a href="#">бирюзовый</a></li>
+              <li><a href="#">бледно-розовый</a></li>
+              <li><a href="#">бордовый</a></li>
+              <li><a href="#">бронзовый</a></li>
+              <li><a href="#">васильковый</a></li>
+              <li><a href="#">вишневый</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="left-filter left-item">
+          <div class="left-item__title">Популярные бренды</div>
+          <div class="left-filter__search">
+            <input type="text" placeholder="Найти бренд" />
+          </div>
+          <div class="left-filter__links">
+            <ul>
+              <li><a href="#">айвори</a></li>
+              <li><a href="#">бежевый</a></li>
+              <li><a href="#">белый</a></li>
+              <li><a href="#">бирюзовый</a></li>
+              <li><a href="#">бледно-розовый</a></li>
+              <li><a href="#">бордовый</a></li>
+              <li><a href="#">бронзовый</a></li>
+              <li><a href="#">васильковый</a></li>
+              <li><a href="#">вишневый</a></li>
+              <li><a href="#">айвори</a></li>
+              <li><a href="#">бежевый</a></li>
+              <li><a href="#">белый</a></li>
+              <li><a href="#">бирюзовый</a></li>
+              <li><a href="#">бледно-розовый</a></li>
+              <li><a href="#">бордовый</a></li>
+              <li><a href="#">бронзовый</a></li>
+              <li><a href="#">васильковый</a></li>
+              <li><a href="#">вишневый</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="left-filter left-item">
+          <div class="left-item__title">Популярные размеры</div>
+          <div class="left-filter__search">
+            <input type="text" placeholder="Найти размер" />
+          </div>
+          <div class="left-filter__links">
+            <ul>
+              <li><a href="#">айвори</a></li>
+              <li><a href="#">бежевый</a></li>
+              <li><a href="#">белый</a></li>
+              <li><a href="#">бирюзовый</a></li>
+              <li><a href="#">бледно-розовый</a></li>
+              <li><a href="#">бордовый</a></li>
+              <li><a href="#">бронзовый</a></li>
+              <li><a href="#">васильковый</a></li>
+              <li><a href="#">вишневый</a></li>
+              <li><a href="#">айвори</a></li>
+              <li><a href="#">бежевый</a></li>
+              <li><a href="#">белый</a></li>
+              <li><a href="#">бирюзовый</a></li>
+              <li><a href="#">бледно-розовый</a></li>
+              <li><a href="#">бордовый</a></li>
+              <li><a href="#">бронзовый</a></li>
+              <li><a href="#">васильковый</a></li>
+              <li><a href="#">вишневый</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+     
+  </section>
+  
+  <!-- БЛОГ -->
+  <section class="blog on-inner on-cat">
+    <div class="container blog-content">
+      
+      <div class="blog__title">
+        <h2 class="section-title">Блог</h2>
+      </div>
+      
+      <div class="blog-items blog-items-wrapper" id="blog-items">
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="col blog-item" data-item-id="1">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__info">
+              <div class="blog-item__category">
+                <a href="#">красота</a>
+              </div>
+              <div class="blog-item__title">
+                <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+              </div>
+              <div class="blog-item__date">
+                20 августа 2018
+              </div>
+              <div class="blog-item__likes">
+                <span>980</span>
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#heart" />
+                  </svg>
+                </i>
+              </div>
+              <div class="blog-item__desc">
+                Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг еще приятнее. Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг.
+              </div>
+            </div>
+          </div>
+                
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="col blog-item" data-item-id="2">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__info">
+              <div class="blog-item__category">
+                <a href="#">красота</a>
+              </div>
+              <div class="blog-item__title">
+                <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+              </div>
+              <div class="blog-item__date">
+                20 августа 2018
+              </div>
+              <div class="blog-item__likes">
+                <span>980</span>
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#heart" />
+                  </svg>
+                </i>
+              </div>
+              <div class="blog-item__desc">
+                Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг еще приятнее. Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг.
+              </div>
+            </div>
+          </div>
+          
+          <!-- ЭЛЕМЕНТ БЛОГА -->
+          <div class="col blog-item hidden-md" data-item-id="3">
+            <div class="blog-item__image">
+              <a href="#">
+                <img src="images/blog.png" alt="" />
+              </a>
+            </div>
+            <div class="blog-item__info">
+              <div class="blog-item__category">
+                <a href="#">красота</a>
+              </div>
+              <div class="blog-item__title">
+                <h3><a href="#">Тренды макияжа: осень 2019</a></h3>
+              </div>
+              <div class="blog-item__date">
+                20 августа 2018
+              </div>
+              <div class="blog-item__likes">
+                <span>980</span>
+                <i class="icon">
+                  <svg width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="/images/icons.svg#heart" />
+                  </svg>
+                </i>
+              </div>
+              <div class="blog-item__desc">
+                Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг еще приятнее. Lamoda Friesnds&Family - это программа лояльности, которая сделает шопинг.
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+        <!-- КНОПКА НА МОБИЛЬНЫХ -->
+        <div class="blog__button">
+          <a href="#" class="btn btn-white btn-lg">показать больше</a>
+        </div>
+                    
+    </div>
+  </section>
+  
+    <!-- ТОВАРЫ -->
+  <section class="products on-inner on-cat">
+    
+    <div class="container products-content">
+     
+      <h2 class="section-title">недавно просмотренные</h2>
+               
+      <div class="product-items" id="product-items">
+        <!-- ТОВАР -->
+        <div class="col product product__women" data-item-id="1">
+          <div class="product__labels">
+            <div class="product__new">
+              NEW
+            </div>
+          </div>
+          <i class="icon product__like" title="В избранное">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#heart" />
+            </svg>
+          </i>
+          <div class="product__image">
+            <a href="#">
+              <img src="images/product.png" alt="" />
+            </a>
+          </div>
+          <div class="product__price">
+            <span class="old-price">67 550 p.</span>
+            33 800 p.
+          </div>
+          <div class="product__brand">
+            <a href="#">United Colors of Benetton</a>
+          </div>
+          <div class="product__desc">
+            <p><a href="#">Укороченные брюки из смеси</a></p>
+          </div>
+          <div class="product__info">
+            <div class="product__sizes">
+              <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+            </div>
+            <div class="product__shop">
+              <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+            </div>
+          </div>
+        </div>
+
+        <!-- ТОВАР -->
+        <div class="col product product__men" data-item-id="2">
+          <i class="icon product__like">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#heart" />
+            </svg>
+          </i>
+          <div class="product__image">
+            <a href="#">
+              <img src="images/product.png" alt="" />
+            </a>
+          </div>
+          <div class="product__price">
+            <span class="old-price">67 550 p.</span>
+            33 800 p.
+          </div>
+          <div class="product__brand">
+            <a href="#">United Colors of Benetton</a>
+          </div>
+          <div class="product__desc">
+            <p><a href="#">Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</a></p>
+          </div>
+          <div class="product__info">
+            <div class="product__sizes">
+              <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+            </div>
+            <div class="product__shop">
+              <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+            </div>
+          </div>
+        </div>
+
+        <!-- ТОВАР -->
+        <div class="col product product__women hidden-sm" data-item-id="3">
+          <div class="product__labels">
+            <div class="product__sale">
+              -50%
+            </div>
+          </div>
+          <i class="icon product__like">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#heart" />
+            </svg>
+          </i>
+          <div class="product__image">
+            <a href="#">
+              <img src="images/product.png" alt="" />
+            </a>
+          </div>
+          <div class="product__price">
+            <span class="old-price">67 550 p.</span>
+            33 800 p.
+          </div>
+          <div class="product__brand">
+            <a href="#">United Colors of Benetton Colors</a>
+          </div>
+          <div class="product__desc">
+            <p>Укороченные брюки из смеси шерсти и вискозы в клетку</p>
+          </div>
+          <div class="product__info">
+            <div class="product__sizes">
+              <span>размер:</span> 40 42 44 46 48 50 52 
+            </div>
+            <div class="product__shop">
+              <span>магазин:</span> lamoda.by 
+            </div>
+          </div>
+        </div>
+
+        <!-- ТОВАР -->
+        <div class="col product product__cosm hidden-md" data-item-id="4">
+          <i class="icon product__like">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#heart" />
+            </svg>
+          </i>
+          <div class="product__image">
+            <a href="#">
+              <img src="images/product.png" alt="" />
+            </a>
+          </div>
+          <div class="product__price">
+            <span class="old-price">67 550 p.</span>
+            33 800 p.
+          </div>
+          <div class="product__brand">
+            <a href="#">United Colors of Benetton</a>
+          </div>
+          <div class="product__desc">
+            <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+          </div>
+          <div class="product__info">
+            <div class="product__sizes">
+              <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+            </div>
+            <div class="product__shop">
+              <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+            </div>
+          </div>
+        </div>
+
+        <!-- ТОВАР -->
+        <div class="col product product__women hidden-md" data-item-id="5">
+        <i class="icon product__like">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#heart" />
+          </svg>
+        </i>
+        <div class="product__image">
+          <a href="#">
+            <img src="images/product.png" alt="" />
+          </a>
+        </div>
+        <div class="product__price">
+          <span class="old-price">67 550 p.</span>
+          33 800 p.
+        </div>
+        <div class="product__brand">
+          <a href="#">United Colors of Benetton</a>
+        </div>
+        <div class="product__desc">
+          <p>Укороченные брюки из смеси шерсти и вискозы в клетку из смеси шерсти из смеси шерсти</p>
+        </div>
+        <div class="product__info">
+          <div class="product__sizes">
+            <span>размер:</span> 40 42 44 46 48 50 52 54 56 58 60
+          </div>
+          <div class="product__shop">
+            <span>магазин:</span> lamoda.by lamoda.by lamoda.by lamoda.by lamoda.by
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="products__button">
+        <a href="#" class="btn btn-grey btn-lg">показать больше</a>
+      </div>
+            
+    </div>
+  </section>
+  
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      
+      <!-- ЛОГО И СОЦСЕТИ -->
+      <div class="container">
+        <i class="icon footer__heart">
+          <svg width="1em" height="1em" fill="currentColor">
+            <use xlink:href="/images/icons.svg#heart" />
+          </svg>
+        </i>
+        <div class="footer__logo hidden-lg">
+          <a href="/">
+            <svg class="logo__image" width="208" height="125">
+              <use xlink:href="/images/icons.svg#logo" />
+            </svg>
+          </a>
+        </div>
+        <div class="social-icons show-lg">
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-vk" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-facebook" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-instagram" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-pinterest" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-telegram" />
+                </svg>
+              </i>
+            </a>
+            <a href="#" class="social-icons__item">
+              <i class="icon">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#social-viber" />
+                </svg>
+              </i>
+            </a>
+          </div>
+      </div>
+      
+      <!-- МЕНЮ -->
+      <div class="container">
+        <div class="col footer__menu">
+          <h3>Информация</h3>
+          <ul>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Обмен и возврат</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Разделы</h3>
+          <ul>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Акции</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Каталог</h3>
+          <ul>
+            <li><a href="#">Женщинам</a></li>
+            <li><a href="#">Мужчинам</a></li>
+            <li><a href="#">Детям</a></li>
+            <li><a href="#">Косметика</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu hidden-sm">
+          <h3>Соцсети</h3>
+          <ul>
+            <li><a href="#">Вконтакте</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="col footer__menu">
+          <h3>Помощь</h3>
+          <ul>
+            <li><a href="#">Все категории</a></li>
+            <li><a href="#">Категории по бренду</a></li>
+            <li><a href="#">Категории по цвету</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- КОПИРАЙТ -->
+      <div class="container">
+      <div class="footer__copy">
+        &copy; Лайкни лук. Москва. 2016-2019. Все права защищены
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobmenu" id="mobmenu">
+    
+    <!-- ВЕРХ МЕНЮ -->
+    <div class="mobmenu__top" id="mobmenu__top">
+      <!-- ПУНКТЫ МЕНЮ 1 УРОВНЯ(КАТАЛОГ) -->
+      <ul class="mobmenu__cats" id="mobmenu__cats">
+        <li>
+          <a data-id="subs-1" href="#">Женщинам</a>
+        </li>
+        <li>
+          <a data-id="subs-2" href="#">Мужчинам</a>
+        </li>
+        <li>
+          <a data-id="subs-3" href="#">Детям</a>
+        </li>
+        <li>
+          <a data-id="subs-4" href="#">Косметика</a>
+        </li>
+      </ul>
+      <!-- КНОПКА НАЗАД -->
+      <div class="mobmenu__back" id="mobmenu__back">
+        назад
+        <i class="icon">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+        </i>
+      </div>
+      <!-- ЗАКРЫТЬ МЕНЮ -->
+      <div class="mobmenu__close" id="mobmenu__close">
+        x
+      </div>
+    </div>
+    
+    <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+    <div class="mobmenu__subs">
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-1" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              женская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">головные уборы<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">шапки и варежки<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">перчатки и варежки<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">сумки<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">рюкзаки<span class="mobmenu__count">23</span></a>
+                </li>
+                <li>
+                  <a href="#">кошельки<span class="mobmenu__count">545</span></a>
+                </li>
+                <li>
+                  <a href="#">косметички<span class="mobmenu__count">2322</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              женская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              женские аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-2" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              мужская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская одежда 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-3" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              детская одежда
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детская одежда 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              детская обувь
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детская обувь 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              детская аксессуары
+              <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">детские аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+      <!-- ПУНКТЫ МЕНЮ 2 УРОВНЯ -->
+      <ul id="subs-4" class="mobmenu__sub">
+          <li>
+            <a href="#">
+              женская косметика
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">женская косметика 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              мужская косметика
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">мужская косметика 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              косметика аксессуары
+               <i class="icon mobmenu__arrow">
+                <svg width="1em" height="1em" fill="currentColor">
+                  <use xlink:href="/images/icons.svg#dropdown-arrow" />
+                </svg>
+              </i>
+            </a>
+            <!-- ПУНКТЫ МЕНЮ 3 УРОВНЯ -->
+            <div class="mobmenu__dropdown">
+              <ul>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">3212</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">232</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">432</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">4565</span></a>
+                </li>
+                <li>
+                  <a href="#">косметика аксессуары 2<span class="mobmenu__count">23</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+      
+    </div>
+    
+    <!-- ОСТАЛЬНЫЕ ПУНКТЫ МЕНЮ 1 УРОВНЯ -->
+    <div class="mobmenu__other">
+      <ul>
+        <li>
+          <a href="#">бренды</a>
+        </li>
+        <li>
+          <a href="#">магазины</a>
+        </li>
+        <li>
+          <a href="#">акции</a>
+        </li>
+        <li>
+          <a href="#">блог</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- МОБИЛЬНЫЕ ФИЛЬТРЫ -->
+  <div class="mobmenu mobfilters" id="mobfilters">
+    
+    <!-- ВЕРХ МЕНЮ -->
+    <div class="mobmenu__top" id="mobfilters__top">
+      
+      <div class="mobfilters__clear clear_all" id="mobfilters__clear">
+        сбросить все
+      </div>
+      
+      <!-- КНОПКА НАЗАД -->
+      <div class="mobmenu__back" id="mobfilters__back">
+        назад
+        <i class="icon">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+        </i>
+      </div>
+      <!-- ЗАКРЫТЬ МЕНЮ -->
+      <div class="mobmenu__close level-2" id="mobfilters__close">
+        закрыть
+      </div>
+    </div>
+          
+    <ul class="mobmenu__sub mobfilters__sub">
+      <li>
+        <a href="#">
+          для кого<span>женщинам</span>
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown">
+          <ul>
+            <li>
+              <a href="#">головные уборы<span class="mobmenu__count">3212</span></a>
+            </li>
+            <li>
+              <a href="#">шапки и варежки<span class="mobmenu__count">232</span></a>
+            </li>
+            <li>
+              <a href="#">перчатки и варежки<span class="mobmenu__count">432</span></a>
+            </li>
+            <li>
+              <a href="#">сумки<span class="mobmenu__count">4565</span></a>
+            </li>
+            <li>
+              <a href="#">рюкзаки<span class="mobmenu__count">23</span></a>
+            </li>
+            <li>
+              <a href="#">кошельки<span class="mobmenu__count">545</span></a>
+            </li>
+            <li>
+              <a href="#">косметички<span class="mobmenu__count">2322</span></a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          категория<span>сумки</span>
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown">
+          <ul>
+            <li>
+              <a href="#">головные уборы<span class="mobmenu__count">3212</span></a>
+            </li>
+            <li>
+              <a href="#">шапки и варежки<span class="mobmenu__count">232</span></a>
+            </li>
+            <li>
+              <a href="#">перчатки и варежки<span class="mobmenu__count">432</span></a>
+            </li>
+            <li>
+              <a href="#">сумки<span class="mobmenu__count">4565</span></a>
+            </li>
+            <li>
+              <a href="#">рюкзаки<span class="mobmenu__count">23</span></a>
+            </li>
+            <li>
+              <a href="#">кошельки<span class="mobmenu__count">545</span></a>
+            </li>
+            <li>
+              <a href="#">косметички<span class="mobmenu__count">2322</span></a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          теги
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown">
+          <ul>
+            <li>
+              <a href="#">головные уборы<span class="mobmenu__count">3212</span></a>
+            </li>
+            <li>
+              <a href="#">шапки и варежки<span class="mobmenu__count">232</span></a>
+            </li>
+            <li>
+              <a href="#">перчатки и варежки<span class="mobmenu__count">432</span></a>
+            </li>
+            <li>
+              <a href="#">сумки<span class="mobmenu__count">4565</span></a>
+            </li>
+            <li>
+              <a href="#">рюкзаки<span class="mobmenu__count">23</span></a>
+            </li>
+            <li>
+              <a href="#">кошельки<span class="mobmenu__count">545</span></a>
+            </li>
+            <li>
+              <a href="#">косметички<span class="mobmenu__count">2322</span></a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          популярное
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown">
+          <ul>
+            <li>
+              <a href="#">головные уборы<span class="mobmenu__count">3212</span></a>
+            </li>
+            <li>
+              <a href="#">шапки и варежки<span class="mobmenu__count">232</span></a>
+            </li>
+            <li>
+              <a href="#">перчатки и варежки<span class="mobmenu__count">432</span></a>
+            </li>
+            <li>
+              <a href="#">сумки<span class="mobmenu__count">4565</span></a>
+            </li>
+            <li>
+              <a href="#">рюкзаки<span class="mobmenu__count">23</span></a>
+            </li>
+            <li>
+              <a href="#">кошельки<span class="mobmenu__count">545</span></a>
+            </li>
+            <li>
+              <a href="#">косметички<span class="mobmenu__count">2322</span></a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          цвет
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown mobfilter-color">
+          <div class="mobfilter__search">
+            <input type="text" placeholder="Найти цвет" />
+          </div>
+          <div class="mobfilter__options">
+            <ul>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_1" value="айвори" checked>
+                <label for="mobfilter-color_1">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_2" value="бежевый">
+                <label for="mobfilter-color_2">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_3" value="белый" checked>
+                <label for="mobfilter-color_3">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_4" value="бирюзовый">
+                <label for="mobfilter-color_4">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_6" value="бордовый" checked>
+                <label for="mobfilter-color_6">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_7" value="бронзовый">
+                <label for="mobfilter-color_7">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_8" value="васильковый">
+                <label for="mobfilter-color_8">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_9" value="вишневый">
+                <label for="mobfilter-color_9">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_10" value="айвори">
+                <label for="mobfilter-color_10">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_11" value="бежевый">
+                <label for="mobfilter-color_11">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobmobfilter-color_12" value="белый">
+                <label for="mobfilter-color_12">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_13" value="бирюзовый">
+                <label for="mobfilter-color_13">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_14" value="бордовый">
+                <label for="mobfilter-color_14">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_15" value="бронзовый">
+                <label for="mobfilter-color_15">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_16" value="васильковый">
+                <label for="mobfilter-color_16">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_17" value="вишневый">
+                <label for="mobfilter-color_17">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_18" value="айвори">
+                <label for="mobfilter-color_18">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_19" value="бежевый">
+                <label for="mobfilter-color_19">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobmobfilter-color_20" value="белый">
+                <label for="mobfilter-color_20">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_21" value="бирюзовый">
+                <label for="mobfilter-color_21">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_22" value="бордовый">
+                <label for="mobfilter-color_22">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_23" value="бронзовый">
+                <label for="mobfilter-color_23">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_24" value="васильковый">
+                <label for="mobfilter-color_24">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_25" value="вишневый">
+                <label for="mobfilter-color_25">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_27" value="айвори">
+                <label for="mobfilter-color_26">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_28" value="бежевый">
+                <label for="mobfilter-color_28">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobmobfilter-color_29" value="белый">
+                <label for="mobfilter-color_29">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_30" value="бирюзовый">
+                <label for="mobfilter-color_30">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_31" value="бордовый">
+                <label for="mobfilter-color_31">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_32" value="бронзовый">
+                <label for="mobfilter-color_32">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_33" value="васильковый">
+                <label for="mobfilter-color_33">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_34" value="вишневый">
+                <label for="mobfilter-color_34">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_35" value="айвори">
+                <label for="mobfilter-color_35">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_36" value="бежевый">
+                <label for="mobfilter-color_36">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobmobfilter-color_37" value="белый">
+                <label for="mobfilter-color_37">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_38" value="бирюзовый">
+                <label for="mobfilter-color_39">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_40" value="бордовый">
+                <label for="mobfilter-color_40">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_41" value="бронзовый">
+                <label for="mobfilter-color_41">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_42" value="васильковый">
+                <label for="mobfilter-color_42">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-color" id="mobfilter-color_43" value="вишневый">
+                <label for="mobfilter-color_43">вишневый</label>
+              </li>
+            </ul>
+          </div>
+          <div class="mobfilter__show">показать все цвета</div>
+          <div class="mobfilter__button">
+            <button class="btn btn-primary">применить фильтры</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          размер<span>3</span>
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown mobfilter-size">
+          <div class="mobfilter__search">
+            <input type="text" placeholder="Найти цвет" />
+          </div>
+          <div class="mobfilter__options">
+             <ul>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_1" value="айвори">
+                <label for="mobfilter-size_1">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_2" value="бежевый">
+                <label for="mobfilter-size_2">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_3" value="белый">
+                <label for="mobfilter-size_3">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_4" value="бирюзовый">
+                <label for="mobfilter-size_4">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_6" value="бордовый">
+                <label for="mobfilter-size_6">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_7" value="бронзовый">
+                <label for="mobfilter-size_7">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_8" value="васильковый">
+                <label for="mobfilter-size_8">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_9" value="вишневый">
+                <label for="mobfilter-size_9">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_10" value="айвори">
+                <label for="mobfilter-size_10">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_11" value="бежевый">
+                <label for="mobfilter-size_11">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobmobfilter-size_12" value="белый">
+                <label for="mobfilter-size_12">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_13" value="бирюзовый">
+                <label for="mobfilter-size_13">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_14" value="бордовый">
+                <label for="mobfilter-size_14">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_15" value="бронзовый">
+                <label for="mobfilter-size_15">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_16" value="васильковый">
+                <label for="mobfilter-size_16">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_17" value="вишневый">
+                <label for="mobfilter-size_17">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_18" value="айвори">
+                <label for="mobfilter-size_18">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_19" value="бежевый">
+                <label for="mobfilter-size_19">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobmobfilter-size_20" value="белый">
+                <label for="mobfilter-size_20">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_21" value="бирюзовый">
+                <label for="mobfilter-size_21">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_22" value="бордовый">
+                <label for="mobfilter-size_22">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_23" value="бронзовый">
+                <label for="mobfilter-size_23">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_24" value="васильковый">
+                <label for="mobfilter-size_24">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_25" value="вишневый">
+                <label for="mobfilter-size_25">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_27" value="айвори">
+                <label for="mobfilter-size_26">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_28" value="бежевый">
+                <label for="mobfilter-size_28">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobmobfilter-size_29" value="белый">
+                <label for="mobfilter-size_29">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_30" value="бирюзовый">
+                <label for="mobfilter-size_30">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_31" value="бордовый">
+                <label for="mobfilter-size_31">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_32" value="бронзовый">
+                <label for="mobfilter-size_32">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_33" value="васильковый">
+                <label for="mobfilter-size_33">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_34" value="вишневый">
+                <label for="mobfilter-size_34">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_35" value="айвори">
+                <label for="mobfilter-size_35">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_36" value="бежевый">
+                <label for="mobfilter-size_36">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobmobfilter-size_37" value="белый">
+                <label for="mobfilter-size_37">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_38" value="бирюзовый">
+                <label for="mobfilter-size_39">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_40" value="бордовый">
+                <label for="mobfilter-size_40">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_41" value="бронзовый">
+                <label for="mobfilter-size_41">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_42" value="васильковый">
+                <label for="mobfilter-size_42">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-size" id="mobfilter-size_43" value="вишневый">
+                <label for="mobfilter-size_43">вишневый</label>
+              </li>
+            </ul>
+          </div>
+          <div class="mobfilter__show">показать все размеры</div>
+          <div class="mobfilter__button">
+            <button class="btn btn-primary">применить фильтры</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          бренд
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown mobfilter-brand">
+          <div class="mobfilter__search">
+            <input type="text" placeholder="Найти цвет" />
+          </div>
+          <div class="mobfilter__options">
+             <ul>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_1" value="айвори">
+                <label for="mobfilter-brand_1">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_2" value="бежевый">
+                <label for="mobfilter-brand_2">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_3" value="белый">
+                <label for="mobfilter-brand_3">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_4" value="бирюзовый">
+                <label for="mobfilter-brand_4">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_6" value="бордовый">
+                <label for="mobfilter-brand_6">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_7" value="бронзовый">
+                <label for="mobfilter-brand_7">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_8" value="васильковый">
+                <label for="mobfilter-brand_8">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_9" value="вишневый">
+                <label for="mobfilter-brand_9">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_10" value="айвори">
+                <label for="mobfilter-brand_10">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_11" value="бежевый">
+                <label for="mobfilter-brand_11">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobmobfilter-brand_12" value="белый">
+                <label for="mobfilter-brand_12">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_13" value="бирюзовый">
+                <label for="mobfilter-brand_13">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_14" value="бордовый">
+                <label for="mobfilter-brand_14">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_15" value="бронзовый">
+                <label for="mobfilter-brand_15">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_16" value="васильковый">
+                <label for="mobfilter-brand_16">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_17" value="вишневый">
+                <label for="mobfilter-brand_17">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_18" value="айвори">
+                <label for="mobfilter-brand_18">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_19" value="бежевый">
+                <label for="mobfilter-brand_19">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobmobfilter-brand_20" value="белый">
+                <label for="mobfilter-brand_20">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_21" value="бирюзовый">
+                <label for="mobfilter-brand_21">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_22" value="бордовый">
+                <label for="mobfilter-brand_22">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_23" value="бронзовый">
+                <label for="mobfilter-brand_23">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_24" value="васильковый">
+                <label for="mobfilter-brand_24">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_25" value="вишневый">
+                <label for="mobfilter-brand_25">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_27" value="айвори">
+                <label for="mobfilter-brand_26">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_28" value="бежевый">
+                <label for="mobfilter-brand_28">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobmobfilter-brand_29" value="белый">
+                <label for="mobfilter-brand_29">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_30" value="бирюзовый">
+                <label for="mobfilter-brand_30">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_31" value="бордовый">
+                <label for="mobfilter-brand_31">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_32" value="бронзовый">
+                <label for="mobfilter-brand_32">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_33" value="васильковый">
+                <label for="mobfilter-brand_33">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_34" value="вишневый">
+                <label for="mobfilter-brand_34">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_35" value="айвори">
+                <label for="mobfilter-brand_35">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_36" value="бежевый">
+                <label for="mobfilter-brand_36">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobmobfilter-brand_37" value="белый">
+                <label for="mobfilter-brand_37">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_38" value="бирюзовый">
+                <label for="mobfilter-brand_39">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_40" value="бордовый">
+                <label for="mobfilter-brand_40">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_41" value="бронзовый">
+                <label for="mobfilter-brand_41">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_42" value="васильковый">
+                <label for="mobfilter-brand_42">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-brand" id="mobfilter-brand_43" value="вишневый">
+                <label for="mobfilter-brand_43">вишневый</label>
+              </li>
+            </ul>
+          </div>
+          <div class="mobfilter__show">показать все бренды</div>
+          <div class="mobfilter__button">
+            <button class="btn btn-primary">применить фильтры</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          магазин
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown mobfilter-shop">
+          <div class="mobfilter__search">
+            <input type="text" placeholder="Найти цвет" />
+          </div>
+          <div class="mobfilter__options">
+             <ul>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_1" value="айвори">
+                <label for="mobfilter-shop_1">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_2" value="бежевый">
+                <label for="mobfilter-shop_2">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_3" value="белый">
+                <label for="mobfilter-shop_3">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_4" value="бирюзовый">
+                <label for="mobfilter-shop_4">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_6" value="бордовый">
+                <label for="mobfilter-shop_6">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_7" value="бронзовый">
+                <label for="mobfilter-shop_7">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_8" value="васильковый">
+                <label for="mobfilter-shop_8">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_9" value="вишневый">
+                <label for="mobfilter-shop_9">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_10" value="айвори">
+                <label for="mobfilter-shop_10">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_11" value="бежевый">
+                <label for="mobfilter-shop_11">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobmobfilter-shop_12" value="белый">
+                <label for="mobfilter-shop_12">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_13" value="бирюзовый">
+                <label for="mobfilter-shop_13">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_14" value="бордовый">
+                <label for="mobfilter-shop_14">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_15" value="бронзовый">
+                <label for="mobfilter-shop_15">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_16" value="васильковый">
+                <label for="mobfilter-shop_16">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_17" value="вишневый">
+                <label for="mobfilter-shop_17">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_18" value="айвори">
+                <label for="mobfilter-shop_18">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_19" value="бежевый">
+                <label for="mobfilter-shop_19">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobmobfilter-shop_20" value="белый">
+                <label for="mobfilter-shop_20">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_21" value="бирюзовый">
+                <label for="mobfilter-shop_21">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_22" value="бордовый">
+                <label for="mobfilter-shop_22">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_23" value="бронзовый">
+                <label for="mobfilter-shop_23">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_24" value="васильковый">
+                <label for="mobfilter-shop_24">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_25" value="вишневый">
+                <label for="mobfilter-shop_25">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_27" value="айвори">
+                <label for="mobfilter-shop_26">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_28" value="бежевый">
+                <label for="mobfilter-shop_28">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobmobfilter-shop_29" value="белый">
+                <label for="mobfilter-shop_29">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_30" value="бирюзовый">
+                <label for="mobfilter-shop_30">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_31" value="бордовый">
+                <label for="mobfilter-shop_31">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_32" value="бронзовый">
+                <label for="mobfilter-shop_32">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_33" value="васильковый">
+                <label for="mobfilter-shop_33">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_34" value="вишневый">
+                <label for="mobfilter-shop_34">вишневый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_35" value="айвори">
+                <label for="mobfilter-shop_35">айвори</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_36" value="бежевый">
+                <label for="mobfilter-shop_36">бежевый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobmobfilter-shop_37" value="белый">
+                <label for="mobfilter-shop_37">белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_38" value="бирюзовый">
+                <label for="mobfilter-shop_39">бирюзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_40" value="бордовый">
+                <label for="mobfilter-shop_40">бордовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_41" value="бронзовый">
+                <label for="mobfilter-shop_41">бронзовый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_42" value="васильковый">
+                <label for="mobfilter-shop_42">васильковый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mobfilter-shop" id="mobfilter-shop_43" value="вишневый">
+                <label for="mobfilter-shop_43">вишневый</label>
+              </li>
+            </ul>
+          </div>
+          <div class="mobfilter__show">показать все магазины</div>
+          <div class="mobfilter__button">
+            <button class="btn btn-primary">применить фильтры</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          цена
+          <i class="icon mobmenu__arrow">
+            <svg width="1em" height="1em" fill="currentColor">
+              <use xlink:href="/images/icons.svg#dropdown-arrow" />
+            </svg>
+          </i>
+        </a>
+        <div class="mobmenu__dropdown mobfilter-price">
+          <div class="mobfilter__price">
+            <input type="text" name="from" placeholder="от" />
+            <input type="text" name="to" placeholder="до" />
+            <input type="checkbox" name="discount" id="mobdiscount" />
+            <label for="mobdiscount">только со скидкой</label>
+          </div>
+          <div class="mobfilter__button">
+            <button class="btn btn-primary">применить фильтры</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+    <div class="mobfilter__button">
+      <button class="btn btn-primary">применить фильтры</button>
+    </div>
+    
+  </div>
+  
+  <form name="filtes-form" id="filtes-form"></form>
+  
+  <!-- КНОПКА НАВЕРХ-->
+  <div class="to-top" id="to-top">
+    <i class="icon">
+      <svg width="1em" height="1em" fill="currentColor">
+        <use xlink:href="/images/icons.svg#arrow-goto" />
+      </svg>
+    </i>
+    <span>наверх</span>
+  </div>
+
+  <!-- сторонние скрипты -->
+  <script src="/js/vendor.js"></script>
+  <!-- главный скрипт -->
+  <script src="/js/main.js"></script>
+    
+</body>
+</html>
+
