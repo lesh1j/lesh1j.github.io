@@ -811,28 +811,28 @@
       
       <div class="article__bar">
         <div class="article__socials">
-          <a href="#">
+          <a href="#" onclick="Share.facebook(window.location.href, document.title, 'https://lesh1j.github.io/images/article1.png', $(this).parent().parent().parent().children('.article__desc').text())">
             <i class="icon">
               <svg width="1em" height="1em" fill="currentColor">
                 <use xlink:href="/images/icons.svg#social-facebook" />
               </svg>
             </i>
           </a>
-          <a href="#">
+          <a href="#" onclick="Share.vkontakte(window.location.href, document.title, 'https://lesh1j.github.io/images/article1.png', $(this).parent().parent().parent().children('.article__desc').text())">
             <i class="icon">
               <svg width="1em" height="1em" fill="currentColor">
                 <use xlink:href="/images/icons.svg#social-vk" />
               </svg>
             </i>
           </a>
-          <a href="#">
+          <a href="#" onclick="Share.pinterest(window.location.href, 'https://lesh1j.github.io/images/article1.png', $(this).parent().parent().parent().children('.article__desc').text())">
             <i class="icon">
               <svg width="1em" height="1em" fill="currentColor">
                 <use xlink:href="/images/icons.svg#social-pinterest" />
               </svg>
             </i>
           </a>
-          <a href="#">
+          <a href="#" onclick="Share.odnoklassniki(window.location.href, $(this).parent().parent().parent().children('.article__desc').text())">
             <i class="icon">
               <svg width="1em" height="1em" fill="currentColor">
                 <use xlink:href="/images/icons.svg#social-odnoklassniki" />
@@ -846,7 +846,7 @@
               </svg>
             </i>
           </a>
-          <a href="#">
+          <a href="#" onclick="Share.twitter(window.location.href, document.title)">
             <i class="icon">
               <svg width="1em" height="1em" fill="currentColor">
                 <use xlink:href="/images/icons.svg#social-twitter" />
@@ -854,6 +854,7 @@
             </i>
           </a>
         </div>
+        
         <div>
           <div class="article__numcomment">
             <i class="icon">
@@ -1773,7 +1774,7 @@
   <!-- сторонние скрипты -->
   <script src="/js/vendor.js"></script>
   <!-- главный скрипт -->
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js?v=2"></script>
     
 </body>
 </html>
