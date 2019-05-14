@@ -29,8 +29,8 @@
       max-width: 43%;
     }
     &__search{
-      flex: 0 0 32%;
-      max-width: 32%;
+      flex: 0 0 30%;
+      max-width: 30%;
     }
   }
   .city-select {
@@ -135,10 +135,17 @@
     }
   }
   .brands-page .breadcrumbs {
-    margin-left: 0;
+    margin-left: 5px;
   }
-  .page .container {
-    padding: 0 15px;
+  .page {
+    .container {
+      padding: 0 15px;
+    }
+    &.article{
+      .container {
+        padding: 0 48px;
+      }
+    }
   }
   .page__title {
     padding: 0 20px !important;
@@ -164,6 +171,62 @@
   .product-item__socials {
     right: 60px;
   }
+  .about{ 
+    &-header {
+      height: 490px;
+      margin-top: 24px;
+      .container {
+        padding: 0 22px 0 !important;
+      }
+      .section-title {
+        display: none;
+      }
+      &__image {
+        max-width: 490px;
+        margin-right: -37px;
+        margin-top: -20px;
+      }
+      &__title {
+        font-size: 36px;
+        max-width: 490px;
+        margin-top: 62px;
+        line-height: 30px;
+      }
+      &__subtitle {
+        max-width: 490px;
+        display: inline-block;
+        margin-top: 22px;
+      }
+      &__text {
+        margin-top: 5px;
+        padding-right: 0;
+      }
+    }
+  }
+  .blog{
+    &-bar{
+      .container {
+        padding: 9px 56px 30px 52px !important;
+      }
+    }
+    &.on-inner {
+      .container {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+    }
+  }
+  .article{
+    &__content {
+      padding: 43px 201px 25px 141px !important;
+    }
+    &__toptags{
+      left: 790px;
+    }
+    &__left{
+      left: 20px;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -173,9 +236,39 @@
   .show-md{
     display: block !important;
   }
+  .btn{
+    &-primary{
+      &:hover{
+        background: #d7d7d7;
+        border: 1px solid #d7d7d7;
+        color: #000;
+      }
+    }
+    &-grey{
+      &:hover{
+        background: #f2f0f1;
+        border: 1px solid #f2f0f1;
+        color: #000;
+      }
+    }
+    &-white{
+      &:hover{
+        background: #fff;
+        border: 1px solid #fff;
+        color: #000;
+      }
+    }
+    &-black{
+      &:hover{
+        background: #000;
+        border: 1px solid #000;
+        color: #fff;
+      }
+    }
+  }
   .cat{
     .breadcrumbs {
-      margin-left: 29px;
+      margin-left: 34px;
       margin-top: 2px;
     }
     &__content {
@@ -216,8 +309,9 @@
         max-width: 182px;
         padding: 0 0 19px;
         margin: 0 19px 9px;
-        &__image {
-          height: 256px;
+        &__like {
+          right: 6px;
+          top: 10px;
         }
         &__price {
           padding-left: 0;
@@ -231,6 +325,11 @@
         &__desc {
           margin-left: 0;
           margin-right: 0;
+        }
+        &:hover{
+          .product__economy{
+            opacity: 0;
+          }
         }
       }
     }
@@ -248,6 +347,24 @@
         }
         p {
           font-size: 13px;
+        }
+      }
+    }
+    &__related{
+      a{
+        &:hover{
+          background: #f2f0f1;
+          color: #000;
+          max-width: 114px;
+          .cat__related-brand{
+            color: #9b9b9b;
+          }
+          .long{
+            max-width: 100%;
+            &:after{
+              display: block;
+            }
+          }
         }
       }
     }
@@ -287,14 +404,26 @@
   }
   .pagination {
     margin-top: 14px;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
     li{
       margin: 0 11px;
+      a{
+        &:hover{
+          color: #bebebe;
+        }
+      }
+      &.arrow{
+        a{
+          &:hover{
+            color: #d8d8d8;
+          }
+        }
+      }
     }
   }
   .cats{ 
     .breadcrumbs {
-      margin-left: 52px;
+      margin-left: 57px;
       margin-top: 9px;
     }
     &__menu {
@@ -324,7 +453,7 @@
     &__item {
       width: 33.3333%;
       margin-top: 19px;
-      margin-bottom: 7px;
+      margin-bottom: -10px;
     }
     &__slider {
       .container {
@@ -357,7 +486,7 @@
   }
   .sitemap{
     .breadcrumbs {
-      margin-left: 2px;
+      margin-left: 7px;
     }
     .page__title {
       padding: 0 21px !important;
@@ -385,13 +514,21 @@
         column-count: 4;
         li {
           margin-right: 8px;
+          a{
+            margin-bottom: 8px;
+          }
         }
+      }
+    }
+    &-brands{
+      .sitemap__cattitle {
+        font-weight: 700;
       }
     }
   }
   .error{
     .breadcrumbs {
-      margin-left: 1px;
+      margin-left: 6px;
     }
     &__content {
       padding: 0 21px !important;
@@ -435,7 +572,7 @@
   }
   .contacts{
     .breadcrumbs {
-      margin-left: 1px;
+      margin-left:6px;
       margin-top: -2px;
     }
     &__map {
@@ -497,11 +634,11 @@
   }
   .about{ 
     .breadcrumbs {
-      margin-left: 27px;
+      margin-left: 32px;
       margin-top: -2px;
     }
     &-header {
-      height: 590px;
+      height: 610px;
       margin-top: 16px;
       .container {
         padding: 0 22px 0 !important;
@@ -512,6 +649,7 @@
       &__image {
         max-width: 433px;
         margin-right: -37px;
+        margin-top: -17px;
       }
       &__title {
         font-size: 30px;
@@ -628,6 +766,7 @@
     &__search{
       position: absolute;
       width: 100%;
+      height: 100%; 
       flex: 0 0 100%;
       max-width: 100%;
       left: 0;
@@ -654,6 +793,8 @@
       justify-content: flex-end;
       font-size: 25px;
       margin-top: -5px;
+      top: 0;
+      padding-right: 15px;
     }
     &__mob{
       display: flex !important;;
@@ -726,6 +867,9 @@
       &>li{
         &>a{
           padding: 11px 43px 12px;
+          &:hover{
+            background: #000;
+          }
         }
         &:hover{
           .menu__dropdown{
@@ -738,7 +882,7 @@
   }
   .top-banner {
     height: 295px;
-    margin-bottom: 32px;
+    margin-bottom: 11px;
     &__content{
       padding: 70px 0 0 69px;
       h1{
@@ -810,11 +954,19 @@
     }
     &.on-cats {
       margin-top: 6px;
+      .section-title{
+        padding-left: 43px;
+      }
     }
   }
   .product{
-    &__image{
-      height: 200px;
+    &__labels {
+      left: 28px;
+      top: 28px;
+    }
+    &__like {
+      right: 24px;
+      top: 28px;
     }
     &__price{
       font-size: 15px;
@@ -846,7 +998,7 @@
   }
   .product-item{
     .breadcrumbs {
-      margin-left: 51px;
+      margin-left: 56px;
       margin-top: 10px;
     }
     &__content {
@@ -963,9 +1115,21 @@
         margin: 0 1.5% 25px;
         flex: 0 0 47%;
       }
+      &:hover{
+        .blog-item__desc{
+          opacity: 0;
+          visibility: hidden;
+        }
+        .blog-item__likes{
+          color: #f0dcdd;
+        }
+      }
     }
     &__button{
       display: block;
+      a{
+        width: 47%;
+      }
     }
     &-bar{
       background: transparent;
@@ -1134,7 +1298,7 @@
       }
       .breadcrumbs {
         margin-top: 23px;
-        margin-left: 18px;
+        margin-left: 23px;
         margin-bottom: 18px;
       }
     }
@@ -1153,7 +1317,7 @@
       }
     }
     .breadcrumbs {
-      margin-left: 3px;
+      margin-left: 8px;
       margin-top: 24px;
       margin-bottom: 17px;
     }
@@ -1309,10 +1473,15 @@
     .container {
       padding: 0 15px;
     }
+    &.article{
+      .container {
+        padding: 0 15px;
+      }
+    }
   }
   .breadcrumbs {
     font-size: 12px;
-    margin-left: 1px;
+    margin-left: 6px;
   }
   .shops-content {
     margin-top: 24px;
@@ -1356,11 +1525,18 @@
   .brands-content {
     padding: 13px 6px !important;
   }
-  .brands-item__list ul {
-    //height: 185px;
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
+  .brands-item{
+    &__list {
+      ul {
+        //height: 185px;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+        li{
+          padding-right: 10px;
+        }
+      }
+    }
   }
   .brands-item__list ul li {
     //width: 33.3333%
@@ -1378,7 +1554,7 @@
       padding: 0 9px;
     }
     .breadcrumbs {
-      margin-left: 0px;
+      margin-left: 5px;
       margin-top: 9px;
     }
   }
@@ -1434,7 +1610,7 @@
     }
   }
   .products.marks-page .section-title {
-    display: none;
+    display: none !important;
   }
   .products-content .product {
     flex: 0 0 33.33333%;
@@ -1442,7 +1618,7 @@
     padding-bottom: 6px;
   }
   .marks-page .breadcrumbs {
-    margin-left: 52px;
+    margin-left: 57px;
     margin-top: 10px;
   }
   .marks-page .page__title {
@@ -1451,6 +1627,10 @@
   }
   .products-content {
     padding: 20px 25px 0 24px !important;
+  }
+  .to-top {
+    right: 20px;
+    bottom: 20px;
   }
 }
 
@@ -1463,7 +1643,7 @@
   }
   .cat {
     .breadcrumbs {
-      margin-left: 1px;
+      margin-left: 6px;
       margin-top: 1px;
     }
     &__content {
@@ -1513,6 +1693,10 @@
       &.bottom {
         margin: 28px 21px 0;
         padding-top: 28px;
+        max-height: 843px;
+        overflow: hidden;
+        border-bottom: none;
+        position: relative;
         h2 {
           font-size: 12px;
         }
@@ -1523,23 +1707,48 @@
           max-width: 45%;
         }
       }
+      &-show{
+        position: absolute;
+        bottom: 0;
+        background: #fff;
+        width: 100%;
+        padding-top: 15px;
+        text-align: center;
+        a{
+          text-decoration: none;
+          font-weight: 700;
+        }
+      }
     }
     &__related {
       padding: 0 22px;
+      margin-top: 40px;
       a {
-        width: 30%;
-        margin-right: 3%;
+        width: 92%;
+        min-width: 92%;
         font-size: 12px;
+        margin-right: 0;
+      }
+      .owl-dots {
+        padding-right: 10px;
       }
     }
   }
   .pagination {
     margin-top: 19px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
-  .filter__dropdown-sort {
-    left: auto;
-    right: 0;
+  .filters {
+    ul{
+      flex: 0 0 48%;
+    }
+  }
+  .filter {
+    width: 100%;
+    &__dropdown-sort {
+      left: auto;
+      right: 0;
+    }
   }
   .mobfilter{
     &__search {
@@ -1559,7 +1768,7 @@
   }
   .cats{
     .breadcrumbs {
-      margin-left: 1px;
+      margin-left: 6px;
       margin-top: 1px;
     }
     &__menu {
@@ -1595,7 +1804,7 @@
     &__item {
       width: 100%;
       margin-top: 15px;
-      margin-bottom: -8px;
+      margin-bottom: -18px;
     }
     &__slider{
       .container {
@@ -1616,7 +1825,7 @@
   }
   .sitemap{
     .breadcrumbs {
-      margin-left: -1px;
+      margin-left: 4px;
     }
     .page__title {
       padding: 0 21px !important;
@@ -1643,7 +1852,7 @@
   }
   .error{
     .breadcrumbs {
-      margin-left: -1px;
+      margin-left: 4px;
     }
     &__content {
       padding: 0 24px !important;
@@ -1652,6 +1861,7 @@
       padding: 12px 0 0;
       img{
         width: 325px;
+        max-width: 100%;
       }
     }
     &__text {
@@ -1687,7 +1897,7 @@
   }
   .contacts{
     .breadcrumbs {
-      margin-left: 1px;
+      margin-left: 6px;
       margin-top: 1px;
     }
     &__map {
@@ -1737,7 +1947,7 @@
   }
   .about{ 
     .breadcrumbs {
-      margin-left: 1px;
+      margin-left: 6px;
       margin-top: 1px;
     }
     &-header {
@@ -1750,7 +1960,7 @@
       &__image {
         max-width: 100%;
         margin-right: 0;
-        margin-top: -27px;
+        margin-top: -15px;
         margin-bottom: 0;
       }
       &__title {
@@ -1889,6 +2099,9 @@
         margin-left: 0;
       }
     }
+    &.on-cat{
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    }
   }
   .search-form {
     width: 100%;
@@ -1964,14 +2177,17 @@
     &__list{
       &>li{
         &>a{
-          padding: 7px 18px 11px;
+          padding: 7px 16px 11px;
         }
       }
+    }
+    &.on-cat{
+      display: none;
     }
   }
   .top-banner {
     height: 200px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     &__content{
       padding: 56px 0 0 23px;
       h1{
@@ -2011,23 +2227,29 @@
     }
     &.on-cats {
       margin-top: 6px;
+      .section-title{
+        padding-left: 30px;
+      }
     }
   }
   .product {
     padding: 10px 4px 13px;
     border: none !important;
     &__labels{
-      left: 1px;
-      top: 3px;
+      left: 14px;
+      top: 20px;
     }
     &__like{
-      right: 0px;
-      top: 5px;
+      right: 10px;
+      top: 20px;
     }
+    &__price {
+      font-size: 14px;
+    }  
   }
   .product-item{
     .breadcrumbs {
-      margin-left: 1px;
+      margin-left: 6px;
       margin-top: 0px;
     }
     &__content {
@@ -2041,7 +2263,7 @@
       margin: 7px -12px 15px 0;
     }
     &__right {
-      padding-left: 7px;
+      padding-left: 0;
     }
     &__cat {
       margin-top: 5px; 
@@ -2056,7 +2278,7 @@
       margin-top: 22px;
       .btn {
         padding: 14px 50px;
-        width: 326px;
+        width: 100%;
       }
     }
     &__attrs {
@@ -2129,6 +2351,9 @@
     }
     &__button{
       margin-top: -7px;
+      a{
+        width: 100%;
+      }
     }
     &-item{
       flex: 0 0 100%;
@@ -2153,7 +2378,7 @@
     &.blog-page {
       .breadcrumbs {
         margin-top: 11px;
-        margin-left: 35px;
+        margin-left: 17px;
         margin-bottom: 12px;
       }
     }
@@ -2174,7 +2399,7 @@
   }
   .article{
     .breadcrumbs {
-      margin-left: 16px;
+      margin-left: 21px;
       margin-top: 11px;
       margin-bottom: 12px;
     }
@@ -2367,7 +2592,7 @@
   }
   .breadcrumbs {
     font-size: 12px;
-    margin-left: 1px;
+    margin-left: 6px;
   }
   .shops-content {
     margin-top: 12px;
@@ -2411,10 +2636,9 @@
   .brands-item__list ul li {
     width: 100%;
   }
-  
-  
+   
   .offers-page .breadcrumbs {
-    margin-left: 2px;
+    margin-left: 7px;
     margin-top: 0px;
   }
   .offers-content {
@@ -2426,13 +2650,19 @@
   .offer {
     margin-bottom: 37px;
     display: block;
+    &__image {
+      flex: 0 0 100%;
+      max-width: 100%;
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
     &__shop {
       margin: 15px 19px 0;
       font-size: 13px;
     }
     &__info {
-      border-left: 1px solid #ccc;
-      border-top: none;
       overflow: hidden;
     }
     &__title {
@@ -2456,7 +2686,7 @@
   }
   
   .marks-page .breadcrumbs {
-    margin-left: 1px;
+    margin-left: 6px;
     margin-top: 1px;
   }
   .marks-page .page__title {
@@ -2476,18 +2706,50 @@
   }
 }
 
+@media (max-width: 500px) {
+  .banner {
+    background-position: 35% center;
+  }
+}
+
 @media (max-width: 374px) {
   .menu{
     &__list{
       &>li{
         &>a{
-          padding: 7px 15px 11px;
+          padding: 7px 14px 11px;
         }
       }
     }
   }
   .blog-item__title h3 {
     font-size: 28px;
+  }
+  .product {
+    &__price {
+      font-size: 13px;
+    }  
+  }
+  .brands{
+    &-content {
+      padding: 6px 15px !important;
+    }
+    &-item{
+      &__button .btn {
+        min-width: 100%;
+      }
+    }
+  }
+  .contacts{
+    &__right {
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex: 0 0 100%;
+    }
+  }
+  .sitemap__category > ul {
+    max-width: 320px;
   }
 }
 
@@ -2496,7 +2758,7 @@
     &__list{
       &>li{
         &>a{
-          padding: 7px 9px 11px;
+          padding: 7px 7px 11px;
         }
       }
     }
@@ -2514,7 +2776,12 @@
   .blog-item__title h3 {
     font-size: 24px;
   }
-  .blog-item__image {
-    height: 200px;
+  .product {
+    &__price {
+      font-size: 12px;
+    }  
+  }
+  .sitemap__category > ul {
+    max-width: 280px;
   }
 }
