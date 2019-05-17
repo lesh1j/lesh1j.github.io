@@ -7,7 +7,7 @@
   }
   .slider__arrow.next {
     right: -12px;
-  }
+  } 
   .section-title {
     left: 12px;
   }
@@ -2647,6 +2647,17 @@
     width: 50%;
     max-width: 220px;
     padding-bottom: 13px;
+  }
+  text[text-anchor="middle"] {
+    -webkit-writing-mode: tb;
+    -ms-writing-mode: tb;
+    writing-mode: tb;
+  }
+  .product-item__chart {
+    margin-bottom: 40px;
+  }
+  .product-item__chart svg {
+    height: 310px;
   }
 }
 

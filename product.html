@@ -7,8 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/vendor.css">
-  <link rel="stylesheet" href="/css/main.css?v=4">
-  <link rel="stylesheet" href="/css/responsive.css?v=4">
+  <link rel="stylesheet" href="/css/main.css?v=5">
+  <link rel="stylesheet" href="/css/responsive.css?v=5">
   <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/images/android-192x192.png" sizes="192x192">
@@ -2382,7 +2382,7 @@
   <script src="/js/vendor.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <!-- главный скрипт -->
-  <script src="/js/main.js?v=4"></script>
+  <script src="/js/main.js?v=5"></script>
   
   <!-- график -->
   <script>
@@ -2391,7 +2391,7 @@
 
 
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([
+        var prices = [
           ['date', 'price'],
           ['10.11.18',  2500],
           ['11.11.18',  2900],
@@ -2403,7 +2403,8 @@
           ['17.11.18',  1700],
           ['18.11.18',  1900],
           ['19.11.18',  1800]
-        ]);
+        ];
+        var data = google.visualization.arrayToDataTable(prices);
 
         var options = {
           legend: { position: 'none' },
@@ -2439,13 +2440,18 @@
 
         chart.draw(data, options);
         
-        /*setTimeout(function(){
-          var labels = document.querySelectorAll('text[text-anchor="middle"]');
-          labels.forEach(function(label){
-            console.log(label.getAttribute('x'));
-            label.setAttribute("y", 285);
-          })
-        }, 300);*/
+        if(document.documentElement.clientWidth < 760){
+        
+          setTimeout(function(){
+            var labels = document.querySelectorAll('text[text-anchor="middle"]');
+            labels[labels.length - 1].textContent = prices[labels.length][0];
+            labels.forEach(function(label){
+              label.setAttribute("y", 275);
+              label.setAttribute("transform", 'rotate(180 '+label.getAttribute('x')+' 275)');
+            })
+          }, 300);
+        
+        }
         
       }
   </script>

@@ -2720,7 +2720,13 @@
     padding-bottom: 13px;
   }
   text[text-anchor="middle"] {
-    //writing-mode: tb;
+    writing-mode: tb;
+  }
+  .product-item__chart {
+    margin-bottom: 40px;
+    svg{
+      height: 310px;
+    }
   }
 }
 
