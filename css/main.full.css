@@ -12,7 +12,7 @@
 }
 
 @-o-viewport {
-  width: device-width;
+  width: device-width; 
 }
 
 @viewport {
@@ -50,6 +50,11 @@ body {
   font-family: 'Open Sans';
   font-weight: 300;
   font-size: 14px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .cat .breadcrumbs {
@@ -100,8 +105,8 @@ body {
   margin-top: 39px;
   padding-top: 32px;
   padding-bottom: 14px;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .cat__text.bottom h2 {
@@ -1093,7 +1098,7 @@ textarea:focus {
   font-size: 14px;
   font-weight: 700;
   width: 100%;
-  margin-bottom: 41px;
+  margin-bottom: 30px;
 }
 
 .sitemap__cattitle a {
@@ -2626,6 +2631,7 @@ p {
   border: 1px solid transparent;
   -webkit-transition: 300ms;
   transition: 300ms;
+  position: relative;
 }
 
 .product-items {
@@ -2884,6 +2890,7 @@ p {
 
 .product-item__image {
   position: relative;
+  display: inline-block;
 }
 
 .product-item__image img {
@@ -3835,12 +3842,12 @@ p {
   margin-bottom: 22px;
 }
 
-.article__content a {
+.article__content p a {
   color: #6c6c6c;
   text-decoration: underline;
 }
 
-.article__content a:hover {
+.article__content p a:hover {
   text-decoration: none;
   color: #000;
 }
@@ -3972,6 +3979,7 @@ p {
 
 .article__insta iframe {
   margin-bottom: 0 !important;
+  min-width: 250px !important;
 }
 
 .article__insta-desc {

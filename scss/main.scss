@@ -52,6 +52,11 @@ body{
   //background: url("../images/map_cat_d.jpg") no-repeat center top;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 .cat{
   .breadcrumbs {
     margin-left: 29px;
@@ -88,8 +93,8 @@ body{
       margin-top: 39px;
       padding-top: 32px;
       padding-bottom: 14px;
-      border-top: 2px solid #ccc;
-      border-bottom: 2px solid #ccc;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       h2{
         font-size: 14px;
         margin-bottom: 19px;
@@ -947,7 +952,7 @@ textarea{
     font-size: 14px;
     font-weight: 700;
     width: 100%;
-    margin-bottom: 41px;
+    margin-bottom: 30px;
     a{
       color: #000;
     }
@@ -2255,6 +2260,7 @@ p {
   padding: 18px;
   border: 1px solid transparent;
   transition: 300ms;
+  position: relative;
   &-items {
     display: flex;
     flex-wrap: wrap;
@@ -2469,6 +2475,7 @@ p {
   }
   &__image{
     position: relative;
+    display: inline-block;
     img{
       max-width: 100%;
     }
@@ -3221,13 +3228,13 @@ p {
     p{
       font-size: 16px;
       margin-bottom: 22px;
-    }
-    a{
-      color: #6c6c6c;
-      text-decoration: underline;
-      &:hover{
-        text-decoration: none;
-        color: #000;
+      a{
+        color: #6c6c6c;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+          color: #000;
+        }
       }
     }
   }
@@ -3329,6 +3336,7 @@ p {
     width: 487px;
     iframe{
       margin-bottom: 0 !important;
+      min-width: 250px !important;
     }
     &-desc{
       position: absolute;

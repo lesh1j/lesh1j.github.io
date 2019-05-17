@@ -1676,9 +1676,11 @@
       margin-left: -5px;
       margin-right: -5px;
       margin-top: 0px;
+      justify-content: space-evenly;
       .product {
         flex: 0 0 47.895%;
-        max-width: 47.895%;
+        width: 47.895%;
+        max-width: 220px;
         padding: 0 0 18px;
         margin: 0 1.05% 9px;
         &__image {
@@ -2208,6 +2210,9 @@
       padding-right: 0;
       padding-left: 0;
       margin-bottom: 0;
+      .product {
+        margin: 0 auto;
+      }
     }
     &__popular{
       display: none;
@@ -2235,6 +2240,7 @@
   .product {
     padding: 10px 4px 13px;
     border: none !important;
+    max-width: 220px;
     &__labels{
       left: 14px;
       top: 20px;
@@ -2246,6 +2252,10 @@
     &__price {
       font-size: 14px;
     }  
+    &-items {
+      justify-content: space-evenly;
+      width: 100%;
+    }
   }
   .product-item{
     .breadcrumbs {
@@ -2348,20 +2358,29 @@
     &__slider{
       padding-right: 0px;
       padding-left: 0;
+      .blog__button {
+        padding: 0 22px;
+      }
     }
     &__button{
       margin-top: -7px;
       a{
         width: 100%;
+        max-width: 340px;
       }
+    }
+    &-items{
+      justify-content: space-evenly;
     }
     &-item{
       flex: 0 0 100%;
       max-width: 100%;
-      margin: 0 0 30px;
+      margin: 0 auto 30px;
+      max-width: 340px;
       &.col {
         margin: 0 0 25px;
         flex: 0 0 100%;
+        max-width: 340px;
       }
     }
     &-bar{
@@ -2602,13 +2621,6 @@
     flex: 0 0 33.33333%;
     padding: 0 5px;
   }
-  .blog{
-    &.on-inner {
-      .container {
-        //justify-content: center;
-      }
-    }
-  }
   .page__title {
     margin-top: 19px;
     line-height: 22px;
@@ -2646,10 +2658,12 @@
   }
   .offers-content .section-title {
     margin-bottom: 28px;
+    width: 100%;
   }
   .offer {
-    margin-bottom: 37px;
+    margin: 0 auto 37px;
     display: block;
+    max-width: 360px;
     &__image {
       flex: 0 0 100%;
       max-width: 100%;
@@ -2701,8 +2715,12 @@
   }
   .products-content .product {
     flex: 0 0 50%;
-    max-width: 50%;
+    width: 50%;
+    max-width: 220px;
     padding-bottom: 13px;
+  }
+  text[text-anchor="middle"] {
+    //writing-mode: tb;
   }
 }
 
