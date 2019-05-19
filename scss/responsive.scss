@@ -309,6 +309,18 @@
         max-width: 182px;
         padding: 0 0 19px;
         margin: 0 19px 9px;
+        &__image {
+        img{
+            &.active{
+              &.mob{
+                display: inline-block;
+              }
+              &.pc{
+                display: none;
+              }
+            }
+          }
+        }
         &__like {
           right: 6px;
           top: 10px;
@@ -1508,45 +1520,49 @@
   .page__title h1 {
     font-size: 20px;
   }
-  .brands-page__letters {
-    font-size: 14px;
-    padding: 24px 20px !important;
-  }
-  .brands-page__letters ul li {
-    margin-right: 7px;
-  }
-  .brands-page__letters ul li.rus-letters {
-    margin-left: 21px;
-    letter-spacing: 0;
-  }
-  .brands-page__letters ul li.other-letters {
-    margin-left: 22px;
-  }
-  .brands-content {
-    padding: 13px 6px !important;
-  }
-  .brands-item{
-    &__list {
-      ul {
-        //height: 185px;
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-        li{
-          padding-right: 10px;
+  .brands{
+    &-page{
+      &__letters {
+        font-size: 14px;
+        padding: 24px 20px !important;
+        ul{
+          li {
+            margin-right: 7px;
+            &.rus-letters {
+              margin-left: 21px;
+              letter-spacing: 0;
+            }
+            &.other-letters {
+              margin-left: 22px;
+            }
+          }
         }
       }
     }
-  }
-  .brands-item__list ul li {
-    //width: 33.3333%
-  }
-  .brands-item__button {
-    margin: 28px 0 23px;
-  }
-  .brands-item__list ul li a span {
-    opacity: 1;
-    visibility: visible;
+    &-content {
+      padding: 13px 6px !important;
+    }
+    &-item{
+      &__list {
+        ul {
+          -moz-column-count: 3;
+          -webkit-column-count: 3;
+          column-count: 3;
+          li{
+            padding-right: 10px;
+            a{
+              span {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__button {
+      margin: 28px 0 23px;
+    }
   }
   .offers-page {
     padding-bottom: 13px;
