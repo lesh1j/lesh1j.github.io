@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory-->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>pricefon</title>
+					<link rel="stylesheet" href="styles/vendor.css">
+			<link rel="stylesheet" href="styles/main.css">
+					</head>
+	<body class="layout layout_primary">
+					
+<header class="header layout" id="hidden-header">
+	<div class="header__inner">
+		<button type="button" class="header__menu-switch">
+			<svg width="23" height="18" class="header__burger-img">
+	<use xlink:href="images/icons.svg#hamburger"></use>
+</svg>
+		</button>
+		<a class="header__logo" href="">
+			<svg width="211" height="32" class="header__logo-img">
+	<use xlink:href="images/icons.svg#logo"></use>
+</svg>
+		</a>
+    <button class="search__show cta cta_only-icon cta_theme_fancy">
+      <svg width="22" height="18" class="">
+        <use xlink:href="images/icons.svg#cta-search"></use>
+      </svg>
+    </button>
+		<form class="header__search search search_layout_header">
+      <div class="mobmenu__title">
+        <div class="mobmenu__close" id="search-close">
+          закрыть
+        </div>
+      </div>
+			<input class="search__input text-input text-input_theme_contrast" type="search" placeholder="iphone7" required>
+			<button class="search__submit cta cta_only-icon cta_theme_fancy">
+				<svg width="22" height="18" class="">
+        <use xlink:href="images/icons.svg#cta-search"></use>
+      </svg>
+			</button>
+		</form>
+    <div class="mobmenu__header">
+      <div class="mobmenu__title">
+        <div class="mobmenu__close" id="mobmenu-close">
+          закрыть
+        </div>
+      </div>
+    </div>
+		<div class="header__auth auth">
+				<div class="auth__actions">
+		<button class="auth__cta cta cta_theme_contrast js-toggle js-click-trigger" data-toggle="dialog" data-dialog="dialog-auth" data-click-target="auth-dialog-1">Зарегистрироваться</button>
+		<button class="auth__cta cta cta_theme_contrast js-toggle js-click-trigger" data-toggle="dialog" data-dialog="dialog-auth" data-click-target="auth-dialog-0">Войти</button>
+	</div>
+	<div class="auth__user">
+		<div class="auth__avatar-container">
+			<span class="cta cta_only-icon cta_static-white">
+				<svg width="30" height="30" class="">
+	<use xlink:href="images/icons.svg#user"></use>
+</svg>
+			</span>
+		</div>
+	</div>
+		</div>
+		<dialog class="dialog header__auth-dialog" id="dialog-auth">
+			<div class="dialog__dropup">
+				<div class="radiogroup radiogroup_theme_primary js-tab-links" data-current-class="tabs__tab_current" data-tab-group="auth-dialog">
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="product-tabs" data-tab-target="sign-in" id="auth-dialog-0" checked>
+						<label for="auth-dialog-0" class="radiogroup__label">Войти</label>
+					</div>
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="product-tabs" data-tab-target="sign-up" id="auth-dialog-1">
+						<label for="auth-dialog-1" class="radiogroup__label">Зарегистрироваться</label>
+					</div>
+				</div>
+			</div>
+			<div class="dialog__content">
+				<div class="js-tabs" data-tab-group="auth-dialog">
+					<form action="" method="post" class="fields tabs__tab tabs__tab_current" id="sign-in">
+						<div class="fields__field">
+							<input type="text" class="text-input fields__control fields__input" placeholder="e-mail или логин" required name="username">
+						</div>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input" placeholder="пароль" required name="password">
+							<button class="cta cta_only-icon fields__control fields__submit">
+								<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+							</button>
+						</div>
+						<div class="fields__actions">
+							<a href="" class="fields__link js-toggle" data-toggle="dialog" data-dialog="pass_recovery">Восстановить пароль</a>
+						</div>
+						<div class="dialog__login-links_social">
+							<a href="" class="dialog__social-link" title="Facebook">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_fb">
+									Войти через Facebook
+									<svg width="8" height="16" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-facebook-filled"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Вконтакте">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_vk">
+									Войти через vk.com
+									<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Одноклассники">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ok">
+									Войти через Одноклассники
+									<svg width="9" height="15" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-ok"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Яндекс">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ya">
+									Войти через Яндекс
+									<svg width="7" height="14" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-yandex"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Twitter">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_tw">
+									Войти через Twitter
+									<svg width="15" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-twitter"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Goolge">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_gl">
+									Войти через Google
+									<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-gplus"></use>
+</svg>
+								</span>
+							</a>
+						</div>
+					</form>
+					<form action="" method="post" class="fields tabs__tab" id="sign-up">
+						<div class="fields__field">
+							<input type="text" class="text-input fields__control fields__input fields__input-registration" placeholder="имя" required name="username">
+						</div>
+						<div class="fields__field">
+<!--fields__input_state_invalid-->
+							<input type="email" class="text-input fields__control fields__input fields__input-registration" placeholder="адрес электронной почты" required name="email">
+						</div>
+						<input type="checkbox" name="fieldset-5" id="checkbox-example-one" class="checkbox_input" />
+						 <label for="checkbox-example-one" class="checkbox_input-label">Я согласен на <a href="">условия подписки</a></label>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input fields__input-registration" placeholder="пароль" required name="password">
+						</div>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input fields__input-registration" placeholder="повторите пароль" required name="password">
+						</div>
+						<button class="cta fields__submit cta_registration">регистрация</button><br>
+						<input type="checkbox" name="fieldset-5" id="checkbox-example-two" class="checkbox_input checkbox_input-marginless" />
+						 <label for="checkbox-example-two" class="checkbox_input-label">Я согласен на <a href="">обработку персональных данных</a></label>
+						<div class="fields__messages">
+							<p class="fields__message fields__message_error">Пользователь с таким e-mail уже зарегистрирован на сайте!</p>
+						</div>
+						<div class="dialog__login-links_social">
+						<a href="" class="dialog__social-link" title="Facebook">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_fb">
+								Войти через Facebook
+								<svg width="8" height="16" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-facebook-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Вконтакте">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_vk">
+								Войти через vk.com
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Одноклассники">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ok">
+								Войти через Одноклассники
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Яндекс">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ya">
+								Войти через Яндекс
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Twitter">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_tw">
+								Войти через Twitter
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Goolge">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_gl">
+								Войти через Google
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+					</div>
+					</form>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="dialog header__auth-dialog" id="pass_recovery">
+			<div class="dialog__dropup dialog__title">Восстановление пароля</div>
+			<div class="dialog__content">
+				<form action="" method="post" class="fields tabs__tab tabs__tab_current">
+					<p class="fields_recovery-message">Укажите адрес электронной почты, на который мы сможем отправить ссылку для создания нового  пароля </p>
+					<div class="fields__field">
+						<input type="text" class="text-input fields__control fields__input" placeholder="e-mail или логин" required name="username">
+						<button class="cta cta_only-icon fields__control fields__submit">
+							<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</dialog>
+		<div class="header__sidebar">
+			<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ header__social">
+	<li class="social-list__item">
+		<a href="" title="instagram" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-instagram"></use>
+</svg>
+		</a>
+	</li>
+	<li class="social-list__item">
+		<a href="" title="vk" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-vk"></use>
+</svg>
+		</a>
+	</li>
+</ul>
+			<div class="header__langs header__dropdown-trigger">
+				<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+				<ul class="header__dropdown">
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">
+							<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+						</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">
+							<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__currency header__dropdown-trigger">
+				₽
+				<ul class="header__dropdown">
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">$</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">€</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">Rs</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+					<div class="layout layout_columned ">
+		<div class="layout__column layout__column_menu">
+			<nav class="menu layout__menu ">
+	<ul class="menu__list">
+		<li class="menu__item menu-item menu-item_pop">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="16" height="31" class="">
+	<use xlink:href="images/icons.svg#sections-phone"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">телефоны</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item menu-item_pop">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="20" height="27" class="">
+	<use xlink:href="images/icons.svg#sections-tablet"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">планшеты</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="26" height="26" class="">
+	<use xlink:href="images/icons.svg#sections-groupbuying"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">совместные покупки</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="19" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-tracktrace"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">где посылка?</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item menu-item_active">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="20" height="18" class="">
+	<use xlink:href="images/icons.svg#sections-shops"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">магазины</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="19" height="18" class="">
+	<use xlink:href="images/icons.svg#sections-brands"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">бренды</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="24" height="21" class="">
+	<use xlink:href="images/icons.svg#sections-review"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">отзывы</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="25" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-promocode"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">промокоды</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="24" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-cashback"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">кэшбэк</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+								</div>
+		<main class="layout__main">
+				<div class="layout layout_columned shop">
+		<div class="layout__main shop__main">
+			<div class="breadcrumbs breadcrumbs_embedded">
+				<a href="index.html" class="breadcrumbs__link">Главная</a>
+				<a href="shops.html" class="breadcrumbs__link">магазины</a>
+				<a href="shop.html" class="breadcrumbs__link breadcrumbs__link_current">Aliexpress</a>
+			</div>
+			
+			<div class="shop__content">
+				<div class="shop__header">
+					<img src="https://loremflickr.com/230/55"
+     width="230"
+     height="55"
+     class="shop__logo"
+     alt=""
+>
+					<a href="aliexpress.com" class="cta">перейти на сайт магазина</a>
+				</div>
+				<h1 class="layout__title layout__title-shop">Aliexpress</h1>
+				<div class="shop__text">Доставка во все страны Доставка от 3 дней до 3 месяцев</div>
+				<div class="shop__promocodes">
+					<div class="promocode js-promocode shop__promocode" data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+						<div class="cta promocode__code promocode__hidden">без промокода</div>			<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode_1_dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode_1_dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">Нету кода</div>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+					<div class="promocode js-promocode shop__promocode" data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode_2_dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode_2_dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+					<div class="promocode js-promocode shop__promocode" data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+						<div class="cta promocode__code promocode__hidden">без промокода</div>			<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode_3_dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode_3_dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">Нету кода</div>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+					<div class="promocode js-promocode shop__promocode" data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode_4_dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode_4_dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+					<div class="promocode js-promocode shop__promocode" data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+						<div class="cta promocode__code promocode__hidden">без промокода</div>			<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode_5_dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode_5_dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">Нету кода</div>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+					<div class="promocode js-promocode shop__promocode" data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode_6_dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode_6_dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+					<div class="promocode js-promocode shop__promocode" data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+						<div class="cta promocode__code promocode__hidden">без промокода</div>			<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode_7_dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode_7_dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">Нету кода</div>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+					<div class="promocode js-promocode shop__promocode" data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode_8_dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode_8_dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</div>
+			</div>
+		</div>
+		<div class="layout__sidebar sidebar-shop">
+			<div class="sidebar-shop__name">Aliexpress</div>
+			<div class="sidebar-shop__origin">BY</div>
+			<div class="sidebar-shop__devices">
+				<a href="" class="sidebar-shop__device">
+					<svg width="16" height="31" class="sidebar-shop__icon">
+	<use xlink:href="images/icons.svg#sections-phone"></use>
+</svg>
+					456
+				</a>
+				<a href="" class="sidebar-shop__device">
+					<svg width="20" height="27" class="sidebar-shop__icon">
+	<use xlink:href="images/icons.svg#sections-tablet"></use>
+</svg>
+					367
+				</a>
+			</div>
+			<div class="sidebar-shop__shipping">
+				Доставка во все страны Доставка от 3 дней до 3 месяцев
+			</div>
+
+							<div class="sidebar-shop__title">Кэшбэк-сервисы:</div>
+									<a href="" class="sidebar-shop__link">cashback-obzor</a>
+									<a href="" class="sidebar-shop__link">cashback-aliexpress</a>
+										<div class="sidebar-shop__title">Промокоды:</div>
+			23
+			<div class="sidebar-shop__title">Совместные покупки:</div>
+			12
+		</div>
+	</div>
+		</main>
+	</div>
+						<footer class="footer layout layout__footer">
+	<div class="footer_to-top">
+		<button class="cta cta_only-icon fields__control fields__submit cta_to-top">
+								<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+		</button>
+	</div>
+	<div class="footer__inner">
+		<a class="footer__logo" href="">
+			<svg width="207" height="31" class="footer__logo-img">
+	<use xlink:href="images/icons.svg#logo"></use>
+</svg>
+			<small class="footer__copyrights">© Pricefon. 2018 Все права защищены.</small>
+		</a>
+		<div class="footer__links">
+			<a class="footer__link" href="#">контакты</a>
+			<a class="footer__link" href="#">пользовательское соглашение</a>
+			<a class="footer__link" href="#">политика конфиденциальность</a>
+		</div>
+		<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ footer__social">
+	<li class="social-list__item">
+		<a href="" title="instagram" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-instagram"></use>
+</svg>
+		</a>
+	</li>
+	<li class="social-list__item">
+		<a href="" title="vk" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-vk"></use>
+</svg>
+		</a>
+	</li>
+</ul>
+	</div>
+</footer>
+											<script src="scripts/vendor.js"></script>
+			<script src="scripts/main.js"></script>
+			</body>
+</html>

@@ -1,0 +1,4010 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory-->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>pricefon</title>
+					<link rel="stylesheet" href="styles/vendor.css">
+			<link rel="stylesheet" href="styles/main.css">
+					</head>
+	<body class="layout layout_primary">
+    
+<header class="header layout" id="hidden-header">
+	<div class="header__inner">
+		<button type="button" class="header__menu-switch">
+			<svg width="23" height="18" class="header__burger-img">
+	<use xlink:href="images/icons.svg#hamburger"></use>
+</svg>
+		</button>
+		<a class="header__logo" href="">
+			<svg width="211" height="32" class="header__logo-img">
+	<use xlink:href="images/icons.svg#logo"></use>
+</svg>
+		</a>
+    <button class="search__show cta cta_only-icon cta_theme_fancy">
+      <svg width="22" height="18" class="">
+        <use xlink:href="images/icons.svg#cta-search"></use>
+      </svg>
+    </button>
+		<form class="header__search search search_layout_header">
+      <div class="mobmenu__title">
+        <div class="mobmenu__close" id="search-close">
+          закрыть
+        </div>
+      </div>
+			<input class="search__input text-input text-input_theme_contrast" type="search" placeholder="iphone7" required>
+			<button class="search__submit cta cta_only-icon cta_theme_fancy">
+				<svg width="22" height="18" class="">
+        <use xlink:href="images/icons.svg#cta-search"></use>
+      </svg>
+			</button>
+		</form>
+    <div class="mobmenu__header">
+      <div class="mobmenu__title">
+        <div class="mobmenu__close" id="mobmenu-close">
+          закрыть
+        </div>
+      </div>
+    </div>
+		<div class="header__auth auth">
+				<div class="auth__actions">
+		<button class="auth__cta cta cta_theme_contrast js-toggle js-click-trigger" data-toggle="dialog" data-dialog="dialog-auth" data-click-target="auth-dialog-1">Зарегистрироваться</button>
+		<button class="auth__cta cta cta_theme_contrast js-toggle js-click-trigger" data-toggle="dialog" data-dialog="dialog-auth" data-click-target="auth-dialog-0">Войти</button>
+	</div>
+	<div class="auth__user">
+		<div class="auth__avatar-container">
+			<span class="cta cta_only-icon cta_static-white">
+				<svg width="30" height="30" class="">
+	<use xlink:href="images/icons.svg#user"></use>
+</svg>
+			</span>
+		</div>
+	</div>
+		</div>
+		<dialog class="dialog header__auth-dialog" id="dialog-auth">
+			<div class="dialog__dropup">
+				<div class="radiogroup radiogroup_theme_primary js-tab-links" data-current-class="tabs__tab_current" data-tab-group="auth-dialog">
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="product-tabs" data-tab-target="sign-in" id="auth-dialog-0" checked>
+						<label for="auth-dialog-0" class="radiogroup__label">Войти</label>
+					</div>
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="product-tabs" data-tab-target="sign-up" id="auth-dialog-1">
+						<label for="auth-dialog-1" class="radiogroup__label">Зарегистрироваться</label>
+					</div>
+				</div>
+			</div>
+			<div class="dialog__content">
+				<div class="js-tabs" data-tab-group="auth-dialog">
+					<form action="" method="post" class="fields tabs__tab tabs__tab_current" id="sign-in">
+						<div class="fields__field">
+							<input type="text" class="text-input fields__control fields__input" placeholder="e-mail или логин" required name="username">
+						</div>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input" placeholder="пароль" required name="password">
+							<button class="cta cta_only-icon fields__control fields__submit">
+								<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+							</button>
+						</div>
+						<div class="fields__actions">
+							<a href="" class="fields__link js-toggle" data-toggle="dialog" data-dialog="pass_recovery">Восстановить пароль</a>
+						</div>
+						<div class="dialog__login-links_social">
+							<a href="" class="dialog__social-link" title="Facebook">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_fb">
+									Войти через Facebook
+									<svg width="8" height="16" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-facebook-filled"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Вконтакте">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_vk">
+									Войти через vk.com
+									<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Одноклассники">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ok">
+									Войти через Одноклассники
+									<svg width="9" height="15" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-ok"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Яндекс">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ya">
+									Войти через Яндекс
+									<svg width="7" height="14" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-yandex"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Twitter">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_tw">
+									Войти через Twitter
+									<svg width="15" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-twitter"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Goolge">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_gl">
+									Войти через Google
+									<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-gplus"></use>
+</svg>
+								</span>
+							</a>
+						</div>
+					</form>
+					<form action="" method="post" class="fields tabs__tab" id="sign-up">
+						<div class="fields__field">
+							<input type="text" class="text-input fields__control fields__input fields__input-registration" placeholder="имя" required name="username">
+						</div>
+						<div class="fields__field">
+<!--fields__input_state_invalid-->
+							<input type="email" class="text-input fields__control fields__input fields__input-registration" placeholder="адрес электронной почты" required name="email">
+						</div>
+						<input type="checkbox" name="fieldset-5" id="checkbox-example-one" class="checkbox_input" />
+						 <label for="checkbox-example-one" class="checkbox_input-label">Я согласен на <a href="">условия подписки</a></label>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input fields__input-registration" placeholder="пароль" required name="password">
+						</div>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input fields__input-registration" placeholder="повторите пароль" required name="password">
+						</div>
+						<button class="cta fields__submit cta_registration">регистрация</button><br>
+						<input type="checkbox" name="fieldset-5" id="checkbox-example-two" class="checkbox_input checkbox_input-marginless" />
+						 <label for="checkbox-example-two" class="checkbox_input-label">Я согласен на <a href="">обработку персональных данных</a></label>
+						<div class="fields__messages">
+							<p class="fields__message fields__message_error">Пользователь с таким e-mail уже зарегистрирован на сайте!</p>
+						</div>
+						<div class="dialog__login-links_social">
+						<a href="" class="dialog__social-link" title="Facebook">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_fb">
+								Войти через Facebook
+								<svg width="8" height="16" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-facebook-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Вконтакте">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_vk">
+								Войти через vk.com
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Одноклассники">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ok">
+								Войти через Одноклассники
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Яндекс">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ya">
+								Войти через Яндекс
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Twitter">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_tw">
+								Войти через Twitter
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Goolge">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_gl">
+								Войти через Google
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+					</div>
+					</form>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="dialog header__auth-dialog" id="pass_recovery">
+			<div class="dialog__dropup dialog__title">Восстановление пароля</div>
+			<div class="dialog__content">
+				<form action="" method="post" class="fields tabs__tab tabs__tab_current">
+					<p class="fields_recovery-message">Укажите адрес электронной почты, на который мы сможем отправить ссылку для создания нового  пароля </p>
+					<div class="fields__field">
+						<input type="text" class="text-input fields__control fields__input" placeholder="e-mail или логин" required name="username">
+						<button class="cta cta_only-icon fields__control fields__submit">
+							<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</dialog>
+		<div class="header__sidebar">
+			<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ header__social">
+	<li class="social-list__item">
+		<a href="" title="instagram" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-instagram"></use>
+</svg>
+		</a>
+	</li>
+	<li class="social-list__item">
+		<a href="" title="vk" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-vk"></use>
+</svg>
+		</a>
+	</li>
+</ul>
+			<div class="header__langs header__dropdown-trigger">
+				<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+				<ul class="header__dropdown">
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">
+							<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+						</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">
+							<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__currency header__dropdown-trigger">
+				₽
+				<ul class="header__dropdown">
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">$</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">€</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">Rs</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+					<div class="layout layout_promo">
+					<nav class="menu layout__menu ">
+	<ul class="menu__list">
+		<li class="menu__item menu-item menu-item_pop">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="16" height="31" class="">
+	<use xlink:href="images/icons.svg#sections-phone"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">телефоны</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item menu-item_pop">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="20" height="27" class="">
+	<use xlink:href="images/icons.svg#sections-tablet"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">планшеты</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="26" height="26" class="">
+	<use xlink:href="images/icons.svg#sections-groupbuying"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">совместные покупки</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="19" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-tracktrace"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">где посылка?</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item menu-item_active">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="20" height="18" class="">
+	<use xlink:href="images/icons.svg#sections-shops"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">магазины</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="19" height="18" class="">
+	<use xlink:href="images/icons.svg#sections-brands"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">бренды</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="24" height="21" class="">
+	<use xlink:href="images/icons.svg#sections-review"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">отзывы</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="25" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-promocode"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">промокоды</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="24" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-cashback"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">кэшбэк</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+					<section class="promo-products js-slider layout layout_section" data-current-item-class="promo-products__option-name_selected" data-autoplay="3000">
+	<div class="promo-products__container">
+		<div class="radiogroup promo-products__group">
+			<div class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="promo-products-group" id="group_promo-products-group_0" checked>
+				<label for="group_promo-products-group_0" class="radiogroup__label cta">лучшие продажи</label>
+			</div>
+			<div class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="promo-products-group" id="group_promo-products-group_1">
+				<label for="group_promo-products-group_1" class="radiogroup__label cta">новинки</label>
+			</div>
+			<div class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="promo-products-group" id="group_promo-products-group_2">
+				<label for="group_promo-products-group_2" class="radiogroup__label cta">рекомендуем</label>
+			</div>
+		</div>
+		<div class="promo-products__slider">
+			<div class="slider slider_overlayed slider_variant_promo-products">
+				<button class="js-slider-prev slider__shift slider__shift_prev cta cta_only-icon">
+					<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-left"></use>
+</svg>
+				</button>
+				<button class="js-slider-next slider__shift slider__shift_next cta cta_only-icon">
+					<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+				</button>
+				<div class="slider__frame js-slider-frame">
+					<div class="slider__slides js-slider-slides">
+													<div class="slider__slide js-slider-slide">
+								<div class="slider__slide-content">
+									<div class="promo-products__item">
+										<a href="" class="promo-products__image-container">
+											<img class="promo-products__image" srcset="https://loremflickr.com/980/540?image=1 1260w, https://loremflickr.com/600/540?image=1 520w" alt="">
+										</a>
+										<div class="promo-products__info">
+											<div class="promo-products__platform">
+																									<svg width="20" height="26" class="">
+	<use xlink:href="images/icons.svg#platform-ios"></use>
+</svg>
+																							</div>
+											<div class="promo-products__name">
+												Apple Iphone 6S 256 GB Onix Black
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="slider__slide js-slider-slide">
+								<div class="slider__slide-content">
+									<div class="promo-products__item">
+										<a href="" class="promo-products__image-container">
+											<img class="promo-products__image" srcset="https://loremflickr.com/980/540?image=2 1260w, https://loremflickr.com/600/540?image=2 520w" alt="">
+										</a>
+										<div class="promo-products__info">
+											<div class="promo-products__platform">
+																									<svg width="22" height="27" class="">
+	<use xlink:href="images/icons.svg#platform-android"></use>
+</svg>
+																							</div>
+											<div class="promo-products__name">
+												Google Nexus 5x black 128Tb
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+											</div>
+				</div>
+			</div>
+
+			<div class="promo-products__slide-info">
+				<div class="promo-products__price">
+					1 450
+				</div>
+				<div class="promo-products__currency dropdown">
+					₽
+					<ul class="dropdown__content promo-products__currency-dropdown">
+						<li>
+							<a class="promo-products__currency-link" href="">€</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="promo-products__options">
+			<div class="promo-products__options-head">
+				<div class="promo-products__options-title">Топ</div>
+				<div class="radiogroup radiogroup_condensed radiogroup_theme_contrast promo-products__options-category radiogroup_lite">
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="promo-products-options-category" id="group_promo-products-options-category_0" checked>
+						<label for="group_promo-products-options-category_0" class="radiogroup__label cta">телефоны</label>
+					</div>
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="promo-products-options-category" id="group_promo-products-options-category_1">
+						<label for="group_promo-products-options-category_1" class="radiogroup__label cta">планшеты</label>
+					</div>
+				</div>
+			</div>
+			<ul class="promo-products__options-list">
+									<li class="promo-products__option">
+						<a href="/real/url/to/option/page" class="js-slider-item promo-products__option-link">
+							<div class="promo-products__option-name js-slider-active-target promo-products__option-name_selected">
+								Apple Iphone 6s
+							</div>
+							<div class="promo-products__option-specs">
+								256Gb Funky Mint
+							</div>
+							<div class="promo-products__option-price">
+								<strong>12 800</strong> RUB
+							</div>
+						</a>
+					</li>
+									<li class="promo-products__option">
+						<a href="/real/url/to/option/page" class="js-slider-item promo-products__option-link">
+							<div class="promo-products__option-name js-slider-active-target ">
+								Google Nexus 5x
+							</div>
+							<div class="promo-products__option-specs">
+								128Tb full throttle
+							</div>
+							<div class="promo-products__option-price">
+								<strong>10 000</strong> RUB
+							</div>
+						</a>
+					</li>
+							</ul>
+		</div>
+	</div>
+</section>
+	</div>
+	<main>
+			<section class="catalog layout layout_section">
+			<a href="" class="section-head section-head_theme_ section-head_overlay">
+	<div class="section-head__icon">
+		<svg width="16" height="31" class="">
+	<use xlink:href="images/icons.svg#sections-phone"></use>
+</svg>
+	</div>
+			<div class="section-head__title">Каталог</div>
+	</a>
+		<div class="catalog__head">
+			<div class="price-promo">
+	<div class="price-promo__prices">
+		<div class="price-promo__axis-label">50</div>
+		<div class="price-promo__chart">
+			<ul class="price-promo__buckets">
+				<li class="price-promo__bucket" data-bucket-min-price="50" data-bucket-max-price="1083"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">35 моделей</span><span class="price-promo__bucket-bar" style="height:70%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="1083" data-bucket-max-price="2116"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">35 моделей</span><span class="price-promo__bucket-bar" style="height:70%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="2116" data-bucket-max-price="3149"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">36 моделей</span><span class="price-promo__bucket-bar" style="height:72%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="3149" data-bucket-max-price="4182"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">39 моделей</span><span class="price-promo__bucket-bar" style="height:78%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="4182" data-bucket-max-price="5215"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">24 моделей</span><span class="price-promo__bucket-bar" style="height:48%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="5215" data-bucket-max-price="6248"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">39 моделей</span><span class="price-promo__bucket-bar" style="height:78%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="6248" data-bucket-max-price="7281"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">25 моделей</span><span class="price-promo__bucket-bar" style="height:50%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="7281" data-bucket-max-price="8314"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">40 моделей</span><span class="price-promo__bucket-bar" style="height:80%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="8314" data-bucket-max-price="9347"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">7 моделей</span><span class="price-promo__bucket-bar" style="height:14.000000000000002%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="9347" data-bucket-max-price="10380"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">21 моделей</span><span class="price-promo__bucket-bar" style="height:42%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="10380" data-bucket-max-price="11413"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">12 моделей</span><span class="price-promo__bucket-bar" style="height:24%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="11413" data-bucket-max-price="12446"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">23 моделей</span><span class="price-promo__bucket-bar" style="height:46%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="12446" data-bucket-max-price="13479"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">10 моделей</span><span class="price-promo__bucket-bar" style="height:20%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="13479" data-bucket-max-price="14512"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">25 моделей</span><span class="price-promo__bucket-bar" style="height:50%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="14512" data-bucket-max-price="15545"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">36 моделей</span><span class="price-promo__bucket-bar" style="height:72%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="15545" data-bucket-max-price="16578"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">11 моделей</span><span class="price-promo__bucket-bar" style="height:22%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="16578" data-bucket-max-price="17611"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">40 моделей</span><span class="price-promo__bucket-bar" style="height:80%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="17611" data-bucket-max-price="18644"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">14 моделей</span><span class="price-promo__bucket-bar" style="height:28.000000000000004%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="18644" data-bucket-max-price="19677"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">15 моделей</span><span class="price-promo__bucket-bar" style="height:30%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="19677" data-bucket-max-price="20710"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">18 моделей</span><span class="price-promo__bucket-bar" style="height:36%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="20710" data-bucket-max-price="21743"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">4 моделей</span><span class="price-promo__bucket-bar" style="height:8%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="21743" data-bucket-max-price="22776"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">39 моделей</span><span class="price-promo__bucket-bar" style="height:78%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="22776" data-bucket-max-price="23809"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">48 моделей</span><span class="price-promo__bucket-bar" style="height:96%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="23809" data-bucket-max-price="24842"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">13 моделей</span><span class="price-promo__bucket-bar" style="height:26%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="24842" data-bucket-max-price="25875"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">47 моделей</span><span class="price-promo__bucket-bar" style="height:94%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="25875" data-bucket-max-price="26908"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">13 моделей</span><span class="price-promo__bucket-bar" style="height:26%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="26908" data-bucket-max-price="27941"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">43 моделей</span><span class="price-promo__bucket-bar" style="height:86%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="27941" data-bucket-max-price="28974"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">36 моделей</span><span class="price-promo__bucket-bar" style="height:72%"></span></a></li>
+				<li class="price-promo__bucket" data-bucket-min-price="28974" data-bucket-max-price="30007"><a class="price-promo__bucket-link" href=""><span class="price-promo__bucket-value">19 моделей</span><span class="price-promo__bucket-bar" style="height:38%"></span></a></li>
+			</ul>
+		</div>
+		<div class="price-promo__axis-label">30000</div>
+	</div>
+	<div class="price-promo__title">Сколько вы&nbsp;готовы потратить на&nbsp;телефон?</div>
+</div>
+		</div>
+		<div class="catalog__section">
+		<div class="catalog__header">
+			<div class="radiogroup catalog__categories">
+	<div class="radiogroup__item catalog__cta">
+		<input class="radiogroup__control" type="radio" name="catalog_phones" id="group_catalog_phones_0" checked>
+		<label for="group_catalog_phones_0" class="radiogroup__label cta">все телефоны</label>
+	</div>
+	<div class="radiogroup__item catalog__cta">
+		<input class="radiogroup__control" type="radio" name="catalog_phones" id="group_catalog_phones_1">
+		<label for="group_catalog_phones_1" class="radiogroup__label cta">лучшие продажи</label>
+	</div>
+	<div class="radiogroup__item catalog__cta">
+		<input class="radiogroup__control" type="radio" name="catalog_phones" id="group_catalog_phones_2">
+		<label for="group_catalog_phones_2" class="radiogroup__label cta">новинки</label>
+	</div>
+	<div class="radiogroup__item catalog__cta">
+		<input class="radiogroup__control" type="radio" name="catalog_phones" id="group_catalog_phones_3">
+		<label for="group_catalog_phones_3" class="radiogroup__label cta">рекомендуем</label>
+	</div>
+	<a class="cta cta_iconed catalog__goto catalog__cta" href="">
+		<svg width="24" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-view"></use>
+</svg>
+		смотреть в каталоге
+	</a>
+</div>
+		</div>
+		<div class="slider js-slider ">
+	<button class="js-slider-prev slider__shift slider__shift_prev cta cta_only-icon " disabled>
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-left"></use>
+</svg>
+	</button>
+	<button class="js-slider-next slider__shift slider__shift_next cta cta_only-icon ">
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+	</button>
+	<div class="slider__frame js-slider-frame">
+		<div class="slider__slides js-slider-slides">
+				<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="catalog__list">
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="catalog__list">
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="catalog__section">
+		<div class="catalog__header">
+			<div class="radiogroup catalog__categories">
+	<div class="radiogroup__item catalog__cta">
+		<input class="radiogroup__control" type="radio" name="catalog_tablets" id="group_catalog_tablets_0" checked>
+		<label for="group_catalog_tablets_0" class="radiogroup__label cta">все планшеты</label>
+	</div>
+	<div class="radiogroup__item catalog__cta">
+		<input class="radiogroup__control" type="radio" name="catalog_tablets" id="group_catalog_tablets_1">
+		<label for="group_catalog_tablets_1" class="radiogroup__label cta">лучшие продажи</label>
+	</div>
+	<div class="radiogroup__item catalog__cta">
+		<input class="radiogroup__control" type="radio" name="catalog_tablets" id="group_catalog_tablets_2">
+		<label for="group_catalog_tablets_2" class="radiogroup__label cta">новинки</label>
+	</div>
+	<div class="radiogroup__item catalog__cta">
+		<input class="radiogroup__control" type="radio" name="catalog_tablets" id="group_catalog_tablets_3">
+		<label for="group_catalog_tablets_3" class="radiogroup__label cta">рекомендуем</label>
+	</div>
+	<a class="cta cta_iconed catalog__goto catalog__cta" href="">
+		<svg width="24" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-view"></use>
+</svg>
+		смотреть в каталоге
+	</a>
+</div>
+		</div>
+		<div class="slider js-slider ">
+	<button class="js-slider-prev slider__shift slider__shift_prev cta cta_only-icon " disabled>
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-left"></use>
+</svg>
+	</button>
+	<button class="js-slider-next slider__shift slider__shift_next cta cta_only-icon ">
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+	</button>
+	<div class="slider__frame js-slider-frame">
+		<div class="slider__slides js-slider-slides">
+				<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="catalog__list">
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="catalog__list">
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+				<li class="catalog__item">
+					<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_" >
+				<label for="product_" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+	</div>
+</section>
+	<section class="reviews reviews_section layout layout_section">
+	<a href="" class="section-head section-head_theme_ section-head_overlay">
+	<div class="section-head__icon">
+		<svg width="21" height="17" class="">
+	<use xlink:href="images/icons.svg#sections-review"></use>
+</svg>
+	</div>
+			<div class="section-head__title">отзывы</div>
+	</a>
+	<div class="slider js-slider reviews__slider">
+	<button class="js-slider-prev slider__shift slider__shift_prev cta cta_only-icon cta_theme_contrast reviews__shift" disabled>
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-left"></use>
+</svg>
+	</button>
+	<button class="js-slider-next slider__shift slider__shift_next cta cta_only-icon cta_theme_contrast reviews__shift">
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+	</button>
+	<div class="slider__frame js-slider-frame">
+		<div class="slider__slides js-slider-slides">
+				<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content reviews__slide">
+			<article class="review reviews__review review_layout_slide">
+	<a href="" class="review__image-container">
+		<img src="https://loremflickr.com/170/320"
+     width="170"
+     height="320"
+     class="review__image"
+     alt=""
+>
+	</a>
+	<div class="review__body">
+		<a href="" class="review__title">
+			LG Nexus 5X 16GB Carbon: <br>отличный телефон на каждый день
+		</a>
+		<a href="" class="review__author">vovic_2009</a>
+		<div class="review__text">
+			Отличный смартфон за свои деньги. Брал в черном цвете - крышка особо не пачкается. Боковые кнопки (громкость и блокировка) вызывают ощущение ненадежности - пошатываются. Но это мелочи за такую цену. Экран - отличный! Фотки яркие, сочные &lt;…&gt;
+		</div>
+		<a href="" class="review__goto cta cta_iconed cta_theme_contrast">
+			<svg width="24" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-view"></use>
+</svg>
+			читать полностью
+		</a>
+	</div>
+		<ul class="review__meta">
+		<li class="review__meta-item" title="Совместные покупки">
+			<svg width="30" height="30" class="">
+	<use xlink:href="images/icons.svg#sections-groupbuying"></use>
+</svg>
+		</li>
+		<li class="review__meta-item" title="Есть промокоды">
+			<svg width="30" height="30" class="">
+	<use xlink:href="images/icons.svg#sections-promocode"></use>
+</svg>
+		</li>
+		<li class="review__meta-item review__meta-item_pop" title="На платформе Android">
+			<svg width="22" height="27" class="">
+	<use xlink:href="images/icons.svg#platform-android"></use>
+</svg>
+		</li>
+	</ul>
+</article>
+		</div>
+	</div>
+	<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content reviews__slide">
+			<article class="review reviews__review review_layout_slide">
+	<a href="" class="review__image-container">
+		<img src="https://loremflickr.com/170/320"
+     width="170"
+     height="320"
+     class="review__image"
+     alt=""
+>
+	</a>
+	<div class="review__body">
+		<a href="" class="review__title">
+			LG Nexus 5X 16GB Carbon: <br>отличный телефон на каждый день
+		</a>
+		<a href="" class="review__author">vovic_2009</a>
+		<div class="review__text">
+			Отличный смартфон за свои деньги. Брал в черном цвете - крышка особо не пачкается. Боковые кнопки (громкость и блокировка) вызывают ощущение ненадежности - пошатываются. Но это мелочи за такую цену. Экран - отличный! Фотки яркие, сочные &lt;…&gt;
+		</div>
+		<a href="" class="review__goto cta cta_iconed cta_theme_contrast">
+			<svg width="24" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-view"></use>
+</svg>
+			читать полностью
+		</a>
+	</div>
+		<ul class="review__meta">
+		<li class="review__meta-item" title="Совместные покупки">
+			<svg width="30" height="30" class="">
+	<use xlink:href="images/icons.svg#sections-groupbuying"></use>
+</svg>
+		</li>
+		<li class="review__meta-item" title="Есть промокоды">
+			<svg width="30" height="30" class="">
+	<use xlink:href="images/icons.svg#sections-promocode"></use>
+</svg>
+		</li>
+		<li class="review__meta-item review__meta-item_pop" title="На платформе Android">
+			<svg width="22" height="27" class="">
+	<use xlink:href="images/icons.svg#platform-android"></use>
+</svg>
+		</li>
+	</ul>
+</article>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+	<a class="reviews__stats" href="">
+		<strong class="reviews__stats-number">298</strong>отзывов на&nbsp;топовые модели на&nbsp;сайте
+	</a>
+</section>
+	<section class="groupbuying layout layout_section">
+	<a href="" class="section-head section-head_theme_ ">
+	<div class="section-head__icon">
+		<svg width="26" height="26" class="">
+	<use xlink:href="images/icons.svg#sections-groupbuying"></use>
+</svg>
+	</div>
+			<div class="section-head__title">совместные покупки</div>
+	</a>
+	<div class="groupbuying__section">
+		<div class="slider js-slider groupbuying__slider">
+	<button class="js-slider-prev slider__shift slider__shift_prev cta cta_only-icon groupbuying__shift" disabled>
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-left"></use>
+</svg>
+	</button>
+	<button class="js-slider-next slider__shift slider__shift_next cta cta_only-icon groupbuying__shift">
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+	</button>
+	<div class="slider__frame js-slider-frame">
+		<div class="slider__slides js-slider-slides">
+				<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="groupbuying__list">
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="groupbuying__list">
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="groupbuying__section">
+		<div class="slider js-slider groupbuying__slider">
+	<button class="js-slider-prev slider__shift slider__shift_prev cta cta_only-icon groupbuying__shift" disabled>
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-left"></use>
+</svg>
+	</button>
+	<button class="js-slider-next slider__shift slider__shift_next cta cta_only-icon groupbuying__shift">
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+	</button>
+	<div class="slider__frame js-slider-frame">
+		<div class="slider__slides js-slider-slides">
+				<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="groupbuying__list">
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="groupbuying__list">
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+				<li class="groupbuying__item">
+					<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+	</article>
+					<div class="groupbuying__meta">
+						<span class="cta groupbuying__cta groupbuying__time">12 д. 20 ч. 03 мин.</span>
+						<span class="cta groupbuying__cta groupbuying__participants">200 участников</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+	</div>
+</section>
+	<section class="tracktrace tracktrace_section layout layout_section">
+	<a href="" class="section-head section-head_theme_ section-head_overlay">
+	<div class="section-head__icon">
+		<svg width="26" height="34" class="">
+	<use xlink:href="images/icons.svg#sections-tracktrace"></use>
+</svg>
+	</div>
+	</a>
+	<div class="title tracktrace__title">Где посылка?</div>
+	<form class="tracktrace__form">
+		<input class="tracktrace__input text-input text-input_fancy text-input_extrafont text-input_theme_contrast" placeholder="Введите трек-код" required="required"/>
+		<button class="tracktrace__submit cta cta_theme_contrast cta_only-icon">
+			<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+		</button>
+	</form>
+	<p class="tracktrace__text"><strong>Трекинг номер</strong> (трек-код или номер отслеживания) — это международный почтовый идентификатор отправления, по которому ориентируются службы доставки, и благодаря которому можно определить, где в данный момент находится ваша посылка.</p>
+</section>
+	<section class="promocodes layout layout_section">
+	<a href="" class="section-head section-head_theme_ promocodes__title">
+	<div class="section-head__icon">
+		<svg width="30" height="30" class="">
+	<use xlink:href="images/icons.svg#sections-promocode"></use>
+</svg>
+	</div>
+			<div class="section-head__title">промокоды</div>
+	</a>
+	<div class="slider js-slider promocodes__slider">
+	<button class="js-slider-prev slider__shift slider__shift_prev cta cta_only-icon promocodes__shift" disabled>
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-left"></use>
+</svg>
+	</button>
+	<button class="js-slider-next slider__shift slider__shift_next cta cta_only-icon promocodes__shift">
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+	</button>
+	<div class="slider__frame js-slider-frame">
+		<div class="slider__slides js-slider-slides">
+				<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="promocodes__list">
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="promocodes__list">
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+	<div class="slider js-slider promocodes__slider">
+	<button class="js-slider-prev slider__shift slider__shift_prev cta cta_only-icon promocodes__shift" disabled>
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-left"></use>
+</svg>
+	</button>
+	<button class="js-slider-next slider__shift slider__shift_next cta cta_only-icon promocodes__shift">
+		<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+	</button>
+	<div class="slider__frame js-slider-frame">
+		<div class="slider__slides js-slider-slides">
+				<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="promocodes__list">
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="slider__slide js-slider-slide">
+		<div class="slider__slide-content">
+			<ul class="promocodes__list">
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+				<li class="promocodes__item">
+					<div class="promocode js-promocode " data-revealed-class="promocode_result" data-hidden-class="promocode__hidden">
+			<a href="" class="cta promocode__shop">Aliexpress</a>
+		<a href="" class="promocode__body">
+		<div class="promocode__text">-50% на все модели Samsung до 25 февраля 2017 года от магазина Aliexpress …</div>
+		<div class="promocode__ctas">
+			<div class="cta promocode__code promocode__hidden">Rhd874h</div>						<div class="cta promocode__cta promocode__code-holder js-promocode-holder">· · · · · ·</div>
+			<div class="cta promocode__cta promocode__goto cta_only-icon js-promocode-reveal js-toggle" data-toggle="dialog" data-dialog="promocode__dialog">
+				<svg width="7" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+			</div>
+		</div>
+	</a>
+</div>
+<dialog class="dialog" id="promocode__dialog">
+	<div class="dialog__dropup dialog__title">Получить промокод</div>
+	<div class="dialog__content dialog__content-cashback">
+		<div class="cashback cashback_popup">
+			<h1>
+				-50% при заказе от 2 000 рублей<br>
+				до 20 ноября 2019 года<br>
+				на AliExpress и Alibaba<br>
+			</h1>
+			<div class="cashback__description">
+				<p>
+				Активируйте код при оформлении покупки товаров на сайте AliExpress. По ссылке - акционные товары, на которые предоставляется скидка. Скидка действует на любые товары, стоимость которых превышает 2 000 рублей за единицу, количество товаров в корзине не ограничено.
+				</p>
+								<ol class="cashback__steps">
+					<li>Скопируйте код</li>
+					<li>Перейдите в <a href="">магазин</a></li>
+					<li>Введите код в корзине</li>
+				</ol>
+							</div>
+			<div class="cashback__buttons">
+									<div class="cta cta_promocodes">RTI-4392</div>
+					<button class="cta cta_copy-code">Скопировать код</button>
+								<a class="cta cta-link_active" href="">Перейти на AliExpress.com</a>
+			</div>
+		</div>
+	</div>
+</dialog>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
+</section>
+	
+<section class="cashback cashback_section layout layout_section">
+	<a href="" class="section-head section-head_theme_ section-head_overlay">
+	<div class="section-head__icon">
+		<svg width="32" height="31" class="">
+	<use xlink:href="images/icons.svg#sections-cashback"></use>
+</svg>
+	</div>
+			<div class="section-head__title">кэшбэк</div>
+	</a>
+	<div class="cashback__body">
+		<div class="title cashback__title">Рейтинг и сравнение кэшбэк-сервисов</div>
+		<div class="cashback__content">Возвращайте часть денег с каждой покупки в интернет-магазинах.</div>
+		<a href="cashback_catalog.html" class="cta cta_theme_contrast cashback__goto">Получить кэшбэк</a>
+	</div>
+</section>
+			<section class="layout logo-showcase">
+	<a href="" class="section-head section-head_theme_contrast logo-showcase__head">
+	<div class="section-head__icon">
+		<svg width="25" height="24" class="">
+	<use xlink:href="images/icons.svg#sections-shops"></use>
+</svg>
+	</div>
+			<div class="section-head__title">магазины</div>
+	</a>
+	<ul class="logo-showcase__list">
+				<li class="logo-showcase__item">
+			<a href="https://ru.aliexpress.com/" class="logo-showcase__link">
+				<img src="images/logos/aliexpress.png" srcset="images/logos/aliexpress.png, images/logos/aliexpress@2x.png 2x" class="logo-showcase__image" alt="Aliexpress">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://www.gearbest.com/" class="logo-showcase__link">
+				<img src="images/logos/gearbest.png" srcset="images/logos/gearbest.png, images/logos/gearbest@2x.png 2x" class="logo-showcase__image" alt="GearBest">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="http://www.everbuying.net/" class="logo-showcase__link">
+				<img src="images/logos/everbuying.png" srcset="images/logos/everbuying.png, images/logos/everbuying@2x.png 2x" class="logo-showcase__image" alt="Everbuying">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://www.lightinthebox.com/ru/" class="logo-showcase__link">
+				<img src="images/logos/lightinthebox.png" srcset="images/logos/lightinthebox.png, images/logos/lightinthebox@2x.png 2x" class="logo-showcase__image" alt="LightInTheBox">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://www.banggood.com/ru/" class="logo-showcase__link">
+				<img src="images/logos/banggood.png" srcset="images/logos/banggood.png, images/logos/banggood@2x.png 2x" class="logo-showcase__image" alt="Banggood">
+			</a>
+		</li>
+			</ul>
+</section>
+				<section class="layout logo-showcase logo-showcase_theme_contrast">
+	<a href="" class="section-head section-head_theme_ logo-showcase__head">
+	<div class="section-head__icon">
+		<svg width="26" height="27" class="">
+	<use xlink:href="images/icons.svg#sections-brands"></use>
+</svg>
+	</div>
+			<div class="section-head__title">бренды</div>
+	</a>
+	<ul class="logo-showcase__list">
+				<li class="logo-showcase__item">
+			<a href="https://www.mi.com/en/" class="logo-showcase__link">
+				<img src="images/logos/xiaomi.png" srcset="images/logos/xiaomi.png, images/logos/xiaomi@2x.png 2x" class="logo-showcase__image" alt="Xiaomi">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://www3.lenovo.com/ru/ru/" class="logo-showcase__link">
+				<img src="images/logos/lenovo.png" srcset="images/logos/lenovo.png, images/logos/lenovo@2x.png 2x" class="logo-showcase__image" alt="Lenovo">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://shop.huawei.ru/" class="logo-showcase__link">
+				<img src="images/logos/huawei.png" srcset="images/logos/huawei.png, images/logos/huawei@2x.png 2x" class="logo-showcase__image" alt="Huawei">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://www.meizu.com/en/" class="logo-showcase__link">
+				<img src="images/logos/meizu.png" srcset="images/logos/meizu.png, images/logos/meizu@2x.png 2x" class="logo-showcase__image" alt="Meizu">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="http://www.lg.com/ru" class="logo-showcase__link">
+				<img src="images/logos/lg.png" srcset="images/logos/lg.png, images/logos/lg@2x.png 2x" class="logo-showcase__image" alt="LG Electronics">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://www.microsoft.com/ru-ru" class="logo-showcase__link">
+				<img src="images/logos/microsoft.png" srcset="images/logos/microsoft.png, images/logos/microsoft@2x.png 2x" class="logo-showcase__image" alt="Microsoft">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://www.apple.com/" class="logo-showcase__link">
+				<img src="images/logos/apple.png" srcset="images/logos/apple.png, images/logos/apple@2x.png 2x" class="logo-showcase__image" alt="Apple">
+			</a>
+		</li>
+				<li class="logo-showcase__item">
+			<a href="https://www.samsung.com/ru/" class="logo-showcase__link">
+				<img src="images/logos/samsung.png" srcset="images/logos/samsung.png, images/logos/samsung@2x.png 2x" class="logo-showcase__image" alt="Samsung">
+			</a>
+		</li>
+			</ul>
+</section>
+		
+	
+	
+	
+	</main>
+					<footer class="footer layout layout__footer">
+	<div class="footer_to-top">
+		<button class="cta cta_only-icon fields__control fields__submit cta_to-top">
+								<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+		</button>
+	</div>
+	<div class="footer__inner">
+		<a class="footer__logo" href="">
+			<svg width="207" height="31" class="footer__logo-img">
+	<use xlink:href="images/icons.svg#logo"></use>
+</svg>
+			<small class="footer__copyrights">© Pricefon. 2018 Все права защищены.</small>
+		</a>
+		<div class="footer__links">
+			<a class="footer__link" href="#">контакты</a>
+			<a class="footer__link" href="#">пользовательское соглашение</a>
+			<a class="footer__link" href="#">политика конфиденциальность</a>
+		</div>
+		<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ footer__social">
+	<li class="social-list__item">
+		<a href="" title="instagram" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-instagram"></use>
+</svg>
+		</a>
+	</li>
+	<li class="social-list__item">
+		<a href="" title="vk" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-vk"></use>
+</svg>
+		</a>
+	</li>
+</ul>
+	</div>
+</footer>
+											<script src="scripts/vendor.js"></script>
+			<script src="scripts/main.js"></script>
+			</body>
+</html>

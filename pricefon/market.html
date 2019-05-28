@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory-->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>pricefon</title>
+					<link rel="stylesheet" href="styles/vendor.css">
+			<link rel="stylesheet" href="styles/main.css">
+					</head>
+	<body class="layout layout_primary">
+			
+<header class="header layout" id="hidden-header">
+	<div class="header__inner">
+		<button type="button" class="header__menu-switch">
+			<svg width="23" height="18" class="header__burger-img">
+	<use xlink:href="images/icons.svg#hamburger"></use>
+</svg>
+		</button>
+		<a class="header__logo" href="">
+			<svg width="211" height="32" class="header__logo-img">
+	<use xlink:href="images/icons.svg#logo"></use>
+</svg>
+		</a>
+    <button class="search__show cta cta_only-icon cta_theme_fancy">
+      <svg width="22" height="18" class="">
+        <use xlink:href="images/icons.svg#cta-search"></use>
+      </svg>
+    </button>
+		<form class="header__search search search_layout_header">
+      <div class="mobmenu__title">
+        <div class="mobmenu__close" id="search-close">
+          закрыть
+        </div>
+      </div>
+			<input class="search__input text-input text-input_theme_contrast" type="search" placeholder="iphone7" required>
+			<button class="search__submit cta cta_only-icon cta_theme_fancy">
+				<svg width="22" height="18" class="">
+        <use xlink:href="images/icons.svg#cta-search"></use>
+      </svg>
+			</button>
+		</form>
+    <div class="mobmenu__header">
+      <div class="mobmenu__title">
+        <div class="mobmenu__close" id="mobmenu-close">
+          закрыть
+        </div>
+      </div>
+    </div>
+		<div class="header__auth auth">
+				<div class="auth__user dropdown">
+		<a href="" class="auth__cta cta cta_theme_contrast">Ivan_superstar</a>
+		<a href="" class="auth__avatar-container">
+			<img src="https://loremflickr.com/30/30"
+     width="30"
+     height="30"
+     class="auth__avatar"
+     alt=""
+>
+		</a>
+		<div class="dropdown__content auth__dropdown">
+			<ul class="auth__dropdown-list">
+				<li class="auth__dropdown-link"><a href="" class="cta cta_theme_contrast">Мои посылки (0)</a></li>
+				<li class="auth__dropdown-link"><a href="" class="cta cta_theme_contrast">Мои отзывы (123)</a></li>
+				<li class="auth__dropdown-link"><a href="" class="cta cta_theme_contrast">Избранные телефоны  (40)</a></li>
+				<li class="auth__dropdown-link"><a href="" class="cta cta_theme_contrast">Избранные планшеты (8)</a></li>
+				<li class="auth__dropdown-link"><a href="" class="cta cta_theme_contrast">Выйти</a></li>
+			</ul>
+		</div>
+	</div>
+		</div>
+		<dialog class="dialog header__auth-dialog" id="dialog-auth">
+			<div class="dialog__dropup">
+				<div class="radiogroup radiogroup_theme_primary js-tab-links" data-current-class="tabs__tab_current" data-tab-group="auth-dialog">
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="product-tabs" data-tab-target="sign-in" id="auth-dialog-0" checked>
+						<label for="auth-dialog-0" class="radiogroup__label">Войти</label>
+					</div>
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="product-tabs" data-tab-target="sign-up" id="auth-dialog-1">
+						<label for="auth-dialog-1" class="radiogroup__label">Зарегистрироваться</label>
+					</div>
+				</div>
+			</div>
+			<div class="dialog__content">
+				<div class="js-tabs" data-tab-group="auth-dialog">
+					<form action="" method="post" class="fields tabs__tab tabs__tab_current" id="sign-in">
+						<div class="fields__field">
+							<input type="text" class="text-input fields__control fields__input" placeholder="e-mail или логин" required name="username">
+						</div>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input" placeholder="пароль" required name="password">
+							<button class="cta cta_only-icon fields__control fields__submit">
+								<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+							</button>
+						</div>
+						<div class="fields__actions">
+							<a href="" class="fields__link js-toggle" data-toggle="dialog" data-dialog="pass_recovery">Восстановить пароль</a>
+						</div>
+						<div class="dialog__login-links_social">
+							<a href="" class="dialog__social-link" title="Facebook">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_fb">
+									Войти через Facebook
+									<svg width="8" height="16" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-facebook-filled"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Вконтакте">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_vk">
+									Войти через vk.com
+									<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Одноклассники">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ok">
+									Войти через Одноклассники
+									<svg width="9" height="15" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-ok"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Яндекс">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ya">
+									Войти через Яндекс
+									<svg width="7" height="14" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-yandex"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Twitter">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_tw">
+									Войти через Twitter
+									<svg width="15" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-twitter"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Goolge">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_gl">
+									Войти через Google
+									<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-gplus"></use>
+</svg>
+								</span>
+							</a>
+						</div>
+					</form>
+					<form action="" method="post" class="fields tabs__tab" id="sign-up">
+						<div class="fields__field">
+							<input type="text" class="text-input fields__control fields__input fields__input-registration" placeholder="имя" required name="username">
+						</div>
+						<div class="fields__field">
+<!--fields__input_state_invalid-->
+							<input type="email" class="text-input fields__control fields__input fields__input-registration" placeholder="адрес электронной почты" required name="email">
+						</div>
+						<input type="checkbox" name="fieldset-5" id="checkbox-example-one" class="checkbox_input" />
+						 <label for="checkbox-example-one" class="checkbox_input-label">Я согласен на <a href="">условия подписки</a></label>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input fields__input-registration" placeholder="пароль" required name="password">
+						</div>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input fields__input-registration" placeholder="повторите пароль" required name="password">
+						</div>
+						<button class="cta fields__submit cta_registration">регистрация</button><br>
+						<input type="checkbox" name="fieldset-5" id="checkbox-example-two" class="checkbox_input checkbox_input-marginless" />
+						 <label for="checkbox-example-two" class="checkbox_input-label">Я согласен на <a href="">обработку персональных данных</a></label>
+						<div class="fields__messages">
+							<p class="fields__message fields__message_error">Пользователь с таким e-mail уже зарегистрирован на сайте!</p>
+						</div>
+						<div class="dialog__login-links_social">
+						<a href="" class="dialog__social-link" title="Facebook">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_fb">
+								Войти через Facebook
+								<svg width="8" height="16" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-facebook-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Вконтакте">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_vk">
+								Войти через vk.com
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Одноклассники">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ok">
+								Войти через Одноклассники
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Яндекс">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ya">
+								Войти через Яндекс
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Twitter">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_tw">
+								Войти через Twitter
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Goolge">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_gl">
+								Войти через Google
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+					</div>
+					</form>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="dialog header__auth-dialog" id="pass_recovery">
+			<div class="dialog__dropup dialog__title">Восстановление пароля</div>
+			<div class="dialog__content">
+				<form action="" method="post" class="fields tabs__tab tabs__tab_current">
+					<p class="fields_recovery-message">Укажите адрес электронной почты, на который мы сможем отправить ссылку для создания нового  пароля </p>
+					<div class="fields__field">
+						<input type="text" class="text-input fields__control fields__input" placeholder="e-mail или логин" required name="username">
+						<button class="cta cta_only-icon fields__control fields__submit">
+							<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</dialog>
+		<div class="header__sidebar">
+			<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ header__social">
+	<li class="social-list__item">
+		<a href="" title="instagram" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-instagram"></use>
+</svg>
+		</a>
+	</li>
+	<li class="social-list__item">
+		<a href="" title="vk" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-vk"></use>
+</svg>
+		</a>
+	</li>
+</ul>
+			<div class="header__langs header__dropdown-trigger">
+				<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+				<ul class="header__dropdown">
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">
+							<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+						</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">
+							<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__currency header__dropdown-trigger">
+				₽
+				<ul class="header__dropdown">
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">$</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">€</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">Rs</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+			<div class="layout layout_columned market">
+		<div class="layout__column layout__column_menu">
+			<nav class="menu layout__menu ">
+	<ul class="menu__list">
+		<li class="menu__item menu-item menu-item_pop">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="16" height="31" class="">
+	<use xlink:href="images/icons.svg#sections-phone"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">телефоны</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item menu-item_pop">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="20" height="27" class="">
+	<use xlink:href="images/icons.svg#sections-tablet"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">планшеты</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="26" height="26" class="">
+	<use xlink:href="images/icons.svg#sections-groupbuying"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">совместные покупки</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="19" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-tracktrace"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">где посылка?</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item menu-item_active">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="20" height="18" class="">
+	<use xlink:href="images/icons.svg#sections-shops"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">магазины</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="19" height="18" class="">
+	<use xlink:href="images/icons.svg#sections-brands"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">бренды</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="24" height="21" class="">
+	<use xlink:href="images/icons.svg#sections-review"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">отзывы</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="25" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-promocode"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">промокоды</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="24" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-cashback"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">кэшбэк</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+				<div class="market__filters" id="filters">
+          <div class="filters-mobtitle">
+            <span class="cta__label">Фильтры</span>
+            <span id="filters-close" class="js-toggle" data-toggle="class" data-toggle-target="filters" data-toggle-class="market__filters_open" id="market-filters-toggle">закрыть</span>
+          </div>
+		<details class="market__filter filter " open>
+	<summary class="filter__head">
+		<div class="filter__icon-container">
+			<svg width="16" height="14" class="filter__icon">
+	<use xlink:href="images/icons.svg#filters-price"></use>
+</svg>
+		</div>
+		<div class="filter__name">
+				Цена
+		</div>
+		<span class="filter_opener"></span>
+	</summary>
+	<div class="filter__body">
+			<input type="number" class="text-input filter__item" placeholder="от $39" min="0">
+	<input type="number" class="text-input filter__item" placeholder="до $2897" min="0">
+	</div>
+</details>
+		<details class="market__filter filter 	filter_columned
+" open>
+	<summary class="filter__head">
+		<div class="filter__icon-container">
+			<svg width="18" height="18" class="filter__icon">
+	<use xlink:href="images/icons.svg#filters-brand"></use>
+</svg>
+		</div>
+		<div class="filter__name">
+				бренд
+		</div>
+		<span class="filter_opener"></span>
+	</summary>
+	<div class="filter__body">
+			<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned">
+		<li class="radiogroup__item">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-0" checked>
+			<label for="filter-brand-0" class="radiogroup__label cta">Apple</label>
+		</li>
+		<li class="radiogroup__item">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-1">
+			<label for="filter-brand-1" class="radiogroup__label cta">Alcatel</label>
+		</li>
+		<li class="radiogroup__item">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-2">
+			<label for="filter-brand-2" class="radiogroup__label cta">Motorola</label>
+		</li>
+		<li class="radiogroup__item">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-3">
+			<label for="filter-brand-3" class="radiogroup__label cta">Lenovo</label>
+		</li>
+		<li class="radiogroup__item">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-4">
+			<label for="filter-brand-4" class="radiogroup__label cta">LG</label>
+		</li>
+		<li class="radiogroup__item">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-5">
+			<label for="filter-brand-5" class="radiogroup__label cta">Google</label>
+		</li>
+		<li class="radiogroup__item">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-6">
+			<label for="filter-brand-6" class="radiogroup__label cta">HTC</label>
+		</li>
+		<li class="radiogroup__item">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-7">
+			<label for="filter-brand-7" class="radiogroup__label cta">Sony</label>
+		</li>
+		<li class="radiogroup__item radiogroup__item_more">
+			<button type="button" class="radiogroup__more cta">все бренды</label>
+		</li>
+	</ul>
+	</div>
+</details>
+		<details class="market__filter filter " open>
+	<summary class="filter__head">
+		<div class="filter__icon-container">
+			<svg width="13" height="20" class="filter__icon">
+	<use xlink:href="images/icons.svg#specs-body"></use>
+</svg>
+		</div>
+		<div class="filter__name">
+				корпус
+		</div>
+		<span class="filter_opener"></span>
+	</summary>
+	<div class="filter__body">
+			<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">вес</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-body" id="filter-body-0" checked>
+				<label for="filter-body-0" class="radiogroup__label cta">до 100 гр</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-body" id="filter-body-1">
+				<label for="filter-body-1" class="radiogroup__label cta">до 200 гр</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-body" id="filter-body-2">
+				<label for="filter-body-2" class="radiogroup__label cta">до 300 гр</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-body" id="filter-body-3">
+				<label for="filter-body-3" class="radiogroup__label cta">до 400 гр</label>
+			</li>
+		</ul>
+	</details>
+	</div>
+</details>
+		<details class="market__filter filter " open>
+	<summary class="filter__head">
+		<div class="filter__icon-container">
+			<svg width="13" height="20" class="filter__icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+		</div>
+		<div class="filter__name">
+				экран
+		</div>
+		<span class="filter_opener"></span>
+	</summary>
+	<div class="filter__body">
+			<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">диагональ</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-screen-size" id="filter-screen-size-0" checked>
+				<label for="filter-screen-size-0" class="radiogroup__label cta">до 3'</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-screen-size" id="filter-screen-size-1">
+				<label for="filter-screen-size-1" class="radiogroup__label cta">до 4'</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-screen-size" id="filter-screen-size-2">
+				<label for="filter-screen-size-2" class="radiogroup__label cta">до 5'</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-screen-size" id="filter-screen-size-3">
+				<label for="filter-screen-size-3" class="radiogroup__label cta">до 6'</label>
+			</li>
+		</ul>
+	</details>
+	<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">разрешение</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_column radiogroup_full expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-screen-resolution" id="filter-screen-resolution-0" checked>
+				<label for="filter-screen-resolution-0" class="radiogroup__label cta">540x960 (qHD) и мене</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-screen-resolution" id="filter-screen-resolution-1">
+				<label for="filter-screen-resolution-1" class="radiogroup__label cta">720x1280 (HD)</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-screen-resolution" id="filter-screen-resolution-2">
+				<label for="filter-screen-resolution-2" class="radiogroup__label cta">1440x2560 (QHD) и более</label>
+			</li>
+		</ul>
+	</details>
+	</div>
+</details>
+		<details class="market__filter filter " open>
+	<summary class="filter__head">
+		<div class="filter__icon-container">
+			<svg width="18" height="15" class="filter__icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+		</div>
+		<div class="filter__name">
+				объём памяти
+		</div>
+		<span class="filter_opener"></span>
+	</summary>
+	<div class="filter__body">
+			<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">оперативная память</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-memory-storage" id="filter-memory-storage-0" checked>
+				<label for="filter-memory-storage-0" class="radiogroup__label cta">до 1 Gb</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-memory-storage" id="filter-memory-storage-1">
+				<label for="filter-memory-storage-1" class="radiogroup__label cta">до 2 Gb</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-memory-storage" id="filter-memory-storage-2">
+				<label for="filter-memory-storage-2" class="radiogroup__label cta">до 4 Gb</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-memory-storage" id="filter-memory-storage-3">
+				<label for="filter-memory-storage-3" class="radiogroup__label cta">до 8 Gb</label>
+			</li>
+		</ul>
+	</details>
+	<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">встроенная память</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-memory-ram" id="filter-memory-ram-0" checked>
+				<label for="filter-memory-ram-0" class="radiogroup__label cta">до 16 Gb</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-memory-ram" id="filter-memory-ram-1">
+				<label for="filter-memory-ram-1" class="radiogroup__label cta">до 32 Gb</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-memory-ram" id="filter-memory-ram-2">
+				<label for="filter-memory-ram-2" class="radiogroup__label cta">до 128 Gb</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-memory-ram" id="filter-memory-ram-3">
+				<label for="filter-memory-ram-3" class="radiogroup__label cta">до 256 Gb</label>
+			</li>
+		</ul>
+	</details>
+	</div>
+</details>
+		<details class="market__filter filter " open>
+	<summary class="filter__head">
+		<div class="filter__icon-container">
+			<svg width="18" height="15" class="filter__icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+		</div>
+		<div class="filter__name">
+				камера
+		</div>
+		<span class="filter_opener"></span>
+	</summary>
+	<div class="filter__body">
+			<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">разрешение</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_column radiogroup_full expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-camera-resolution" id="filter-camera-resolution-0" checked>
+				<label for="filter-camera-resolution-0" class="radiogroup__label cta">до 1 MP</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-camera-resolution" id="filter-camera-resolution-1">
+				<label for="filter-camera-resolution-1" class="radiogroup__label cta">более 1 MP</label>
+			</li>
+		</ul>
+	</details>
+	<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">функции</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-camera-func" id="filter-camera-func-0" checked>
+				<label for="filter-camera-func-0" class="radiogroup__label cta">хуюнкции</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-camera-func" id="filter-camera-func-1">
+				<label for="filter-camera-func-1" class="radiogroup__label cta">щютк</label>
+			</li>
+		</ul>
+	</details>
+	</div>
+</details>
+		<details class="market__filter filter " open>
+	<summary class="filter__head">
+		<div class="filter__icon-container">
+			<svg width="15" height="16" class="filter__icon">
+	<use xlink:href="images/icons.svg#specs-tech"></use>
+</svg>
+		</div>
+		<div class="filter__name">
+				технологии
+		</div>
+		<span class="filter_opener"></span>
+	</summary>
+	<div class="filter__body">
+			<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">операционная система</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-os" id="filter-tech-os-0" checked>
+				<label for="filter-tech-os-0" class="radiogroup__label cta">Ондроед</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-os" id="filter-tech-os-1">
+				<label for="filter-tech-os-1" class="radiogroup__label cta">Огрызок</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-os" id="filter-tech-os-2">
+				<label for="filter-tech-os-2" class="radiogroup__label cta">Окна</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-os" id="filter-tech-os-3">
+				<label for="filter-tech-os-3" class="radiogroup__label cta">Tizen</label>
+			</li>
+		</ul>
+	</details>
+	<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">ёмкость аккумулятора</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-battery" id="filter-tech-battery-0" checked>
+				<label for="filter-tech-battery-0" class="radiogroup__label cta">до 1000 махов</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-battery" id="filter-tech-battery-1">
+				<label for="filter-tech-battery-1" class="radiogroup__label cta">до 2000 махов</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-battery" id="filter-tech-battery-2">
+				<label for="filter-tech-battery-2" class="radiogroup__label cta">до 3000 махов</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-battery" id="filter-tech-battery-3">
+				<label for="filter-tech-battery-3" class="radiogroup__label cta">до 4000 махов</label>
+			</li>
+		</ul>
+	</details>
+	<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">ёмкость аккумулятора</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-sim" id="filter-tech-sim-0" checked>
+				<label for="filter-tech-sim-0" class="radiogroup__label cta">1 SIM-карта</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-sim" id="filter-tech-sim-1">
+				<label for="filter-tech-sim-1" class="radiogroup__label cta">2 SIM-карты</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-sim" id="filter-tech-sim-2">
+				<label for="filter-tech-sim-2" class="radiogroup__label cta">3 SIM-карты</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-tech-sim" id="filter-tech-sim-3">
+				<label for="filter-tech-sim-3" class="radiogroup__label cta">10 SIM-карт</label>
+			</li>
+		</ul>
+	</details>
+	</div>
+</details>
+		<details class="market__filter filter " open>
+	<summary class="filter__head">
+		<div class="filter__icon-container">
+			<svg width="16" height="15" class="filter__icon">
+	<use xlink:href="images/icons.svg#specs-cpu"></use>
+</svg>
+		</div>
+		<div class="filter__name">
+				процессор
+		</div>
+		<span class="filter_opener"></span>
+	</summary>
+	<div class="filter__body">
+			<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">количество ядер</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_column radiogroup_full expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-cpu-cores" id="filter-cpu-cores-0" checked>
+				<label for="filter-cpu-cores-0" class="radiogroup__label cta">восемь</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-cpu-cores" id="filter-cpu-cores-1">
+				<label for="filter-cpu-cores-1" class="radiogroup__label cta">неоправданно мало</label>
+			</li>
+		</ul>
+	</details>
+	<details class="filter__expandable expandable">
+		<summary class="cta expandable__summary">частота процессора</summary>
+		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-cpu-freq" id="filter-cpu-freq-0" checked>
+				<label for="filter-cpu-freq-0" class="radiogroup__label cta">высокая</label>
+			</li>
+			<li class="radiogroup__item">
+				<input class="radiogroup__control" type="radio" name="filter-cpu-freq" id="filter-cpu-freq-1">
+				<label for="filter-cpu-freq-1" class="radiogroup__label cta">частая</label>
+			</li>
+		</ul>
+	</details>
+	</div>
+</details>
+		<button class="cta cta_accept">Подтвердить</button>
+          <div class="filter-mobbuttons">
+            <button>Сбросить</button>
+            <button>Показать (78)</button>
+          </div>
+	</div>
+		</div>
+		<main class="layout__main">
+				<div class="layout__main market__main">
+		<div class="breadcrumbs breadcrumbs_embedded">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<a href="shops.html" class="breadcrumbs__link breadcrumbs__link_current">магазины</a>
+		</div>
+		<h1 class="layout__title layout__title-market market__title">Каталог</h1>
+		<div class="market__products">
+			<div class="market__product-list">
+				<div class="market__view-configs view-configs">
+					<div class="view-configs__primary">
+						<span class="cta cta_toggle view-configs__filter view-configs__filter_compact market__filters-toggle">
+							<input type="checkbox" class="cta__control js-toggle" data-toggle="class" data-toggle-target="filters" data-toggle-class="market__filters_open" id="market-filters-toggle">
+							<label for="market-filters-toggle" class="cta__label" title="Фильтры">
+								Фильтры
+							</label>
+						</span>
+						<span class="cta cta_toggle cta_only-icon view-configs__filter view-configs__filter_compact">
+							<input type="checkbox" class="cta__control" id="market-filter-groupbuying">
+							<label for="market-filter-groupbuying" class="cta__label cta__label_secondary" title="Совместные покупки">
+								<svg width="30" height="30" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-groupbuying"></use>
+</svg>
+							</label>
+						</span>
+						<span class="cta cta_toggle cta_only-icon view-configs__filter view-configs__filter_compact">
+							<input type="checkbox" class="cta__control" id="market-filter-cashback">
+							<label for="market-filter-cashback" class="cta__label cta__label_secondary" title="Кэшбэк">
+								<svg width="8" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+							</label>
+						</span>
+            <div class="text-input text-input_dropdown view-configs__sort styled-select" id="market-sort">
+              <div class="styled-select__value" id="market-sort__text">сначала популярные</div>
+              <div class="styled-select__drop" id="market-sort__dropdown">
+                <div data-value="0" class="styled-select__item active">сначала популярные</div>
+                <div data-value="1" class="styled-select__item">сначала новые</div>
+                <div data-value="2" class="styled-select__item">сначала дешевые</div>
+                <div data-value="3" class="styled-select__item">сначала дорогие</div>
+              </div>
+              <select name="" id="market-sort__select">
+                <option value="0">сначала популярные</option>
+                <option value="1">сначала новые</option>
+                <option value="2">сначала дешевые</option>
+                <option value="3">сначала дорогие</option>
+              </select>
+            </div>
+					</div>
+					<div class="view-configs__secondary">
+						<span class="cta cta_static view-configs__filter">
+							50 - 200 $
+							<button type="button" class="cta__dismiss">×</button>
+						</span>
+						<span class="cta cta_static view-configs__filter">
+							Apple
+							<button type="button" class="cta__dismiss">×</button>
+						</span>
+						<span class="cta cta_static view-configs__filter">
+							до 100 гр
+							<button type="button" class="cta__dismiss">×</button>
+						</span>
+						<button type="button" class="cta cta_only-icon cta_scroll_right" title="Следующие фильтры"></button>
+					</div>
+				</div>
+									<div class="market__product">
+													<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_1" >
+				<label for="product_1" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+											</div>
+									<div class="market__product">
+													<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_2" >
+				<label for="product_2" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<span class="cta cta_only-icon product__cta product__cta_groupbuying">
+					<svg width="30" height="30" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-groupbuying"></use>
+</svg>
+				</span>
+				<span class="cta product__cta product__cta_groupbuying">12 д. 20 ч.</span>
+				<span class="cta product__cta product__cta_groupbuying">20 участников</span>
+					</div>
+	</article>
+											</div>
+									<div class="market__product">
+													<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_3" >
+				<label for="product_3" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+											</div>
+													<div class="market__product">
+													<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_1" >
+				<label for="product_1" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+											</div>
+									<div class="market__product">
+													<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_2" >
+				<label for="product_2" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<span class="cta cta_only-icon product__cta product__cta_groupbuying">
+					<svg width="30" height="30" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-groupbuying"></use>
+</svg>
+				</span>
+				<span class="cta product__cta product__cta_groupbuying">12 д. 20 ч.</span>
+				<span class="cta product__cta product__cta_groupbuying">20 участников</span>
+					</div>
+	</article>
+											</div>
+									<div class="market__product">
+													<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_3" >
+				<label for="product_3" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+											</div>
+							</div>
+			<button class="cta cta_iconed market__load-more">
+				<svg width="24" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-view"></use>
+</svg>
+				показать больше
+			</button>
+		</div>
+		<div class="market__footer">
+      <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Error in dolor maiores illum consequuntur est nulla sapiente laboriosam et, illo. Distinctio ducimus harum laudantium accusamus incidunt expedita labore aspernatur assumenda ut architecto veniam perspiciatis delectus necessitatibus rerum, nobis quos cupiditate? Praesentium aliquam aliquid in repellat, totam deleniti laboriosam nihil, sequi perferendis consequatur impedit. Quis officia vel non, ea expedita saepe.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error in dolor maiores illum consequuntur est nulla sapiente laboriosam et, illo. Distinctio ducimus harum laudantium accusamus incidunt expedita labore aspernatur assumenda ut architecto veniam perspiciatis delectus necessitatibus rerum, nobis quos cupiditate? Praesentium aliquam aliquid in repellat, totam deleniti laboriosam nihil, sequi perferendis consequatur impedit. Quis officia vel non, ea expedita saepe.</p>
+		</div>
+		<a href="" class="market__selected">
+			<div class="market__selected-vs">VS</div>
+			<div class="market__selected-text">10 товаров в сравнении</div>
+		</a>
+	</div>
+		</main>
+	</div>
+						<footer class="footer layout layout__footer">
+	<div class="footer_to-top">
+		<button class="cta cta_only-icon fields__control fields__submit cta_to-top">
+								<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+		</button>
+	</div>
+	<div class="footer__inner">
+		<a class="footer__logo" href="">
+			<svg width="207" height="31" class="footer__logo-img">
+	<use xlink:href="images/icons.svg#logo"></use>
+</svg>
+			<small class="footer__copyrights">© Pricefon. 2018 Все права защищены.</small>
+		</a>
+		<div class="footer__links">
+			<a class="footer__link" href="#">контакты</a>
+			<a class="footer__link" href="#">пользовательское соглашение</a>
+			<a class="footer__link" href="#">политика конфиденциальность</a>
+		</div>
+		<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ footer__social">
+	<li class="social-list__item">
+		<a href="" title="instagram" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-instagram"></use>
+</svg>
+		</a>
+	</li>
+	<li class="social-list__item">
+		<a href="" title="vk" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-vk"></use>
+</svg>
+		</a>
+	</li>
+</ul>
+	</div>
+</footer>
+    <div class="overlay"></div>
+											<script src="scripts/vendor.js"></script>
+			<script src="scripts/main.js"></script>
+			</body>
+</html>

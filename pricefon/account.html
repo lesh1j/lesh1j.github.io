@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory-->
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>pricefon</title>
+					<link rel="stylesheet" href="styles/vendor.css">
+			<link rel="stylesheet" href="styles/main.css">
+					</head>
+	<body class="layout layout_primary">
+					
+<header class="header layout" id="hidden-header">
+	<div class="header__inner">
+		<button type="button" class="header__menu-switch">
+			<svg width="23" height="18" class="header__burger-img">
+	<use xlink:href="images/icons.svg#hamburger"></use>
+</svg>
+		</button>
+		<a class="header__logo" href="">
+			<svg width="211" height="32" class="header__logo-img">
+	<use xlink:href="images/icons.svg#logo"></use>
+</svg>
+		</a>
+    <button class="search__show cta cta_only-icon cta_theme_fancy">
+      <svg width="22" height="18" class="">
+        <use xlink:href="images/icons.svg#cta-search"></use>
+      </svg>
+    </button>
+		<form class="header__search search search_layout_header">
+      <div class="mobmenu__title">
+        <div class="mobmenu__close" id="search-close">
+          закрыть
+        </div>
+      </div>
+			<input class="search__input text-input text-input_theme_contrast" type="search" placeholder="iphone7" required>
+			<button class="search__submit cta cta_only-icon cta_theme_fancy">
+				<svg width="22" height="18" class="">
+        <use xlink:href="images/icons.svg#cta-search"></use>
+      </svg>
+			</button>
+		</form>
+    <div class="mobmenu__header">
+      <div class="mobmenu__title">
+        <div class="mobmenu__close" id="mobmenu-close">
+          закрыть
+        </div>
+      </div>
+    </div>
+		<div class="header__auth auth">
+				<div class="auth__actions">
+		<button class="auth__cta cta cta_theme_contrast js-toggle js-click-trigger" data-toggle="dialog" data-dialog="dialog-auth" data-click-target="auth-dialog-1">Зарегистрироваться</button>
+		<button class="auth__cta cta cta_theme_contrast js-toggle js-click-trigger" data-toggle="dialog" data-dialog="dialog-auth" data-click-target="auth-dialog-0">Войти</button>
+	</div>
+	<div class="auth__user">
+		<div class="auth__avatar-container">
+			<span class="cta cta_only-icon cta_static-white">
+				<svg width="30" height="30" class="">
+	<use xlink:href="images/icons.svg#user"></use>
+</svg>
+			</span>
+		</div>
+	</div>
+		</div>
+		<dialog class="dialog header__auth-dialog" id="dialog-auth">
+			<div class="dialog__dropup">
+				<div class="radiogroup radiogroup_theme_primary js-tab-links" data-current-class="tabs__tab_current" data-tab-group="auth-dialog">
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="product-tabs" data-tab-target="sign-in" id="auth-dialog-0" checked>
+						<label for="auth-dialog-0" class="radiogroup__label">Войти</label>
+					</div>
+					<div class="radiogroup__item">
+						<input class="radiogroup__control" type="radio" name="product-tabs" data-tab-target="sign-up" id="auth-dialog-1">
+						<label for="auth-dialog-1" class="radiogroup__label">Зарегистрироваться</label>
+					</div>
+				</div>
+			</div>
+			<div class="dialog__content">
+				<div class="js-tabs" data-tab-group="auth-dialog">
+					<form action="" method="post" class="fields tabs__tab tabs__tab_current" id="sign-in">
+						<div class="fields__field">
+							<input type="text" class="text-input fields__control fields__input" placeholder="e-mail или логин" required name="username">
+						</div>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input" placeholder="пароль" required name="password">
+							<button class="cta cta_only-icon fields__control fields__submit">
+								<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+							</button>
+						</div>
+						<div class="fields__actions">
+							<a href="" class="fields__link js-toggle" data-toggle="dialog" data-dialog="pass_recovery">Восстановить пароль</a>
+						</div>
+						<div class="dialog__login-links_social">
+							<a href="" class="dialog__social-link" title="Facebook">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_fb">
+									Войти через Facebook
+									<svg width="8" height="16" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-facebook-filled"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Вконтакте">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_vk">
+									Войти через vk.com
+									<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Одноклассники">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ok">
+									Войти через Одноклассники
+									<svg width="9" height="15" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-ok"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Яндекс">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ya">
+									Войти через Яндекс
+									<svg width="7" height="14" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-yandex"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Twitter">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_tw">
+									Войти через Twitter
+									<svg width="15" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-twitter"></use>
+</svg>
+								</span>
+							</a>
+							<a href="" class="dialog__social-link" title="Goolge">
+								<span class="cta cta_iconed cta_iconed-social cta_iconed-social_gl">
+									Войти через Google
+									<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-gplus"></use>
+</svg>
+								</span>
+							</a>
+						</div>
+					</form>
+					<form action="" method="post" class="fields tabs__tab" id="sign-up">
+						<div class="fields__field">
+							<input type="text" class="text-input fields__control fields__input fields__input-registration" placeholder="имя" required name="username">
+						</div>
+						<div class="fields__field">
+<!--fields__input_state_invalid-->
+							<input type="email" class="text-input fields__control fields__input fields__input-registration" placeholder="адрес электронной почты" required name="email">
+						</div>
+						<input type="checkbox" name="fieldset-5" id="checkbox-example-one" class="checkbox_input" />
+						 <label for="checkbox-example-one" class="checkbox_input-label">Я согласен на <a href="">условия подписки</a></label>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input fields__input-registration" placeholder="пароль" required name="password">
+						</div>
+						<div class="fields__field">
+							<input type="password" class="text-input fields__control fields__input fields__input-registration" placeholder="повторите пароль" required name="password">
+						</div>
+						<button class="cta fields__submit cta_registration">регистрация</button><br>
+						<input type="checkbox" name="fieldset-5" id="checkbox-example-two" class="checkbox_input checkbox_input-marginless" />
+						 <label for="checkbox-example-two" class="checkbox_input-label">Я согласен на <a href="">обработку персональных данных</a></label>
+						<div class="fields__messages">
+							<p class="fields__message fields__message_error">Пользователь с таким e-mail уже зарегистрирован на сайте!</p>
+						</div>
+						<div class="dialog__login-links_social">
+						<a href="" class="dialog__social-link" title="Facebook">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_fb">
+								Войти через Facebook
+								<svg width="8" height="16" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-facebook-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Вконтакте">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_vk">
+								Войти через vk.com
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Одноклассники">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ok">
+								Войти через Одноклассники
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Яндекс">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_ya">
+								Войти через Яндекс
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Twitter">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_tw">
+								Войти через Twitter
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+						<a href="" class="dialog__social-link" title="Goolge">
+							<span class="cta cta_iconed cta_iconed-social cta_iconed-social_gl">
+								Войти через Google
+								<svg width="16" height="10" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-vk-filled"></use>
+</svg>
+							</span>
+						</a>
+					</div>
+					</form>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="dialog header__auth-dialog" id="pass_recovery">
+			<div class="dialog__dropup dialog__title">Восстановление пароля</div>
+			<div class="dialog__content">
+				<form action="" method="post" class="fields tabs__tab tabs__tab_current">
+					<p class="fields_recovery-message">Укажите адрес электронной почты, на который мы сможем отправить ссылку для создания нового  пароля </p>
+					<div class="fields__field">
+						<input type="text" class="text-input fields__control fields__input" placeholder="e-mail или логин" required name="username">
+						<button class="cta cta_only-icon fields__control fields__submit">
+							<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</dialog>
+		<div class="header__sidebar">
+			<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ header__social">
+	<li class="social-list__item">
+		<a href="" title="instagram" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-instagram"></use>
+</svg>
+		</a>
+	</li>
+	<li class="social-list__item">
+		<a href="" title="vk" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-vk"></use>
+</svg>
+		</a>
+	</li>
+</ul>
+			<div class="header__langs header__dropdown-trigger">
+				<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+				<ul class="header__dropdown">
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">
+							<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+						</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">
+							<svg width="20" height="15" class="">
+	<use xlink:href="images/icons.svg#flags-ru"></use>
+</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__currency header__dropdown-trigger">
+				₽
+				<ul class="header__dropdown">
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">$</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">€</a>
+					</li>
+					<li class="header__dropdown-option">
+						<a href="" class="header__dropdown-link">Rs</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+					<div class="layout layout_columned ">
+		<div class="layout__column layout__column_menu">
+			<nav class="menu layout__menu ">
+	<ul class="menu__list">
+		<li class="menu__item menu-item menu-item_pop">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="16" height="31" class="">
+	<use xlink:href="images/icons.svg#sections-phone"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">телефоны</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item menu-item_pop">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="20" height="27" class="">
+	<use xlink:href="images/icons.svg#sections-tablet"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">планшеты</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="26" height="26" class="">
+	<use xlink:href="images/icons.svg#sections-groupbuying"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">совместные покупки</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="19" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-tracktrace"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">где посылка?</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item menu-item_active">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="20" height="18" class="">
+	<use xlink:href="images/icons.svg#sections-shops"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">магазины</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="19" height="18" class="">
+	<use xlink:href="images/icons.svg#sections-brands"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">бренды</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="24" height="21" class="">
+	<use xlink:href="images/icons.svg#sections-review"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">отзывы</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="25" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-promocode"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">промокоды</span>
+			</a>
+		</li>
+		<li class="menu__item menu-item">
+			<a class="menu-item__link" href="">
+				<div class="menu-item__icon-container">
+					<svg width="24" height="25" class="">
+	<use xlink:href="images/icons.svg#sections-cashback"></use>
+</svg>
+				</div>
+				<span class="menu-item__text">кэшбэк</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+								</div>
+		<main class="layout__main">
+				<div class="account account_layout_page-head">
+		<div class="account__main">
+			<div class="breadcrumbs breadcrumbs_theme_contrast">
+				<a href="" class="breadcrumbs__link">Главная</a>
+				<a href="" class="breadcrumbs__link breadcrumbs__link_current">Личный кабинет</a>
+			</div>
+			<div class="account__info">
+				<div class="account__owner">
+					<div class="account__avatar-container">
+						<img src="https://loremflickr.com/60/60"
+     width="60"
+     height="60"
+     class="account__avatar"
+     alt=""
+>
+					</div>
+					<div class="account__name">Ivan_Kolbaska</div>
+				</div>
+				<div class="radiogroup radiogroup_theme_contrast account__tabs js-tab-links" data-current-class="tabs__tab_current" data-tab-group="account">
+					<div class="radiogroup__item catalog__cta">
+						<input class="radiogroup__control" type="radio" name="account-tabs" data-tab-target="favourite_phones" id="account-tabs-3" checked>
+						<label for="account-tabs-3" class="radiogroup__label radiogroup__label_account cta cta_theme_contrast">Избранное (23)</label>
+					</div>
+					<div class="radiogroup__item catalog__cta">
+						<input class="radiogroup__control" type="radio" name="account-tabs" data-tab-target="orders" id="account-tabs-1">
+						<label for="account-tabs-1" class="radiogroup__label radiogroup__label_account cta cta_theme_contrast">Мои посылки (23)</label>
+					</div>
+					<div class="radiogroup__item catalog__cta">
+						<input class="radiogroup__control" type="radio" name="account-tabs" data-tab-target="reviews" id="account-tabs-2">
+						<label for="account-tabs-2" class="radiogroup__label radiogroup__label_account cta cta_theme_contrast">Мои отзывы (100)</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layout__sidebar layout__sidebar_theme_lite account__actions-container">
+			<ul class="account__actions">
+				<li class="account__actions-item">
+					<button type="button" class="account__action cta cta_iconed cta_theme_contrast js-toggle" data-toggle="dialog" data-dialog="dialog-review">
+						<svg width="16" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-edit"></use>
+</svg>
+						написать отзыв
+					</button>
+				</li>
+				<li class="account__actions-item">
+					<a href="" class="account__action cta cta_iconed cta_theme_contrast">
+						<svg width="20" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-barcode"></use>
+</svg>
+						добавить трек-код
+					</a>
+				</li>
+				<li class="account__actions-item account__actions-item_separated">
+					<button class="account__action cta cta_iconed cta_theme_contrast js-toggle" data-toggle="dialog" data-dialog="dialog-paid-reviews">
+						<svg width="34" height="19" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-pay"></use>
+</svg>
+						Получить деньги за&nbsp;отзыв
+					</button>
+				</li>
+				<li class="account__actions-item">
+					<button class="account__action cta cta_iconed cta_theme_contrast js-toggle" data-toggle="dialog" data-dialog="dialog-eula">
+						<svg width="19" height="23" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-document"></use>
+</svg>
+						Пользовательское соглашение
+					</button>
+				</li>
+					<li class="account__actions-item account__actions-item_separated">
+					<a href="" class="account__action cta cta_theme_contrast">
+						Выйти
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<dialog class="dialog" id="dialog-review">
+		<div class="dialog__dropup dialog__title">Добавить отзыв</div>
+		<div class="dialog__content">
+			<form action="" class="fields fields_large">
+				<div class="fields__field">
+					<input type="text" class="text-input fields__control fields__input" placeholder="Заглавие" required>
+				</div>
+				<div class="fields__field">
+					<textarea cols="30" rows="21" class="text-input text-input_area fields__control fields__input" required placeholder="Текст"></textarea>
+				</div>
+				<div class="fields__field">
+					<div class="file-input fields__control">
+						<input type="file" multiple class="file-input__control" id="review-images" tabindex="-1">
+						<label for="review-images" class="file-input__label" tabindex="0">
+							<svg width="22" height="17" class="file-input__icon">
+	<use xlink:href="images/icons.svg#controls-image"></use>
+</svg>
+						</label>
+					</div>
+				</div>
+				<div class="fields__field">
+					<input type="text" class="text-input fields__control fields__input" placeholder="Номер кошелька" required>
+					<button class="cta cta_only-icon fields__control fields__submit">
+						<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+					</button>
+				</div>
+				<div class="fields__field-description">Введите данные своего электронного кошелька, чтобы получить деньги за отзыв</div>
+				<div class="dialog__dropdown">
+					<button type="submit" class="dialog__dropdown-name dialog__cta js-toggle" data-toggle="dialog" data-dialog="dialog-review-added">
+						Опубликовать
+					</button>
+				</div>
+			</form>
+		</div>
+
+	</dialog>
+	<dialog class="dialog dialog_message" id="dialog-review-added">
+		<div class="dialog__content">
+			Спасибо <br> за вашу активность! <br>
+			Ваш отзыв на модерации.
+		</div>
+	</dialog>
+	<dialog class="dialog" id="dialog-eula">
+		<div class="dialog__dropup dialog__title">Пользовательское соглашение</div>
+		<div class="dialog__content dialog__content_overflow">
+			<strong>Предмет Соглашения</strong>
+			<p>Общество с ограниченной ответственностью «Суп Медиа» (Администрация) предоставляет пользователю информационно-телекоммуникационной сети Интернет (Пользователь) возможность использования Сервиса на условиях, изложенных в настоящем пользовательском соглашении (Соглашение). Использовать Сервис вправе только физические лица, достигшие 14-летнего возраста.</p>
+			<p>Возможность использования Сервиса предоставляется Администрацией Пользователю безвозмездно.</p>
+
+			<strong>Общие положения</strong>
+			<p>Соглашение является публичной офертой в соответствии со статьей 437 Гражданского кодекса Российской Федерации. Использование Сервиса, включая каждое осуществление доступа к страницам Сайта любыми средствами, означает полный и безоговорочный акцепт Соглашения Пользователем.</p>
+			<p>Соглашение регулирует права и обязанности Пользователей и Администрации, а также отношения с третьими лица, чьи права и интересы могут быть затронуты в результате действий Пользователей.</p>
+			<p>Действующая редакция Соглашения находится на странице по адресу http://www.livejournal.com/legal/tos-ru.bml. Соглашение может быть изменено Администрацией без специального уведомления путем размещения по тому же адресу новой редакции Соглашения. Новая редакция Соглашения вступает в силу с момента ее размещения в сети Интернет, если иное не предусмотрено новой редакцией Соглашения.</p>
+			<p>Пользователь, не согласный с условиями действующей редакции Соглашения полностью или в части, обязан прекратить любое использование Сервиса.</p>
+			<p>Нарушение Пользователем условий Соглашения может привести к прекращению доступа к Аккаунту или удалению Аккаунта такого Пользователя, а также к полному или частичному удалению Контента или ограничению доступа к нему без предварительного уведомления.</p>
+			<p>
+				Термины
+				Авторизация — процесс анализа программной частью Сервиса введённых Пользователем Аутентификационных данных, по результатам которого Пользователю предоставляется доступ к Аккаунту.
+			</p>
+
+			<p>Аккаунт — учетная запись Пользователя, содержащая Аутентификационные и иные данные, предоставленные Пользователем в процессе использования Сервиса.</p>
+		</div>
+		<div class="dialog__dropdown">
+			<button class="js-toggle dialog__dropdown-cta" data-toggle="dialog" data-dialog="dialog-eula">Принято</button>
+		</div>
+	</dialog>
+	<dialog class="dialog" id="dialog-paid-reviews">
+		<div class="dialog__dropup dialog__title">Получить деньги за отзыв</div>
+		<div class="dialog__content">
+			<strong>Предмет Соглашения</strong>
+			<p>Общество с ограниченной ответственностью «Суп Медиа» (Администрация) предоставляет пользователю информационно-телекоммуникационной сети Интернет (Пользователь) возможность использования Сервиса на условиях, изложенных в настоящем пользовательском соглашении (Соглашение). Использовать Сервис вправе только физические лица, достигшие 14-летнего возраста.</p>
+			<p>Возможность использования Сервиса предоставляется Администрацией Пользователю безвозмездно.</p>
+
+			<strong>Общие положения</strong>
+			<p>Соглашение является публичной офертой в соответствии со статьей 437 Гражданского кодекса Российской Федерации. Использование Сервиса, включая каждое осуществление доступа к страницам Сайта любыми средствами, означает полный и безоговорочный акцепт Соглашения Пользователем.</p>
+			<p>Соглашение регулирует права и обязанности Пользователей и Администрации, а также отношения с третьими лица, чьи права и интересы могут быть затронуты в результате действий Пользователей.</p>
+			<p>Действующая редакция Соглашения находится на странице по адресу http://www.livejournal.com/legal/tos-ru.bml. Соглашение может быть изменено Администрацией без специального уведомления путем размещения по тому же адресу новой редакции Соглашения. Новая редакция Соглашения вступает в силу с момента ее размещения в сети Интернет, если иное не предусмотрено новой редакцией Соглашения.</p>
+			<p>Пользователь, не согласный с условиями действующей редакции Соглашения полностью или в части, обязан прекратить любое использование Сервиса.</p>
+			<p>Нарушение Пользователем условий Соглашения может привести к прекращению доступа к Аккаунту или удалению Аккаунта такого Пользователя, а также к полному или частичному удалению Контента или ограничению доступа к нему без предварительного уведомления.</p>
+			<p>
+				Термины
+				Авторизация — процесс анализа программной частью Сервиса введённых Пользователем Аутентификационных данных, по результатам которого Пользователю предоставляется доступ к Аккаунту.
+			</p>
+
+			<p>Аккаунт — учетная запись Пользователя, содержащая Аутентификационные и иные данные, предоставленные Пользователем в процессе использования Сервиса.</p>
+		</div>
+		<div class="dialog__dropdown">
+			<button class="js-toggle dialog__dropdown-cta" data-toggle="dialog" data-dialog="dialog-paid-reviews">Принято</button>
+		</div>
+	</dialog>
+		</main>
+	</div>
+		<div class="account account_layout_page-body">
+		<div class="tabs js-tabs" data-tab-group="account">
+			<div class="account__orders tabs__tab" id="orders">
+				<div class="layout layout_columned">
+					<div class="layout__column layout__column_account"></div>
+					<div class="layout__main">
+						<table class="account__order-table">
+							<thead>
+								<tr class="account__order-tr">
+									<th class="account__order-th">Трек-код</th>
+									<th class="account__order-th">Статус</th>
+									<th class="account__order-th account__order-actions"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="account__order-td  account__order-cta cta cta_static cta_static-light">BY098OI</td>
+									<td class="account__order-td  account__order-cta account__order-status cta cta_static cta_static-light">доставлен</td>
+									<td class="account__order-td">
+										<button type="button" class="cta cta_only-icon">
+											<svg width="13" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-delete"></use>
+</svg>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="account__order-td account__order-cta cta cta_static">RTI-4392</td>
+									<td class="account__order-td"><a href="" class="cta account__order-status account__order-cta">отследить</a></td>
+									<td class="account__order-td">
+										<button type="button" class="cta cta_only-icon">
+											<svg width="13" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-delete"></use>
+</svg>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="account__order-td cta cta_static account__order-cta">RTI-4392</td>
+									<td class="account__order-td"><a href="" class="cta account__order-status account__order-cta">отследить</a></td>
+									<td class="account__order-td">
+										<button type="button" class="cta cta_only-icon">
+											<svg width="13" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-delete"></use>
+</svg>
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="layout__sidebar layout__sidebar_placeholder"></div>
+				</div>
+			</div>
+			<div class="account__reviews reviews reviews_body tabs__tab" id="reviews">
+				<div class="layout layout_columned">
+					<div class="layout__column layout__column_account"></div>
+					<div class="layout__main">
+						<article class="review reviews__review review_layout_compact review_disabled review__account">
+	<a href="" class="review__image-container">
+		<img src="https://loremflickr.com/170/320"
+     width="170"
+     height="320"
+     class="review__image"
+     alt=""
+>
+	</a>
+	<div class="review__body">
+		<a href="" class="review__title">
+			LG Nexus 5X 16GB Carbon: <br>отличный телефон на каждый день
+		</a>
+		<a href="" class="review__author">vovic_2009</a>
+		<div class="review__text">
+			Отличный смартфон за свои деньги. Брал в черном цвете - крышка особо не пачкается. Боковые кнопки (громкость и блокировка) вызывают ощущение ненадежности - пошатываются. Но это мелочи за такую цену. Экран - отличный! Фотки яркие, сочные &lt;…&gt;
+		</div>
+		<a href="" class="review__goto cta cta_iconed ">
+			<svg width="24" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-view"></use>
+</svg>
+			читать полностью
+		</a>
+	</div>
+		<div class="review__footer review__account_footer-disabled">
+		<div class="cta cta_static review__status">
+			на модерации
+		</div>
+		<ul class="review__actions review__actions_off">
+			<li class="review__actions-item">
+				<button class="cta cta_iconed review__action">
+					<svg width="16" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-edit"></use>
+</svg>
+					редактировать
+				</button>
+			</li>
+			<li class="review__actions-item">
+				<button class="cta cta_iconed review__action">
+					<svg width="13" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-delete"></use>
+</svg>
+					удалить
+				</button>
+			</li>
+		</ul>
+	</div>
+</article>
+						<article class="review reviews__review review_layout_compact review_disabled review__account review__account_modified">
+	<a href="" class="review__image-container">
+		<img src="https://loremflickr.com/170/320"
+     width="170"
+     height="320"
+     class="review__image"
+     alt=""
+>
+	</a>
+	<div class="review__body">
+		<a href="" class="review__title">
+			LG Nexus 5X 16GB Carbon: <br>отличный телефон на каждый день
+		</a>
+		<a href="" class="review__author">vovic_2009</a>
+		<div class="review__text">
+			Отличный смартфон за свои деньги. Брал в черном цвете - крышка особо не пачкается. Боковые кнопки (громкость и блокировка) вызывают ощущение ненадежности - пошатываются. Но это мелочи за такую цену. Экран - отличный! Фотки яркие, сочные &lt;…&gt;
+		</div>
+		<a href="" class="review__goto cta cta_iconed ">
+			<svg width="24" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-view"></use>
+</svg>
+			читать полностью
+		</a>
+	</div>
+		<div class="review__footer review__account_footer">
+		<div class="cta cta_static review__status">
+			отклонён
+		</div>
+		<ul class="review__actions ">
+			<li class="review__actions-item">
+				<button class="cta cta_iconed review__action">
+					<svg width="16" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-edit"></use>
+</svg>
+					редактировать
+				</button>
+			</li>
+			<li class="review__actions-item">
+				<button class="cta cta_iconed review__action">
+					<svg width="13" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-delete"></use>
+</svg>
+					удалить
+				</button>
+			</li>
+		</ul>
+	</div>
+</article>
+						<article class="review reviews__review review_layout_compact review__account">
+	<a href="" class="review__image-container">
+		<img src="https://loremflickr.com/170/320"
+     width="170"
+     height="320"
+     class="review__image"
+     alt=""
+>
+	</a>
+	<div class="review__body">
+		<a href="" class="review__title">
+			LG Nexus 5X 16GB Carbon: <br>отличный телефон на каждый день
+		</a>
+		<a href="" class="review__author">vovic_2009</a>
+		<div class="review__text">
+			Отличный смартфон за свои деньги. Брал в черном цвете - крышка особо не пачкается. Боковые кнопки (громкость и блокировка) вызывают ощущение ненадежности - пошатываются. Но это мелочи за такую цену. Экран - отличный! Фотки яркие, сочные &lt;…&gt;
+		</div>
+		<a href="" class="review__goto cta cta_iconed ">
+			<svg width="24" height="12" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-view"></use>
+</svg>
+			читать полностью
+		</a>
+	</div>
+		<div class="review__footer review__account_footer-disabled">
+		<div class="cta cta_static review__status">
+			опубликован
+		</div>
+		<ul class="review__actions review__actions_off">
+			<li class="review__actions-item">
+				<button class="cta cta_iconed review__action">
+					<svg width="16" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-edit"></use>
+</svg>
+					редактировать
+				</button>
+			</li>
+			<li class="review__actions-item">
+				<button class="cta cta_iconed review__action">
+					<svg width="13" height="17" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-delete"></use>
+</svg>
+					удалить
+				</button>
+			</li>
+		</ul>
+	</div>
+</article>
+					</div>
+					<div class="layout__sidebar layout__sidebar_placeholder layout__sidebar_placeholder_account"></div>
+				</div>
+			</div>
+			<div class="account__favourites tabs__tab tabs__tab_current market" id="favourite_phones">
+				<div class="layout layout_columned">
+					<div class="layout__column account-layout__column"></div>
+						<div class="layout__main account__favourites-container">
+							<div class="market__product-list">
+								<div class="market__product">
+									<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product1" checked>
+				<label for="product_product1" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+								</div>
+								<div class="market__product">
+									<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product2" checked>
+				<label for="product_product2" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<span class="cta cta_only-icon product__cta product__cta_groupbuying">
+					<svg width="30" height="30" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-groupbuying"></use>
+</svg>
+				</span>
+				<span class="cta product__cta product__cta_groupbuying">12 д. 20 ч.</span>
+				<span class="cta product__cta product__cta_groupbuying">20 участников</span>
+					</div>
+	</article>
+								</div>
+								<div class="market__product">
+									<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product3" checked>
+				<label for="product_product3" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+								</div>
+								<div class="market__product">
+									<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product4" checked>
+				<label for="product_product4" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+								</div>
+								<div class="market__product">
+									<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product5" checked>
+				<label for="product_product5" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+								</div>
+								<div class="market__product">
+									<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product5" checked>
+				<label for="product_product5" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="account__favourites tabs__tab market" id="favourite_tablets">
+				<div class="layout layout_columned">
+					<div class="layout__column"></div>
+						<div class="layout__main">
+							<div class="market__product-list">
+								<div class="market__product">
+									<article class="product product_theme_groupbuying product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product2" checked>
+				<label for="product_product2" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<span class="cta cta_only-icon product__cta product__cta_groupbuying">
+					<svg width="30" height="30" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-groupbuying"></use>
+</svg>
+				</span>
+				<span class="cta product__cta product__cta_groupbuying">12 д. 20 ч.</span>
+				<span class="cta product__cta product__cta_groupbuying">20 участников</span>
+					</div>
+	</article>
+								</div>
+								<div class="market__product">
+									<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product1" checked>
+				<label for="product_product1" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+								</div>
+								<div class="market__product">
+									<article class="product product_theme_ product_layout_card">
+	<div class="product__main">		
+		<a href="" class="product__image-container product__link">
+			<img src="https://loremflickr.com/90/180"
+     width="90"
+     height="180"
+     class="product__image"
+     alt=""
+>
+		</a>
+		<a href="" class="product__body product__link">
+			<div class="product__name">Huawei P8 Lite Dual Black</div>
+			<div class="product__description">32GB Black Onyx [G935F]</div>
+			<div class="product__price price">
+				от <strong class="price__number">209 800</strong> ₽
+			</div>
+		</a>
+					<ul class="product__specs">
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="13" height="20" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-screen"></use>
+</svg>
+						<span>
+							<strong>5.5</strong>
+							inch
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-storage"></use>
+</svg>
+						<span>
+							<strong>164</strong>
+							Gb
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item">
+					<a href="" class="product__spec product__link">
+						<svg width="18" height="15" class="product__spec-icon">
+	<use xlink:href="images/icons.svg#specs-camera"></use>
+</svg>
+						<span>
+							<strong>12</strong>
+							Mp
+						</span>
+					</a>
+				</li>
+				<li class="product__specs-item product__specs-item_compare">
+					<a href="" class="product__spec product__link">Vs</a>
+				</li>
+			</ul>
+			</div>
+			<div class="product__footer">
+			<span class="cta cta_toggle cta_only-icon product__cta">
+				<input type="checkbox" class="cta__control" id="product_product3" checked>
+				<label for="product_product3" class="cta__label">
+					<svg width="13" height="13" class="cta__icon">
+	<use xlink:href="images/icons.svg#cta-favourites"></use>
+</svg>
+				</label>
+			</span>
+							<a href="" class="cta cta_only-icon  product__cta">
+					<svg width="8" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-cashback"></use>
+</svg>
+				</a>
+				<a href="" class="cta product__cta">Получить Cashback до 30%</a>
+					</div>
+	</article>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					<footer class="footer layout layout__footer">
+	<div class="footer_to-top">
+		<button class="cta cta_only-icon fields__control fields__submit cta_to-top">
+								<svg width="7" height="12" class="">
+	<use xlink:href="images/icons.svg#cta-scroll-right"></use>
+</svg>
+		</button>
+	</div>
+	<div class="footer__inner">
+		<a class="footer__logo" href="">
+			<svg width="207" height="31" class="footer__logo-img">
+	<use xlink:href="images/icons.svg#logo"></use>
+</svg>
+			<small class="footer__copyrights">© Pricefon. 2018 Все права защищены.</small>
+		</a>
+		<div class="footer__links">
+			<a class="footer__link" href="#">контакты</a>
+			<a class="footer__link" href="#">пользовательское соглашение</a>
+			<a class="footer__link" href="#">политика конфиденциальность</a>
+		</div>
+		<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ footer__social">
+	<li class="social-list__item">
+		<a href="" title="instagram" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-instagram"></use>
+</svg>
+		</a>
+	</li>
+	<li class="social-list__item">
+		<a href="" title="vk" class="social-list__link">
+			<svg width="23" height="23" class="social-list__icon">
+	<use xlink:href="images/icons.svg#social-vk"></use>
+</svg>
+		</a>
+	</li>
+</ul>
+	</div>
+</footer>
+											<script src="scripts/vendor.js"></script>
+			<script src="scripts/main.js"></script>
+			</body>
+</html>
