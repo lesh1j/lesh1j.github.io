@@ -24,7 +24,6 @@ html {
 body {
   margin: 0;
   scroll-behavior: smooth;
-  /*background: url('../images/h_400.jpg') no-repeat center top;*/
 }
 
 *,
@@ -141,7 +140,7 @@ mark {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   min-width: 0;
-  width: 300px;
+  width: 300px; 
 }
 
 @media screen and (max-width: 979px) {
@@ -1217,11 +1216,6 @@ mark {
   }
 }
 
-@media screen and (max-width: 639px) and (hover: none) and (pointer: coarse) {
-  .product_layout_card {
-    margin-right: 50px;
-  }
-}
 
 .product_layout_page-head {
   display: -webkit-box;
@@ -2068,7 +2062,7 @@ mark {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center;  
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -2124,7 +2118,7 @@ mark {
 }
 
 .product_layout_page-head .product__misc {
-  margin: 0 auto 30px;
+  margin: 0 auto 30px; 
 }
 
 @media screen and (max-width: 979px) {
@@ -6691,7 +6685,7 @@ mark {
   background-position: 0 -1px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1;
+  flex-grow: 1; 
   padding: 20px 10px 40px 50px;
 }
 
@@ -7591,6 +7585,10 @@ mark {
 @media screen and (max-width: 639px) {
   .market__product {
     padding-right: 50px;
+    margin: 8px auto 15px auto;
+  }
+  .market__product:nth-child(3n+1) {
+    margin-right: auto;
   }
 }
 
@@ -7624,6 +7622,22 @@ mark {
   }
   .market__product:last-child {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 639px) and (hover: none) and (pointer: coarse) {
+  .market__product {
+    margin-right: auto;
+    z-index: 2;
+  }
+  .market__product:nth-child(odd) {
+    margin-right: auto;
+  }
+  .market__product:nth-child(3n+1) {
+    margin-right: auto;
+  }
+  .market__product:last-child {
+    margin-right: auto;
   }
 }
 
@@ -8736,6 +8750,7 @@ mark {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  position: relative;
 }
 
 .account__main {
@@ -8795,8 +8810,10 @@ mark {
 @media screen and (max-width: 1259px) {
   .account__actions-container {
     position: absolute;
-    left: 300px;
-    bottom: -65px;
+    left: auto;
+    right: 0;
+    width: auto;
+    bottom: 60px;
     background: none !important;
     min-height: 0;
   }
@@ -8805,8 +8822,6 @@ mark {
 @media screen and (max-width: 979px) {
   .account__actions-container {
     position: absolute;
-    left: 50px;
-    bottom: -65px;
     background: none !important;
     min-height: 0;
   }
@@ -8814,7 +8829,15 @@ mark {
 
 @media screen and (max-width: 639px) {
   .account__actions-container {
-    left: 0;
+
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .account__actions-container {
+    width: 100%;
+    padding: 0 5px;
+    bottom: 97px;
   }
 }
 
@@ -8844,6 +8867,12 @@ mark {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .account__actions {
+    width: 100%;
   }
 }
 
