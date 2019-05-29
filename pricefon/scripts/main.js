@@ -393,12 +393,18 @@
   if(showFilters){
     showFilters.addEventListener('click', () => {
       overlay.style.display = 'block';
+      if(layout){
+        layout.style.display = 'block';
+      }
     });
   }
   
   if(hideFilters){
     hideFilters.addEventListener('click', () => {
       overlay.style.display = 'none';
+      if(layout){
+        layout.style.display = 'none';
+      }
     });
   }
   
