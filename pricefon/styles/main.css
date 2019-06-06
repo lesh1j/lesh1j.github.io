@@ -4003,7 +4003,7 @@ mark {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 2px; /* Specified height */
+  height: 20px; /* Specified height */
   background: #fff; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0; /* Set transparency (for mouse-over effects on hover) */
@@ -4026,7 +4026,7 @@ mark {
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
   position: relative;
-  top: -17px;
+  top: -8px;
 }
 
 .range::-moz-range-thumb {
@@ -4034,6 +4034,8 @@ mark {
   height: 20px; /* Slider handle height */
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  position: relative;
+  top: -8px;
 }
 
 
