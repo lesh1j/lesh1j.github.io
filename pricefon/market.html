@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>pricefon</title>
 					<link rel="stylesheet" href="styles/vendor.css">
-			<link rel="stylesheet" href="styles/main.css">
+			<link rel="stylesheet" href="styles/main.css?v=2">
 					</head>
 	<body class="layout layout_primary">
 			
@@ -44,6 +44,12 @@
 		</form>
     <div class="mobmenu__header">
       <div class="mobmenu__title">
+        <div class="mobmenu__back" id="mobmenu-back">
+          <svg width="7" height="12" class="arrow">
+            <use xlink:href="images/icons.svg#cta-scroll-left"></use>
+          </svg>
+          назад
+        </div>
         <div class="mobmenu__close" id="mobmenu-close">
           закрыть
         </div>
@@ -303,25 +309,71 @@
 		<div class="layout__column layout__column_menu">
 			<nav class="menu layout__menu ">
 	<ul class="menu__list">
-		<li class="menu__item menu-item menu-item_pop">
+		<li class="menu__item menu-item menu-item_pop with-child">
 			<a class="menu-item__link" href="">
 				<div class="menu-item__icon-container">
 					<svg width="16" height="31" class="">
-	<use xlink:href="images/icons.svg#sections-phone"></use>
-</svg>
+	         <use xlink:href="images/icons.svg#sections-phone"></use>
+          </svg>
 				</div>
-				<span class="menu-item__text">телефоны</span>
+				<span class="menu-item__text">
+          телефоны
+          <svg width="7" height="12" class="arrow">
+            <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+          </svg>
+        </span>
 			</a>
+      <ul class="menu-dropdown">
+        <li>
+          <a href="#">
+            новинки
+            <svg width="7" height="12" class="arrow">
+              <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            популярное
+            <svg width="7" height="12" class="arrow">
+              <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 		</li>
-		<li class="menu__item menu-item menu-item_pop">
+		<li class="menu__item menu-item menu-item_pop with-child">
 			<a class="menu-item__link" href="">
 				<div class="menu-item__icon-container">
 					<svg width="20" height="27" class="">
-	<use xlink:href="images/icons.svg#sections-tablet"></use>
-</svg>
+            <use xlink:href="images/icons.svg#sections-tablet"></use>
+          </svg>
 				</div>
-				<span class="menu-item__text">планшеты</span>
+				<span class="menu-item__text">
+          планшеты
+          <svg width="7" height="12" class="arrow">
+            <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+          </svg>
+        </span>
 			</a>
+      <ul class="menu-dropdown">
+        <li>
+          <a href="#">
+            новинки п
+            <svg width="7" height="12" class="arrow">
+              <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            популярное п
+            <svg width="7" height="12" class="arrow">
+              <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 		</li>
 		<li class="menu__item menu-item">
 			<a class="menu-item__link" href="">
@@ -343,7 +395,7 @@
 				<span class="menu-item__text">где посылка?</span>
 			</a>
 		</li>
-		<li class="menu__item menu-item menu-item_active">
+		<li class="menu__item menu-item">
 			<a class="menu-item__link" href="">
 				<div class="menu-item__icon-container">
 					<svg width="20" height="18" class="">
@@ -417,8 +469,7 @@
 	<input type="number" class="text-input filter__item" placeholder="до $2897" min="0">
 	</div>
 </details>
-		<details class="market__filter filter 	filter_columned
-" open>
+		<details class="market__filter filter 	filter_columned" open>
 	<summary class="filter__head">
 		<div class="filter__icon-container">
 			<svg width="18" height="18" class="filter__icon">
@@ -431,9 +482,9 @@
 		<span class="filter_opener"></span>
 	</summary>
 	<div class="filter__body">
-			<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned">
+			<ul class="filter__brands filter__group radiogroup radiogroup_fancy radiogroup_columned">
 		<li class="radiogroup__item">
-			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-0" checked>
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-0">
 			<label for="filter-brand-0" class="radiogroup__label cta">Apple</label>
 		</li>
 		<li class="radiogroup__item">
@@ -464,8 +515,24 @@
 			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-7">
 			<label for="filter-brand-7" class="radiogroup__label cta">Sony</label>
 		</li>
+    <li class="radiogroup__item hidden">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-4">
+			<label for="filter-brand-4" class="radiogroup__label cta">Brand</label>
+		</li>
+		<li class="radiogroup__item hidden">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-5">
+			<label for="filter-brand-5" class="radiogroup__label cta">Brand</label>
+		</li>
+		<li class="radiogroup__item hidden">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-6">
+			<label for="filter-brand-6" class="radiogroup__label cta">Brand</label>
+		</li>
+		<li class="radiogroup__item hidden">
+			<input class="radiogroup__control" type="radio" name="filter-brand" id="filter-brand-7">
+			<label for="filter-brand-7" class="radiogroup__label cta">Brand</label>
+		</li>
 		<li class="radiogroup__item radiogroup__item_more">
-			<button type="button" class="radiogroup__more cta">все бренды</label>
+			<button type="button" class="radiogroup__more cta">все бренды</button>
 		</li>
 	</ul>
 	</div>
@@ -487,7 +554,7 @@
 		<summary class="cta expandable__summary">вес</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-body" id="filter-body-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-body" id="filter-body-0">
 				<label for="filter-body-0" class="radiogroup__label cta">до 100 гр</label>
 			</li>
 			<li class="radiogroup__item">
@@ -523,7 +590,7 @@
 		<summary class="cta expandable__summary">диагональ</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-screen-size" id="filter-screen-size-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-screen-size" id="filter-screen-size-0">
 				<label for="filter-screen-size-0" class="radiogroup__label cta">до 3'</label>
 			</li>
 			<li class="radiogroup__item">
@@ -544,7 +611,7 @@
 		<summary class="cta expandable__summary">разрешение</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_column radiogroup_full expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-screen-resolution" id="filter-screen-resolution-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-screen-resolution" id="filter-screen-resolution-0">
 				<label for="filter-screen-resolution-0" class="radiogroup__label cta">540x960 (qHD) и мене</label>
 			</li>
 			<li class="radiogroup__item">
@@ -576,7 +643,7 @@
 		<summary class="cta expandable__summary">оперативная память</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-memory-storage" id="filter-memory-storage-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-memory-storage" id="filter-memory-storage-0">
 				<label for="filter-memory-storage-0" class="radiogroup__label cta">до 1 Gb</label>
 			</li>
 			<li class="radiogroup__item">
@@ -597,7 +664,7 @@
 		<summary class="cta expandable__summary">встроенная память</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-memory-ram" id="filter-memory-ram-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-memory-ram" id="filter-memory-ram-0">
 				<label for="filter-memory-ram-0" class="radiogroup__label cta">до 16 Gb</label>
 			</li>
 			<li class="radiogroup__item">
@@ -633,7 +700,7 @@
 		<summary class="cta expandable__summary">разрешение</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_column radiogroup_full expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-camera-resolution" id="filter-camera-resolution-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-camera-resolution" id="filter-camera-resolution-0">
 				<label for="filter-camera-resolution-0" class="radiogroup__label cta">до 1 MP</label>
 			</li>
 			<li class="radiogroup__item">
@@ -646,7 +713,7 @@
 		<summary class="cta expandable__summary">функции</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-camera-func" id="filter-camera-func-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-camera-func" id="filter-camera-func-0">
 				<label for="filter-camera-func-0" class="radiogroup__label cta">хуюнкции</label>
 			</li>
 			<li class="radiogroup__item">
@@ -674,7 +741,7 @@
 		<summary class="cta expandable__summary">операционная система</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-tech-os" id="filter-tech-os-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-tech-os" id="filter-tech-os-0">
 				<label for="filter-tech-os-0" class="radiogroup__label cta">Ондроед</label>
 			</li>
 			<li class="radiogroup__item">
@@ -695,7 +762,7 @@
 		<summary class="cta expandable__summary">ёмкость аккумулятора</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-tech-battery" id="filter-tech-battery-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-tech-battery" id="filter-tech-battery-0">
 				<label for="filter-tech-battery-0" class="radiogroup__label cta">до 1000 махов</label>
 			</li>
 			<li class="radiogroup__item">
@@ -716,7 +783,7 @@
 		<summary class="cta expandable__summary">ёмкость аккумулятора</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-tech-sim" id="filter-tech-sim-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-tech-sim" id="filter-tech-sim-0">
 				<label for="filter-tech-sim-0" class="radiogroup__label cta">1 SIM-карта</label>
 			</li>
 			<li class="radiogroup__item">
@@ -752,7 +819,7 @@
 		<summary class="cta expandable__summary">количество ядер</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_column radiogroup_full expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-cpu-cores" id="filter-cpu-cores-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-cpu-cores" id="filter-cpu-cores-0">
 				<label for="filter-cpu-cores-0" class="radiogroup__label cta">восемь</label>
 			</li>
 			<li class="radiogroup__item">
@@ -765,7 +832,7 @@
 		<summary class="cta expandable__summary">частота процессора</summary>
 		<ul class="filter__group radiogroup radiogroup_fancy radiogroup_columned expandable__content">
 			<li class="radiogroup__item">
-				<input class="radiogroup__control" type="radio" name="filter-cpu-freq" id="filter-cpu-freq-0" checked>
+				<input class="radiogroup__control" type="radio" name="filter-cpu-freq" id="filter-cpu-freq-0">
 				<label for="filter-cpu-freq-0" class="radiogroup__label cta">высокая</label>
 			</li>
 			<li class="radiogroup__item">
@@ -833,6 +900,9 @@
             </div>
 					</div>
 					<div class="view-configs__secondary">
+            <span class="cta cta_static view-configs__filter hidden-768">
+							сбросить все фильтры
+						</span>
 						<span class="cta cta_static view-configs__filter">
 							50 - 200 $
 							<button type="button" class="cta__dismiss">×</button>
@@ -1358,7 +1428,8 @@
 	</div>
 </footer>
     <div class="overlay"></div>
+    <div class="white-overlay"></div>
 											<script src="scripts/vendor.js"></script>
-			<script src="scripts/main.js"></script>
+			<script src="scripts/main.js?v=2"></script>
 			</body>
 </html>

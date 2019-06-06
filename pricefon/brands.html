@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>pricefon</title>
 					<link rel="stylesheet" href="styles/vendor.css">
-			<link rel="stylesheet" href="styles/main.css">
+			<link rel="stylesheet" href="styles/main.css?v=2">
 					</head>
 	<body class="layout layout_primary">
 					
@@ -44,6 +44,12 @@
 		</form>
     <div class="mobmenu__header">
       <div class="mobmenu__title">
+        <div class="mobmenu__back" id="mobmenu-back">
+          <svg width="7" height="12" class="arrow">
+            <use xlink:href="images/icons.svg#cta-scroll-left"></use>
+          </svg>
+          назад
+        </div>
         <div class="mobmenu__close" id="mobmenu-close">
           закрыть
         </div>
@@ -240,11 +246,9 @@
 		<div class="header__sidebar">
 			<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ header__social">
 	<li class="social-list__item">
-		<a href="" title="instagram" class="social-list__link">
-			<svg width="23" height="23" class="social-list__icon">
-	<use xlink:href="images/icons.svg#social-instagram"></use>
-</svg>
-		</a>
+		<a href="" title="telegram" class="social-list__link">
+      <img width="23" height="23" src="images/telegram.svg" class="social-list__icon" />
+    </a>
 	</li>
 	<li class="social-list__item">
 		<a href="" title="vk" class="social-list__link">
@@ -296,25 +300,71 @@
 		<div class="layout__column layout__column_menu">
 			<nav class="menu layout__menu ">
 	<ul class="menu__list">
-		<li class="menu__item menu-item menu-item_pop">
+		<li class="menu__item menu-item menu-item_pop with-child">
 			<a class="menu-item__link" href="">
 				<div class="menu-item__icon-container">
 					<svg width="16" height="31" class="">
-	<use xlink:href="images/icons.svg#sections-phone"></use>
-</svg>
+	         <use xlink:href="images/icons.svg#sections-phone"></use>
+          </svg>
 				</div>
-				<span class="menu-item__text">телефоны</span>
+				<span class="menu-item__text">
+          телефоны
+          <svg width="7" height="12" class="arrow">
+            <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+          </svg>
+        </span>
 			</a>
+      <ul class="menu-dropdown">
+        <li>
+          <a href="#">
+            новинки
+            <svg width="7" height="12" class="arrow">
+              <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            популярное
+            <svg width="7" height="12" class="arrow">
+              <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 		</li>
-		<li class="menu__item menu-item menu-item_pop">
+		<li class="menu__item menu-item menu-item_pop with-child">
 			<a class="menu-item__link" href="">
 				<div class="menu-item__icon-container">
 					<svg width="20" height="27" class="">
-	<use xlink:href="images/icons.svg#sections-tablet"></use>
-</svg>
+            <use xlink:href="images/icons.svg#sections-tablet"></use>
+          </svg>
 				</div>
-				<span class="menu-item__text">планшеты</span>
+				<span class="menu-item__text">
+          планшеты
+          <svg width="7" height="12" class="arrow">
+            <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+          </svg>
+        </span>
 			</a>
+      <ul class="menu-dropdown">
+        <li>
+          <a href="#">
+            новинки п
+            <svg width="7" height="12" class="arrow">
+              <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            популярное п
+            <svg width="7" height="12" class="arrow">
+              <use xlink:href="images/icons.svg#cta-scroll-right"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 		</li>
 		<li class="menu__item menu-item">
 			<a class="menu-item__link" href="">
@@ -336,7 +386,7 @@
 				<span class="menu-item__text">где посылка?</span>
 			</a>
 		</li>
-		<li class="menu__item menu-item menu-item_active">
+		<li class="menu__item menu-item">
 			<a class="menu-item__link" href="">
 				<div class="menu-item__icon-container">
 					<svg width="20" height="18" class="">
@@ -484,11 +534,9 @@
 		</div>
 		<ul class="social-list social-list_size_medium social-list_layout_ social-list_theme_ footer__social">
 	<li class="social-list__item">
-		<a href="" title="instagram" class="social-list__link">
-			<svg width="23" height="23" class="social-list__icon">
-	<use xlink:href="images/icons.svg#social-instagram"></use>
-</svg>
-		</a>
+		<a href="" title="telegram" class="social-list__link">
+      <img width="23" height="23" src="images/telegram.svg" class="social-list__icon" />
+    </a>
 	</li>
 	<li class="social-list__item">
 		<a href="" title="vk" class="social-list__link">
@@ -500,7 +548,8 @@
 </ul>
 	</div>
 </footer>
+    <div class="white-overlay"></div>
 											<script src="scripts/vendor.js"></script>
-			<script src="scripts/main.js"></script>
+			<script src="scripts/main.js?v=2"></script>
 			</body>
 </html>
