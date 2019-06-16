@@ -321,24 +321,26 @@
   
   if(menuShow){
     menuShow.addEventListener('click', () => {
-      menuHeader.style.visibility = 'visible';
-      menuHeader.style.opacity = '1';
-      menuContainer.style.position = 'fixed';
-      menuContainer.style.top = '60px';
-      menuContainer.style.display = 'block';
-      menuContainer.style.width = document.documentElement.clientWidth + 'px';
-      menuContainer.style.maxWidth = document.documentElement.clientWidth + 'px';
-      whiteOverlay.style.display = 'block';
-      if(layout){
-        layout.style.display = 'block';
-      }
-      if(menuContainer.classList.contains('layout__menu_comparison')){
-        menuContainer.style.display = 'block';
+      if(document.documentElement.clientWidth < 980){
+        menuHeader.style.visibility = 'visible';
+        menuHeader.style.opacity = '1';
+        menuContainer.style.position = 'fixed';
         menuContainer.style.top = '60px';
+        menuContainer.style.display = 'block';
+        menuContainer.style.width = document.documentElement.clientWidth + 'px';
+        menuContainer.style.maxWidth = document.documentElement.clientWidth + 'px';
+        whiteOverlay.style.display = 'block';
+        if(layout){
+          layout.style.display = 'block';
+        }
+        if(menuContainer.classList.contains('layout__menu_comparison')){
+          menuContainer.style.display = 'block';
+          menuContainer.style.top = '60px';
+        }
+        menuItems.forEach((item) => {
+          item.style.display = 'flex';
+        })
       }
-      menuItems.forEach((item) => {
-        item.style.display = 'flex';
-      })
     });
   }
   

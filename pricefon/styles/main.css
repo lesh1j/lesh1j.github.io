@@ -1114,6 +1114,7 @@ mark {
     flex-wrap: wrap;
     height: auto;
     padding: 0;
+    align-items: flex-start;
   }
 }
 
@@ -3151,6 +3152,12 @@ mark {
   }
 }
 
+@media screen and (max-width: 519px) {
+  .review_layout_slide {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .review_layout_slide {
     margin-left: 0;
@@ -3216,11 +3223,11 @@ mark {
   padding-left: 30px;
 }
 
-.review__body a {
+.review__text a {
   color: #616fa2;
 }
 
-.review__body a:hover {
+.review__text a:hover {
   text-decoration: none;
 }
 
@@ -4513,6 +4520,10 @@ mark {
 .view-configs__secondary {
   margin-left: auto;
   margin-left: 0;
+}
+
+.view-configs__secondary form {
+  display: inline-block;
 }
 
 .view-configs__filter {
@@ -7699,6 +7710,13 @@ mark {
     height: 60px;
     cursor: pointer;
 }
+button {
+    font-family: 'Graphik', 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+button.cta_static, button.cta_static:hover, button.cta_static:active{
+  cursor: pointer;
+}
 .filter-mobbuttons button:last-child {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#04438c), to(#001023));
     background-image: linear-gradient(to right bottom, #04438c, #001023);
@@ -8201,7 +8219,7 @@ mark {
   }
 }
 
-@media screen and (max-width: 359px)
+@media screen and (max-width: 359px){
   .cashback__body {
     padding: 50px 20px 0 20px;
   }
@@ -8211,7 +8229,8 @@ mark {
 }
 
 .cashback__title {
-  margin-top: 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .cashback__content {
