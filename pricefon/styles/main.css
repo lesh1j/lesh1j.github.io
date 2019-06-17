@@ -7498,6 +7498,18 @@ mark {
   }
 }
 
+@media screen and (max-width: 519px) {
+  .promo-products__image {
+    min-height: 420px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .promo-products__image {
+    min-height: 360px;
+  }
+}
+
 .promo-products__item {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
