@@ -1,0 +1,2162 @@
+/* --------------------------------------
+=========================================
+LANDER - Responsive Landing Page Template
+Version: 1.0 (Initial Release)
+Designed By: Vadzim Liashkevich
+=========================================
+
+
+/**
+ * Table of Contents:
+ *
+ * 1 - IMPORT GOOGLE WEB FONTS
+ *
+ * 2 - GLOBAL STYLES
+ *	 2.1 - GENERAL STYLES
+ *	 2.2 - MISC FIXES
+ *	 2.3 - TYPOGRAPHY
+ *	 2.4 - BUTTONS
+ *	 2.5 - PROGRESS BAR
+ *	 2.6 - FORMS
+ *	 2.7 - ALERTS
+ *	 2.8 - PRE LOADER
+ *	 2.9 - LIGHTBOX
+ *
+ * 3 - SECTION SPECIFIC CSS
+ *	 3.1 - TOP NAVIGATION BAR
+ *	 3.2 - HEADER SECTION
+ *	 3.3 - SERVICES SECTION
+ *	 3.4 - FEATURE SECTION ONE
+ *	 3.5 - FEATURE SECTION TWO
+ *	 3.6 - FEATURE SECTION THREE
+ *	 3.7 - FEATURE SECTION FOUR
+ *	 3.8 - BENEFITS SECTION
+ *	 3.9 - CHART SECTION
+ *	 3.10 - WE DID SECTION
+ *	 3.11 - INFO SECTION
+ *	 3.12 - PORTFOLIO SECTION
+ *	 3.13 - WHY WE SECTION
+ *	 3.14 - TEAM SECTION
+ *	 3.15 - CLIENTS SECTION
+ *	 3.16 - YOU ARE READY SECTION
+ *	 3.17 - WORKING PROCESS SECTION
+ *	 3.18 - VIDEO SECTION
+ *	 3.19 - PRICE SECTION
+ *	 3.20 - BLOG SECTION
+ *	 3.21 - REVIEWS SECTION
+ *	 3.22 - FAQ SECTION
+ *	 3.23 - SOCIAL ICONS SECTION
+ *	 3.24 - GOOGLE MAP SECTION
+ *	 3.25 - CONTACTS SECTION
+ *	 3.26 - FOOTER SECTION
+ *	 3.27 - RIGHT SLIDE MENU
+ *
+ * 4 - OTHER PAGES
+ *	 4.1 - BREADCRUMBS
+ *	 4.2 - BLOG PAGES
+ *	 4.3 - PORTFOLIO PAGES
+ * -----------------------------------------------------------------------------
+ */
+
+
+/*---------------------------------------
+   1. IMPORT GOOGLE WEB FONTS                
+-----------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Montserrat:400,700|Raleway:400,200,100,300,500,600,700,800,900|Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700|Source+Code+Pro:400,300,500,600,700);
+
+/* --------------------------------------
+=========================================
+   2. GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   2.1 GENERAL STYLES                
+-----------------------------------------*/
+
+html, body {
+  font-family: 'Inconsolata', sans-serif;
+  color: #556d7e;
+  overflow-x: hidden;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/*---------------------------------------
+   2.2 MISC FIXES         
+-----------------------------------------*/
+@-webkit-viewport {
+	width: device-width;
+}
+
+@-moz-viewport {
+	width: device-width;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@-o-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul{
+	padding-left: 0 !important;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+/*---------------------------------------
+   2.3 TYPOGRAPHY   
+-----------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    margin-top: 0;
+    font-weight: 400;
+}
+.h2, h2 {
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.h3, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+.h4, h4 {
+    font-size: 16px;
+}
+h1 span.bold {
+	font-weight: 700;
+}
+/* H2 WITH LEFT BOTTOM BORDER  */
+h2.border-bottom {
+	position: relative;
+	margin-bottom: 42px;
+	text-align: left;
+	text-transform: uppercase;
+}
+h2.border-bottom:before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    margin-top: 18px;
+}
+/* H2 WITH CENTER BOTTOM BORDER  */
+h2.border-bottom-center{
+	position: relative;
+	margin-bottom: 42px;
+	text-align: center;
+	text-transform: uppercase;
+}
+h2.border-bottom-center:before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    top: 100%;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: 18px;
+}
+/* H3 WITH LEFT BOTTOM BORDER  */
+h3.border-bottom {
+	position: relative;
+	margin-bottom: 30px;
+}
+h3.border-bottom:before {
+	position: absolute;
+	content: "";
+	width: 84px;
+	background-color: #3498db;
+	height: 2px;
+	top: 100%;
+	left: 0;
+	margin-top: 10px;
+}
+/* H3 WITH CENTER BOTTOM BORDER  */
+h3.border-bottom-center{
+	background: none;
+	position: relative;
+	margin-bottom: 30px;
+}
+h3.border-bottom-center:before {
+	position: absolute;
+	content: "";
+	width: 84px;
+	background-color: #3498db;
+	height: 2px;
+	top: 100%;
+	left: 50%;
+	margin-left: -42px;
+	margin-top: 10px;
+}
+/* SPAN FOR COLORED H2  */
+.colorhead{
+	color: #3498db;
+}
+.subheader {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-button {
+    margin: 50px 0;
+}
+
+a {
+	color: #3498db;
+	text-decoration: none;
+	outline: none;
+}
+a:hover   {
+	color: #3498db;
+	text-decoration: none;
+}
+a:focus   {
+	color: #3498db;
+	text-decoration: none;
+	outline: none;
+}
+
+/*---------------------------------------
+   2.4 BUTTONS   
+-----------------------------------------*/
+
+.btn {
+    font-family: "Montserrat";
+    border-radius: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+	padding: 7px 15px;
+    transition: all 300ms;
+}
+.btn.active{
+	box-shadow: none;
+}
+/* DEFAULT BUTTON  */
+.btn-default {
+  color: #556d7e;
+}
+.btn-default:hover, .btn-default:focus {
+	background: #556d7e;
+	color: #fff;
+}
+.btn-default.active {
+    background: #556d7e;
+    color: #fff;
+}
+/* DEFAULT INVERSE BUTTON  */
+.btn-default-inverse {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+}
+.btn-default-inverse:hover, .btn-default-inverse:focus {
+	background: #fff;
+    color: #556d7e;
+}
+.btn-default.active {
+    background: #fff;
+    color: #556d7e;
+}
+/* PRIMARY BUTTON  */
+.btn-primary {
+	color: #fff;
+	background-color: #3498db;
+}
+.btn-primary:hover, .btn-primary:focus {
+	background: #2a83bf;
+}
+/* PRIMARY INVERSE BUTTON  */
+.btn-primary-inverse {
+    background: none;
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+.btn-primary-inverse:hover, .btn-primary-inverse:focus {
+	background: #3498db;
+    color: #fff;
+}
+.btn-primary-inverse.active {
+    background: #3498db;
+    color: #fff;
+}
+/* SUCCES INVERSE BUTTON  */
+.btn-success-inverse {
+    background: none;
+    border: 2px solid #5cb85c;
+    color: #5cb85c;
+}
+.btn-success-inverse:hover, .btn-success-inverse:focus {
+	background: #5cb85c;
+    color: #fff;
+}
+.btn-success-inverse.active {
+    background: #5cb85c;
+    color: #fff;
+}
+/* INFO INVERSE BUTTON  */
+.btn-info-inverse {
+    background: none;
+    border: 2px solid #5bc0de;
+    color: #5bc0de;
+}
+.btn-info-inverse:hover, .btn-info-inverse:focus {
+	background: #5bc0de;
+    color: #fff;
+}
+.btn-info-inverse.active {
+    background: #5bc0de;
+    color: #fff;
+}
+/* WARNING INVERSE BUTTON  */
+.btn-warning-inverse {
+    background: none;
+    border: 2px solid #f0ad4e;
+    color: #f0ad4e;
+}
+.btn-warning-inverse:hover, .btn-warning-inverse:focus {
+	background: #f0ad4e;
+    color: #fff;
+}
+.btn-warning-inverse.active {
+    background: #f0ad4e;
+    color: #fff;
+}
+/* DANGER INVERSE BUTTON  */
+.btn-danger-inverse {
+    background: none;
+    border: 2px solid #d9534f;
+    color: #d9534f;
+}
+.btn-danger-inverse:hover, .btn-danger-inverse:focus {
+	background: #d9534f;
+    color: #fff;
+}
+.btn-danger-inverse.active {
+    background: #d9534f;
+    color: #fff;
+}
+/* CUSTOM GREY BUTTON  */
+.btn-grey {
+    background: #556d7e;
+    color: #fff;
+}
+.btn-grey:hover, .btn-grey:focus {
+	color: #fff;
+	background: #000;
+}
+.btn-grey.active {
+    background: #000;
+    color: #fff;
+}
+/* CUSTOM GREY INVERSE BUTTON  */
+.btn-grey-inverse {
+    background: none;
+    border: 2px solid #556d7e;
+    color: #556d7e;
+}
+.btn-grey-inverse:hover, .btn-grey-inverse:focus {
+	background: #556d7e;
+    color: #fff;
+}
+.btn-grey-inverse.active {
+    background: #556d7e;
+    color: #fff;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 16px;
+}
+
+/*---------------------------------------
+   2.5 PROGRESS BAR   
+-----------------------------------------*/
+
+.progress-bar{
+	box-shadow: none;
+}
+.progress{
+	box-shadow: none;
+	background-color: #eaeaea;
+    border-radius: 0;
+    height: 1px;
+}
+
+/*---------------------------------------
+   2.6 FORMS
+-----------------------------------------*/
+input, textarea {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: all 300ms;
+}
+input:focus, textarea:focus {
+	outline: none;
+	border-left: 5px solid #3498db;
+}
+
+/*---------------------------------------
+   2.7 ALERTS
+-----------------------------------------*/
+.alert {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 13px;
+	border-radius: 2px;
+	margin: 20px 15px;
+}
+
+/*---------------------------------------
+   2.8 PRE LOADER
+-----------------------------------------*/
+
+.preloader {
+	position: fixed;
+	width: 100%;
+	z-index: 111111111111111111;
+	height: 100%;
+	background: #fff;
+}
+.status {
+	width: 284px;
+	margin-left: auto;
+	position: relative;
+	top: 50%;
+	margin-top: -58px;
+	padding: 20px;
+	margin-right: auto;
+}
+.preloader-logo {
+	float: left;
+	margin-right: 15px;
+}
+.preloader img {
+	width: 64px;
+}
+.preloader-text {
+	font-family: "Montserrat";
+	font-size: 34px;
+	line-height: 33px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/*---------------------------------------
+   2.9 FANCYBOX
+-----------------------------------------*/
+
+/* --------------------------------------
+=========================================
+   3. SECTION SPECIFIC CSS
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   3.1 TOP NAVIGATION BAR  
+-----------------------------------------*/
+
+.top-navbar {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 15px 0;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+	transition: all 600ms;
+	background: #fff;
+	position: relative;
+	z-index: 100;
+}
+/*  TOP NAVBAR FOR INNER PAGE  */
+.top-navbar.inner-page {
+	top: 0 !important;
+}
+.top-navbar a {
+	color: #556d7e;
+}
+.top-navbar a:hover {
+	color: #3498db;
+}
+.topmenu-logo {
+	float: left;
+}
+.topmenu-logo img {
+	width: 76%;
+}
+.top-menu {
+	float: right;
+}
+.top-navbar .nav > li > a {
+	font-family: Montserrat;
+	font-size: 15px;
+	text-align: right;
+	line-height: 14px;
+	padding: 12px 15px;
+	text-transform: uppercase;
+}
+.top-navbar .nav > li.active > a {
+	background: none;
+	color: #3498db;
+}
+.top-navbar .nav > li > a:hover, .top-navbar .nav > li > a:focus {
+	background: none;
+	color: #3498db;
+	padding: 12px 15px;
+}
+.top-navbar .nav > li.active > a:hover, .top-navbar .nav > li.active > a:focus {
+	background: none;
+	color: #3498db;
+}
+.showmenu {
+	float: right;
+	border: 2px solid #484848;
+	font-size: 19px;
+	line-height: 30px;
+	border-radius: 50%;
+	margin-left: 15px;
+	width: 34px;
+	text-align: center;
+	cursor: pointer;
+	height: 34px;
+	transition: all 300ms;
+	display: none;
+}
+.showmenu:hover {
+	background: #484848;
+	color: #fff;
+}
+
+/*---------------------------------------
+   3.2 HEADER SECTION
+-----------------------------------------*/
+
+.header {
+	position: relative;
+    background: url("../images/bg2.jpg") no-repeat  scroll 0 0 / cover;
+	background-attachment: fixed;
+}
+.header-left-bg {
+	height: 100%;
+	background: rgba(52, 152, 219, 0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.header-left {
+	padding-left: 0;
+}
+.header-content {
+	padding-top: 80px;
+}
+.header h1 {
+	font-weight: 100;
+	font-size: 83px;
+	line-height: 90px;
+	margin: 0;
+	color: #fff;
+	font-family: Raleway;
+}
+.header span.bold {
+	font-weight: 800;
+}
+.header span.big {
+	font-size: 138px;
+	line-height: 130px;
+}
+.header .btn {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 13px 35px;
+}
+.header .btn-default-inverse {
+	font-size: 17px;
+    letter-spacing: 2px;
+    padding: 11px 35px;
+}
+.header-left .btn-default-inverse {
+	margin-left: 7px;
+    font-weight: 400;
+    border-radius: 0;
+    margin-top: 20px;
+    padding: 12px 188px;
+    border-width: 2px;
+}
+
+/*---------------------------------------
+   3.3 SERVICES SECTION
+-----------------------------------------*/
+
+.services {
+	padding: 100px 0;
+	border-bottom: 1px solid #eaeaea;
+	background: #fff;
+	position: relative;
+}
+.services .subheader{
+	margin-bottom: 60px;
+}
+.services a{
+	color: #556d7e;
+}
+.service {
+	text-align: center;
+	cursor: pointer;
+}
+.service-icon {
+    position: relative;
+    text-align: center;
+    font-size: 66px;
+    margin: 10px 0 60px;
+    line-height: 0;
+    transition: all 300ms;
+}
+.service-icon:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    top: 100%;
+    border-bottom: 1px solid #3498db;
+    border-top: 1px solid #3498db;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: 29px;
+}
+
+.services h3 {
+	background: #fff;
+	position: relative;
+	z-index: 1;
+	padding: 15px 0 10px 0;
+	margin: -40px 0 0 0;
+}
+.services h4 {
+    position: relative;
+    z-index: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.service p {
+	margin: 0;
+	padding: 0 20px;
+}
+
+/*---------------------------------------
+   3.4 FEATURE SECTION ONE
+-----------------------------------------*/
+
+.feature1 {
+	position: relative;
+	background: url("../images/bg5.jpg") no-repeat scroll 0 0 / cover;
+	background-attachment: fixed;
+	padding: 80px 0;
+	line-height: 27px;
+	color: #fff;
+	font-size: 17px;
+	text-align: justify;
+	border-bottom: 1px solid #e5e5e5;
+}
+.feature1-left-bg {
+	border-right: 60px solid transparent;
+	border-top: 423px solid rgba(52,152,219,0.9);
+	height: 0;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+}
+.feature1-right-bg {
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+}
+.feature1-left {
+	padding-right: 150px;
+}
+.feature1 h2 {
+	margin-bottom: 40px;
+}
+.feature1 .nav-tabs {
+	margin-bottom: 25px;
+	border: none;
+}
+.feature1 .nav>li>a {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 30px 20px 0;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.feature1 .nav>li>a:hover, .nav>li>a:focus {
+	color: #fff;
+	background: none;
+	border: none;
+	padding: 11px 31px 20px 1px;
+}
+.feature1 .nav>li.active>a {
+    background-color: inherit;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid;
+    color: #fff;
+}
+.feature1 .nav>li.active>a:hover, .nav>li.active>a:focus {
+	background-color: inherit;
+	border-top: none;
+	color: #fff;
+	padding: 10px 30px 20px 0;
+}
+
+/*---------------------------------------
+   3.5 FEATURE SECTION TWO
+-----------------------------------------*/
+
+.feature2 {
+	position: relative;
+	background: url("../images/bg3.jpg") no-repeat scroll 0 0 / cover;
+	background-attachment: fixed;
+	padding: 80px 0;
+	color: #fff;
+	font-size: 17px;
+	line-height: 27px;
+	text-align: justify;
+	border-bottom: 1px solid #e5e5e5;
+}
+.feature2-left-bg {
+	border-right: 60px solid transparent;
+	border-bottom: 423px solid rgba(52,152,219,0.9);
+	height: 0;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+}
+.feature2-right-bg {
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+}
+.feature2-left {
+	padding-right: 150px;
+}
+.feature2 h2 {
+	margin-bottom: 42px;
+}
+.feature2 li {
+	padding-top: 8px;
+}
+.feature2 li i {
+	padding-right: 8px;
+}
+
+/*---------------------------------------
+   3.6 FEATURE SECTION THREE
+-----------------------------------------*/
+
+.feature3 {
+	position: relative;
+	background: url("../images/bg1.jpg") no-repeat scroll 0 0 / cover;
+	background-attachment: fixed;
+	padding: 80px 0;
+	color: #fff;
+	font-size: 17px;
+	text-align: justify;
+	border-bottom: 1px solid #e5e5e5;
+}
+.feature3-left-bg {
+	border-right: 60px solid transparent;
+	border-top: 423px solid rgba(52,152,219,0.9);
+	height: 0;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+}
+.feature3-right-bg {
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+}
+.feature3-left {
+	padding-right: 150px;
+}
+.feature3 h2 {
+	margin-bottom: 47px;
+}
+.item-progress {
+    margin-bottom: 22px;
+    overflow: hidden;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.feature3 .progress-bar{
+	background: #fff;
+}
+.feature3 .progress{
+	margin: 0;
+	width: 100%;
+	background-color: #999;
+}
+.progress-bar-title {
+    float: left;
+    margin-bottom: 7px;
+}
+.progress-bar-percents {
+    float: right;
+}
+
+/*---------------------------------------
+   3.7 FEATURE SECTION FOUR
+-----------------------------------------*/
+
+.feature4 {
+	position: relative;
+	background: url("../images/bg4.jpg") no-repeat scroll 0 0 / cover;
+	background-attachment: fixed;
+	padding: 80px 0 30px 0;
+	line-height: 27px;
+	color: #fff;
+	font-size: 17px;
+	text-align: justify;
+}
+.feature4-left-bg {
+	border-right: 60px solid transparent;
+	border-bottom: 423px solid rgba(52,152,219,0.9);
+	height: 0;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+}
+.feature4-right-bg {
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+}
+.feature4-left {
+	padding-right: 150px;
+}
+.feature4-item {
+	margin-bottom: 49px;
+}
+.feature4 h3 {
+    margin-bottom: 20px;
+}
+.feature4-item-icon {
+	float: left;
+	font-size: 30px;
+	margin-right: 10px;
+	margin-top: -10px;
+}
+
+/*---------------------------------------
+   3.8 BENEFITS SECTION
+-----------------------------------------*/
+
+.benefits {
+	border-bottom: 1px solid #eaeaea;
+	padding: 90px 0 0 0;
+	background: #fff;
+	position: relative;
+}
+.benefits .subheader {
+	margin-bottom: 60px;
+}
+.benefits img {
+	max-width: 100%;
+}
+.benefit-icon {
+	color: #fff;
+	background-color: #3498db;
+	width: 80px; 
+	height: 46.19px;
+	position: absolute;
+	font-size: 40px;
+	line-height: 54px;
+	top: 40px;
+}
+.benefit-icon div{
+	text-align: center;
+}
+.benefit-icon:before,
+.benefit-icon:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	left: 0;
+}
+.benefit-icon:before {
+	bottom: 100%;
+	border-bottom: 23.09px solid #3498db;
+}
+.benefit-icon:after {
+	top: 100%;
+	width: 0;
+	border-top: 23.09px solid #3498db;
+}
+.benefit-icon.right{
+	right: 0;
+}
+.benefit-icon.left{
+	left: 0;
+}
+.benefit-left {
+	position: relative;
+	font-weight: 300;
+	margin: 55px 0;
+	padding: 22px 100px 0 0;
+}
+.benefit-right {
+	position: relative;
+	font-weight: 300;
+	margin: 55px 0;
+	padding: 22px 0 0 100px;
+}
+
+/*---------------------------------------
+   3.9 CHART SECTION
+-----------------------------------------*/
+
+.legend {
+	width: 220px;
+	margin: 0 auto 40px auto;
+	overflow: hidden;
+}
+.legend-item {
+	float: left;
+}
+.legend-item-color {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	float: left;
+	margin: 4px 10px;
+}
+.legend-item-color.red {
+	background: #EE6557;
+}
+.legend-item-color.green {
+	background: #16A6B6;
+}
+.legend-item-color.blue {
+	background: #3498DB;
+}
+.chart {
+	background: #fff;
+	position: relative;
+	padding: 90px 0 100px;
+}
+.chart .subheader {
+	margin-bottom: 60px;
+}
+.chart #canvaschart {
+	margin-bottom: -11px;
+}
+
+
+/*---------------------------------------
+   3.10 WE DID SECTION
+-----------------------------------------*/
+
+.wedids {
+	position: relative;
+	text-align: center;
+	background: url("../images/bg6.jpg") no-repeat scroll 0 0 / cover;
+	background-attachment: fixed;
+	font-family: "Raleway";
+}
+.wedids-pattern {
+    background: rgba(0,0,0,0.7);
+    position: relative;
+	color: #fff;
+	padding: 100px 0;
+}
+.wedids h3 {
+    margin-bottom: 70px;
+    line-height: 26px;
+}
+.wedid-icon {
+	font-size: 80px;
+	margin-bottom: -30px;
+}
+.wedid-number {
+	font-size: 80px;
+	font-weight: bold;
+	font-family: Montserrat;
+}
+.wedid-text {
+    font-size: 25px;
+    font-family: "Montserrat";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*---------------------------------------
+   3.11 INFO SECTION
+-----------------------------------------*/
+
+.infos {
+	padding: 100px 0;
+	border-bottom: 1px solid #eaeaea;
+	position: relative;
+	background: #fff;
+}
+.infos h2 {
+	text-align: left;
+}
+.info > img {
+	max-width: 100%;
+	border: 10px solid #3498db;
+}
+.info-1 {
+	padding-right: 40px;
+	padding-left: 70px;
+}
+.info-2 {
+	padding-left: 90px;
+	padding-right: 70px;
+}
+.info-1 > p {
+	text-align: justify;
+	margin-bottom: 45px;
+}
+.info-2 > p {
+	text-align: justify;
+}
+.info-2 > img {
+	margin-bottom: 40px;
+}
+
+/*---------------------------------------
+   3.12 PORTFOLIO SECTION
+-----------------------------------------*/
+
+.portfolio {
+	padding: 90px 0 0;
+	background: #fff;
+	position: relative;
+}
+.portfolio .subheader {
+    margin-bottom: 50px;
+}
+.portfolio-items {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+#filter a {
+    color: #556d7e;
+    margin: 0 10px;
+    font-weight: 400;
+    border-bottom: 1px solid;
+    padding: 5px;
+    cursor: pointer;
+}
+#filter a:hover, #filter a:focus{
+	color: #3498db;
+}
+#filter a.active{
+	color: #3498db;
+}
+.portfolio-item  {
+	text-align: center;
+	padding: 0;
+}
+.portfolio-item img {
+    max-width: 100%;
+}
+.photo-info {
+    margin-top: 17%;
+    position: relative;
+}
+.view {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+.view .mask {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.view img {
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	display: block;
+	position: relative;
+}
+.view .mask {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	background-color: rgba(0,0,0, 0.7);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.view:hover img {
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+.view:hover .mask {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.view h3 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	padding-bottom: 10px;
+	font-size: 24px;
+}
+.view a.info {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 12px 15px;
+	font-size: 16px;
+}
+.view .portfolio-item-categories {
+	font-size: 14px;
+	padding-top: 10px;
+	color: #fff;
+}
+
+/*---------------------------------------
+   3.13 WHY WE SECTION
+-----------------------------------------*/
+
+.whywes {
+    background: url("../images/bg13.jpg") no-repeat scroll 0 0 / cover;
+    color: #fff;
+    padding: 90px 0;
+}
+.whywes > .subheader {
+    margin-bottom: 45px;
+}
+.whywes > h2 > span.header-bg {
+    background: #3498db;
+}
+.whywe {
+	margin-top: 25px;
+}
+.whywe p {
+    text-align: justify;
+}
+.whywe h3 {
+    padding: 19px 0;
+    margin-bottom: 15px;
+}
+.whywe-icon {
+	position: relative;
+	width: 50px;
+	height: 28.87px;
+	background-color: #ffffff;
+	margin: 14.43px 0;
+	color: #3498db;
+	float: left;
+	font-size: 22px;
+	margin-right: 10px;
+	line-height: 33px;
+}
+.whywe-icon:before,
+.whywe-icon:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+.whywe-icon:before {
+	bottom: 100%;
+	border-bottom: 14.43px solid #ffffff;
+}
+.whywe-icon:after {
+	top: 100%;
+	width: 0;
+	border-top: 14.43px solid #ffffff;
+}
+.whywe-icon div {
+	text-align: center;
+}
+
+
+/*---------------------------------------
+   3.14 TEAM SECTION
+-----------------------------------------*/
+
+.teams {
+	padding: 90px 0;
+}
+.teams > .subheader {
+	margin-bottom: 60px;
+}
+.team {
+    overflow: hidden;
+    position: relative;
+}
+.team-image {
+
+}
+.team-image > img {
+
+    width: 100%;
+}
+
+.team-name {
+    font-size: 18px;
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.team-name:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    top: 100%;
+    border-bottom: 1px solid #3498db;
+    border-top: 1px solid #3498db;
+    left: 0;
+    margin-top: 8px;
+}
+.team-prof {
+    font-size: 17px;
+    margin: 18px 0 15px;
+}
+.team-social {
+    width: 60px;
+    position: absolute;
+    top: -10px;
+    right: -7px;
+    height: 100%;
+}
+.team-icon {
+    position: relative;
+    width: 50px; 
+	height: 28.87px;
+    background-color: #3498db;
+    margin: 23px 0;
+    z-index: 1;
+    transform: rotate(30deg);
+	color: #fff;
+}
+.team-icon div {
+    text-align: center;
+    line-height: 31px;
+    font-size: 16px;
+}
+.team-icon:before,
+.team-icon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+   border-left: 25px solid transparent;
+  border-right: 25px solid transparent
+}
+
+.team-icon:before {
+  bottom: 100%;
+  border-bottom: 14.43px solid #3498db;
+}
+
+.team-icon:after {
+  top: 100%;
+  width: 0;
+  border-top: 14.43px solid #3498db;
+}
+.team-icon:hover {
+	background: #fff;
+	color: #3498db;
+}
+.team-icon:hover:before {
+	border-bottom: 14.43px solid #fff;
+}
+.team-icon:hover:after {
+	border-top: 14.43px solid #fff;
+}
+.team-social-white {
+    background-color: #fff;
+    width: 26px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -6px;
+}
+
+/*---------------------------------------
+   3.15 CLIENTS SECTION
+-----------------------------------------*/
+
+.clients {
+	background: url("../images/bg6.jpg") no-repeat scroll 0 0 / cover;
+	background-attachment: fixed;
+	position: relative;
+	color: #fff;
+	z-index: 1;
+	text-align: center;
+}
+.clients-pattern {
+    background: rgba(0,0,0,0.7);
+    position: relative;
+	color: #fff;
+	padding: 80px 0 65px 0;
+}
+.client {
+	cursor: pointer;
+	margin: 15px 0;
+}
+.client img {
+	max-width: 100%;
+}
+
+/*---------------------------------------
+   3.16 YOU ARE READY SECTION
+-----------------------------------------*/
+
+.ready {
+	background: #3498db;
+	color: #fff;
+	font-family: Montserrat;
+	padding: 55px 0;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.ready-text {
+	font-size: 55px;
+	line-height: 46px;
+}
+
+
+/*---------------------------------------
+   3.17 WORKING PROCESS SECTION
+-----------------------------------------*/
+
+.howworks {
+	border-bottom: 1px solid #eaeaea;
+	padding: 90px 0;
+	position: relative;
+	background: #fff;
+	z-index: 1;
+}
+.howworks > .subheader {
+	margin-bottom: 80px;
+}
+.howwork {
+	text-align: center;
+}
+.howwork-number {
+    font-size: 175px;
+    font-family: Montserrat;
+    color: #eaeaea;
+    font-weight: 400;
+    line-height: 0;
+    position: relative;
+    bottom: -72px;
+}
+.howwork-icon {
+    font-size: 120px;
+    color: #3498db;
+    opacity: 0.7;
+}
+.howwork-title h3 {
+	line-height: 10px;
+	text-transform: uppercase;
+}
+.howwork-text {
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+/*---------------------------------------
+   3.18 VIDEO SECTION
+-----------------------------------------*/
+
+.video {
+	height: 500px;
+	position: relative;
+}
+.video video {
+	position: absolute;
+	top: -50%;
+	margin-top: 250px;
+	height: auto;
+	width: 100%;
+}
+.video-pattern {
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.play-video {
+	position: relative;
+	width: 100px;
+	height: 57.74px;
+	background: none;
+	margin: 120px auto 70px auto;
+	border-left: solid 2px #ffffff;
+	border-right: solid 2px #ffffff;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 60px;
+}
+.play-video:before,
+.play-video:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 70.71px;
+	height: 70.71px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 12.6447px;
+}
+.play-video:before {
+	top: -35.3553px;
+	border-top: solid 2.8284px #ffffff;
+	border-right: solid 2.8284px #ffffff;
+}
+.play-video:after {
+	bottom: -35.3553px;
+	border-bottom: solid 2.8284px #ffffff;
+	border-left: solid 2.8284px #ffffff;
+}
+.play-video:hover {
+	background: #fff;
+	color: #3498db;
+}
+.play-video i {
+	z-index: 2;
+	position: relative;
+}
+.stop-video {
+	position: relative;
+	width: 100px;
+	height: 57.74px;
+	background: none;
+	margin: 120px auto 70px auto;
+	border-left: solid 2px #ffffff;
+	border-right: solid 2px #ffffff;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 60px;
+	display: none;
+}
+.stop-video:before,
+.stop-video:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 70.71px;
+	height: 70.71px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 12.6447px;
+}
+.stop-video:before {
+	top: -35.3553px;
+	border-top: solid 2.8284px #ffffff;
+	border-right: solid 2.8284px #ffffff;
+}
+.stop-video:after {
+	bottom: -35.3553px;
+	border-bottom: solid 2.8284px #ffffff;
+	border-left: solid 2.8284px #ffffff;
+}
+.stop-video:hover {
+	background: #fff;
+	color: #3498db;
+}
+.stop-video i {
+	z-index: 2;
+	position: relative;
+}
+.video h2.border-bottom-center {
+	font-size: 60px;
+}
+.more-video {
+	text-align: center;
+	margin-top: 60px;
+}
+
+/*---------------------------------------
+   3.19 PRICE SECTION
+-----------------------------------------*/
+
+.prices {
+	padding: 90px 0;
+	position: relative;
+	background: #fff;
+}
+.prices > .subheader {
+	margin-bottom: 70px;
+}
+.price {
+	text-align: center;
+	color: #556d7e;
+	padding: 0;
+}
+.price-header {
+    position: relative;
+    background: #3498db;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    text-align: center;
+    padding: 15px 0;
+}
+.price-header:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(52, 152, 219, 0);
+	border-top-color: #3498db;
+	border-width: 12px;
+	margin-left: -12px;
+}
+.price-cost {
+    padding: 25px 0;
+    font-size: 15px;
+}
+.price-number {
+    font-family: Montserrat;
+    font-size: 67px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 5px;
+}
+.price-number:before {
+	position: absolute;
+	content: "";
+	width: 50px;
+	border-bottom: 1px solid #3498db;
+	height: 3px;
+	border-top: 1px solid #3498db;
+	top: 85%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: 11px;
+}
+.price-desc {
+    background: #e4edf4;
+    padding: 20px 0;
+}
+.price-desc ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.price-desc li {
+	font-size: 16px;
+	padding: 5px 0;
+}
+.price-icon {
+	padding-right: 15px;
+}
+.price-button {
+	padding: 25px 0;
+	border-bottom: 1px solid #eaeaea;
+}
+.price.price-one .price-header{
+	border-right: 1px solid #fff;
+}
+.price.price-one .price-cost{
+	border-right: 1px solid #eaeaea;
+	border-left: 1px solid #eaeaea;
+}
+.price.price-one .price-desc{
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.price.price-one .price-button{
+	border-right: 1px solid #eaeaea;
+	border-left: 1px solid #eaeaea;
+}
+.price.price-three .price-header{
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.price.price-three .price-cost{
+	border-right: 1px solid #eaeaea;
+	border-left: 1px solid #eaeaea;
+}
+.price.price-three .price-desc{
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.price.price-three .price-button{
+	border-right: 1px solid #eaeaea;
+	border-left: 1px solid #eaeaea;
+}
+.price.price-four .price-cost{
+	border-right: 1px solid #eaeaea;
+}
+.price.price-four .price-desc{
+	border-right: 1px solid #ccc;
+}
+.price.price-four .price-button{
+	border-right: 1px solid #eaeaea;
+}
+.price.price-three{
+	margin-top: -15px;
+}
+.price.price-three .price-desc{
+	padding: 34px 0;
+}
+
+/*---------------------------------------
+   3.20 BLOG SECTION
+-----------------------------------------*/
+
+.blog {
+	padding: 90px 0;
+}
+.blog-item.inner-page {
+	margin-bottom: 30px;
+}
+.blog-image {
+	border: 5px solid #3498db;
+}
+.blog-image img {
+	width: 100%;
+}
+.blog-info {
+	position: relative;
+	width: 96px; 
+	height: 55.43px;
+	background-color: #3498db;
+	margin: -33px auto -52px auto;
+	font-size: 15px;
+	color: #fff;
+}
+.blog-info:before,
+.blog-info:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	border-left: 48px solid transparent;
+	border-right: 48px solid transparent;
+}
+.blog-info:before {
+	bottom: 100%;
+	border-bottom: 27.71px solid #3498db;
+}
+.blog-info:after {
+	top: 100%;
+	width: 0;
+	border-top: 27.71px solid #3498db;
+}
+.blog-info div {
+	text-align: center;
+	padding: 8px 0;
+}
+.blog-text {
+	padding: 60px 15px 20px;
+	text-align: justify;
+}
+.blog-item h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    line-height: 23px;
+    text-align: center;
+}
+.blog-button {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*---------------------------------------
+   3.21 REVIEWS SECTION
+-----------------------------------------*/
+
+.reviews {
+	background: url("../images/bg7.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	color: #fff;
+}
+.rev-pattern {
+    background: rgba(0,0,0,0.7);
+    position: relative;
+	color: #fff;
+	padding: 90px 0;
+}
+.rev-navigation {
+	float: right;
+	margin-top: -70px;
+	margin-bottom: 40px;
+}
+.rev-text {
+	text-align: center;
+	position: relative;
+	border-radius: 3px;
+	color: #fff;
+	padding: 1px 10px 30px 10px;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+.rev-name {
+	font-family: "Montserrat";
+	font-size: 50px;
+	background: none;
+	font-weight: bold;
+	position: relative;
+	margin-bottom: 30px;
+}
+.rev-name:before {
+	position: absolute;
+	content: "";
+	width: 84px;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	height: 3px;
+	top: 100%;
+	left: 50%;
+	margin-left: -42px;
+	margin-top: 10px;
+}
+.quote {
+	font-size: 32px;
+}
+
+/*---------------------------------------
+   3.22 FAQ SECTION
+-----------------------------------------*/
+
+.faqs {
+	padding: 90px 0;
+	position: relative;
+	background: #fff;
+}
+.faqs > .subheader {
+	margin-bottom: 60px;
+}
+.panel-group .panel {
+    margin-bottom: 20px;
+    box-shadow: none;
+    border-top: none;
+    border-right: none;
+	border-left: none;
+    border-radius: 0;
+    border-bottom: 1px solid #3498db;
+}
+.panel-default>.panel-heading {
+    background-color: #fff;
+    color: #556d7e;
+    border: none;
+	border-radius: 0;
+}
+.panel-heading {
+	padding: 13px 0px 14px 60px;
+	position: relative;
+	border-radius: 0;
+}
+.panel-title {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 17px;
+	border-radius: 0;
+}
+h4.panel-title a:before {
+	content: '\e896';
+	font-family: 'Tonicons';
+	text-align: center;
+	background: #3498db;
+	color: #fff;
+	font-size: 22px;
+	position: absolute;
+	padding: 11px 13px;
+	border-radius: 0;
+	top: 0px;
+	left: 0px;
+}
+h4.panel-title a.collapsed:before {
+	content: '\e898';
+}
+
+/*---------------------------------------
+   3.23 SOCIAL ICONS SECTION
+-----------------------------------------*/
+
+.socials {
+	background: #3498db;
+	padding: 40px 0;
+	color: #fff;
+	overflow: hidden;
+}
+.socials a {
+	color: #fff;
+}
+.social-icons {
+	width: 450px;
+	margin: 0 auto;
+}
+.social {
+	float: left;
+	font-size: 28px;
+	background: rgba(255,255,255,0.3);
+	cursor: pointer;
+	line-height: 42px;
+	position: relative;
+	width: 70px;
+	height: 40.41px;
+	margin: 20.21px 10px;
+	transition: all 300ms;
+}
+.social:before,
+.social:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	transition: all 300ms;
+}
+.social:before {
+	bottom: 100%;
+	border-bottom: 20.21px solid rgba(255,255,255,0.3);
+}
+.social:after {
+	top: 100%;
+	width: 0;
+	border-top: 20.21px solid rgba(255,255,255,0.3);
+}
+.social div {
+	text-align: center;
+}
+.social:hover {
+	background: #fff;
+	color: #3498db;
+}
+.social:hover:before {
+	border-bottom: 20.21px solid #fff;
+}
+.social:hover:after {
+	border-top: 20.21px solid #fff;
+}
+
+/*---------------------------------------
+   3.24 GOOGLE MAP SECTION
+-----------------------------------------*/
+
+#map {
+  height: 360px;
+}
+
+/*---------------------------------------
+   3.25 CONTACTS SECTION
+-----------------------------------------*/
+
+.contacts {
+	padding: 90px 0;
+}
+.contact-1 {
+	text-align: justify;
+}
+.contact-2 h2.border-bottom {
+  margin-left: 15px;
+}
+.contact-item {
+	margin: 20px 0;
+}
+.contacts input {
+	width: 100%;
+}
+.contacts textarea {
+	width: 100%;
+	margin: 17px 0 14px;
+	height: 115px;
+}
+.contacts .btn-primary {
+	width: 100%;
+	padding: 10px;
+}
+.cont-icon {
+	position: relative;
+	width: 32px;
+	height: 18.48px;
+	background-color: #3498db;
+	margin: 4px 10px 0 0;
+	float: left;
+	color: #fff;
+	line-height: 18px;
+	font-size: 14px;
+}
+.cont-icon:before,
+.cont-icon:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+}
+.cont-icon:before {
+	bottom: 100%;
+	border-bottom: 9.24px solid #3498db;
+}
+.cont-icon:after {
+	top: 100%;
+	width: 0;
+	border-top: 9.24px solid #3498db;
+}
+.cont-icon div {
+	text-align: center;
+}
+
+/*---------------------------------------
+   3.26 FOOTER SECTION
+-----------------------------------------*/
+
+.footer {
+	background: #3498db;
+	color: #fff;
+	padding: 20px 0 10px 0;
+	text-align: center;
+}
+
+/*---------------------------------------
+   3.27 RIGHT SLIDE MENU
+-----------------------------------------*/
+
+.right-menu {
+	width: 300px;
+	top: 0;
+	height: 100%;
+	right: -330px;
+	position: fixed;
+	background: #3a3f51;
+	border-left: 1px solid #3498db;
+	z-index: 5555;
+	overflow-y: auto;
+	transition: all 300ms;
+}
+.hidemenu {
+	font-size: 21px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin: 20px auto;
+	width: 42px;
+	color: #fff;
+	height: 42px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 37px;
+	transition: all 300ms;
+}
+.hidemenu:hover {
+	background: #fff;
+	color: #000;
+}
+.right-menu .nav > li > a {
+	font-size: 21px;
+	text-align: center;
+	padding: 10px 25px;
+	color: #fff;
+	border-bottom: 1px solid #2e3344;
+}
+.right-menu .nav > li.active > a {
+	background: #3498db;
+	border-bottom: 1px solid #2e3344;
+}
+.right-menu .nav>li>a:hover, .right-menu .nav>li>a:focus {
+	padding: 10px 25px;
+	background: #3498db;
+	border-bottom: 1px solid #2e3344;
+}
+.right-menu .nav>li.active>a:hover, .right-menu .nav>li.active>a:focus {
+	padding: 10px 25px;
+	background: #3498db;
+	border-bottom: 1px solid #2e3344;
+}
+
+/* --------------------------------------
+=========================================
+   4. OTHER PAGES
+=========================================
+-----------------------------------------*/
+
+/* --------------------------------------
+   4.1 BREADCRUMBS
+=========================================
+-----------------------------------------*/
+
+.breadcrumbs {
+	background: url("../images/bg7.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: "Raleway";
+}
+.breadcrumbs-pattern {
+	background: rgba(0,0,0,0.3);
+	position: relative;
+	color: #fff;
+	padding: 60px 0;
+}
+.breadcrumb {
+	padding: 0 15px;
+	margin-bottom: 0;
+	background: none;
+	font-size: 50px;
+}
+.breadcrumb a {
+	color: #fff;
+	font-weight: 600;
+}
+.breadcrumb>.active {
+	color: #fff;
+}
+
+/* --------------------------------------
+   4.2 BLOG PAGES
+=========================================
+-----------------------------------------*/
+
+.single-blog {
+	padding: 70px 0;
+}
+.single-blog .blog-info {
+  margin-bottom: 40px;
+}
+.single-blog-image img {
+	max-width: 100%;
+}
+.single-blog-image {
+	margin: 50px 0 0;
+	position: relative;
+}
+.single-blog-text {
+    text-align: justify;
+    margin-top: 50px;
+}
+.gallery-prev {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	margin-top: -15px;
+	z-index: 1;
+}
+.gallery-next {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -15px;
+	z-index: 1;
+}
+
+/*---------------------------------------
+   4.3 PORTFOLIO PAGES
+=========================================
+-----------------------------------------*/
+
+.portfolio-page {
+	padding: 70px 0;
+}
+.single-portfolio {
+	padding: 70px 0;
+}
+.portfolio-info {
+	font-size: 13px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.single-portfolio-image img {
+	max-width: 100%;
+}
+.single-portfolio-image {
+	margin: 50px 0;
+	position: relative;
+}
+.single-portfolio-text {
+	text-align: justify;
+}
