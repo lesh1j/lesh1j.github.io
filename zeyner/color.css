@@ -1,0 +1,65 @@
+.color {
+  position: fixed;
+  right: -120px;
+  width: 160px;
+  z-index: 1111;
+  top: 100px;
+  transition: all 300ms;
+}
+.showcolor {
+  background: #fff;
+  border-radius: 3px 0 0 3px;
+  cursor: pointer;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-left: 1px solid #ccc;
+  font-size: 25px;
+  line-height: 37px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.color-body {
+  background: #fff;
+  width: 120px;
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0 0 0 3px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  right: 0;
+}
+.ch-color {
+  width: 40px;
+  float: left;
+  height: 40px;
+  cursor: pointer;
+  margin: 9px;
+}
+.ch-color.blue {
+  background: #3498db;
+}
+.ch-color.red {
+  background: #e74c3c;
+}
+.ch-color.green {
+  background: #1abc9c;
+}
+.ch-color.yellow {
+  background: #f1c40f;
+}
+.ch-color.orange {
+  background: #e67e22;
+}
+.ch-color.purple {
+  background: #8e44ad;
+}
+.color h5 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 15px 0 5px 0;
+}
+.color h5  a{
+  margin-bottom: 15px;
+}
