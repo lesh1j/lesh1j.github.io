@@ -1,0 +1,322 @@
+/* --------------------------------------
+=========================================
+CoMoD - Creative Responsive Html Template
+Version: 1.0 (Initial Release)
+Designed By: Vadzim Liashkevich
+=========================================
+
+/* --------------------------------------
+=========================================
+   1. IMPORT GOOGLE WEB FONTS                
+=========================================
+-----------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,100,200,300,600,700,800,900|Josefin+Sans:400,300,600,700);
+
+/* --------------------------------------
+=========================================
+   2. GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   2.1 GENERAL STYLES          
+-----------------------------------------*/
+
+html, body {
+    color: #50575A;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+section{
+	position: relative;
+}
+
+/*---------------------------------------
+   2.2 MISC FIXES         
+-----------------------------------------*/
+@-webkit-viewport {
+	width: device-width;
+}
+
+@-moz-viewport {
+	width: device-width;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@-o-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+ul{
+	margin: 0;
+	padding-left: 0 !important;
+}
+
+li {
+	list-style: none;
+}
+
+/*---------------------------------------
+   2.3 TYPOGRAPHY   
+-----------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Montserrat;
+	font-weight: 700;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.h2, h2 {
+    font-size: 28px;
+}
+.h4, h4 {
+    font-size: 17px;
+}
+
+
+/* DUBLE borDER BOTTOM FOR HEADINGS  */
+.border-bottom {
+	margin-bottom: 30px;
+	position: relative;
+	text-align: left;
+	text-transform: uppercase;
+}
+.border-bottom:before {
+	border-bottom: 1px solid #a8b5ba;
+	border-top: 1px solid #a8b5ba;
+	content: "";
+	height: 3px;
+	left: 0;
+	margin-top: 10px;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+.section-title{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.section-title-left {
+    text-align: left;
+	margin-bottom: 40px;
+}
+.section-title-right {
+    text-align: right;
+	margin-bottom: 40px;
+}
+.section-subtitle {
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    letter-spacing: 1px;
+    font-weight: 300;
+    top: 4px;
+    font-size: 13px;
+    font-family: montserrat;
+    margin-bottom: 62px;
+}
+.section-subtitle-left {
+    text-align: left;
+}
+.section-subtitle-right {
+    text-align: right;
+}
+
+/* LINKS  */
+
+a {
+	color: #50575A;
+	outline: none;
+	text-decoration: none;
+}
+a:hover   {
+	color: #50575A;
+	text-decoration: none;
+}
+a:focus   {
+	color: #50575A;
+	outline: none;
+	text-decoration: none;
+}
+
+
+/*---------------------------------------
+   2.6 BUTTONS
+-----------------------------------------*/
+
+.btn {
+    border-radius: 0;
+    padding: 8px 16px;
+    transition: all 300ms;
+    font-family: Montserrat;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 18px;
+}
+.btn-group-sm>.btn, .btn-sm {
+    padding: 6px 14px;
+}
+.btn-group-xs>.btn, .btn-xs {
+    padding: 4px 12px;
+}
+.btn-primary {
+	background-color: #f7fafb;
+	border: 2px solid #50575A;
+	color: #50575A;
+}
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #50575A;
+	color: #f7fafb;
+}
+.btn-default {
+	background-color: #50575A;
+	border: 1px solid #50575A;
+	color: #f7fafb;
+}
+.btn-default:hover, .btn-default:focus {
+	background-color: #f7fafb;
+	color: #50575A;
+}
+
+/*  CUSTOM BUTTONS  */
+
+.my-button {
+    position: relative;
+    padding: 10px 20px;
+    overflow: hidden;
+	font-size: 14px;
+    font-family: montserrat;
+}
+.my-button-lg {
+    padding: 13px 26px;
+    font-size: 16px;
+}
+.my-button-sm {
+    padding: 8px 16px;
+    font-size: 13px;
+}
+.my-button-xs {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+.my-button-border-top {
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid;
+    height: 2px;
+    top: 0;
+    left: -100%;
+	transition: all 1.5s;
+}
+.my-button-border-right {
+    position: absolute;
+    height: 100%;
+    border-right: 2px solid;
+    width: 2px;
+    top: -100%;
+    right: 0;
+	transition: all 1.5s;
+}
+.my-button-border-bottom {
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid;
+    height: 2px;
+    bottom: 0;
+    right: -100%;
+	transition: all 1.5s;
+}
+.my-button-border-left {
+    position: absolute;
+    height: 100%;
+    border-right: 2px solid;
+    width: 2px;
+    bottom: -100%;
+    left: 0;
+	transition: all 1.5s;
+}
+.my-button-text {
+    opacity: 0;
+	transition: all 1.5s;
+}
+
+#header-2 {
+    background: url(../images/hbg.jpg);
+    background-size: cover;
+    padding: 125px 0 95px;
+    margin-bottom: 50px;
+    background-position: center top;
+}
+
+/*  MAIN TITLE 2  */
+.page-title-2 h1 {
+    font-size: 90px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 120px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.75);
+    position: relative;
+    font-weight: 600;
+    padding: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.page-title-small-style-2 {
+    font-size: 23px;
+    position: relative;
+    font-family: Montserrat;
+    text-align: center;
+    padding: 15px 25px;
+    z-index: 2;
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,0.8);
+    margin-bottom: 30px;
+}
+section#demos {
+    padding: 50px 0;
+}
+.demo {
+    margin-bottom: 50px;
+}
+.demo-image {
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.demo-title {
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo-button {
+    text-align: center;
+}
+.coming-soon {
+    font-family: montserrat;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
