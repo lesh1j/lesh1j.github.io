@@ -1,0 +1,204 @@
+/* --------------------------------------
+=========================================
+COLOR : GREEN 
+
+COLOR CODE: #1abc9c, rgb(26, 188, 156)
+=========================================
+----------------------------------------- */
+.colorhead{
+	color: #1abc9c;
+}
+a  {
+	color: #1abc9c;
+}
+a:hover   {
+	color: #1abc9c;
+}
+a:focus   {
+	color: #1abc9c;
+}
+input:focus, textarea:focus {
+	border-left-color: #1abc9c;
+}
+.btn-primary {
+	background-color: #1abc9c;
+}
+.btn-primary:hover, .btn-primary:focus {
+	background: #d13f30;
+}
+.btn-primary-inverse {
+    border-color: #1abc9c;
+    color: #1abc9c;
+}
+.btn-primary-inverse:hover, .btn-primary-inverse:focus {
+	background: #1abc9c;
+}
+.btn-primary-inverse.active {
+    background: #1abc9c;
+}
+.top-navbar .nav>li.active>a {
+	color: #1abc9c;
+}
+.top-navbar .nav>li>a:hover, .top-navbar .nav>li>a:focus {
+	color: #1abc9c;
+}
+.top-navbar .nav>li.active>a:hover, .top-navbar .nav>li.active>a:focus {
+	color: #1abc9c;
+}
+.header-left-bg {
+	border-bottom-color: rgba(26, 188, 156, 0.8);
+}
+.main-navbar .nav>li.active>a {
+	color: #1abc9c;
+}
+.main-navbar .nav>li>a:hover, .main-navbar .nav>li>a:focus {
+	color: #1abc9c;
+}
+.service-icon {
+	color: #1abc9c;
+}
+.service-icon:before {
+	border-top-color: #1abc9c;
+	border-bottom-color: #1abc9c;
+}
+.feature1-left-bg {
+	border-top-color: rgba(26, 188, 156, 0.8);
+}
+.feature2-left-bg {
+	border-bottom-color: rgba(26, 188, 156, 0.8);
+}
+.feature3-left-bg {
+	border-top-color: rgba(26, 188, 156, 0.8);
+}
+.feature4-left-bg {
+	border-bottom-color: rgba(26, 188, 156, 0.8);
+}
+.benefit-icon {
+	background-color: #1abc9c;
+}
+.benefit-icon:before {
+	border-bottom-color: #1abc9c;
+}
+.benefit-icon:after {
+	border-top-color: #1abc9c;
+}
+.info > img {
+	border-color: #1abc9c;
+}
+.whywes {
+    background: #1abc9c;
+}
+.whywes > h2 > span.header-bg {
+    background: #1abc9c;
+}
+.whywe-icon {
+	color: #1abc9c;
+}
+.team-icon {
+    background-color: #1abc9c;
+}
+.team-icon:before {
+    border-bottom-color: #1abc9c;
+}
+.team-icon:after {
+    border-top-color: #1abc9c;
+}
+.team-name:before {
+    border-bottom-color: #1abc9c;
+    border-top-color: #1abc9c;
+}
+.team-icon:hover {
+	color: #1abc9c;
+}
+.ready {
+	background: #1abc9c;
+}
+.howwork-icon {
+	color: #1abc9c;
+}
+.play-video:hover {
+	color: #1abc9c;
+}
+.stop-video:hover {
+	color: #1abc9c;
+}
+.price-header {
+	background: #1abc9c;
+}
+.price-header:after {
+	border-top-color: #1abc9c;
+}
+.price-number:before {
+    border-bottom-color: #1abc9c;
+    border-top-color: #1abc9c;
+}
+.blog-image {
+	border-color: #1abc9c;
+}
+.blog-info {
+	background-color: #1abc9c;
+}
+.blog-info:before {
+	border-bottom-color: #1abc9c;
+}
+.blog-info:after {
+	border-top-color: #1abc9c;
+}
+h4.panel-title a:before {
+	background: #1abc9c;
+}
+.panel-group .panel {
+    border-bottom-color: #1abc9c;
+}
+.socials {
+	background: #1abc9c;
+}
+.social:hover {
+	color: #1abc9c;
+}
+.cont-icon {
+	background-color: #1abc9c;
+}
+.cont-icon:before {
+	border-bottom-color: #1abc9c;
+}
+.cont-icon:after {
+	border-top-color: #1abc9c;
+}
+.footer {
+	background: #1abc9c;
+}
+.contact-form-header {
+	background: #1abc9c;
+}
+.right-menu {
+	border-left-color: #1abc9c;
+}
+.right-menu .nav > li.active > a {
+	background: #1abc9c;
+}
+.right-menu .nav>li>a:hover, .right-menu .nav>li>a:focus {
+	background: #1abc9c;
+}
+.right-menu .nav>li.active>a:hover, .right-menu .nav>li.active>a:focus {
+	background: #1abc9c;
+}
+
+
+@media (max-width: 992px) {
+	.header-left-bg {
+		background: rgba(26, 188, 156, 0.8);
+	}
+	.feature1-left-bg {
+		background: rgba(26, 188, 156, 0.8);
+	}
+	.feature2-left-bg {
+		background: rgba(26, 188, 156, 0.8);
+	}
+	.feature3-left-bg {
+		background: rgba(26, 188, 156, 0.8);
+	}
+	.feature4-left-bg {
+		background: rgba(26, 188, 156, 0.8);
+	}
+}

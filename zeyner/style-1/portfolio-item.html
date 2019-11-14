@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Responsive Bootstrap Multi-Purpose Landing Page Template">
+<meta name="keywords" content="Zeyner, Bootstrap, Landing page, Template, Landing, One page">
+<meta name="author" content="Vadzim Liashkevich">
+
+<!-- SITE TITLE -->
+<title>Zeyner - Responsive Landing Page Template</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- FONT ICONS -->
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+<!-- Icomoon icons -->
+<link rel="stylesheet" href="assets/tonicons-outline/style.css">
+
+<!-- Elegant Icons 
+<link rel="stylesheet" href="assets/elegant-icons/style.css"> -->
+<!--[if lte IE 7]><script src="assets/elegant-icons/lte-ie7.js"></script><![endif]-->
+
+<!-- IonIcons 
+<link rel="stylesheet" href="assets/ionicons/css/ionicons.css"> -->
+
+<!-- LIGHTBOX -->
+<link href="css/lightbox.css" rel="stylesheet" />
+
+<!-- OWL CARUSEL -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+
+<!-- ANIMATE -->
+<link rel="stylesheet" href="css/animate.css">
+
+<!-- CUSTOM STYLES -->
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- COLORS SCHEMES 
+<link rel="stylesheet" type="text/css" href="css/colors/red.css" />
+<link rel="stylesheet" type="text/css" href="css/colors/green.css" />
+<link rel="stylesheet" type="text/css" href="css/colors/yellow.css" />
+<link rel="stylesheet" type="text/css" href="css/colors/orange.css" />
+<link rel="stylesheet" type="text/css" href="css/colors/purple.css" /> -->
+<link rel="stylesheet" type="text/css" href="../color.css" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" onload="initialize();">
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader" id="preloader">
+	<div class="status">
+		<div class="preloader-logo"><img src="images/preloader.gif" alt="" /></div>
+		<div class="preloader-text">Please,<br>loading</div>
+	</div>
+</div>
+
+<!-- =========================
+     TOP NAVBAR
+============================== -->
+<div class="top-navbar navbar inner-page" role="navigation">
+	<div class="container">
+		<div class="row">
+		
+			<!-- NAVBAR LOGO -->		
+			<a href="/"><div class="topmenu-logo"><img src="images/logo_dark.png" alt="" /></div></a>
+			
+			<!-- SHOW RIGHT MENU BUTTON -->		
+			<div class="showmenu" id="showmenu"><i class="fa fa-bars"></i></div>
+			
+			<!-- NAVBAR MENU -->	
+			<div class="collapse navbar-collapse top-menu">
+				<ul class="nav navbar-nav">
+					<li><a href="/demo/zeyner/style-1/#home">Home</a></li>
+					<li><a href="/demo/zeyner/style-1/#services">Services</a></li>
+					<li><a href="/demo/zeyner/style-1/#portfolio">Portfolio</a></li>
+					<li><a href="/demo/zeyner/style-1/#team">Our team</a></li>
+					<li><a href="/demo/zeyner/style-1/#price">Price</a></li>
+					<li><a href="/demo/zeyner/style-1/#blog">Our blog</a></li>
+					<li><a href="/demo/zeyner/style-1/#contacts">Contacts</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<!-- =========================
+     SECTION BREADCRUMBS
+============================== -->
+<section class="breadcrumbs" data-stellar-background-ratio="0.2">
+	<!-- PATTENRN BACKGROUND -->
+	<div class="breadcrumbs-pattern">
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb">
+					<li><a href="/demo/zeyner/style-1/">HOME</a></li>
+					<li><a href="/demo/zeyner/style-1/#portfolio">PORTFOLIO</a></li>
+					<li class="active">PORTFOLIO ITEM</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- =========================
+     SECTION PORTFOLIO
+============================== -->	
+<section id="single-portfolio" class="single-portfolio">
+	<div class="container">
+		<div class="row">
+			
+			<!-- PORTFOLIO TITLE -->
+			<h2 class="border-bottom-center">PORTFOLIO ITEM.</h2>
+			
+			<!-- PORTFOLIO INFO -->
+			<div class="portfolio-info">
+				<i class="fa fa-clock-o"></i> Marth 26, 2015 | <i class="fa fa-user"></i> for <a href="#">John Doe</a> | <i class="fa fa-link"></i> <a href="#">website.com</a>
+			</div>
+			
+			<!-- PORTFOLIO IMAGE GALLEY -->
+			<div class="single-portfolio-image">
+				<a class="gallery-prev btn btn-default-inverse prev" id="prev-gallery"><i class="fa fa-chevron-left"></i></a>
+				<a class="gallery-next btn btn-default-inverse next" id="next-gallery"><i class="fa fa-chevron-right"></i></a>
+				<div id="owl-gallery" class="owl-carousel owl-theme">
+					<img src="images/blog.jpg" alt="" />
+					<img src="images/blog.jpg" alt="" />
+					<img src="images/blog.jpg" alt="" />
+				</div>
+			</div>
+			
+			<!-- PORTFOLIO TEXT -->
+			<div class="single-portfolio-text">
+				<h3 class="border-bottom">PROJECT DESCRIPTION.</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- =========================
+     SECTION SOCIAL ICONS 
+============================== -->	
+<section id="contacts" class="socials">
+	<div class="social-icons">
+		<a href="#"><div class="social"><div><i class="fa fa-facebook"></i></div></div></a>
+		<a href="#"><div class="social"><div><i class="fa fa-twitter"></i></div></div></a>
+		<a href="#"><div class="social"><div><i class="fa fa-instagram"></i></div></div></a>
+		<a href="#"><div class="social"><div><i class="fa fa-pinterest-p"></i></div></div></a>
+		<a href="#"><div class="social"><div><i class="fa fa-vk"></i></div></div></a>
+	</div>
+</section>
+
+<!-- =========================
+     SECTION GOOGLE MAP
+============================== -->
+<section id="map"></section>
+
+<!-- =========================
+     SECTION CONTACTS
+============================== -->
+<section class="contacts">
+	<div class="container">
+		<div class="row">
+			
+			<!-- LEFT CONTACTS -->
+			<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 contact-1">
+				<h2 class="border-bottom">Our contacts</h2>
+				<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+				<div class="contact-item"><div class="cont-icon"><div><i class="fa fa-map-marker"></i></div></div>Manchester, Great Britain</div>
+				<div class="contact-item"><div class="cont-icon"><div><i class="fa fa-phone"></i></div></div>+4(934)234-23-423</div>
+				<div class="contact-item"><div class="cont-icon"><div><i class="fa fa-envelope"></i></div></div>myemail@myemail.com</div>
+			</div>
+			
+			<!-- RIGHT CONTACTS -->
+			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 contact-2">
+				<h2 class="border-bottom">Get in touch</h2>
+				<div class="send-result"></div>
+				<form name="bottom-form" id="bottom-form" method="POST" action="javascript:void(null);" onsubmit="sendmail();">
+					<div class="col-md-4"><input type="text" name="name" placeholder="Your name.." /></div>
+					<div class="col-md-4"><input type="text" name="phone" placeholder="Your phone.." /></div>
+					<div class="col-md-4"><input type="text" name="email" placeholder="Your email.." /></div>
+					<div class="col-md-12"><textarea name="message" placeholder="Your message.."></textarea></div>
+					<div class="col-md-12"><button class="btn btn-primary">Send message</button></div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</section>
+	
+<!-- =========================
+     SECTION FOOTER
+============================== -->
+<footer class="footer">
+	<div class="container">
+		<p>&copy; Lander template 2015 - All right reserved</p>
+	</div>
+</footer>
+
+<!-- =========================
+     RIGHT MENU
+============================== -->
+<aside class="right-menu" id="right-menu">
+	
+	<!-- CLOSE MENU BUTTON -->
+	<div class="hidemenu" id="hidemenu"><i class="fa fa-close"></i></div>
+	
+	<!-- MENU ITEMS -->
+	<div class="navbar">
+		<ul class="nav nav-menu">
+			<li><a href="/demo/zeyner/style-1/#home">Home</a></li>
+			<li><a href="/demo/zeyner/style-1/#services">Services</a></li>
+			<li><a href="/demo/zeyner/style-1/#chart">Our stats</a></li>
+			<li><a href="/demo/zeyner/style-1/#infos">About us</a></li>
+			<li><a href="/demo/zeyner/style-1/#portfolio">Portfolio</a></li>
+			<li><a href="/demo/zeyner/style-1/#team">Our team</a></li>
+			<li><a href="/demo/zeyner/style-1/#clients">Our clients</a></li>
+			<li><a href="/demo/zeyner/style-1/#howworks">Working process</a></li>
+			<li><a href="/demo/zeyner/style-1/#price">Price</a></li>
+			<li><a href="/demo/zeyner/style-1/#blog">Our blog</a></li>
+			<li><a href="/demo/zeyner/style-1/#reviews">Client says</a></li>
+			<li><a href="/demo/zeyner/style-1/#faq">Are your question?</a></li>
+			<li><a href="/demo/zeyner/style-1/#contacts">Contacts</a></li>
+		</ul>
+	</div>
+</aside>
+<div class="color">
+	<div class="showcolor"><i class="fa fa-cog"></i></div>
+	<div class="color-body">
+		<h5>Chose color</h5>
+		<div class="ch-color blue"></div>
+		<div class="ch-color red"></div>
+		<div class="ch-color green"></div>
+		<div class="ch-color yellow"></div>
+		<div class="ch-color orange"></div>
+		<div class="ch-color purple"></div>
+		<h5><a href="/">All demos</a></h5>
+	</div>
+</div>	
+	
+<!-- =========================
+     SCRIPTS   
+============================== -->	
+<!-- JQUERY -->
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- BOOTSTRAP -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- GOOGLE MAP API -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1N87a_NHjocaepKKcovPAYTMUkJBr9pQ&amp;libraries=geometry,places&amp;sensor=true"></script>
+
+<!-- LIGHTBOX -->
+<script src="js/lightbox.min.js"></script>
+
+<!-- CAROUSEL -->
+<script src="js/owl.carousel.js"></script>
+
+<!-- WOW PLAGIN -->
+<script src="js/wow.min.js"></script>
+
+<!-- STELLAR.JS FOR PARALLAX -->
+<script src="js/jquery.stellar.min.js"></script>
+
+<!-- SMOOTH SCROLLING  -->
+<script src="js/smoothscroll.min.js"></script>
+
+<script src="js/scrollspy.js"></script>
+
+<!-- CUSTOM SCRIPT -->
+<script src="js/main_inner.js"></script>
+<script src="../color.js"></script>		
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script>
+<!-- GOOGLE MAP INITIALIZE -->
+function initialize() {
+	
+	/*“use strict” mode on*/
+	"use strict";
+	
+	<!-- CUSTOM STYLES ARRAY -->
+	var styles = [
+	{
+		"featureType": "administrative",
+		"elementType": "labels.text.fill",
+		"stylers": [{ "color": "#444444" }]
+	},
+	{
+		"featureType": "landscape",
+		"elementType": "all",
+		"stylers": [{ "color": "#f2f2f2" }]
+	},
+	{
+		"featureType": "road",
+		"elementType": "all",
+		"stylers": [{ "saturation": -100 }, { "lightness": 45 }]
+	},
+	{
+		"featureType": "road.highway",
+		"elementType": "all",
+		"stylers": [{ "visibility": "simplified" }]
+	},
+	{
+		"featureType": "road.arterial",
+		"elementType": "labels.icon",
+		"stylers": [{ "visibility": "off" }]
+	},
+	{
+		"featureType": "transit",
+		"elementType": "all",
+		"stylers": [{ "visibility": "off" }]
+	},
+	{
+		"featureType": "water",
+		"elementType": "all",
+		"stylers": [{ "color": "#46bcec"}, { "visibility": "on" }]
+	}
+	];
+	
+	<!-- CENTER AND MARKER COORDINATES -->
+	var myLatlng = new google.maps.LatLng(51.50361379,-0.13183594);
+	
+	<!-- MAP OPTIONS -->
+	var mapOptions = {
+		center: myLatlng,
+		zoom: 13,
+		scrollwheel: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	
+	<!-- MAP INITIALIZE -->
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	
+	<!-- SET CUSTOM STILES -->
+	map.setOptions({styles: styles});
+	
+	<!-- MARKER IMAGE -->
+	var image = 'images/marker.png';
+	
+	<!-- SET MARKER -->
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		icon: image
+	});
+}
+
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter30909601 = new Ya.Metrika({id:30909601,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/30909601" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>

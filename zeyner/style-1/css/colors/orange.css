@@ -1,0 +1,203 @@
+/* --------------------------------------
+=========================================
+COLOR : ORANGE 
+
+COLOR CODE: #e67e22, rgb(230, 126, 34)
+=========================================
+----------------------------------------- */
+.colorhead{
+	color: #e67e22;
+}
+a  {
+	color: #e67e22;
+}
+a:hover   {
+	color: #e67e22;
+}
+a:focus   {
+	color: #e67e22;
+}
+input:focus, textarea:focus {
+	border-left-color: #e67e22;
+}
+.btn-primary {
+	background-color: #e67e22;
+}
+.btn-primary:hover, .btn-primary:focus {
+	background: #d13f30;
+}
+.btn-primary-inverse {
+    border-color: #e67e22;
+    color: #e67e22;
+}
+.btn-primary-inverse:hover, .btn-primary-inverse:focus {
+	background: #e67e22;
+}
+.btn-primary-inverse.active {
+    background: #e67e22;
+}
+.top-navbar .nav>li.active>a {
+	color: #e67e22;
+}
+.top-navbar .nav>li>a:hover, .top-navbar .nav>li>a:focus {
+	color: #e67e22;
+}
+.top-navbar .nav>li.active>a:hover, .top-navbar .nav>li.active>a:focus {
+	color: #e67e22;
+}
+.header-left-bg {
+	border-bottom-color: rgba(230, 126, 34, 0.8);
+}
+.main-navbar .nav>li.active>a {
+	color: #e67e22;
+}
+.main-navbar .nav>li>a:hover, .main-navbar .nav>li>a:focus {
+	color: #e67e22;
+}
+.service-icon {
+	color: #e67e22;
+}
+.service-icon:before {
+	border-top-color: #e67e22;
+	border-bottom-color: #e67e22;
+}
+.feature1-left-bg {
+	border-top-color: rgba(230, 126, 34, 0.8);
+}
+.feature2-left-bg {
+	border-bottom-color: rgba(230, 126, 34, 0.8);
+}
+.feature3-left-bg {
+	border-top-color: rgba(230, 126, 34, 0.8);
+}
+.feature4-left-bg {
+	border-bottom-color: rgba(230, 126, 34, 0.8);
+}
+.benefit-icon {
+	background-color: #e67e22;
+}
+.benefit-icon:before {
+	border-bottom-color: #e67e22;
+}
+.benefit-icon:after {
+	border-top-color: #e67e22;
+}
+.info > img {
+	border-color: #e67e22;
+}
+.whywes {
+    background: #e67e22;
+}
+.whywes > h2 > span.header-bg {
+    background: #e67e22;
+}
+.whywe-icon {
+	color: #e67e22;
+}
+.team-icon {
+    background-color: #e67e22;
+}
+.team-icon:before {
+    border-bottom-color: #e67e22;
+}
+.team-icon:after {
+    border-top-color: #e67e22;
+}
+.team-name:before {
+    border-bottom-color: #e67e22;
+    border-top-color: #e67e22;
+}
+.team-icon:hover {
+	color: #e67e22;
+}
+.ready {
+	background: #e67e22;
+}
+.howwork-icon {
+	color: #e67e22;
+}
+.play-video:hover {
+	color: #e67e22;
+}
+.stop-video:hover {
+	color: #e67e22;
+}
+.price-header {
+	background: #e67e22;
+}
+.price-header:after {
+	border-top-color: #e67e22;
+}
+.price-number:before {
+    border-bottom-color: #e67e22;
+    border-top-color: #e67e22;
+}
+.blog-image {
+	border-color: #e67e22;
+}
+.blog-info {
+	background-color: #e67e22;
+}
+.blog-info:before {
+	border-bottom-color: #e67e22;
+}
+.blog-info:after {
+	border-top-color: #e67e22;
+}
+h4.panel-title a:before {
+	background: #e67e22;
+}
+.panel-group .panel {
+    border-bottom-color: #e67e22;
+}
+.socials {
+	background: #e67e22;
+}
+.social:hover {
+	color: #e67e22;
+}
+.cont-icon {
+	background-color: #e67e22;
+}
+.cont-icon:before {
+	border-bottom-color: #e67e22;
+}
+.cont-icon:after {
+	border-top-color: #e67e22;
+}
+.footer {
+	background: #e67e22;
+}
+.contact-form-header {
+	background: #e67e22;
+}
+.right-menu {
+	border-left-color: #e67e22;
+}
+.right-menu .nav > li.active > a {
+	background: #e67e22;
+}
+.right-menu .nav>li>a:hover, .right-menu .nav>li>a:focus {
+	background: #e67e22;
+}
+.right-menu .nav>li.active>a:hover, .right-menu .nav>li.active>a:focus {
+	background: #e67e22;
+}
+
+@media (max-width: 992px) {
+	.header-left-bg {
+		background: rgba(230, 126, 34, 0.8);
+	}
+	.feature1-left-bg {
+		background: rgba(230, 126, 34, 0.8);
+	}
+	.feature2-left-bg {
+		background: rgba(230, 126, 34, 0.8);
+	}
+	.feature3-left-bg {
+		background: rgba(230, 126, 34, 0.8);
+	}
+	.feature4-left-bg {
+		background: rgba(230, 126, 34, 0.8);
+	}
+}
