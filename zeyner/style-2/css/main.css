@@ -1,7 +1,7 @@
 /* --------------------------------------
 =========================================
-LANDER - Responsive Landing Page Template
-Version: 1.0 (Initial Release)
+Zeyner - Responsive Landing Page Template
+Version: 1.1 (Initial Release)
 Designed By: Vadzim Liashkevich
 =========================================
 
@@ -469,7 +469,7 @@ input:focus, textarea:focus {
 }
 .preloader-text {
 	font-family: "Montserrat";
-	font-size: 34px;
+	font-size: 33px;
 	line-height: 33px;
 	text-transform: uppercase;
 	font-weight: 700;
