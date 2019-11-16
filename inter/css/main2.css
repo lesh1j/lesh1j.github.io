@@ -467,3 +467,102 @@ h1.on-tech {
 	max-width: 63%;
 	margin-top: 53px;
 }
+
+.quick-link-anchor.on-price {
+    justify-content: flex-start;
+    padding-top: 0px;
+}
+
+.price .container {
+
+}
+
+.price__desc {
+    font-size: 14px;
+    margin-top: 15px;
+      margin-bottom: 18px;
+}
+
+.beam__title {
+    font-size: 23px;
+}
+.beam__title img {
+    display: inline-block;
+    position: relative;
+    top: 9px;
+}
+
+.beam__text {
+    margin-top: 27px;
+    width: 500px;
+    float: left;
+}
+
+.beam__image {
+    position: relative;
+    top: -30px;
+}
+
+.beam__table {
+    margin-top: -27px;
+}
+
+.beam__row {
+    display: flex;
+    text-align: center;
+  padding: 9px 0;
+}
+
+.beam__row:nth-child(2n-1) {
+    background: #f6f6f6;
+}
+
+.beam__row.beam__header {
+  background: transparent;
+    font-size: 18px;
+    border-bottom: 1px solid;
+    padding: 12px 0;
+}
+
+.beam__col:nth-child(1) {
+    flex: 0 0 17%;
+}
+.beam__col:nth-child(2) {
+    flex: 0 0 15%;
+}
+.beam__col:nth-child(3) {
+    flex: 0 0 31%;
+}
+.beam__col:nth-child(4) {
+    flex: 0 0 17%;
+}
+.beam__col:nth-child(5) {
+    flex: 0 0 17%;
+}
+
+.beam__button {
+    text-align: right;
+    padding: 29px 10px 0;
+}
+
+.beam__button .icon {
+    font-size: 16px;
+}
+
+.price__buttons {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.quick-link-anchor.on-price a {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.beam__notice {
+    color: #00a550;
+    margin-top: 9px;
+    font-size: 11px;
+    text-align: center;
+    display: none;
+}
