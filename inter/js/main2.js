@@ -1,9 +1,6 @@
-const accordionTitles = document.querySelectorAll('.accordion__title');
-
-accordionTitles.forEach((title) => {
-  title.addEventListener('click', (e) => e.currentTarget.parentNode.classList.toggle('open'));
+$('.accordion__title').on('click', function(){
+  $(this).parent().toggleClass('open');
 });
-
 
 function changeNodes() {
   if($(window).width() <= 640){
