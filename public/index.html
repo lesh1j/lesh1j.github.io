@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Pay form</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+  <div class="container">
+    <form class="form" action="">
+      
+      <div class="form__section form__top">
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <h2 class="form__title">К оплате: <span class="color-blue">270 BYN</span></h2>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <p>Годовая подписка на сервис</p>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <div class="field">
+              <label class="field__label" for="email">Ваш e-mail</label>
+              <input class="field__input" type="text" id="email" name="email" placeholder="mail@mail.com" />
+            </div>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <div class="field phone" data-mask="+375 (XX) XXX XX XX">
+              <label class="field__label" for="phone">Номер телефона</label>
+              <input class="field__input field__phone" type="text" id="phone" name="phone" placeholder="+375 (XX) XXX XX XX" />
+              
+              <!-- dropdown -->
+              <div class="dropdown bottom left countries">
+                <div class="dropdown__title">
+                  <img class="countries__flag" id="country-flag" src="images/by.svg" alt="BY">
+                </div>
+                <div class="dropdown__body">
+                    <ul class="countries__list custom-scroll">
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+375 (XX) XXX XX XX">
+                        <img class="country__flag" src="images/by.svg" alt="BY" />
+                        <span class="country__text">Беларусь (+375)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+32 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/be.svg" alt="BE" />
+                        <span class="country__text">Бельгия (+32)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+49 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/de.svg" alt="DE" />
+                        <span class="country__text">Германия (+49)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+31 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/nl.svg" alt="NL" />
+                        <span class="country__text">Нидерланды (+31)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+370 (XX) XXX XX XX">
+                        <img class="country__flag" src="images/lt.svg" alt="LT" />
+                        <span class="country__text">Литва (+370)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+7 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/ru.svg" alt="RU" />
+                        <span class="country__text">Россия (+7)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+420 (XX) XXX XX XX">
+                        <img class="country__flag" src="images/cz.svg" alt="CZ" />
+                        <span class="country__text">Чехия (+420)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+56 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/cl.svg" alt="CL" />
+                        <span class="country__text">Чили (+56)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+375 (XX) XXX XX XX">
+                        <img class="country__flag" src="images/by.svg" alt="BY" />
+                        <span class="country__text">Беларусь (+375)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+32 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/be.svg" alt="BE" />
+                        <span class="country__text">Бельгия (+32)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+49 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/de.svg" alt="DE" />
+                        <span class="country__text">Германия (+49)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+31 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/nl.svg" alt="NL" />
+                        <span class="country__text">Нидерланды (+31)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+370 (XX) XXX XX XX">
+                        <img class="country__flag" src="images/lt.svg" alt="LT" />
+                        <span class="country__text">Литва (+370)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+7 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/ru.svg" alt="RU" />
+                        <span class="country__text">Россия (+7)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+420 (XX) XXX XX XX">
+                        <img class="country__flag" src="images/cz.svg" alt="CZ" />
+                        <span class="country__text">Чехия (+420)</span>
+                      </li>
+                      
+                      <!-- dropdown item -->
+                      <li class="country dropdown__item" data-mask="+56 (XXX) XXX XX XX">
+                        <img class="country__flag" src="images/cl.svg" alt="CL" />
+                        <span class="country__text">Чили (+56)</span>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="form__section form__bottom">
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <div class="payments">
+              <img class="payments__image" src="images/visa.svg" alt="VISA">
+              <img class="payments__image" src="images/master_card.svg" alt="VISA">
+              <img class="payments__image" src="images/maestro.svg" alt="VISA">
+              <img class="payments__image" src="images/mir.svg" alt="VISA">
+            </div>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <div class="field" data-mask="XXXX XXXX XXXX XXXX">
+              <label class="field__label" for="number">Номер карты</label>
+              <input class="field__input" type="text" id="card_number" name="card_number" placeholder="XXXX XXXX XXXX XXXX" />
+            </div>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <div class="field">
+              <label class="field__label" for="name">Имя владельца карты</label>
+              <input class="field__input" type="text" id="name" name="name" placeholder="YOUR NAME" />
+            </div>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-1">
+            <div class="field" data-mask="XX  /  XX">
+              <label class="field__label" for="term">Срок действия</label>
+              <input class="field__input" type="text" id="term" name="term" placeholder="MM  /  YY" />
+              
+              <!-- dropdown -->
+              <div class="dropdown top center help">
+                <div class="dropdown__title">
+                  <button type="button" class="help__button">?</button>
+                </div>
+                <div class="dropdown__body help__body">
+                  Срок действия вашей карты написанна лицевой стороне карты. Запишите срок дейсвия в формате Месяц / 2 последние цифры года.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col col-1">
+            <div class="field" data-mask="XXX">
+              <label class="field__label" for="cvv">Cvv/Cvc</label>
+              <input class="field__input" type="text" id="cvv" name="cvv" placeholder="XXX" />
+              
+              <!-- dropdown -->
+              <div class="dropdown top right help">
+                <div class="dropdown__title">
+                  <button type="button" class="help__button">?</button>
+                </div>
+                <div class="dropdown__body help__body">
+                  <p>
+                    CVV/CVC – код это последние 3 цифры на оборотной стороне карты
+                  </p>
+                  <img src="images/help_cvv.png" alt="Help CVV" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <div class="terms">
+              Нажимая кнопку "Оплатить", Вы соглашаетесь на обработку данных в соответствии с <a href="#">Пользовательским соглашением</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <button type="submit" id="send-form" class="btn btn-blue" disabled>Оплатить 270 BYN</button>
+          </div>
+        </div>
+        
+        <!-- form item -->
+        <div class="row">
+          <div class="col col-2">
+            <div class="save">
+              <img class="save__image" src="images/save.svg" alt="VISA">
+              <span class="save__text">
+                Безопасность работы подтверждена <a href="#">сертификатом PCI DSS</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </form>
+    
+    <div class="secure">
+      <img class="secure__image" src="images/secure_visa.png" alt="VISA">
+      <img class="secure__image" src="images/secure_master.png" alt="VISA">
+      <img class="secure__image" src="images/secure_mir.png" alt="VISA">
+      <img class="secure__image" src="images/secure_pci.png" alt="VISA">
+    </div>
+    
+  </div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
