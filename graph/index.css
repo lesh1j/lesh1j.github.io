@@ -1,0 +1,8 @@
+body {
+    background: #181E2F;
+}
+div#outlineContainer {
+    background: #2b3250;
+    border: 15px solid #2b3250;
+    border-radius: 8px;
+}
