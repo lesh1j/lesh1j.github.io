@@ -5,15 +5,87 @@
 	<script type="text/javascript">
 		mxBasePath = 'src';
 	</script>
-	<script type="text/javascript" src="js/mxClient.min.js?v=4"></script>
-	<script type="text/javascript" src="js/main.min.js?v=4"></script>
-  <link type="text/css" href="index.css?v=4" rel="stylesheet">
+  <script type="text/javascript" src="js/range-slider.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+	<script type="text/javascript" src="js/mxClient.min.js?v=5"></script>
+	<script type="text/javascript" src="js/main.min.js?v=5"></script>
+  <link type="text/css" href="css/range-slider.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <link type="text/css" href="css/index.css?v=5" rel="stylesheet">
 </head>
 
 <body>
 	<div id="outlineContainer"
-		style="z-index:1;position:absolute;overflow:hidden;bottom:0px;right:0px;width:220px;height:160px;">
+		style="z-index:1;position:absolute;overflow:hidden;bottom:64px;right:8px;width:280px;height:144px;">
+    <div class="map__close">
+      <img src="icons/icon_close.svg" alt="" />
+    </div>
 	</div>
+  <div class="zoom">
+    <div class="zoom__minus">
+      <img src="icons/icon_minus.svg" alt="" />
+    </div>
+    <div class="zoom__scale">
+      <input
+        type="range"
+        min="0.1"
+        max="2"
+        step="0.1"
+        value="1"
+        data-buffer="0" />
+    </div>
+    <div class="zoom__plus">
+      <img src="icons/icon_plus.svg" alt="" />
+    </div>
+    <div class="zoom__map">
+      <img src="icons/icon_map.svg" alt="" />
+    </div>
+  </div>
+  <div class="header">
+    <div class="header__left">
+      <div class="header__item">
+        <img src="icons/icon_menu_1.svg" alt="" />
+      </div>
+      <div class="header__item">
+        <img src="icons/icon_menu_2.svg" alt="" />
+      </div>
+      <div class="header__item">
+        <img src="icons/icon_menu_3.svg" alt="" />
+      </div>
+      <div class="header__item">
+        <img src="icons/icon_menu_4.svg" alt="" />
+      </div>
+    </div>
+    <div class="header__center">
+      <div class="dropdown">
+        <div class="dropdown__body">
+          Общий режим
+        </div>
+        <div class="dropdown__items">
+          <div class="dropdown__item active">
+            Общий режим
+          </div>
+          <div class="dropdown__item">
+            Окружение НП по выбранному узлу
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__right">
+      <div class="header__item">
+        <img src="icons/icon_menu_5.svg" alt="" />
+      </div>
+      <div class="header__item">
+        <img src="icons/icon_menu_6.svg" alt="" />
+      </div>
+      <div class="header__item">
+        <img src="icons/icon_menu_7.svg" alt="" />
+      </div>
+      <div class="header__item">
+        <img src="icons/icon_menu_8.svg" alt="" />
+      </div>
+    </div>
+  </div>
   <div class="risk-menu">
     <div class="risk-menu__close">
       <img src="icons/icon_close.svg" alt="" />
@@ -56,17 +128,62 @@
   </div>
   <div class="menu">
     <div class="menu__item" id="environment">
-      A
+      <img src="icons/icon_rmenu_1.svg" alt="" />
     </div>
     <div class="menu__item" id="environment">
-      B
+      <img src="icons/icon_rmenu_2.svg" alt="" />
     </div>
     <div class="menu__item" id="environment">
-      C
+      <img src="icons/icon_rmenu_3.svg" alt="" />
     </div>
     <div class="menu__item" id="environment">
-      D
+      <img src="icons/icon_rmenu_4.svg" alt="" />
     </div>
+    <div class="menu__item" id="environment">
+      <img src="icons/icon_rmenu_5.svg" alt="" />
+    </div>
+    <div class="menu__item" id="environment">
+      <img src="icons/icon_rmenu_6.svg" alt="" />
+    </div>
+    <div class="menu__item" id="environment">
+      <img src="icons/icon_rmenu_7.svg" alt="" />
+    </div>
+    <div class="menu__item" id="environment">
+      <img src="icons/icon_rmenu_8.svg" alt="" />
+    </div>
+    <div class="menu__item menu__more">
+      <img src="icons/icon_rmenu_more.svg" alt="" />
+    </div>
+  </div>
+  <div class="card" data-simplebar>
+    <div class="card__close">
+      <img src="icons/icon_arrow.svg" alt="" />
+    </div>
+    <div class="card__show">
+      Развернуть
+    </div>
+    <div class="card__header">
+      <div class="card__subtitle">
+        Наименование
+      </div>
+      <div class="card__title">
+      </div>
+    </div>
+    <div class="card__info">
+      <div class="card__info-item"></div>
+      <div class="card__info-item"></div>
+    </div>
+    <div class="card__section">
+      <div class="card__section-title">
+        Общие сведения
+      </div>
+    </div>
+    <div class="card__section">
+      <div class="card__section-title">
+        Сведения о НП по РНПТ
+      </div>
+    </div>
+    <a href="#" class="card__button">Операции на узле</a>
   </div>
 </body>
 </html>
