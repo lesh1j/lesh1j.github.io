@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="5.1107mm" height="5.1103mm" version="1.1" viewBox="0 0 5.1107 5.1103" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-153.85 -155.92)">
+  <g transform="matrix(.26458 0 0 .26458 79.451 124.53)" fill="#241c1c">
+   <g transform="translate(249.13 151.17)" fill="#241f1c">
+    <g transform="translate(27.718 -36.877)" fill="#fff" stroke="#fff">
+     <rect transform="matrix(.70711 -.70711 -.70711 -.70711 16.195 12.094)" x="-5.9605e-8" y="-.70711" width="7.2808" height="1.9774"/>
+     <path d="m19.616 8.5637 1.8301 3.1256 1.5447-6.6789-6.6791 1.5444 3.1255 1.83 0.1128 0.06605z"/>
+     <rect transform="matrix(-.70711 .70711 .70711 .70711 10.805 14.906)" x="5.9605e-8" y=".70711" width="7.2808" height="1.9774"/>
+     <path d="m8.3843 19.436-1.8301-3.1256-1.5447 6.6789 6.6791-1.5444-3.1255-1.8301-0.11279-0.066z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
