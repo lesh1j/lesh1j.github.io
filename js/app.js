@@ -6,7 +6,7 @@ import AppStore from "./stores/AppStore";
 import { prepareDataTypes } from './utils/prepareData';
 
 export interface GoGraphProps {
-options?: object;
+	options?: object;
 data?: object;
 }
 
