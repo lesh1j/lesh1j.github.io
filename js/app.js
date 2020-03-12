@@ -10,7 +10,7 @@ export interface GoGraphProps {
 	data?: object;
 }
 
-class GoGraph extends Component<GoGraphProps, {}>{
+class GoGraph extends Component<GoGraphProps, {}>{ 
 	
 	get stores(){
 		const { options, data } = this.props;
