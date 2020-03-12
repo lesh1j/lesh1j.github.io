@@ -37,4 +37,4 @@ render(){
 	}
 }
 
-export default GoGraph;
+export default GoGraph; 
