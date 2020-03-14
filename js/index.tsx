@@ -4,33 +4,28 @@ import { Provider } from "mobx-react";
 import App from "./components/app";
 import AppStore from "./stores/AppStore";
 import { prepareDataTypes } from './utils/prepareData';
-
-import data from './utils/data';
-const options = {
-	"theme": "dark",
-	"direction": 0
-}
+import { Options } from './interface';
 
 export interface GoGraphProps {
-	options?: object;
+	options?: Options;
 	data?: object;
 }
 
 class GoGraph extends Component<GoGraphProps, {}>{
-	
-	get stores(){
-		const { options, data } = this.props;
+	private appStore: AppStore = new AppStore(
+		this.props.options, 
+		prepareDataTypes(this.props.data)
+	);	
 
-		const appStore = new AppStore(options, prepareDataTypes(data));
-
+	get stores(): object {
 		return {
-		  AppStore: appStore, 
-		  GraphStore: appStore.GraphStore,
-		  MenuStore: appStore.MenuStore,
-		  RightMenuStore: appStore.RightMenuStore,
-		  InfoCardStore: appStore.InfoCardStore,
-		  RiskCardStore: appStore.RiskCardStore,
-		  ZoomStore: appStore.ZoomStore
+		  AppStore: this.appStore, 
+		  GraphStore: this.appStore.GraphStore,
+		  MenuStore: this.appStore.MenuStore,
+		  RightMenuStore: this.appStore.RightMenuStore,
+		  InfoCardStore: this.appStore.InfoCardStore,
+		  RiskCardStore: this.appStore.RiskCardStore,
+		  ZoomStore: this.appStore.ZoomStore
 		};
 	}
 
@@ -42,9 +37,5 @@ class GoGraph extends Component<GoGraphProps, {}>{
 		)
 	}
 }
-
-ReactDOM.render((
-	<GoGraph options={options} data={data}/>
-), document.getElementById('root'));
 
 export default GoGraph;
