@@ -386,24 +386,6 @@
       "vio_flag":false,
       "last_doc_date":"2021-03-02T16:00:00+03:00",
       "sidedraw":"To"
-    },
-    {
-      "from":"4601000/021020/00032101/64/643/7702838318//",
-      "to":"4601000/021020/00032101/64/643/7702838318//",
-      "orig_id":"4601000/021020/00032101/64/643/7702838318//643/7702838318//1/",
-      "category":"Direct",
-      "edge_type":"Direct",
-      "out_co_code":"643",
-      "out_co_name":"Россия",
-      "in_co_code":"643",
-      "in_co_name":"Россия",
-      "quanyity":200.0,
-      "price_min":4079.8,
-      "price_max":4079.8,
-      "broker":false,
-      "vio_flag":false,
-      "last_doc_date":"2021-03-02T16:00:00+03:00",
-      "sidedraw":"To"
     }
   ]
 }
