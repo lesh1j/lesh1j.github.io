@@ -9,7 +9,7 @@
       {
          "pk":"1002000/912010/00032101/302",
          "ipt":"10123000/050219/0002001/302",
-         "orig_co_code":"076",
+         "orig_co_code":"344",
          "orig_co_name":"Китай",
          "tnved":"8715001000",
          "okpd2":null,
@@ -53,7 +53,7 @@
             },
             "tax_type":null,
             "tax_type_name":null,
-            "co_code":"051",
+            "co_code":"016",
             "co_code_name":"Китай",
             "short_name":"[l:0, r:1] MAXIMAL Forklift Co.Ltd",
             "inn":"0000000100",
