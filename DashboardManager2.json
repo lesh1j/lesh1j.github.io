@@ -1,93 +1,122 @@
 {
   "indicators": {
     "import": {
-      "value": 31419.9463,
-      "percent": 28
+      "value": 9370506.07,
+      "percent": 86
     },
     "turnover": {
-      "value": 77196.13365,
-      "percent": 70
+      "value": 1304742.36,
+      "percent": 12
     },
     "export": {
-      "value": 422.3378,
+      "value": 223403.21,
       "percent": 2
     }
   },
   "participants": {
-    "full": 52,
+    "full": 29,
     "parts": [
       {
         "isOsno": true,
-        "value": 50,
-        "percent": 96
+        "value": 27,
+        "percent": 93
       },
       {
         "isOsno": false,
         "value": 2,
-        "percent": 4
+        "percent": 7
       }
     ]
   },
   "goodsGroups": [
     {
-      "code": "03",
-      "name": "Машины для земляных работ",
-      "value": 22082174.0,
-      "percent": 28
+      "code": "07",
+      "name": "Товары для детей",
+      "value": 8722847.33,
+      "percent": 93
     },
     {
-      "code": "05",
-      "name": "Мониторы и проекторы",
-      "value": 20277250.0,
-      "percent": 26
+      "code": "01",
+      "name": "Холодильники и морозильники",
+      "value": 212000.4,
+      "percent": 2
     },
     {
-      "code": "02",
-      "name": "Автопогрузчики",
-      "value": 10920009.1,
-      "percent": 14
+      "code": "11",
+      "name": "Стиральные машины",
+      "value": 178049.0,
+      "percent": 2
     },
     {
       "code": "ANY_CODE",
       "name": "Прочие",
-      "value": 23916700.55,
-      "percent": 32
+      "value": 257609.34,
+      "percent": 3
     }
   ],
   "countries": [
     {
-      "code": "--",
-      "name": "Страна не определена",
-      "value": 37470909.05,
-      "percent": 48
-    },
-    {
-      "code": "JP",
-      "name": "Япония",
-      "value": 31598398.91,
-      "percent": 40
-    },
-    {
       "code": "PA",
       "name": "Панама",
-      "value": 5122308.0,
-      "percent": 6
+      "value": 7100040.0,
+      "percent": 76
+    },
+    {
+      "code": "KZ",
+      "name": "Казахстан",
+      "value": 1861122.8,
+      "percent": 20
+    },
+    {
+      "code": "RU",
+      "name": "Россия",
+      "value": 332001.3,
+      "percent": 4
     },
     {
       "code": "ANY_CODE",
       "name": "Прочие",
-      "value": 3004517.69,
-      "percent": 6
+      "value": 77341.97,
+      "percent": 0
     }
   ],
-  "risks": [
+  "risks": null,
+  "districts": [
     {
-      "withRisks": true,
-      "percent": 23
+      "code": "30",
+      "value": 80899.1
     },
     {
-      "withRisks": false,
-      "percent": 77
+      "code": "31",
+      "value": 7000000.0
+    },
+    {
+      "code": "33",
+      "value": 1735946.47
+    },
+    {
+      "code": "35",
+      "value": 3000.0
+    },
+    {
+      "code": "37",
+      "value": 6579.8
+    },
+    {
+      "code": "38",
+      "value": 4079.8
+    },
+    {
+      "code": "A0",
+      "value": 540000.9
+    },
+    {
+      "code": "34",
+      "value": 0.0
+    },
+    {
+      "code": "36",
+      "value": 0.0
     }
   ],
   "regions": [
@@ -133,23 +162,23 @@
     "periods": [
       {
         "code": "2017",
-        "value": 0.2,
+        "value": 100.0,
         "percent": 0
       },
       {
         "code": "2018",
-        "value": 11768.4136,
-        "percent": 15
+        "value": 19685695.04,
+        "percent": 63
       },
       {
         "code": "2019",
-        "value": 33583.96355,
-        "percent": 43
+        "value": 2347847.29,
+        "percent": 8
       },
       {
         "code": "2020",
-        "value": 31843.5565,
-        "percent": 42
+        "value": 9370506.07,
+        "percent": 29
       }
     ]
   }
