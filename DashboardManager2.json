@@ -1,0 +1,194 @@
+{
+  "indicators": {
+    "import": {
+      "value": 31419.9463,
+      "percent": 28
+    },
+    "turnover": {
+      "value": 77196.13365,
+      "percent": 70
+    },
+    "export": {
+      "value": 422.3378,
+      "percent": 2
+    }
+  },
+  "participants": {
+    "full": 52,
+    "parts": [
+      {
+        "isOsno": true,
+        "value": 50,
+        "percent": 96
+      },
+      {
+        "isOsno": false,
+        "value": 2,
+        "percent": 4
+      }
+    ]
+  },
+  "goodsGroups": [
+    {
+      "code": "03",
+      "name": "Машины для земляных работ",
+      "value": 22082174.0,
+      "percent": 28
+    },
+    {
+      "code": "05",
+      "name": "Мониторы и проекторы",
+      "value": 20277250.0,
+      "percent": 26
+    },
+    {
+      "code": "02",
+      "name": "Автопогрузчики",
+      "value": 10920009.1,
+      "percent": 14
+    },
+    {
+      "code": "ANY_CODE",
+      "name": "Прочие",
+      "value": 23916700.55,
+      "percent": 32
+    }
+  ],
+  "countries": [
+    {
+      "code": "--",
+      "name": "Страна не определена",
+      "value": 37470909.05,
+      "percent": 48
+    },
+    {
+      "code": "JP",
+      "name": "Япония",
+      "value": 31598398.91,
+      "percent": 40
+    },
+    {
+      "code": "PA",
+      "name": "Панама",
+      "value": 5122308.0,
+      "percent": 6
+    },
+    {
+      "code": "ANY_CODE",
+      "name": "Прочие",
+      "value": 3004517.69,
+      "percent": 6
+    }
+  ],
+  "risks": [
+    {
+      "withRisks": true,
+      "percent": 23
+    },
+    {
+      "withRisks": false,
+      "percent": 77
+    }
+  ],
+  "districts": [
+    {
+      "code": "30",
+      "value": 6370.9776
+    },
+    {
+      "code": "31",
+      "value": 16515.11442
+    },
+    {
+      "code": "33",
+      "value": 13749.24431
+    },
+    {
+      "code": "34",
+      "value": 16200.0
+    },
+    {
+      "code": "35",
+      "value": 7.605
+    },
+    {
+      "code": "36",
+      "value": 15317.552
+    },
+    {
+      "code": "37",
+      "value": 2916.3009
+    },
+    {
+      "code": "38",
+      "value": 297.317
+    },
+    {
+      "code": "A0",
+      "value": 5822.02242
+    }
+  ],
+  "regions": [
+    {
+      "code": "71",
+      "value": 6370.9776
+    },
+    {
+      "code": "46",
+      "value": 16515.11442
+    },
+    {
+      "code": "69",
+      "value": 13749.24431
+    },
+    {
+      "code": "37",
+      "value": 16200.0
+    },
+    {
+      "code": "57",
+      "value": 7.605
+    },
+    {
+      "code": "67",
+      "value": 15317.552
+    },
+    {
+      "code": "36",
+      "value": 2916.3009
+    },
+    {
+      "code": "76",
+      "value": 297.317
+    },
+    {
+      "code": "50",
+      "value": 5822.02242
+    }
+  ],
+  "periods": {
+    "periodType": "year",
+    "periods": [
+      {
+        "code": "2017",
+        "value": 0.2,
+        "percent": 0
+      },
+      {
+        "code": "2018",
+        "value": 11768.4136,
+        "percent": 15
+      },
+      {
+        "code": "2019",
+        "value": 33583.96355,
+        "percent": 43
+      },
+      {
+        "code": "2020",
+        "value": 31843.5565,
+        "percent": 42
+      }
+    ]
+  }
+}
