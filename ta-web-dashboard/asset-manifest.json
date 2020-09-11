@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "./static/css/main.chunk.css",
+    "main.js": "./static/js/main.chunk.js",
+    "main.js.map": "./static/js/main.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.js",
+    "runtime-main.js.map": "./static/js/runtime-main.js.map",
+    "static/js/2.chunk.js": "./static/js/2.chunk.js",
+    "static/js/2.chunk.js.map": "./static/js/2.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.96bc442e89f647702fd7a136930d4d3f.js": "./precache-manifest.96bc442e89f647702fd7a136930d4d3f.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.chunk.css.map": "./static/css/main.chunk.css.map",
+    "static/js/2.chunk.js.LICENSE.txt": "./static/js/2.chunk.js.LICENSE.txt",
+    "static/media/arrow.svg": "./static/media/arrow.svg",
+    "static/media/back.svg": "./static/media/back.svg",
+    "static/media/circulation.svg": "./static/media/circulation.svg",
+    "static/media/dark.svg": "./static/media/dark.svg",
+    "static/media/dropdown.svg": "./static/media/dropdown.svg",
+    "static/media/icons.svg": "./static/media/icons.svg",
+    "static/media/info.svg": "./static/media/info.svg",
+    "static/media/kn.svg": "./static/media/kn.svg",
+    "static/media/light.svg": "./static/media/light.svg",
+    "static/media/list.svg": "./static/media/list.svg",
+    "static/media/logo.svg": "./static/media/logo.svg",
+    "static/media/App.scss": "./static/media/mainBackground.png",
+    "static/media/map.svg": "./static/media/map.svg",
+    "static/media/Map.module.scss": "./static/media/mapBg.png",
+    "static/media/resales.svg": "./static/media/resales.svg",
+    "static/media/restoreFilters.svg": "./static/media/restoreFilters.svg",
+    "static/media/search.svg": "./static/media/search.svg",
+    "static/media/traceability.svg": "./static/media/traceability.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.js",
+    "static/js/2.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}
