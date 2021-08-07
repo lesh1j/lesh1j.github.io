@@ -1,0 +1,134 @@
+@media screen and (max-width: 1340px) {
+    .container {
+      width: 1200px;
+    }
+    .to-order {
+      margin-right: 0;
+    }
+  }
+  
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 6vh;
+    line-height: 6vh;
+  }
+  .container {
+    width: 660px;
+  }
+  .to-order {
+    margin-top: 4vh;
+  }
+  .title {
+    text-align: left;
+    margin-top: 14vh;
+  }
+  .subtitle {
+    text-align: left;
+  }
+  .desktop{
+    display: none;
+  }
+  .moscow {
+    padding-top: 6vh;
+  }
+  .moscow h2 {
+    font-size: 50px;
+  }
+  .moscow__section {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+  }
+  .moscow__section h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 2vh;
+  }
+  .section2 {
+    font-size: 16px;
+  }
+  .moscow__section li {
+    line-height: 22px;
+    margin-bottom: 1vh;
+  }
+  .russia {
+    padding-top: 7vh;
+    padding-left: 60px;
+  }
+  .russia h3 {
+    font-size: 24px;
+    margin-bottom: 3vh;
+  }
+  .info {
+    line-height: 20px;
+    margin-bottom: 3vh;
+    padding-left: 0;
+  }
+  .info__icon {
+    width: 54px;
+    height: 54px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .info__icon>div {
+    width: 54px;
+    line-height: 0;
+  }
+  .info__icon img {
+    max-width: 54%;
+  }
+  .note {
+    padding-left: 46px;
+    margin-top: 3vh;
+  }
+  .form__title h2 {
+    font-size: 50px;
+  }
+}
+  
+@media screen and (max-width: 760px) {
+    h1 {
+      font-size: 6vh;
+      line-height: 6vh;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .container {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .button-container-3 {
+      width: 140px;
+      height: 43px;
+      font-size: 16px;
+    }
+    .button-container-3 button {
+      font-size: 16px;
+    }
+    .mobile{
+      display: block;
+    }
+    .subtitle {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  .russia {
+    display: none;
+  }
+  .moscow {
+    width: 100%;
+  }
+  .section2 {
+    background: transparent;
+  }
+  .form__title h2 {
+    font-size: 32px;
+  }
+  #amoforms_iframe_791590 {
+    width: 300px !important;
+  }
+  .form__check {
+    margin-left: -143px;
+  }
+}

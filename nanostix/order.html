@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Заказать</title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="Resource-type" content="Document" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="css/order.css" />
+  <link rel="stylesheet" type="text/css" href="css/order_responsive.css" />
+</head>
+
+<body>
+  <div id="fullpage" class="fullpage">
+    <section class="section section1" id="section1">
+      <div class="container">
+        <div class="to-order">
+          <div class="button-container-3">
+            <span class="mas">Заказать</span>
+            <button type="button" name="Hover">Заказать</button>
+          </div>
+        </div>
+        <div class="title">
+          <h1>
+            <span class="bold">
+              Покупка и доставка<br />
+              табачной <span class="stroke">и алкогольной<br />
+                продукции</span>
+            </span>
+          </h1>
+        </div>
+        <div class="subtitle">
+          Купим все <span class="green">за вас</span>, только скажите куда доставить
+        </div>
+      </div>
+    </section>
+
+    <section class="section section2" id="section2">
+      <div class="container">
+        <div class="moscow">
+          <h2><span class="bold">Доставка</span></h2>
+          <div class="moscow__section">
+            <h3><span class="stroke">По Москве</span></h3>
+            <ul>
+              <li>Минимальная сумма заказа – <span class="green">2 160 рублей</span></li>
+              <li>Стоимость доставки в пределах МКАД - <span class="green">300 рублей</span></li>
+              <li>Самовывоз - бесплатно</li>
+            </ul>
+          </div>
+          <div class="moscow__section">
+            <h3><span class="stroke">Курьером за пределами МКАД<br />
+                и по городам подмосковья</span></h3>
+            <ul>
+              <li>Стоимость доставки от 1 до 10 км от МКАД – 600 рублей,<br />далее 30 рублей за каждый километр
+              </li>
+              <li>Срок доставки - <span class="green">от 1 до 2 дней</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="russia">
+          <h3><span class="bold">Доставка в регионы России</span></h3>
+          <div class="info">
+            <div class="info__icon">
+              <div><img src="img/info_1.svg" alt="" /></div>
+            </div>
+            <div class="info__text">
+              Доставка <span class="bold">в регионы России</span> осуществляется<br />
+              на основании согласованного заказа<br />
+              с менеджером магазина
+            </div>
+          </div>
+          <div class="info">
+            <div class="info__icon">
+              <div><img src="img/info_2.svg" alt="" /></div>
+            </div>
+            <div class="info__text">
+              Доставка производится через транспортную<br />
+              компанию или почту России
+            </div>
+          </div>
+          <div class="info">
+            <div class="info__icon">
+              <div><img src="img/info_3.svg" alt="" /></div>
+            </div>
+            <div class="info__text">
+              Покупатель оплачивает все транспортные<br />
+              расходы, исходя из тарифов грузоперевозки
+            </div>
+          </div>
+          <div class="note">
+            <ul>
+              <li>Минимальный заказ по регионам – <span class="bold">2 160 рублей</span></li>
+              <li>После размещения заявки менеджер свяжется<br />с вами для уточнения всех деталей</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section3" id="section3">
+      <div class="container">
+        <div class="form__title">
+          <h2>
+            <span class="bold">
+              Оставить заявку
+            </span>
+          </h2>
+        </div>
+        <div class="form">
+          <div class="form__check">
+            <input type="checkbox" class="custom-checkbox" name="agree" id="agree" checked />
+            <label for="agree">Я согласен с <a href="#">договором оферты</a></label>
+          </div>
+          <div class="form__overlay" id="form__overlay"></div>
+          <script>!function (a, m, o, c, r, m) { a[o + c] = a[o + c] || { setMeta: function (p) { this.params = (this.params || []).concat([p]) } }, a[o + r] = a[o + r] || function (f) { a[o + r].f = (a[o + r].f || []).concat([f]) }, a[o + r]({ id: "791590", hash: "89d3e645b00c03d35a69ff0f23081e22", locale: "ru" }) }(window, 0, "amo_forms_", "params", "load");</script>
+          <script id="amoforms_script_791590" async="async"
+            src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1627030515"></script>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/fullpage.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const agree = document.querySelector('#agree');
+      const formOverlay = document.querySelector('#form__overlay');
+
+      agree.addEventListener('change', (e) => {
+        formOverlay.style.display = e.currentTarget.checked ? 'none' : 'block';
+      });
+
+      const myFullpage = new fullpage('#fullpage', {
+        anchors: ['home', 'delivery', 'order'],
+        navigation: true,
+        navigationPosition: 'right',
+        verticalCentered: false,
+        scrollingSpeed: 700,
+
+        onLeave: (index, newIndex, direction) => { },
+      });
+
+      const toOrder = document.querySelector('.to-order');
+      toOrder.addEventListener('click', () => myFullpage.moveTo(3));
+    });
+  </script>
+</body>
+
+</html>
