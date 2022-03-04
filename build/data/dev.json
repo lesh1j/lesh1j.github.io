@@ -1,0 +1,280 @@
+{
+  "inspector_info": [
+    {
+      "insp_full_name": "Kopytin Vladimir",
+      "insp_tax_code": "Не определен",
+      "insp_tab_num": "vladimir.kopytin"
+    }
+  ],
+  "graph_info": [
+    {
+      "pk": "1007300/021150/00032101/1",
+      "ipt": "10013160/220419/0119789/001",
+      "orig_co_code": "392",
+      "orig_co_name": "Япония",
+      "tnved": "8429190001",
+      "okpd2": null,
+      "Okpd2_list": [
+        "28.92.21"
+      ],
+      "p_num": "Колесный бульдозер KOMATSU",
+      "unit_name": "шт",
+      "imp_cnt": 10,
+      "balance": 13,
+      "price_min": 15000,
+      "price_max": 260000,
+      "imp_cost": 500000,
+      "imp_tax": null,
+      "out_cost": null,
+      "root_source": "ДТ",
+      "root_idx": 1,
+      "root_main_inn": "3851999628",
+      "root_kpp": "385101001",
+      "root_name": "СТ_ООО ЭВЕРЕСТ",
+      "rec_inn": "3851999628",
+      "fr_inn": "3851999628",
+      "last_doc_date": null,
+      "statement_info": null
+    }
+  ],
+  "nodes": [
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Disposal",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Production",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Force_Majeure",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Return_Lost_Goods",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Sale_Out_Retail",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Individual",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Sale_In_Retail",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Export",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "In_Retail_Free",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Confiscat_by_Goverment",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Retail_diplomatic",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "In_Lost_Goods",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "key": "1007300/021150/00032101/1/392/0000000100/000000000/0/1",
+      "fake": false,
+      "orig_id": "392/0000000100/000000000",
+      "node": {
+        "values": [
+          "KOMATSU"
+        ],
+        "business_role": "Return_Production",
+        "category": "Abstract",
+        "root": true,
+        "leaf": false,
+        "loc": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  
+  ],
+  "links": [
+  
+  ]
+}

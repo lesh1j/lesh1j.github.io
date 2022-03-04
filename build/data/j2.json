@@ -1,0 +1,370 @@
+{
+  "inspector_info": [
+    {
+      "insp_tab_num": "543543574764865",
+      "insp_tax_code": "4534"
+    }
+  ],
+  "graph_info": [
+    {
+      "pk": "4601000/021020/00032101/64",
+      "ipt": "10123000/020120/0001064/064",
+      "orig_co_code": "392",
+      "orig_co_name": "Япония",
+      "tnved": "8450111900",
+      "okpd2": null,
+      "Okpd2_list": ["27.51.13"],
+      "p_num": "Стиральные машины Indesit",
+      "unit_name": "шт",
+      "imp_cnt": 1000.0,
+      "balance": 900.0,
+      "price_min": 4079.8,
+      "price_max": 55000.0,
+      "imp_cost": 4079802.0,
+      "imp_tax": 0.0,
+      "out_cost": null,
+      "root_source": "ДТ",
+      "root_main_inn": "7702838318",
+      "root_kpp": "770201001",
+      "root_name": "ООО \"ТЕХНОКОМ\"",
+      "rec_inn": "7702838318",
+      "fr_inn": "290113946521",
+      "last_doc_date": null
+    }
+  ],
+  "nodes": [
+    {
+      "key": "1_1",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "2_1",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "2_2",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "3_1",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "3_2",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "3_3",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "3_4",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "3_5",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "3_6",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "3_7",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "4_1",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "4_2",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "4_3",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "4_4",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "4_5",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    },
+    {
+      "key": "4_6",
+      "node": {
+        "loc": {
+          "x": 0,
+          "y": 0
+        },
+        "business_role": "Russia",
+        "category": "Real",
+        "co_code": "643",
+        "co_code_name": "Россия",
+        "short_name": "Test node",
+        "inn": "111111111",
+        "balance": 1.0
+      }
+    }
+  ],
+  "links": [
+    {
+      "from": "1_1",
+      "to": "2_1",
+      "quantity": 1
+    },
+    {
+      "from": "1_1",
+      "to": "2_2",
+      "quantity": 1
+    },
+    {
+      "from": "2_2",
+      "to": "3_7",
+      "quantity": 1
+    },
+    {
+      "from": "2_1",
+      "to": "3_1",
+      "quantity": 1
+    },
+    {
+      "from": "2_1",
+      "to": "3_2",
+      "quantity": 1
+    },
+    {
+      "from": "2_1",
+      "to": "3_3",
+      "quantity": 1
+    },
+    {
+      "from": "2_1",
+      "to": "3_4",
+      "quantity": 1
+    },
+    {
+      "from": "2_1",
+      "to": "3_5",
+      "quantity": 1
+    },
+    {
+      "from": "2_1",
+      "to": "3_6",
+      "quantity": 1
+    },
+    {
+      "from": "3_2",
+      "to": "4_1",
+      "quantity": 1
+    },
+    {
+      "from": "3_2",
+      "to": "4_2",
+      "quantity": 1
+    },
+    {
+      "from": "3_2",
+      "to": "4_3",
+      "quantity": 1
+    },
+    {
+      "from": "3_2",
+      "to": "4_4",
+      "quantity": 1
+    },
+    {
+      "from": "3_2",
+      "to": "4_5",
+      "quantity": 1
+    },
+    {
+      "from": "3_1",
+      "to": "4_6",
+      "quantity": 1
+    }
+  ]
+}
