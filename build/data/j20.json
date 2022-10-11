@@ -12,18 +12,18 @@
       "ipt": "10131010/150721/0462556/001",
       "orig_co_code": null,
       "orig_co_name": null,
-      "tnved": null,
+      "tnved": "8418102001",
       "okpd2": null,
       "Okpd2_list": [null],
-      "p_num": "Товар не определен",
+      "p_num": "ХОЛОДИЛЬНИКИ-МОРОЗИЛЬНИКИ БЫТОВЫЕ",
       "unit_name": null,
       "imp_cnt": null,
-      "balance": 310.0,
+      "balance": 309.0,
       "price_min": 18182.0,
       "price_max": 38136.0,
       "imp_cost": null,
       "imp_tax": null,
-      "out_cost": null,
+      "out_cost": 38136.0,
       "root_source": null,
       "root_idx": null,
       "root_main_inn": null,
@@ -31,126 +31,14 @@
       "root_name": null,
       "rec_inn": null,
       "fr_inn": null,
-      "last_doc_date": null,
+      "last_doc_date": 1632949200,
       "statement_info": null,
-      "allow_rb_request": true
+      "allow_rb_request": false
     }
   ],
   "nodes": [
     {
-      "key": "0",
-      "isGroup": true,
-      "node": {
-        "loc": {
-          "x": 0,
-          "y": 0
-        }
-      }
-    },
-    {
-      "key": "1",
-      "isGroup": true,
-      "node": {
-        "loc": {
-          "x": 1,
-          "y": 1
-        }
-      }
-    },
-    {
-      "key": "2",
-      "isGroup": true,
-      "node": {
-        "loc": {
-          "x": 2,
-          "y": 2
-        }
-      }
-    },
-    {
-      "key": "3",
-      "isGroup": true,
-      "node": {
-        "loc": {
-          "x": 3,
-          "y": 3
-        }
-      }
-    },
-    {
-      "key": "4",
-      "isGroup": true,
-      "node": {
-        "loc": {
-          "x": 4,
-          "y": 4
-        }
-      }
-    },
-    {
-      "key": "5",
-      "isGroup": true,
-      "node": {
-        "loc": {
-          "x": 5,
-          "y": 5
-        }
-      }
-    },
-    {
-      "key": "6",
-      "isGroup": true,
-      "node": {
-        "loc": {
-          "x": 6,
-          "y": 6
-        }
-      }
-    },
-    {
       "key": "6552640/127051/01013101/1/643/7722220167//1/0",
-      "fake": true,
-      "orig_id": "643/7722220167/",
-      "node": {
-        "values": ["Общество с ограниченной ответственностью \"БАЛУ ТМ\""],
-        "business_role": "Russia",
-        "category": "Real",
-        "root": true,
-        "leaf": false,
-        "loc": {
-          "x": 1,
-          "y": 1
-        },
-        "tax_type": 1,
-        "tax_type_name": "ОСНО",
-        "co_code": "643",
-        "co_code_name": "Россия",
-        "short_name": "Общество с ограниченной ответственностью \"БАЛУ ТМ\"",
-        "inn": "7722220167",
-        "kpp": "771901001",
-        "debet": 310.0,
-        "credit": 231.0,
-        "balance": 79.0,
-        "in_br": 0.0,
-        "out_br": 0.0,
-        "balance_br": 0.0,
-        "indicators_top": null,
-        "integral": "Not_Defined",
-        "cost_in": 6674254.24,
-        "cost_out": 5787354.0,
-        "price_in": 21529.85,
-        "price_out": 25053.48,
-        "krc": 0.16,
-        "damage": null,
-        "price_avg": 26539.31,
-        "st_flag": false,
-        "last_doc_date": 1635714000,
-        "price_min": 18182.0,
-        "price_max": 37374.0
-      }
-    },
-    {
-      "key": "6552640/127051/01013101/1/643/7722220167//3/1",
       "fake": false,
       "orig_id": "643/7722220167/",
       "node": {
@@ -159,10 +47,7 @@
         "category": "Real",
         "root": true,
         "leaf": false,
-        "loc": {
-          "x": 3,
-          "y": 3
-        },
+        "loc": { "x": 1, "y": 1 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -176,7 +61,16 @@
         "in_br": 0.0,
         "out_br": 0.0,
         "balance_br": 0.0,
-        "indicators_top": null,
+        "indicators_top": [
+          {
+            "RiskId": "6552640/127051/01013101/1/7722220167/204",
+            "Code": 204,
+            "Name": "Завышенная стоимость реализации",
+            "priceIn": 21529.85,
+            "priceOut": 25053.48,
+            "coeffDeviation": 23.08
+          }
+        ],
         "integral": "Not_Defined",
         "cost_in": 6674254.24,
         "cost_out": 5787354.0,
@@ -184,15 +78,16 @@
         "price_out": 25053.48,
         "krc": 0.16,
         "damage": null,
-        "price_avg": 26539.31,
+        "price_avg": 23034.4,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 18182.0,
-        "price_max": 37374.0
+        "price_max": 37374.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/7722220167//4/2",
+      "key": "6552640/127051/01013101/1/643/7722220167//3/2",
       "fake": true,
       "orig_id": "643/7722220167/",
       "node": {
@@ -201,10 +96,7 @@
         "category": "Real",
         "root": true,
         "leaf": false,
-        "loc": {
-          "x": 4,
-          "y": 4
-        },
+        "loc": { "x": 3, "y": 3 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -218,7 +110,22 @@
         "in_br": 0.0,
         "out_br": 0.0,
         "balance_br": 0.0,
-        "indicators_top": null,
+        "indicators_top": [
+          {
+            "RiskId": "6552640/127051/01013101/1/7722220167/204",
+            "Code": 204,
+            "Name": "Завышенная стоимость реализации",
+            "priceIn": 21529.85,
+            "priceOut": 25053.48,
+            "coeffDeviation": 23.08
+          },
+          {
+            "RiskId": "6000000/228040/84259999/1/5252010451/212",
+            "Code": 211,
+            "Name": "Данные по перемещению превышают заявленный импорт",
+            "Balance": 22
+          }
+        ],
         "integral": "Not_Defined",
         "cost_in": 6674254.24,
         "cost_out": 5787354.0,
@@ -226,15 +133,16 @@
         "price_out": 25053.48,
         "krc": 0.16,
         "damage": null,
-        "price_avg": 26539.31,
+        "price_avg": 23034.4,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 18182.0,
-        "price_max": 37374.0
+        "price_max": 37374.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/5041205454//5/0",
+      "key": "6552640/127051/01013101/1/643/5041205454//2/0",
       "fake": false,
       "orig_id": "643/5041205454/",
       "node": {
@@ -243,10 +151,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 5,
-          "y": 5
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -266,17 +171,18 @@
         "cost_out": 0.0,
         "price_in": 27942.51,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
-        "price_avg": 27910.56,
+        "price_avg": 27942.51,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 19546.0,
-        "price_max": 34900.0
+        "price_max": 34900.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/5041205454//5/1",
+      "key": "6552640/127051/01013101/1/643/5041205454//3/1",
       "fake": true,
       "orig_id": "643/5041205454/",
       "node": {
@@ -285,10 +191,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 5,
-          "y": 5
-        },
+        "loc": { "x": 3, "y": 3 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -308,59 +211,58 @@
         "cost_out": 0.0,
         "price_in": 27942.51,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
-        "price_avg": 27910.56,
+        "price_avg": 27942.51,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 19546.0,
-        "price_max": 34900.0
+        "price_max": 34900.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/7727402330//6/0",
+      "key": "6552640/127051/01013101/1/643/7718151908/000001004/3/0",
       "fake": false,
-      "orig_id": "643/7727402330/",
+      "orig_id": "643/7718151908/000001004",
       "node": {
-        "values": [""],
-        "business_role": "Russia",
-        "category": "Real",
+        "values": ["Общество с ограниченной ответственностью \"Светлячок В\""],
+        "business_role": "Sale_In_Retail",
+        "category": "Abstract",
         "root": false,
-        "leaf": false,
-        "loc": {
-          "x": 6,
-          "y": 6
-        },
-        "tax_type": 1,
-        "tax_type_name": "ОСНО",
+        "leaf": true,
+        "loc": { "x": 3, "y": 3 },
+        "tax_type": null,
+        "tax_type_name": null,
         "co_code": "643",
         "co_code_name": "Россия",
-        "short_name": null,
-        "inn": "7727402330",
-        "kpp": "772401001",
+        "short_name": "Общество с ограниченной ответственностью \"Светлячок В\"",
+        "inn": "7718151908",
+        "kpp": "000001004",
         "debet": 1.0,
         "credit": 0.0,
-        "balance": 1.0,
+        "balance": 0.0,
         "in_br": 0.0,
         "out_br": 0.0,
         "balance_br": 0.0,
         "indicators_top": null,
         "integral": "Not_Defined",
-        "cost_in": 38136.0,
+        "cost_in": 0.0,
         "cost_out": 0.0,
-        "price_in": 38136.0,
+        "price_in": 0.0,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
-        "price_avg": 38136.0,
+        "price_avg": null,
         "st_flag": false,
-        "last_doc_date": 1627765200,
-        "price_min": 38136.0,
-        "price_max": 38136.0
+        "last_doc_date": null,
+        "price_min": null,
+        "price_max": null,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/2310131960//4/0",
+      "key": "6552640/127051/01013101/1/643/2310131960//2/0",
       "fake": false,
       "orig_id": "643/2310131960/",
       "node": {
@@ -369,10 +271,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 4,
-          "y": 4
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -392,17 +291,18 @@
         "cost_out": 0.0,
         "price_in": 26774.33,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
-        "price_avg": 26701.67,
+        "price_avg": 26774.33,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 23388.0,
-        "price_max": 30451.33
+        "price_max": 30451.33,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/2632116324//5/0",
+      "key": "6552640/127051/01013101/1/643/2632116324//2/0",
       "fake": false,
       "orig_id": "643/2632116324/",
       "node": {
@@ -411,10 +311,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 5,
-          "y": 5
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -428,23 +325,31 @@
         "in_br": 0.0,
         "out_br": 0.0,
         "balance_br": 0.0,
-        "indicators_top": null,
+        "indicators_top": [
+          {
+            "RiskId": "6000000/228040/84259999/1/5252010451/212",
+            "Code": 211,
+            "Name": "Данные по перемещению превышают заявленный импорт",
+            "Balance": 23
+          }
+        ],
         "integral": "Not_Defined",
         "cost_in": 88104.0,
         "cost_out": 0.0,
         "price_in": 22026.0,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
-        "price_avg": 22106.17,
+        "price_avg": 22026.0,
         "st_flag": false,
         "last_doc_date": 1627765200,
         "price_min": 21785.5,
-        "price_max": 22396.0
+        "price_max": 22396.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/5041205694//4/0",
+      "key": "6552640/127051/01013101/1/643/5041205694//2/0",
       "fake": false,
       "orig_id": "643/5041205694/",
       "node": {
@@ -455,10 +360,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 4,
-          "y": 4
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -472,7 +374,15 @@
         "in_br": 0.0,
         "out_br": 0.0,
         "balance_br": 0.0,
-        "indicators_top": null,
+        "indicators_top": [
+          {
+            "RiskId": "6552640/127051/01013101/1/5041205694/207",
+            "Code": 207,
+            "Name": "Заниженная стоимость реализации",
+            "priceIn": 30440.57,
+            "priceOut": 28064.0
+          }
+        ],
         "integral": "Not_Defined",
         "cost_in": 213084.0,
         "cost_out": 28064.0,
@@ -480,15 +390,16 @@
         "price_out": 28064.0,
         "krc": -0.08,
         "damage": null,
-        "price_avg": 29759.63,
+        "price_avg": 30143.5,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 26442.0,
-        "price_max": 34660.0
+        "price_max": 34660.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/591100001787//4/0",
+      "key": "6552640/127051/01013101/1/643/591100001787//2/0",
       "fake": false,
       "orig_id": "643/591100001787/",
       "node": {
@@ -497,10 +408,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 4,
-          "y": 4
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -514,23 +422,47 @@
         "in_br": 0.0,
         "out_br": 0.0,
         "balance_br": 0.0,
-        "indicators_top": null,
+        "indicators_top": [
+          {
+            "RiskId": "6552640/127051/01013101/1/7704217371/201",
+            "Code": 201,
+            "Name": "Отрицательный остаток",
+            "ConnectedNodes": [
+              "643/7722220167/",
+              "643/860301303376/",
+              "643/711600078905/",
+              "643/5041205454/",
+              "643/5041205694/",
+              "643/7729355029/",
+              "643/2632116324/",
+              "643/2310131960/",
+              "643/7719866144/"
+            ]
+          },
+          {
+            "RiskId": "6000000/228040/84259999/1/5252010451/212",
+            "Code": 212,
+            "Name": "Данные по импорту превышают сведения по перемещению",
+            "Balance": 24
+          }
+        ],
         "integral": "Not_Defined",
         "cost_in": 50041.0,
         "cost_out": 0.0,
         "price_in": 25020.5,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
         "price_avg": 25020.5,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 22490.0,
-        "price_max": 27551.0
+        "price_max": 27551.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/711600078905//4/0",
+      "key": "6552640/127051/01013101/1/643/711600078905//2/0",
       "fake": false,
       "orig_id": "643/711600078905/",
       "node": {
@@ -539,10 +471,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 4,
-          "y": 4
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -562,17 +491,18 @@
         "cost_out": 0.0,
         "price_in": 24485.5,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
         "price_avg": 24485.5,
         "st_flag": false,
         "last_doc_date": 1627765200,
         "price_min": 22955.0,
-        "price_max": 28142.0
+        "price_max": 28142.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/7718151908//5/0",
+      "key": "6552640/127051/01013101/1/643/7718151908//2/0",
       "fake": false,
       "orig_id": "643/7718151908/",
       "node": {
@@ -580,11 +510,8 @@
         "business_role": "Russia",
         "category": "Real",
         "root": false,
-        "leaf": false,
-        "loc": {
-          "x": 5,
-          "y": 5
-        },
+        "leaf": true,
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -598,7 +525,24 @@
         "in_br": 0.0,
         "out_br": 0.0,
         "balance_br": 0.0,
-        "indicators_top": null,
+        "indicators_top": [
+          {
+            "RiskId": "6552640/127051/01013101/1/7718151908/204",
+            "Code": 204,
+            "Name": "Завышенная стоимость реализации",
+            "priceIn": 23743.0,
+            "priceOut": 38136.0,
+            "coeffDeviation": 369.23
+          },
+          {
+            "RiskId": "6552640/127051/01013101/1/7722220167/204",
+            "Code": 206,
+            "Name": "Завышенная стоимость реализации",
+            "priceIn": 21529.85,
+            "priceOut": 25053.48,
+            "coeffDeviation": 23.08
+          }
+        ],
         "integral": "Not_Defined",
         "cost_in": 23743.0,
         "cost_out": 38136.0,
@@ -610,11 +554,12 @@
         "st_flag": false,
         "last_doc_date": 1627765200,
         "price_min": 23743.0,
-        "price_max": 38136.0
+        "price_max": 38136.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/7719866144//5/0",
+      "key": "6552640/127051/01013101/1/643/7719866144//2/0",
       "fake": false,
       "orig_id": "643/7719866144/",
       "node": {
@@ -623,10 +568,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 5,
-          "y": 5
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -646,17 +588,18 @@
         "cost_out": 0.0,
         "price_in": 22472.97,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
-        "price_avg": 22573.72,
+        "price_avg": 22472.97,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 18182.0,
-        "price_max": 29545.33
+        "price_max": 29545.33,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/7729355029//5/0",
+      "key": "6552640/127051/01013101/1/643/7729355029//2/0",
       "fake": false,
       "orig_id": "643/7729355029/",
       "node": {
@@ -665,10 +608,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 5,
-          "y": 5
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -688,17 +628,18 @@
         "cost_out": 0.0,
         "price_in": 29119.05,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
         "price_avg": 29119.05,
         "st_flag": false,
         "last_doc_date": 1627765200,
         "price_min": 24682.0,
-        "price_max": 32932.0
+        "price_max": 32932.0,
+        "rb_import_flag": false
       }
     },
     {
-      "key": "6552640/127051/01013101/1/643/860301303376//4/0",
+      "key": "6552640/127051/01013101/1/643/860301303376//2/0",
       "fake": false,
       "orig_id": "643/860301303376/",
       "node": {
@@ -707,10 +648,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 4,
-          "y": 4
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -730,13 +668,14 @@
         "cost_out": 0.0,
         "price_in": 29037.67,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
-        "price_avg": 29005.0,
+        "price_avg": 29037.67,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 24465.0,
-        "price_max": 33741.0
+        "price_max": 33741.0,
+        "rb_import_flag": false
       }
     },
     {
@@ -749,10 +688,7 @@
         "category": "Abstract",
         "root": true,
         "leaf": false,
-        "loc": {
-          "x": 0,
-          "y": 0
-        },
+        "loc": { "x": 0, "y": 0 },
         "tax_type": null,
         "tax_type_name": null,
         "co_code": "616",
@@ -772,13 +708,14 @@
         "cost_out": 0.0,
         "price_in": 0.0,
         "price_out": 0.0,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
         "price_avg": null,
         "st_flag": false,
         "last_doc_date": null,
         "price_min": null,
-        "price_max": null
+        "price_max": null,
+        "rb_import_flag": false
       }
     },
     {
@@ -791,10 +728,7 @@
         "category": "Real",
         "root": false,
         "leaf": false,
-        "loc": {
-          "x": 2,
-          "y": 2
-        },
+        "loc": { "x": 2, "y": 2 },
         "tax_type": 1,
         "tax_type_name": "ОСНО",
         "co_code": "643",
@@ -847,13 +781,14 @@
         "cost_out": 110975.0,
         "price_in": 0.0,
         "price_out": 36991.67,
-        "krc": 0.0,
+        "krc": null,
         "damage": null,
-        "price_avg": 36800.5,
+        "price_avg": 36991.67,
         "st_flag": false,
         "last_doc_date": 1635714000,
         "price_min": 36227.0,
-        "price_max": 37374.0
+        "price_max": 37374.0,
+        "rb_import_flag": false
       }
     }
   ],
@@ -869,17 +804,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 306.0,
+      "average_price": 21330.24,
+      "total_cost": 6527052.24,
       "price_min": 21330.24,
       "price_max": 21330.24,
       "broker": false,
       "vio_flag": true,
       "last_doc_date": 1626296400,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/5041205694//4/0",
-      "to": "6552640/127051/01013101/1/643/5041205454//5/0",
+      "from": "6552640/127051/01013101/1/643/5041205694//2/0",
+      "to": "6552640/127051/01013101/1/643/5041205454//3/1",
       "orig_id": "6552640/127051/01013101/1/643/5041205694//643/5041205454//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -888,17 +826,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 1.0,
+      "average_price": 28064.0,
+      "total_cost": 28064.0,
       "price_min": 28064.0,
       "price_max": 28064.0,
       "broker": false,
       "vio_flag": true,
       "last_doc_date": 1638133200,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
       "from": "6552640/127051/01013101/1/643/7704217370//2/0",
-      "to": "6552640/127051/01013101/1/643/7722220167//3/1",
+      "to": "6552640/127051/01013101/1/643/7722220167//3/2",
       "orig_id": "6552640/127051/01013101/1/643/7704217370//643/7722220167//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -907,36 +848,42 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 3.0,
+      "average_price": 36991.67,
+      "total_cost": 110975.0,
       "price_min": 36227.0,
       "price_max": 37374.0,
       "broker": false,
       "vio_flag": true,
       "last_doc_date": 1640898000,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7718151908//5/0",
-      "to": "6552640/127051/01013101/1/643/7727402330//6/0",
-      "orig_id": "6552640/127051/01013101/1/643/7718151908//643/7727402330//1/",
-      "category": "Direct",
+      "from": "6552640/127051/01013101/1/643/7718151908//2/0",
+      "to": "6552640/127051/01013101/1/643/7718151908/000001004/3/0",
+      "orig_id": "6552640/127051/01013101/1/643/7718151908//643/7718151908/000001004/1/",
+      "category": "Out_Traceability",
       "edge_type": "Direct",
       "out_co_code": "643",
       "out_co_name": "Россия",
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 1.0,
+      "average_price": 38136.0,
+      "total_cost": 38136.0,
       "price_min": 38136.0,
       "price_max": 38136.0,
       "broker": false,
       "vio_flag": true,
       "last_doc_date": 1626901200,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/2310131960//4/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/2310131960//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/2310131960//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -945,17 +892,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 9.0,
+      "average_price": 26774.33,
+      "total_cost": 240969.0,
       "price_min": 23388.0,
       "price_max": 30451.33,
       "broker": false,
       "vio_flag": true,
       "last_doc_date": 1640206800,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/2632116324//5/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/2632116324//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/2632116324//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -964,17 +914,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 4.0,
+      "average_price": 22026.0,
+      "total_cost": 88104.0,
       "price_min": 21785.5,
       "price_max": 22396.0,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1632949200,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/5041205454//5/1",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/5041205454//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/5041205454//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -983,17 +936,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 62.0,
+      "average_price": 27940.55,
+      "total_cost": 1732314.0,
       "price_min": 19546.0,
       "price_max": 34900.0,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1640552400,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/5041205694//4/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/5041205694//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/5041205694//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -1002,17 +958,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 7.0,
+      "average_price": 30440.57,
+      "total_cost": 213084.0,
       "price_min": 26442.0,
       "price_max": 34660.0,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1632776400,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/591100001787//4/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/591100001787//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/591100001787//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -1021,17 +980,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 2.0,
+      "average_price": 25020.5,
+      "total_cost": 50041.0,
       "price_min": 22490.0,
       "price_max": 27551.0,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1632258000,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/711600078905//4/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/711600078905//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/711600078905//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -1040,17 +1002,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 6.0,
+      "average_price": 24485.5,
+      "total_cost": 146913.0,
       "price_min": 22955.0,
       "price_max": 28142.0,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1629838800,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/7718151908//5/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/7718151908//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/7718151908//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -1059,17 +1024,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 1.0,
+      "average_price": 23743.0,
+      "total_cost": 23743.0,
       "price_min": 23743.0,
       "price_max": 23743.0,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1628629200,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/7719866144//5/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/7719866144//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/7719866144//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -1078,36 +1046,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 118.0,
+      "average_price": 22472.97,
+      "total_cost": 2651811.0,
       "price_min": 18182.0,
       "price_max": 29545.33,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1640034000,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/7722220167//4/2",
-      "orig_id": "6552640/127051/01013101/1/643/7722220167//643/7722220167//4/",
-      "category": "KVO18_Debet",
-      "edge_type": null,
-      "out_co_code": "643",
-      "out_co_name": "Россия",
-      "in_co_code": "643",
-      "in_co_name": "Россия",
-      "quantity": 1.0,
-      "price_min": 36227.0,
-      "price_max": 36227.0,
-      "broker": false,
-      "vio_flag": true,
-      "last_doc_date": 1632949200,
-      "sidedraw": "To",
-      "cards": null
-    },
-    {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/7729355029//5/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/7729355029//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/7729355029//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -1116,17 +1068,20 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 19.0,
+      "average_price": 29119.05,
+      "total_cost": 553262.0,
       "price_min": 24682.0,
       "price_max": 32932.0,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1627506000,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     },
     {
-      "from": "6552640/127051/01013101/1/643/7722220167//3/1",
-      "to": "6552640/127051/01013101/1/643/860301303376//4/0",
+      "from": "6552640/127051/01013101/1/643/7722220167//1/0",
+      "to": "6552640/127051/01013101/1/643/860301303376//2/0",
       "orig_id": "6552640/127051/01013101/1/643/7722220167//643/860301303376//1/",
       "category": "Direct",
       "edge_type": "Direct",
@@ -1135,12 +1090,15 @@
       "in_co_code": "643",
       "in_co_name": "Россия",
       "quantity": 3.0,
+      "average_price": 29037.67,
+      "total_cost": 87113.0,
       "price_min": 24465.0,
       "price_max": 33741.0,
       "broker": false,
-      "vio_flag": true,
+      "vio_flag": false,
       "last_doc_date": 1636491600,
       "sidedraw": "To",
+      "rbOperationId": null,
       "cards": null
     }
   ]

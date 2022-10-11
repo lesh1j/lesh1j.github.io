@@ -1,0 +1,87 @@
+{
+  "data": {
+    "seller": {
+      "name": "OOO Ландис",
+      "inn": 5007067042
+    },
+    "saleAmount": 3852,
+    "listData": [
+      {
+        "id": 1,
+        "integral": "Not_Defined",
+        "inn": 1234512345,
+        "name": "ООО 'АО Технологии'",
+        "balance": 158,
+        "indicators_top": {
+          "code": 201,
+          "name": "Отрицательный остаток"
+        },
+        "buyAmount": 125,
+        "nodesAmount": 32,
+        "soldAmount": 125
+      },
+      {
+        "id": 2,
+        "integral": "Low",
+        "inn": 1234512345,
+        "name": "ООО 'АО Технологии'",
+        "balance": 158,
+        "indicators_top": {
+          "code": 203,
+          "name": "Остаток по посреднику"
+        },
+        "buyAmount": 125,
+        "nodesAmount": 32,
+        "soldAmount": 125
+      },
+      {
+        "id": 3,
+        "integral": "Medium",
+        "inn": 1234512345,
+        "name": "ООО 'АО Технологии'",
+        "balance": 158,
+        "indicators_top": {
+          "code": 204,
+          "name": "Завышенная стоимость реализации"
+        },
+        "buyAmount": 125,
+        "nodesAmount": 32,
+        "soldAmount": 125
+      },
+      {
+        "id": 4,
+        "integral": "High",
+        "inn": 1234512345,
+        "name": "ООО 'АО Технологии'",
+        "balance": 158,
+        "indicators_top": {
+          "code": 206,
+          "name": "Пересортица"
+        },
+        "buyAmount": 125,
+        "nodesAmount": 32,
+        "soldAmount": 125
+      },
+      {
+        "id": 5,
+        "integral": "High",
+        "inn": 1234512345,
+        "name": "ООО 'АО Технологии'",
+        "balance": 158,
+        "indicators_top": {
+          "code": 207,
+          "name": "Заниженная стоимость реализации"
+        },
+        "buyAmount": 125,
+        "nodesAmount": 32,
+        "soldAmount": 125
+      }
+    ]
+  },
+  "meta": {
+    "currPage": 1,
+    "pagesCount": 3,
+    "rowsPerPage": 10,
+    "totalRowsCount": 100
+  }
+}
