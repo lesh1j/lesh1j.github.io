@@ -1,0 +1,1 @@
+{"version":3,"sources":["ModalSaveGraph.module.scss"],"names":[],"mappings":"AAAA,kCAEI,WAAY","file":"20.4857fb9e.chunk.css","sourcesContent":[".dialog {\r\n  & > div {\r\n    width: 450px;\r\n  }\r\n}\r\n"]}
