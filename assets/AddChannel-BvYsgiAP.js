@@ -1,0 +1,2 @@
+import{c as l,u as r,j as n,a as i,F as o,T as c}from"./index-BiTPM25i.js";import{C as p}from"./Content-zlTvWXDR.js";const j=()=>{const e=l.c(4),{t:a}=r();let s;e[0]!==a?(s=a("Добавление канала"),e[0]=a,e[1]=s):s=e[1];let t;return e[2]!==s?(t=n.jsx(i,{children:n.jsx(p,{children:n.jsx(o,{justify:"space-between",align:"center",children:n.jsx(c.Title,{level:1,children:s})})})}),e[2]=s,e[3]=t):t=e[3],t};export{j as AddChannel,j as default};
+//# sourceMappingURL=AddChannel-BvYsgiAP.js.map
