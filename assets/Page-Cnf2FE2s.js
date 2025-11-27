@@ -1,0 +1,2 @@
+import{A as n,j as i,m as p}from"./index-GqjGJp99.js";const _="_page_13hht_1",c="_page_withoutHeading_13hht_18",e={page:_,page_withoutHeading:c},r=({className:t,children:a,withoutHeading:s,...o})=>{const{token:{colorBgBase:g}}=n.useToken();return i.jsx("div",{...o,style:{background:g},className:p(t,e.page,s&&e.page_withoutHeading),children:a})};export{r as P};
+//# sourceMappingURL=Page-Cnf2FE2s.js.map
