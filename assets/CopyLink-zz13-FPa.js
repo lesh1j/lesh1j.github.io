@@ -1,2 +1,0 @@
-import{A as a,j as o,T as t}from"./index-GqjGJp99.js";const c=({url:e,maxWidth:n=150,textDecoration:s="underline",onLinkCopy:r,...i})=>{const{token:{colorPrimary:p}}=a.useToken();return o.jsx(t.Link,{...i,href:e,target:"_blank",copyable:{text:e,onCopy:r},children:o.jsx(t.Text,{ellipsis:{tooltip:e},style:{maxWidth:n,color:p,textDecoration:s},children:e})})};export{c as C};
-//# sourceMappingURL=CopyLink-zz13-FPa.js.map

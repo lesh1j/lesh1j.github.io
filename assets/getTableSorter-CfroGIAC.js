@@ -1,2 +1,0 @@
-import{aV as t}from"./index-GqjGJp99.js";const f=(i,e)=>(e||(e=new URLSearchParams(window.location.search)),e.get("ordering")?e.get("ordering")==="-"+i?"descend":e.get("ordering")===i?"ascend":void 0:void 0),S=(i,e)=>(g,l,d)=>{if(!Array.isArray(d)){if(!(d!=null&&d.order))i.delete("ordering");else{d.field==="date_time"&&(d.field="date");const n=d.field?d.order==="ascend"?d.field:"-"+d.field:"";i.set("ordering",n.toString())}i.delete(t.OFFSET),e(i)}};export{S as a,f as g};
-//# sourceMappingURL=getTableSorter-CfroGIAC.js.map

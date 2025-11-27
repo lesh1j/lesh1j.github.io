@@ -2,18 +2,18 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="apple-touch-icon" href="http://affilead.docker/favicons/apple-touch-icon.png?v=1" sizes="180x180" />
-		<link rel="icon" href="http://affilead.docker/favicons/favicon-32x32.png?v=1" sizes="32x32" type="image/png" />
-		<link rel="icon" href="http://affilead.docker/favicons/favicon-16x16.png?v=1" sizes="16x16" type="image/png" />
-		<link rel="icon" href="http://affilead.docker/favicon.svg?v=1" type="image/svg+xml" />
-		<link rel="icon" href="http://affilead.docker/favicon.ico?v=1" type="image/x-icon" />
-
-		<link rel="manifest" href="http://affilead.docker/site.webmanifest?v=1" />
+		<link rel="apple-touch-icon" href="%VITE_PUBLIC_CDN_URL%/favicons/apple-touch-icon.png" sizes="180x180" />
+		<link rel="icon" href="%VITE_PUBLIC_CDN_URL%/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+		<link rel="icon" href="%VITE_PUBLIC_CDN_URL%/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+		<link rel="icon" href="%VITE_PUBLIC_URL%/favicon.svg" type="svg+xml" />
+		<link rel="manifest" href="%VITE_PUBLIC_URL%/site.webmanifest" />
 		<meta name="theme-color" content="#4d5465" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Affilead</title>
+		<script src="https://telegram.org/js/telegram-web-app.js?59"></script>
+
+		<title>telerev</title>
 
 		<style>
 			html,
@@ -25,56 +25,10 @@
 				box-sizing: border-box;
 			}
 		</style>
-		<script type="module" crossorigin src="http://affilead.docker/assets/index-GqjGJp99.js"></script>
-		<link rel="stylesheet" crossorigin href="http://affilead.docker/assets/index-CTuyJUsp.css">
+		<script type="module" crossorigin src="/assets/index-BLndcaq1.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/index-0s2LFFot.css">
 	</head>
 	<body>
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript">
-			const environment = 'stage';
-
-			if (environment === 'prod') {
-				(function (m, e, t, r, i, k, a) {
-					m[i] =
-						m[i] ||
-						function () {
-							(m[i].a = m[i].a || []).push(arguments);
-						};
-					m[i].l = 1 * new Date();
-					for (var j = 0; j < document.scripts.length; j++) {
-						if (document.scripts[j].src === r) {
-							return;
-						}
-					}
-					(k = e.createElement(t)),
-						(a = e.getElementsByTagName(t)[0]),
-						(k.async = 1),
-						(k.src = r),
-						a.parentNode.insertBefore(k, a);
-				})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
-
-				ym(99789588, 'init', {
-					clickmap: true,
-					trackLinks: true,
-					accurateTrackBounce: true,
-					webvisor: true,
-				});
-
-				ym(98715808, 'init', {
-					clickmap: true,
-					trackLinks: true,
-					accurateTrackBounce: true,
-				});
-			}
-		</script>
-		<noscript
-			><div><img src="https://mc.yandex.ru/watch/99789588" style="position: absolute; left: -9999px" alt="" /></div
-		></noscript>
-		<noscript
-			><div><img src="https://mc.yandex.ru/watch/98715808" style="position: absolute; left: -9999px" alt="" /></div
-		></noscript>
-		<!-- /Yandex.Metrika counter -->
-
 		<div id="root"></div>
 	</body>
 </html>

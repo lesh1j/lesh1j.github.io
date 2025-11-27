@@ -1,2 +1,0 @@
-import{a as g,j as e,F as i,T as l}from"./index-GqjGJp99.js";const j=({className:x,children:c,component:t,inlineComponent:a,subtitle:r,subtitleMaxWidth:d=720,...y})=>{const s=g();return e.jsxs(i,{vertical:!0,gap:12,align:s?"start":"stretch",children:[e.jsxs(i,{...y,justify:a?"start":"space-between",align:"center",gap:12,className:x,style:{width:"100%"},children:[e.jsx(l.Title,{level:4,style:{margin:0},children:c}),a,!s&&t]}),r&&e.jsx(l.Text,{type:"secondary",style:{maxWidth:d},children:r}),s&&t]})};export{j as P};
-//# sourceMappingURL=PageTitle-CbWA8k_A.js.map

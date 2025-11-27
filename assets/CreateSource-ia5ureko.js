@@ -1,2 +1,0 @@
-import{u as t,j as s,m,cH as c}from"./index-GqjGJp99.js";import{P as n}from"./Page-Cnf2FE2s.js";import{P as f}from"./PageTitle-CbWA8k_A.js";const i="_form_9o328_1",r={form:i},j=({className:e,...o})=>{const{t:a}=t();return s.jsxs(n,{...o,className:m(e,r.createSource),children:[s.jsx(f,{children:a("Добавление площадки")}),s.jsx(c,{className:r.form})]})};export{j as CreateSource,j as default};
-//# sourceMappingURL=CreateSource-ia5ureko.js.map
