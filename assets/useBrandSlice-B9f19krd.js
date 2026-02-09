@@ -1,0 +1,2 @@
+import{w as o,cn as p,cZ as f,c_ as l,c$ as u,d0 as d}from"./index-MLyLgxXm.js";const D=()=>{const e=o.c(9),i=p(),a=f(O);let t,s,c;e[0]!==i?(t=r=>i(l(r)),s=r=>i(u(r)),c=r=>i(d(r)),e[0]=i,e[1]=t,e[2]=s,e[3]=c):(t=e[1],s=e[2],c=e[3]);let n;return e[4]!==a||e[5]!==t||e[6]!==s||e[7]!==c?(n={...a,setOffer:t,setIsOpenDetailsPopup:s,setVisitedOffer:c},e[4]=a,e[5]=t,e[6]=s,e[7]=c,e[8]=n):n=e[8],n};function O(e){return e.brandSlice}export{D as u};
+//# sourceMappingURL=useBrandSlice-B9f19krd.js.map
